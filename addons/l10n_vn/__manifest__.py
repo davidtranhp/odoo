@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-
 {
     "name": "Vietnam - Accounting",
     "summary": "Vietnam Chart of Accounts for Odoo",
@@ -15,7 +14,7 @@ With the new development, the module is now:
 * fully in compliance with the Circular #200/2014/TT-BTC dated Dec 22, 2014 by the Ministry of Finance which came into force on Jan 1, 2015
 * partially in compliance with the Circular #133/2016/TT-BTC dated Aug 26, 2016 by the Ministry of Finance which came into force on Jan 1, 2017.
 
-The folling has been done and integrated
+The following has been done and integrated
 ----------------------------------------
 * More common taxes (e.g. import, export, special consumption, nature resource usage, etc)
 * Complete Chart of Accounts
