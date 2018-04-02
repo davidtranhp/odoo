@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0alpha1+e\n"
+"Project-Id-Version: Odoo Server 12.0alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-27 06:21+0000\n"
-"PO-Revision-Date: 2018-03-27 06:21+0000\n"
+"POT-Creation-Date: 2018-04-02 12:14+0000\n"
+"PO-Revision-Date: 2018-04-02 12:14+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -73,6 +73,56 @@ msgid "An Giang"
 msgstr ""
 
 #. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-43
+msgid "Ba Ria – Vung Tau"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-54
+msgid "Bac Giang"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-53
+msgid "Bac Kan"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-55
+msgid "Bac Lieu"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-56
+msgid "Bac Ninh"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-50
+msgid "Ben Tre"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-31
+msgid "Binh Dinh"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-57
+msgid "Binh Duong"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-58
+msgid "Binh Phuoc"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-40
+msgid "Binh Thuan"
+msgstr ""
+
+#. module: l10n_vn
 #: model:account.account,name:l10n_vn.1_chart34312
 #: model:account.account.template,name:l10n_vn.chart34312
 msgid "Bond distcounts"
@@ -121,58 +171,18 @@ msgid "Buildings and structures"
 msgstr ""
 
 #. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-43
-msgid "Bà Rịa - Vũng Tàu"
+#: model:res.country.state,name:l10n_vn.state_vn_VN-59
+msgid "Ca Mau"
 msgstr ""
 
 #. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-57
-msgid "Bình Dương"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-58
-msgid "Bình Phước"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-40
-msgid "Bình Thuận"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-31
-msgid "Bình Định"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-55
-msgid "Bạc Liêu"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-54
-msgid "Bắc Giang"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-53
-msgid "Bắc Kạn"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-56
-msgid "Bắc Ninh"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-50
-msgid "Bến Tre"
+#: model:res.country.state,name:l10n_vn.state_vn_VN-CT
+msgid "Can Tho"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-04
-msgid "Cao Bằng"
+msgid "Cao Bang"
 msgstr ""
 
 #. module: l10n_vn
@@ -289,8 +299,18 @@ msgid "Current corporate tax expense"
 msgstr ""
 
 #. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-59
-msgid "Cà Mau"
+#: model:res.country.state,name:l10n_vn.state_vn_VN-DN
+msgid "Da Nang"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-33
+msgid "Dak Lak"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-72
+msgid "Dak Nong"
 msgstr ""
 
 #. module: l10n_vn
@@ -391,6 +411,11 @@ msgid "Depreciation expense"
 msgstr ""
 
 #. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-71
+msgid "Dien Bien"
+msgstr ""
+
+#. module: l10n_vn
 #: model:account.account,name:l10n_vn.1_chart412
 #: model:account.account.tag,name:l10n_vn.account_tag_412
 #: model:account.account.template,name:l10n_vn.chart412
@@ -409,6 +434,16 @@ msgstr ""
 #: model:account.account.tag,name:l10n_vn.account_tag_621
 #: model:account.account.template,name:l10n_vn.chart621
 msgid "Direct raw material costs"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-39
+msgid "Dong Nai"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-45
+msgid "Dong Thap"
 msgstr ""
 
 #. module: l10n_vn
@@ -620,46 +655,6 @@ msgid "Gia Lai"
 msgstr ""
 
 #. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_15
-msgid "Giá trị HHDV bán ra"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_16
-msgid "Giá trị HHDV bán ra chịu thuế 0%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_18
-msgid "Giá trị HHDV bán ra chịu thuế 10%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_17
-msgid "Giá trị HHDV bán ra chịu thuế 5%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_06
-msgid "Giá trị HHDV mua vào"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_07
-msgid "Giá trị HHDV mua vào chịu thuế 0%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_09
-msgid "Giá trị HHDV mua vào chịu thuế 10%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_08
-msgid "Giá trị HHDV mua vào chịu thuế 5%"
-msgstr ""
-
-#. module: l10n_vn
 #: model:account.account,name:l10n_vn.1_chart158
 #: model:account.account.tag,name:l10n_vn.account_tag_158
 #: model:account.account.template,name:l10n_vn.chart158
@@ -681,13 +676,38 @@ msgid "Government bonds purchased for resale"
 msgstr ""
 
 #. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_10
-msgid "HHDV bán ra"
+#: model:res.country.state,name:l10n_vn.state_vn_VN-03
+msgid "Ha Giang"
 msgstr ""
 
 #. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_01
-msgid "HHDV mua vào"
+#: model:res.country.state,name:l10n_vn.state_vn_VN-63
+msgid "Ha Nam"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-HN
+msgid "Ha Noi"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-23
+msgid "Ha Tinh"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-61
+msgid "Hai Duong"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-HP
+msgid "Hai Phong"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-73
+msgid "Hau Giang"
 msgstr ""
 
 #. module: l10n_vn
@@ -702,43 +722,18 @@ msgid "Held to maturity investments"
 msgstr ""
 
 #. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-03
-msgid "Hà Giang"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-63
-msgid "Hà Nam"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-HN
-msgid "Hà Nội"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-23
-msgid "Hà Tĩnh"
+#: model:res.country.state,name:l10n_vn.state_vn_VN-SG
+msgid "Ho Chi Minh"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-14
-msgid "Hòa Bình"
+msgid "Hoa Binh"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-66
-msgid "Hưng Yên"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-61
-msgid "Hải Dương"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-73
-msgid "Hậu Giang"
+msgid "Hung Yen"
 msgstr ""
 
 #. module: l10n_vn
@@ -904,12 +899,12 @@ msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-34
-msgid "Khánh Hòa"
+msgid "Khanh Hoa"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-47
-msgid "Kiên Giang"
+msgid "Kien Giang"
 msgstr ""
 
 #. module: l10n_vn
@@ -925,7 +920,12 @@ msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-01
-msgid "Lai Châu"
+msgid "Lai Chau"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-35
+msgid "Lam Dong"
 msgstr ""
 
 #. module: l10n_vn
@@ -938,6 +938,16 @@ msgstr ""
 #: model:account.account,name:l10n_vn.1_chart2131
 #: model:account.account.template,name:l10n_vn.chart2131
 msgid "Land use rights"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-09
+msgid "Lang Son"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-02
+msgid "Lao Cai"
 msgstr ""
 
 #. module: l10n_vn
@@ -955,21 +965,6 @@ msgstr ""
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-41
 msgid "Long An"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-02
-msgid "Lào Cai"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-35
-msgid "Lâm Đồng"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-09
-msgid "Lạng Sơn"
 msgstr ""
 
 #. module: l10n_vn
@@ -1032,22 +1027,22 @@ msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-67
-msgid "Nam Định"
+msgid "Nam Dinh"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-22
-msgid "Nghệ An"
+msgid "Nghe An"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-18
-msgid "Ninh Bình"
+msgid "Ninh Binh"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-36
-msgid "Ninh Thuận"
+msgid "Ninh Thuan"
 msgstr ""
 
 #. module: l10n_vn
@@ -1327,12 +1322,12 @@ msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-68
-msgid "Phú Thọ"
+msgid "Phu Tho"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-32
-msgid "Phú Yên"
+msgid "Phu Yen"
 msgstr ""
 
 #. module: l10n_vn
@@ -1406,9 +1401,34 @@ msgid "Purchase VAT Exemption"
 msgstr ""
 
 #. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_06
+msgid "Purchase Value of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_07
+msgid "Purchase Value of Goods and Services of VAT 0%"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_09
+msgid "Purchase Value of Goods and Services of VAT 10%"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_08
+msgid "Purchase Value of Goods and Services of VAT 5%"
+msgstr ""
+
+#. module: l10n_vn
 #: model:account.account,name:l10n_vn.1_chart1561
 #: model:account.account.template,name:l10n_vn.chart1561
 msgid "Purchase costs"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_01
+msgid "Purchase of Goods and Services"
 msgstr ""
 
 #. module: l10n_vn
@@ -1430,27 +1450,27 @@ msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-24
-msgid "Quảng Bình"
+msgid "Quang Binh"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-27
-msgid "Quảng Nam"
+msgid "Quang Nam"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-29
-msgid "Quảng Ngãi"
+msgid "Quang Ngai"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-13
-msgid "Quảng Ninh"
+msgid "Quang Ninh"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-25
-msgid "Quảng Trị"
+msgid "Quang Tri"
 msgstr ""
 
 #. module: l10n_vn
@@ -1520,6 +1540,31 @@ msgid "Sales VAT Exemption"
 msgstr ""
 
 #. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_15
+msgid "Sales Value of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_16
+msgid "Sales Value of Goods and Services of VAT 0%"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_18
+msgid "Sales Value of Goods and Services of VAT 10%"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_17
+msgid "Sales Value of Goods and Services of VAT 5%"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_10
+msgid "Sales of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
 #: model:account.account,name:l10n_vn.1_chart5213
 #: model:account.account.template,name:l10n_vn.chart5213
 msgid "Sales rebates"
@@ -1568,9 +1613,19 @@ msgid "Shortage of assets awaiting resolution"
 msgstr ""
 
 #. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-52
+msgid "Soc Trang"
+msgstr ""
+
+#. module: l10n_vn
 #: model:account.account,name:l10n_vn.1_chart3383
 #: model:account.account.template,name:l10n_vn.chart3383
 msgid "Social insurance"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-05
+msgid "Son La"
 msgstr ""
 
 #. module: l10n_vn
@@ -1608,36 +1663,6 @@ msgid "Surplus of assets awaitingresolution"
 msgstr ""
 
 #. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-52
-msgid "Sóc Trăng"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-05
-msgid "Sơn La"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-CT
-msgid "TP Cần Thơ"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-HP
-msgid "TP Hải Phòng"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-SG
-msgid "TP Hồ Chí Minh"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-DN
-msgid "TP Đà Nẵng"
-msgstr ""
-
-#. module: l10n_vn
 #: model:account.account.tag,name:l10n_vn.account_tag_211
 msgid "Tangible fixed assets"
 msgstr ""
@@ -1660,6 +1685,11 @@ msgid "Taxes, fees and charges"
 msgstr ""
 
 #. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-37
+msgid "Tay Ninh"
+msgstr ""
+
+#. module: l10n_vn
 #: model:ir.model,name:l10n_vn.model_account_chart_template
 msgid "Templates for Account Chart"
 msgstr ""
@@ -1671,8 +1701,18 @@ msgid "Term deposits"
 msgstr ""
 
 #. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-20
+msgid "Thai Binh"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-69
+msgid "Thai Nguyen"
+msgstr ""
+
+#. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-21
-msgid "Thanh Hóa"
+msgid "Thanh Hoa"
 msgstr ""
 
 #. module: l10n_vn
@@ -1681,63 +1721,13 @@ msgid "The unique code of the tag. For example, 111 for cash, 112 for cash in ba
 msgstr ""
 
 #. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_11
-msgid "Thuế GTGT HHDV bán ra"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_12
-msgid "Thuế GTGT HHDV bán ra chịu thuế 0%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_14
-msgid "Thuế GTGT HHDV bán ra chịu thuế 10%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_13
-msgid "Thuế GTGT HHDV bán ra chịu thuế 5%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_02
-msgid "Thuế GTGT HHDV mua vào"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_03
-msgid "Thuế GTGT HHDV mua vào chịu thuế 0%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_05
-msgid "Thuế GTGT HHDV mua vào chịu thuế 10%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.tag,name:l10n_vn.tag_vn_04
-msgid "Thuế GTGT HHDV mua vào chịu thuế 5%"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-20
-msgid "Thái Bình"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-69
-msgid "Thái Nguyên"
-msgstr ""
-
-#. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-26
-msgid "Thừa Thiên - Huế"
+msgid "Thua Thien – Hue"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-46
-msgid "Tiền Giang"
+msgid "Tien Giang"
 msgstr ""
 
 #. module: l10n_vn
@@ -1755,6 +1745,11 @@ msgstr ""
 #: model:account.account.tag,name:l10n_vn.account_tag_153
 #: model:account.account.template,name:l10n_vn.chart1531
 msgid "Tools and supplies"
+msgstr ""
+
+#. module: l10n_vn
+#: model:res.country.state,name:l10n_vn.state_vn_VN-51
+msgid "Tra Vinh"
 msgstr ""
 
 #. module: l10n_vn
@@ -1796,18 +1791,8 @@ msgid "Treasury shares"
 msgstr ""
 
 #. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-51
-msgid "Trà Vinh"
-msgstr ""
-
-#. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-07
-msgid "Tuyên Quang"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-37
-msgid "Tây Ninh"
+msgid "Tuyen Quang"
 msgstr ""
 
 #. module: l10n_vn
@@ -1840,15 +1825,45 @@ msgid "Unemployment insurance"
 msgstr ""
 
 #. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_03
+msgid "VAT 0% on Purchase of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_12
+msgid "VAT 0% on Sales of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
 #: model:account.tax,description:l10n_vn.1_tax_importing_vat0
 #: model:account.tax.template,description:l10n_vn.tax_importing_vat0
 msgid "VAT 0% on imported goods"
 msgstr ""
 
 #. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_05
+msgid "VAT 10% on Purchase of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_14
+msgid "VAT 10% on Sales of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
 #: model:account.tax,description:l10n_vn.1_tax_importing_vat10
 #: model:account.tax.template,description:l10n_vn.tax_importing_vat10
 msgid "VAT 10% on imported goods"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_04
+msgid "VAT 5% on Purchase of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_13
+msgid "VAT 5% on Sales of Goods and Services"
 msgstr ""
 
 #. module: l10n_vn
@@ -1863,6 +1878,16 @@ msgstr ""
 #: model:account.tax.template,name:l10n_vn.tax_purchase_vat_exemption
 #: model:account.tax.template,name:l10n_vn.tax_sale_vat_exemption
 msgid "VAT Exemption"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_02
+msgid "VAT on Purchase of Goods and Services"
+msgstr ""
+
+#. module: l10n_vn
+#: model:account.account.tag,name:l10n_vn.tag_vn_11
+msgid "VAT on Sales of Goods and Services"
 msgstr ""
 
 #. module: l10n_vn
@@ -1985,12 +2010,12 @@ msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-49
-msgid "Vĩnh Long"
+msgid "Vinh Long"
 msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-70
-msgid "Vĩnh Phúc"
+msgid "Vinh Phuc"
 msgstr ""
 
 #. module: l10n_vn
@@ -2032,40 +2057,6 @@ msgstr ""
 
 #. module: l10n_vn
 #: model:res.country.state,name:l10n_vn.state_vn_VN-06
-msgid "Yên Bái"
+msgid "Yen Bai"
 msgstr ""
 
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-71
-msgid "Điện Biên"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-33
-msgid "Đắk Lắk"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-72
-msgid "Đắk Nông"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-39
-msgid "Đồng Nai"
-msgstr ""
-
-#. module: l10n_vn
-#: model:res.country.state,name:l10n_vn.state_vn_VN-45
-msgid "Đồng Tháp"
-msgstr ""
-
-#. module: l10n_vn
-#: model:ir.actions.client,name:l10n_vn.action_client_l10n_vn_menu
-msgid "Open Account Dashboard Menu"
-msgstr ""
-
-#. module: l10n_vn
-#: model:account.account.type,name:l10n_vn.account_type_other
-msgid "X. TÀI KHOẢN NGOÀI BẢNG"
-msgstr ""
