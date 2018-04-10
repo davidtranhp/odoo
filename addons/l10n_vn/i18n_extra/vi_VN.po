@@ -18,7 +18,7 @@ msgstr ""
 #. module: l10n_vn
 #: model:ir.model,name:l10n_vn.model_account_account_tag
 msgid "Account Tag"
-msgstr ""
+msgstr "Thẻ Tài khoản"
 
 #. module: l10n_vn
 #: model:account.account,name:l10n_vn.1_chart335
@@ -325,7 +325,7 @@ msgstr "Thuế GTGT được khấu trừ của TSCĐ 0%"
 #: model:account.tax,name:l10n_vn.1_tax_fixed_assets_purchase_vat10
 #: model:account.tax.template,name:l10n_vn.tax_fixed_assets_purchase_vat10
 msgid "Deductible Fixed Assets VAT 10%"
-msgstr "Thuế GTGT được khấu trừ của TSCĐ 10"
+msgstr "Thuế GTGT được khấu trừ của TSCĐ 10%"
 
 #. module: l10n_vn
 #: model:account.account.tag,name:l10n_vn.tax_tag_purchase_fix_asset_5
