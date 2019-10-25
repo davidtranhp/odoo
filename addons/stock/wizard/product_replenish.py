@@ -44,10 +44,9 @@ class ProductReplenish(models.TransientModel):
                 if len(product_tmpl_id.product_variant_ids) > 1:
                     res['product_has_variants'] = True
         company = product_tmpl_id.company_id or self.env.company
+        res['company_id'] = company.id
         if 'product_uom_id' in fields:
-            res['product_uom_id'] = product_tmpl_id.uom_id.id
-        if 'company' in fields:
-            res['company_id'] = company.id
+            res['product_uom_id'] = product_tmpl_id.uom_id.id        
         if 'warehouse_id' in fields:
             warehouse = self.env['stock.warehouse'].search([('company_id', '=', company.id)], limit=1)
             res['warehouse_id'] = warehouse.id
