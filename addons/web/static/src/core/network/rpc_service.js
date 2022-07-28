@@ -47,7 +47,7 @@ export function jsonrpc(env, rpcId, url, params, settings = {}) {
         method: "call",
         params: params,
     };
-    const request = settings.xhr || new XHR();
+    const request = typeof settings.xhr !== 'undefined' && settings.xhr || new XHR();
     let rejectFn;
     const promise = new Promise((resolve, reject) => {
         rejectFn = reject;
