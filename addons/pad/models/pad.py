@@ -69,7 +69,7 @@ class PadCommon(models.AbstractModel):
             # get content of the real field
             real_field_value = record[real_field] or self.env.context.get('record', {}).get(real_field, '')
             if real_field_value:
-                myPad.setHtmlFallbackText(path, real_field_value)
+                myPad.setHtmlFallbackText(path, Markup(real_field_value))
 
         return {
             "server": pad["server"],
