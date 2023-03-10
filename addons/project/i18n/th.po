@@ -14,14 +14,16 @@
 # Seksan Poltree <seksan.poltree@gmail.com>, 2020
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2020
 # Somchart Jabsung <jabsung.s@gmail.com>, 2020
+# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Wichanon Jamwutthipreecha, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:32+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: Somchart Jabsung <jabsung.s@gmail.com>, 2020\n"
+"Last-Translator: Wichanon Jamwutthipreecha, 2022\n"
 "Language-Team: Thai (https://www.transifex.com/odoo/teams/41243/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -188,7 +190,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -219,17 +221,6 @@ msgstr ""
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
-"                        Documents are attached to the tasks of your project.</p><p>\n"
-"                        Send messages or log internal notes with attachments to link\n"
-"                        documents to your project.\n"
-"                    </p>"
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid ""
-"<p class=\"o_view_nocontent_smiling_face\">\n"
 "                    Create a new project</p>"
 msgstr ""
 
@@ -248,7 +239,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
 msgid "<small class=\"text-right\">Status:</small>"
-msgstr ""
+msgstr "<small class=\"text-right\">สถานะ:</small>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_project
@@ -316,17 +307,19 @@ msgid ""
 "A Python dictionary that will be evaluated to provide default values when "
 "creating new records for this alias."
 msgstr ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
 msgid "Accept Emails From"
-msgstr ""
+msgstr "ยอมรับฟอร์มอีเมล"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__access_warning
 #: model:ir.model.fields,field_description:project.field_project_task__access_warning
 msgid "Access warning"
-msgstr ""
+msgstr "คําเตือนการเข้าถึง"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__message_needaction
@@ -348,18 +341,18 @@ msgstr "กิจกรรม"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "การตกแต่งข้อยกเว้นกิจกรรม"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "สถานะกิจกรรม"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.mail_activity_type_action_config_project_types
 #: model:ir.ui.menu,name:project.project_menu_config_activity_type
 msgid "Activity Types"
-msgstr ""
+msgstr "Activity Types"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
@@ -379,7 +372,7 @@ msgstr ""
 #. module: project
 #: model:res.groups,name:project.group_project_manager
 msgid "Administrator"
-msgstr ""
+msgstr "ผู้ดูแลระบบ"
 
 #. module: project
 #: model:project.task.type,name:project.project_stage_data_2
@@ -401,12 +394,12 @@ msgstr "นามแฝง"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_contact
 msgid "Alias Contact Security"
-msgstr ""
+msgstr "Alias Contact Security"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_name
 msgid "Alias Name"
-msgstr ""
+msgstr "ชื่อเรียก"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_domain
@@ -416,7 +409,7 @@ msgstr "ชื่อโดเมน"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_model_id
 msgid "Aliased Model"
-msgstr ""
+msgstr "Aliased Model"
 
 #. module: project
 #: code:addons/project/controllers/portal.py:0
@@ -453,6 +446,8 @@ msgid ""
 "Analytic account to which this project is linked for financial management. "
 "Use an analytic account to record cost and revenue on your project."
 msgstr ""
+"บัญชีวิเคราะห์ที่โครงการนี้เชื่อมโยงกับการจัดการทางการเงิน "
+"ใช้บัญชีวิเคราะห์เพื่อบันทึกต้นทุนและรายได้ในโครงการของคุณ"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -514,18 +509,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_project__message_attachment_count
 #: model:ir.model.fields,field_description:project.field_project_task__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "จำนวนไฟล์แนบ"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__attachment_ids
 msgid "Attachment that don't come from message."
 msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "Attachments"
-msgstr "เอกสารแนบ"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__auto_validation_kanban_state
@@ -543,7 +532,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_progressbar
 msgid "Average"
-msgstr ""
+msgstr "เฉลี่ย"
 
 #. module: project
 #. openerp-web
@@ -556,12 +545,12 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_progressbar
 msgid "Bad"
-msgstr ""
+msgstr "แย่"
 
 #. module: project
 #: model:project.task.type,name:project.project_stage_data_1
 msgid "Basic"
-msgstr ""
+msgstr "พื้นฐาน"
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -610,7 +599,7 @@ msgstr ""
 #: model:project.task,legend_done:project.project_task_7
 #: model:project.task.type,legend_done:project.project_stage_1
 msgid "Buzz or set as done"
-msgstr ""
+msgstr "บัซหรือตั้งค่าว่าเสร็จแล้ว"
 
 #. module: project
 #: model:ir.filters,name:project.filter_task_report_responsible
@@ -705,7 +694,7 @@ msgstr ""
 #. module: project
 #: model:ir.model,name:project.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "กำหนดการตั้งค่า"
 
 #. module: project
 #: model:ir.ui.menu,name:project.menu_project_config
@@ -733,12 +722,12 @@ msgstr "ผู้ติดต่อ"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Copywriting"
-msgstr ""
+msgstr "การเขียนโฆษณา"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__displayed_image_id
 msgid "Cover Image"
-msgstr ""
+msgstr "ภาพหน้าปก"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_project_view_form_simplified_footer
@@ -764,7 +753,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.project_tags_action
 msgid "Create a new tag"
-msgstr ""
+msgstr "สร้างแท็กใหม่"
 
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.action_view_task
@@ -774,7 +763,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__create_date
 msgid "Created On"
-msgstr ""
+msgstr "สร้างเมื่อ"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__create_uid
@@ -846,7 +835,7 @@ msgstr ""
 #: model:ir.model.fields,help:project.field_project_project__access_url
 #: model:ir.model.fields,help:project.field_project_task__access_url
 msgid "Customer Portal URL"
-msgstr ""
+msgstr "Portal"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.rating_rating_action_project_report
@@ -855,7 +844,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.rating_project_rating_page
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "Customer Ratings"
-msgstr ""
+msgstr "การให้คะแนนลูกค้า"
 
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.rating_rating_action_project_report
@@ -963,7 +952,7 @@ msgstr "การพัฒนา"
 #. module: project
 #: model:ir.model,name:project.model_digest_digest
 msgid "Digest"
-msgstr ""
+msgstr "จัดระเบียบ"
 
 #. module: project
 #. openerp-web
@@ -990,7 +979,7 @@ msgstr "ชื่อที่ใช้แสดง"
 #: code:addons/project/models/digest.py:0
 #, python-format
 msgid "Do not have access, skip this data for user's digest email"
-msgstr ""
+msgstr "ไม่มีสิทธิ์เข้าถึงข้ามข้อมูลนี้สำหรับอีเมลสรุปข้อมูลของผู้ใช้"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1020,7 +1009,7 @@ msgstr "ร่าง"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Dropdown menu"
-msgstr ""
+msgstr "เมนูแบบดรอปดาว์น"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -1030,7 +1019,7 @@ msgstr "แก้ไข"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Edit Task"
-msgstr ""
+msgstr "แก้ไขงาน"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1054,7 +1043,7 @@ msgstr "อีเมล"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
 msgid "Email Alias"
-msgstr ""
+msgstr "นามแฝงอีเมล"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__mail_template_id
@@ -1064,7 +1053,7 @@ msgstr "แม่แบบอีเมล"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__email_cc
 msgid "Email cc"
-msgstr ""
+msgstr "cc อีเมล"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1106,7 +1095,7 @@ msgstr "วันหมดอายุ"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
 msgid "Extended Filters"
-msgstr ""
+msgstr "Extended Filters"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_form2
@@ -1134,7 +1123,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__fold
 msgid "Folded in Kanban"
-msgstr ""
+msgstr "พับในคัมบัง"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1146,7 +1135,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
 msgid "Followed"
-msgstr ""
+msgstr "ติดตาม"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
@@ -1179,7 +1168,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Future Activities"
-msgstr ""
+msgstr "กิจกรรมในอนาคต"
 
 #. module: project
 #: model:ir.ui.menu,name:project.menu_tasks_config
@@ -1211,22 +1200,22 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__kanban_state__done
 msgid "Green"
-msgstr ""
+msgstr "เขียว"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__legend_done
 msgid "Green Kanban Label"
-msgstr ""
+msgstr "ป้ายคัมบังสีเขียว"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__kanban_state__normal
 msgid "Grey"
-msgstr ""
+msgstr "สีเทา"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__legend_normal
 msgid "Grey Kanban Label"
-msgstr ""
+msgstr "ป้ายคัมบังสีเทา"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
@@ -1249,13 +1238,13 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_progressbar
 msgid "Happy"
-msgstr ""
+msgstr "มีความสุข"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Happy face"
-msgstr ""
+msgstr "หน้ามีความสุข"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__report_project_task_user__priority__2
@@ -1298,6 +1287,7 @@ msgid ""
 "ID of the parent record holding the alias (example: project holding the task"
 " creation alias)"
 msgstr ""
+"ID ของเร็กคอร์ดหลักที่มีนามแฝง (ตัวอย่าง: โครงการที่มีนามแฝงในการสร้างงาน)"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_exception_icon
@@ -1307,7 +1297,7 @@ msgstr "ไอคอน"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "ไอคอนเพื่อระบุกิจกรรมข้อยกเว้น"
 
 #. module: project
 #. openerp-web
@@ -1330,7 +1320,7 @@ msgstr "ถ้าเลือก ข้อความใหม่จะต้�
 #: model:ir.model.fields,help:project.field_project_task__message_has_error
 #: model:ir.model.fields,help:project.field_project_task__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "หากเลือกข้อความบางข้อความมีข้อผิดพลาดในการจัดส่ง"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task_type__mail_template_id
@@ -1456,28 +1446,28 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__legend_blocked
 msgid "Kanban Blocked Explanation"
-msgstr ""
+msgstr "คำอธิบายบล็อกคัมบัง"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__legend_normal
 msgid "Kanban Ongoing Explanation"
-msgstr ""
+msgstr "คำอธิบายอย่างต่อเนื่องคัมบัง"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__kanban_state
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__state
 msgid "Kanban State"
-msgstr ""
+msgstr "สถานะคัมบัง"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__kanban_state_label
 msgid "Kanban State Label"
-msgstr ""
+msgstr "ป้ายสถานะคัมบัง"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__legend_done
 msgid "Kanban Valid Explanation"
-msgstr ""
+msgstr "คำอธิบายที่ถูกต้องคัมบัง"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_digest_digest__kpi_project_task_opened_value
@@ -1492,7 +1482,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_project_rating_page
 msgid "Last 3 months"
-msgstr ""
+msgstr "3 เดือนล่าสุด "
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_rating_view_search_project
@@ -1502,12 +1492,12 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_project_rating_page
 msgid "Last 30 days"
-msgstr ""
+msgstr "30 วันล่าสุด"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_project_rating_page
 msgid "Last 7 days"
-msgstr ""
+msgstr "7 วันล่าสุด"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project____last_update
@@ -1524,7 +1514,7 @@ msgstr "แก้ไขครั้งสุดท้ายเมื่อ"
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__date_last_stage_update
 #, python-format
 msgid "Last Stage Update"
-msgstr ""
+msgstr "อัปเดตขั้นตอนสุดท้าย"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__write_date
@@ -1549,7 +1539,7 @@ msgstr "อัพเดทครั้งสุดท้ายเมื่อ"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Late Activities"
-msgstr ""
+msgstr "กิจกรรมล่าสุด"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
@@ -1564,7 +1554,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Latest Rating: Satisfied"
-msgstr ""
+msgstr "คะแนนล่าสุด: พอใจ"
 
 #. module: project
 #. openerp-web
@@ -1590,19 +1580,19 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__email_cc
 msgid "List of cc from incoming emails."
-msgstr ""
+msgstr "รายการ cc จากอีเมลขาเข้า"
 
 #. module: project
 #. openerp-web
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Live"
-msgstr ""
+msgstr "ไลฟ์"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
 msgid "Log time on tasks"
-msgstr ""
+msgstr "บันทึกเวลาในงาน"
 
 #. module: project
 #. openerp-web
@@ -1627,7 +1617,7 @@ msgstr "ต่ำ"
 #: model:ir.model.fields,field_description:project.field_project_project__message_main_attachment_id
 #: model:ir.model.fields,field_description:project.field_project_task__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "ไฟล์แนบหลัก"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__attachment_ids
@@ -1653,7 +1643,7 @@ msgstr "สมาชิก"
 #: model:ir.model.fields,field_description:project.field_project_project__message_has_error
 #: model:ir.model.fields,field_description:project.field_project_task__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "ส่งข้อความผิดพลาด"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__message_ids
@@ -1696,13 +1686,13 @@ msgstr ""
 #: model:project.task,legend_blocked:project.project_task_7
 #: model:project.task.type,legend_blocked:project.project_stage_1
 msgid "Need functional or technical help"
-msgstr ""
+msgstr "ต้องการความช่วยเหลือด้านการทำงานหรือด้านเทคนิค"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Neutral face"
-msgstr ""
+msgstr "หน้าปกติ"
 
 #. module: project
 #. openerp-web
@@ -1750,17 +1740,17 @@ msgstr "กิจกรรมถัดไป"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "วันที่สิ้นสุดกิจกรรมถัดไป"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "สรุปกิจกรรมถัดไป"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "ประเภทกิจกรรมถัดไป"
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -1832,25 +1822,25 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_project__message_has_error_counter
 #: model:ir.model.fields,field_description:project.field_project_task__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "จำนวนข้อผิดพลาด"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__message_needaction_counter
 #: model:ir.model.fields,help:project.field_project_task__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "จํานวนข้อความที่ต้องการการดําเนินการ"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__message_has_error_counter
 #: model:ir.model.fields,help:project.field_project_task__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "จํานวนข้อความที่มีข้อผิดพลาดในการส่ง"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__message_unread_counter
 #: model:ir.model.fields,help:project.field_project_task__message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "จํานวนข้อความที่ยังไม่ได้อ่าน"
 
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.action_view_task
@@ -1876,6 +1866,9 @@ msgid ""
 "attached, even if they did not reply to it. If set, this will disable the "
 "creation of new records completely."
 msgstr ""
+"ID ทางเลือกของเธรด (บันทึก) ที่จะแนบข้อความขาเข้าทั้งหมด "
+"แม้ว่าพวกเขาจะไม่ตอบกลับก็ตาม หากตั้งค่าไว้ "
+"การดำเนินการนี้จะปิดใช้งานการสร้างระเบียนใหม่ทั้งหมด"
 
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.open_view_project_all
@@ -1893,7 +1886,7 @@ msgstr ""
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Others"
-msgstr ""
+msgstr "อื่น ๆ "
 
 #. module: project
 #: model:ir.actions.act_window,name:project.action_view_task_overpassed_draft
@@ -1907,6 +1900,8 @@ msgid ""
 "Override the default value displayed for the blocked state for kanban "
 "selection, when the task or issue is in that stage."
 msgstr ""
+"แทนที่ค่าเริ่มต้นที่แสดงสำหรับสถานะที่ถูกบล็อกสำหรับการเลือกคัมบัง "
+"เมื่องานหรือปัญหาอยู่ในระยะนั้น"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__legend_done
@@ -1915,6 +1910,8 @@ msgid ""
 "Override the default value displayed for the done state for kanban "
 "selection, when the task or issue is in that stage."
 msgstr ""
+"แทนที่ค่าเริ่มต้นที่แสดงสำหรับสถานะที่เสร็จสิ้นเพื่อการเลือกคัมบัง "
+"เมื่องานหรือปัญหาอยู่ในขั้นตอนนั้น"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__legend_normal
@@ -1923,6 +1920,8 @@ msgid ""
 "Override the default value displayed for the normal state for kanban "
 "selection, when the task or issue is in that stage."
 msgstr ""
+"แทนที่ค่าเริ่มต้นที่แสดงสำหรับสถานะปกติเพื่อการเลือกคัมบัง "
+"เมื่องานหรือปัญหาอยู่ในขั้นตอนนั้น"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_user_id
@@ -1939,12 +1938,12 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_parent_model_id
 msgid "Parent Model"
-msgstr ""
+msgstr "โมเดลหลัก"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_parent_thread_id
 msgid "Parent Record Thread ID"
-msgstr ""
+msgstr "ID เธรดเรกคอร์ดหลัก"
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -1961,11 +1960,14 @@ msgid ""
 " necessarily the model given by alias_model_id (example: project "
 "(parent_model) and task (model))"
 msgstr ""
+"โมเดลหลักถือนามแฝง "
+"โมเดลที่มีการอ้างอิงนามแฝงไม่จำเป็นต้องเป็นโมเดลที่กำหนดโดย alias_model_id "
+"(ตัวอย่าง: โครงการ (parent_model) และงาน (แบบจำลอง))"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__rating_percentage_satisfaction
 msgid "Percentage of happy ratings"
-msgstr ""
+msgstr "เปอร์เซ็นการให้คะแนนความสุข"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -1983,12 +1985,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_popover
 msgid "Placeholder"
-msgstr ""
+msgstr "Placeholder"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__planned_hours
 msgid "Planned Hours"
-msgstr ""
+msgstr "ชั่วโมงที่วางแผน"
 
 #. module: project
 #: code:addons/project/models/analytic_account.py:0
@@ -2006,12 +2008,16 @@ msgid ""
 "- partners: only authenticated partners\n"
 "- followers: only followers of the related document or members of following channels\n"
 msgstr ""
+"นโยบายการโพสต์ข้อความบนเอกสารโดยใช้เมลล์เกตเวย์\n"
+"- ทุกคน: ทุกคนโพสต์ได้\n"
+"- พาร์ทเนอร์: พาร์ทเนอร์ที่ได้รับการรับรองเท่านั้น\n"
+"- ผู้ติดตาม: เฉพาะผู้ติดตามเอกสารที่เกี่ยวข้องหรือสมาชิกของช่องดังต่อไปนี้\n"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__access_url
 #: model:ir.model.fields,field_description:project.field_project_task__access_url
 msgid "Portal Access URL"
-msgstr ""
+msgstr "Portal"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
@@ -2160,17 +2166,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_task__rating_ids
 #: model_terms:ir.ui.view,arch_db:project.view_task_form2
 msgid "Rating"
-msgstr ""
+msgstr "การให้คะแนน"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_avg
 msgid "Rating Average"
-msgstr ""
+msgstr "คะแนนเฉลี่ย"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__rating_template_id
 msgid "Rating Email Template"
-msgstr ""
+msgstr "เทมเพลตอีเมลการให้คะแนน"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__rating_status_period
@@ -2180,17 +2186,17 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_last_feedback
 msgid "Rating Last Feedback"
-msgstr ""
+msgstr "การให้คะแนน ความคิดเห็นล่าสุด"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_last_image
 msgid "Rating Last Image"
-msgstr ""
+msgstr "ให้คะแนนภาพสุดท้าย"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_last_value
 msgid "Rating Last Value"
-msgstr ""
+msgstr "เรตติ้งค่าสุดท้าย"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__rating_request_deadline
@@ -2200,12 +2206,12 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__rating_percentage_satisfaction
 msgid "Rating Satisfaction"
-msgstr ""
+msgstr "การให้คะแนนความพึงพอใจ"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_count
 msgid "Rating count"
-msgstr ""
+msgstr "จำนวนการให้คะแนน"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__portal_show_rating
@@ -2221,7 +2227,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_project__rating_ids
 #: model:mail.message.subtype,description:project.mt_task_rating
 msgid "Ratings"
-msgstr ""
+msgstr "การให้คะแนน"
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -2259,7 +2265,7 @@ msgstr ""
 #: model:project.task.type,legend_done:project.project_stage_data_2
 #, python-format
 msgid "Ready for Next Stage"
-msgstr ""
+msgstr "เตรียมพร้อมสำหรับขั้นตอนถัดไป"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__report_project_task_user__state__done
@@ -2275,7 +2281,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__rating_last_feedback
 msgid "Reason of the rating"
-msgstr ""
+msgstr "เหตุผลของการให้คะแนน"
 
 #. module: project
 #: model:mail.template,subject:project.mail_template_data_project_task
@@ -2285,7 +2291,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_force_thread_id
 msgid "Record Thread ID"
-msgstr ""
+msgstr "บันทึกหัวข้อ ID"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__kanban_state__blocked
@@ -2295,7 +2301,7 @@ msgstr "สีแดง"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__legend_blocked
 msgid "Red Kanban Label"
-msgstr ""
+msgstr "ป้ายคัมบังสีแดง"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_tasks
@@ -2319,7 +2325,7 @@ msgstr "การรายงาน"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Research"
-msgstr ""
+msgstr "งานวิจัย"
 
 #. module: project
 #. openerp-web
@@ -2351,13 +2357,13 @@ msgstr "ผู้ใช้ที่รับผิดชอบ"
 #: model:ir.model.fields,field_description:project.field_project_project__message_has_sms_error
 #: model:ir.model.fields,field_description:project.field_project_task__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "ข้อผิดพลาดในการส่ง SMS"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Sad face"
-msgstr ""
+msgstr "หน้าเศร้า"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
@@ -2369,7 +2375,7 @@ msgstr ""
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search <span class=\"nolabel\"> (in Content)</span>"
-msgstr ""
+msgstr "ค้นหา <span class=\"nolabel\"> (ในเนื้อหา)</span>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
@@ -2380,19 +2386,19 @@ msgstr "ค้นหาโปรเจค"
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in All"
-msgstr ""
+msgstr "ค้นหาในทั้งหมด"
 
 #. module: project
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Customer"
-msgstr ""
+msgstr "ค้นหาในลูกค้า"
 
 #. module: project
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Messages"
-msgstr ""
+msgstr "ค้นหาในข้อความ"
 
 #. module: project
 #: code:addons/project/controllers/portal.py:0
@@ -2404,7 +2410,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_project__access_token
 #: model:ir.model.fields,field_description:project.field_project_task__access_token
 msgid "Security Token"
-msgstr ""
+msgstr "ความปลอดภัย"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__sequence
@@ -2416,7 +2422,7 @@ msgstr "ลำดับ"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Set Cover Image"
-msgstr ""
+msgstr "ตั้งค่าภาพหน้าปก"
 
 #. module: project
 #: model_terms:digest.tip,tip_description:project.digest_tip_project_0
@@ -2451,7 +2457,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Show all records which has next action date is before today"
-msgstr ""
+msgstr "Show all records which has next action date is before today"
 
 #. module: project
 #. openerp-web
@@ -2465,7 +2471,7 @@ msgstr ""
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Specifications"
-msgstr ""
+msgstr "ข้อมูลจำเพาะ"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
@@ -2491,7 +2497,7 @@ msgstr "สถานะเปลี่ยนแปลง"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
 msgid "Stage Description and Tooltips"
-msgstr ""
+msgstr "คำอธิบายขั้นตอนและทูลทิป"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__name
@@ -2527,6 +2533,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"สถานะตามกิจกรรม\n"
+"เกินกำหนด: วันที่ครบกำหนดผ่านไปแล้ว\n"
+"วันนี้: วันที่ทำกิจกรรมคือวันนี้\n"
+"ที่วางแผนไว้: กิจกรรมในอนาคต"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__subtask_project_id
@@ -2617,7 +2627,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_res_config_settings__module_hr_timesheet
 msgid "Task Logs"
-msgstr ""
+msgstr "Logs"
 
 #. module: project
 #: model:ir.filters,name:project.filter_task_report_task_pipe
@@ -2667,12 +2677,12 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
 msgid "Task in progress. Click to block or set as done."
-msgstr ""
+msgstr "อยู่ระหว่างดำเนินการ คลิกเพื่อบล็อกหรือตั้งเป็นเสร็จสิ้น"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
 msgid "Task is blocked. Click to unblock or set as done."
-msgstr ""
+msgstr "งานถูกบล็อก คลิกเพื่อเลิกบล็อกหรือตั้งเป็นเสร็จสิ้น"
 
 #. module: project
 #: model:mail.message.subtype,description:project.mt_task_ready
@@ -2694,6 +2704,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.view_task_partner_info_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_tree2
+#: model:project.project,label_tasks:project.project_project_1
+#: model:project.project,label_tasks:project.project_project_2
+#: model:project.project,label_tasks:project.project_project_data
 msgid "Tasks"
 msgstr "งาน"
 
@@ -2705,7 +2718,7 @@ msgstr "งาน"
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_pivot
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
 msgid "Tasks Analysis"
-msgstr ""
+msgstr "วิเคราะห์งาน"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
@@ -2739,6 +2752,9 @@ msgid ""
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
+"โมเดล (ชนิดเอกสาร Odoo) ซึ่งสอดคล้องกับนามแฝงนี้ อีเมลขาเข้าใดๆ "
+"ที่ไม่ตอบกลับเรกคอร์ดที่มีอยู่จะทำให้เกิดการสร้างเรกคอร์ดใหม่ของโมเดลนี้ "
+"(เช่น งานโครงการ)"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__alias_name
@@ -2746,6 +2762,8 @@ msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
 "<jobs@example.odoo.com>"
 msgstr ""
+"ชื่อของนามแฝงอีเมล เช่น 'งาน' หากคุณต้องการรับอีเมลสำหรับ "
+"<jobs@example.odoo.com>"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__alias_user_id
@@ -2755,12 +2773,9 @@ msgid ""
 "the sender (From) address, or will use the Administrator account if no "
 "system user is found for that address."
 msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "The parent task belongs to a company you do not have access to."
-msgstr ""
+"เจ้าของบันทึกที่สร้างขึ้นเมื่อได้รับอีเมลในนามแฝงนี้ "
+"หากไม่ได้ตั้งค่าฟิลด์นี้ ระบบจะพยายามค้นหาเจ้าของที่ถูกต้องตามที่อยู่ผู้ส่ง "
+"(จาก) หรือจะใช้บัญชีผู้ดูแลระบบหากไม่พบผู้ใช้ระบบสำหรับที่อยู่นั้น"
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -2769,12 +2784,6 @@ msgid ""
 "The project cannot be shared with the recipient(s) because the privacy of "
 "the project is too restricted. Set the privacy to 'Visible by following "
 "customers' in order to make it accessible by the recipient(s)."
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "The subtasks belong to a company you do not have access to."
 msgstr ""
 
 #. module: project
@@ -2818,7 +2827,7 @@ msgstr "เดือนนี้"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "This Week"
-msgstr ""
+msgstr "สัปดาห์นี้"
 
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.action_project_task_user_tree
@@ -2834,11 +2843,12 @@ msgid ""
 "This stage is folded in the kanban view when there are no records in that "
 "stage to display."
 msgstr ""
+"ขั้นตอนนี้ถูกพับในมุมมองคัมบัง เมื่อไม่มีการบันทึกในขั้นตอนนั้นที่จะแสดง"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
 msgid "This step is done. Click to block or set in progress."
-msgstr ""
+msgstr "ขั้นตอนนี้เสร็จสิ้น คลิกเพื่อบล็อกหรือตั้งค่าอยู่ระหว่างดำเนินการ"
 
 #. module: project
 #. openerp-web
@@ -2898,7 +2908,7 @@ msgstr "วันนี้"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Today Activities"
-msgstr ""
+msgstr "กิจกรรมวันนี้"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
@@ -2918,13 +2928,13 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "พิมพ์กิจกรรมข้อยกเว้นบนบันทึก"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Unassigned"
-msgstr ""
+msgstr "ไม่ได้มอบหมาย"
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -3091,6 +3101,15 @@ msgstr "รายปี"
 msgid ""
 "You can also add a description to help your coworkers understand the meaning"
 " and purpose of the stage."
+msgstr ""
+"คุณยังสามารถเพิ่มคำอธิบายเพื่อช่วยให้เพื่อนร่วมงานของคุณเข้าใจความหมายและวัตถุประสงค์ของงาน"
+
+#. module: project
+#: code:addons/project/models/analytic_account.py:0
+#, python-format
+msgid ""
+"You cannot change the company of an analytical account if it is related to a"
+" project."
 msgstr ""
 
 #. module: project

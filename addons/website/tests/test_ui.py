@@ -81,11 +81,21 @@ class TestUiHtmlEditor(odoo.tests.HttpCase):
         self.assertEqual(len(specific_aboutus.inherit_children_ids.filtered(lambda v: 'oe_structure' in v.name)), 1, "oe_structure view should have been created on the specific tree")
 
     def test_html_editor_scss(self):
+        self.env.ref('base.user_demo').write({
+            'groups_id': [(6, 0, [
+                self.env.ref('base.group_user').id,
+                self.env.ref('website.group_website_designer').id
+            ])]
+        })
         self.start_tour("/", 'test_html_editor_scss', login='admin')
+
 
 @odoo.tests.tagged('-at_install', 'post_install')
 class TestUiTranslate(odoo.tests.HttpCase):
     def test_admin_tour_rte_translator(self):
+        fr_BE = self.env.ref('base.lang_fr_BE')
+        fr_BE.active = True
+        self.env.ref('website.default_website').language_ids |= fr_BE
         self.start_tour("/", 'rte_translator', login='admin', timeout=120)
 
 
@@ -120,3 +130,86 @@ class TestUi(odoo.tests.HttpCase):
             'website_id': website.id,
         })
         self.start_tour("/", 'website_navbar_menu')
+
+    def test_05_specific_website_editor(self):
+        website_default = self.env['website'].search([], limit=1)
+        new_website = self.env['website'].create({'name': 'New Website'})
+        website_editor_assets_view = self.env.ref('website.assets_wysiwyg')
+        self.env['ir.ui.view'].create({
+            'name': 'Editor Extension',
+            'type': 'qweb',
+            'inherit_id': website_editor_assets_view.id,
+            'website_id': new_website.id,
+            'arch': """
+                <xpath expr="." position="inside">
+                    <script type="text/javascript">document.body.dataset.hello = 'world';</script>
+                </xpath>
+            """,
+        })
+        self.start_tour("/website/force/%s" % website_default.id, "generic_website_editor", login='admin')
+        self.start_tour("/website/force/%s" % new_website.id, "specific_website_editor", login='admin')
+
+    def test_06_public_user_editor(self):
+        website_default = self.env['website'].search([], limit=1)
+        website_default.homepage_id.arch = """
+            <t name="Homepage" t-name="website.homepage">
+                <t t-call="website.layout">
+                    <textarea class="o_public_user_editor_test_textarea o_wysiwyg_loader"/>
+                </t>
+            </t>
+        """
+        self.start_tour("/", "public_user_editor", login=None)
+
+    def test_07_carousel_snippet_content_removal(self):
+        self.start_tour("/", "carousel_content_removal", login='admin')
+
+    def test_08_editor_focus_blur_unit_test(self):
+        # TODO this should definitely not be a website python tour test but
+        # while waiting for a proper web_editor qunit JS test suite for the
+        # editor, it is better than no test at all as this was broken multiple
+        # times already.
+        self.env["ir.ui.view"].create([{
+            'name': 's_focusblur',
+            'key': 'website.s_focusblur',
+            'type': 'qweb',
+            'arch': """
+                <section class="s_focusblur bg-success py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 s_focusblur_child1 bg-warning py-5"></div>
+                            <div class="col-lg-6 s_focusblur_child2 bg-danger py-5"></div>
+                        </div>
+                    </div>
+                </section>
+            """,
+        }, {
+            'name': 's_focusblur_snippets',
+            'mode': 'extension',
+            'inherit_id': self.env.ref('website.snippets').id,
+            'key': 'website.s_focusblur_snippets',
+            'type': 'qweb',
+            'arch': """
+                <data>
+                    <xpath expr="//*[@id='snippet_structure']//t[@t-snippet]" position="before">
+                        <t t-snippet="website.s_focusblur"/>
+                    </xpath>
+                </data>
+            """,
+        }, {
+            'name': 's_focusblur_options',
+            'mode': 'extension',
+            'inherit_id': self.env.ref('web_editor.snippet_options').id,
+            'key': 'website.s_focusblur_options',
+            'type': 'qweb',
+            'arch': """
+                <data>
+                    <xpath expr=".">
+                        <div data-js="FocusBlurParent" data-selector=".s_focusblur"/>
+                        <div data-js="FocusBlurChild1" data-selector=".s_focusblur_child1"/>
+                        <div data-js="FocusBlurChild2" data-selector=".s_focusblur_child2"/>
+                    </xpath>
+                </data>
+            """,
+        }])
+
+        self.start_tour("/?enable_editor=1", "focus_blur_snippets", login="admin")

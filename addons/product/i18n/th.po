@@ -10,16 +10,19 @@
 # Potsawat Manuthamathorn <firmpotsawat@hotmail.com>, 2020
 # Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2020
 # gsong <gsong2014@foxmail.com>, 2020
-# Martin Trigaux, 2020
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2020
+# Martin Trigaux, 2020
+# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Wichanon Jamwutthipreecha, 2022
+# Amin Cheloh <amincheloh@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:33+0000\n"
+"POT-Creation-Date: 2020-04-27 09:22+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2020\n"
+"Last-Translator: Amin Cheloh <amincheloh@gmail.com>, 2022\n"
 "Language-Team: Thai (https://www.transifex.com/odoo/teams/41243/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,7 +102,7 @@ msgstr "1 ปี"
 #: model:product.product,description_sale:product.product_product_4d
 #: model:product.template,description_sale:product.product_product_4b_product_template
 msgid "160x80cm, with large legs."
-msgstr ""
+msgstr "160x80ซม ขาใหญ่"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_6
@@ -147,11 +150,6 @@ msgid "<span>All general settings about this product are managed on</span>"
 msgstr ""
 
 #. module: product
-#: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
-msgid "<span>m³</span>"
-msgstr ""
-
-#. module: product
 #: model_terms:ir.ui.view,arch_db:product.report_pricelist
 msgid "<strong>Currency</strong>:<br/>"
 msgstr ""
@@ -169,7 +167,7 @@ msgstr "<strong>ชื่อรายการราคา</strong>:<br/>"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.report_simple_label
 msgid "<strong>Price:</strong>"
-msgstr ""
+msgstr "ราคา:"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.report_pricelist
@@ -179,7 +177,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.report_packagingbarcode
 msgid "<strong>Qty: </strong>"
-msgstr ""
+msgstr "<strong>จำนวน: </strong>"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_only_form_view
@@ -202,6 +200,9 @@ msgid ""
 " This description will be copied to every Sales Order, Delivery Order and "
 "Customer Invoice/Credit Note"
 msgstr ""
+"คำอธิบายของผลิตภัณฑ์ที่คุณต้องการสื่อสารกับลูกค้าของคุณ "
+"คำอธิบายนี้จะถูกคัดลอกไปยังทุกใบสั่งขาย ใบสั่งจัดส่ง "
+"และใบกำกับสินค้า/ใบลดหนี้ลูกค้า"
 
 #. module: product
 #: model_terms:ir.actions.act_window,help:product.product_pricelist_action2
@@ -218,6 +219,9 @@ msgid ""
 "A consumable product is a product for which stock is not managed.\n"
 "A service is a non-material product you provide."
 msgstr ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
 
 #. module: product
 #: model:product.product,name:product.product_product_25
@@ -253,19 +257,19 @@ msgstr "กิจกรรม"
 #: model:ir.model.fields,field_description:product.field_product_product__activity_exception_decoration
 #: model:ir.model.fields,field_description:product.field_product_template__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "การตกแต่งข้อยกเว้นกิจกรรม"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__activity_state
 #: model:ir.model.fields,field_description:product.field_product_template__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "สถานะกิจกรรม"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_res_config_settings__group_sale_pricelist
 #: model:res.groups,name:product.group_sale_pricelist
 msgid "Advanced Pricelists"
-msgstr ""
+msgstr "รายการราคาขั้นสูง"
 
 #. module: product
 #: model:ir.model.fields.selection,name:product.selection__res_config_settings__product_pricelist_setting__advanced
@@ -277,7 +281,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:product.selection__product_pricelist_item__applied_on__3_global
 #, python-format
 msgid "All Products"
-msgstr ""
+msgstr "สินค้าทั้งหมด"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_res_config_settings__group_sale_pricelist
@@ -307,7 +311,7 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item__applied_on
 msgid "Apply On"
-msgstr ""
+msgstr "ใช้เมื่อ"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_item_view_search
@@ -329,7 +333,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product__message_attachment_count
 #: model:ir.model.fields,field_description:product.field_product_template__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "จำนวนไฟล์แนบ"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute__name
@@ -355,7 +359,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_exclusion__product_template_attribute_value_id
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_value__product_attribute_value_id
 msgid "Attribute Value"
-msgstr ""
+msgstr "ค่าคุณลักษณะ"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__product_template_attribute_value_ids
@@ -433,7 +437,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product__can_image_1024_be_zoomed
 #: model:ir.model.fields,field_description:product.field_product_template__can_image_1024_be_zoomed
 msgid "Can Image 1024 be zoomed"
-msgstr ""
+msgstr "สามารถซูมภาพ 1024 ได้"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__can_image_variant_1024_be_zoomed
@@ -549,7 +553,7 @@ msgstr ""
 #. module: product
 #: model:ir.model,name:product.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "กำหนดการตั้งค่า"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
@@ -604,7 +608,7 @@ msgstr "ต้นทุน"
 #: model:ir.model.fields,field_description:product.field_product_product__cost_currency_id
 #: model:ir.model.fields,field_description:product.field_product_template__cost_currency_id
 msgid "Cost Currency"
-msgstr ""
+msgstr "ต้นทุนสกุลเงิน"
 
 #. module: product
 #: model:ir.model,name:product.model_res_country_group
@@ -632,7 +636,7 @@ msgstr "สร้างสินค้าใหม่"
 #: model_terms:ir.actions.act_window,help:product.product_normal_action_sell
 #: model_terms:ir.actions.act_window,help:product.product_variant_action
 msgid "Create a new product variant"
-msgstr ""
+msgstr "Create a new product variant"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute__create_uid
@@ -710,7 +714,7 @@ msgstr "วัน"
 #. module: product
 #: model:ir.model,name:product.model_decimal_precision
 msgid "Decimal Precision"
-msgstr ""
+msgstr "ความถูกต้องของทศนิยม"
 
 #. module: product
 #: code:addons/product/models/res_company.py:0
@@ -724,7 +728,7 @@ msgstr ""
 #: model:ir.model.fields,help:product.field_product_product__uom_id
 #: model:ir.model.fields,help:product.field_product_template__uom_id
 msgid "Default unit of measure used for all stock operations."
-msgstr ""
+msgstr "Default unit of measure used for all stock operations."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__uom_po_id
@@ -773,7 +777,7 @@ msgstr ""
 #: model:ir.model.fields,help:product.field_product_attribute__sequence
 #: model:ir.model.fields,help:product.field_product_attribute_value__sequence
 msgid "Determine the display order"
-msgstr ""
+msgstr "กำหนดลำดับการแสดงผล"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist__discount_policy
@@ -818,13 +822,13 @@ msgstr "ชื่อที่ใช้แสดง"
 #: model:product.product,name:product.product_product_27
 #: model:product.template,name:product.product_product_27_product_template
 msgid "Drawer"
-msgstr ""
+msgstr "ลิ้นชัก"
 
 #. module: product
 #: model:product.product,name:product.product_product_16
 #: model:product.template,name:product.product_product_16_product_template
 msgid "Drawer Black"
-msgstr ""
+msgstr "ลิ้นชัก สีดำ"
 
 #. module: product
 #: model:product.product,description:product.product_product_27
@@ -938,7 +942,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Future Activities"
-msgstr ""
+msgstr "กิจกรรมในอนาคต"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view
@@ -955,7 +959,7 @@ msgstr ""
 #: model:ir.model.fields,help:product.field_product_product__sequence
 #: model:ir.model.fields,help:product.field_product_template__sequence
 msgid "Gives the sequence order when displaying a product list"
-msgstr ""
+msgstr "ให้ลำดับเมื่อแสดงรายการสินค้า"
 
 #. module: product
 #: code:addons/product/models/product_template.py:0
@@ -1012,7 +1016,7 @@ msgstr "ไอคอน"
 #: model:ir.model.fields,help:product.field_product_product__activity_exception_icon
 #: model:ir.model.fields,help:product.field_product_template__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "ไอคอนเพื่อระบุกิจกรรมข้อยกเว้น"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__message_needaction
@@ -1026,7 +1030,7 @@ msgstr "ถ้าเลือก ข้อความใหม่จะต้�
 #: model:ir.model.fields,help:product.field_product_product__message_has_error
 #: model:ir.model.fields,help:product.field_product_template__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "หากเลือกข้อความบางข้อความมีข้อผิดพลาดในการจัดส่ง"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo__product_id
@@ -1058,25 +1062,25 @@ msgstr "รูปภาพ"
 #: model:ir.model.fields,field_description:product.field_product_product__image_1024
 #: model:ir.model.fields,field_description:product.field_product_template__image_1024
 msgid "Image 1024"
-msgstr ""
+msgstr "รูปภาพ 1024"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__image_128
 #: model:ir.model.fields,field_description:product.field_product_template__image_128
 msgid "Image 128"
-msgstr ""
+msgstr "รูปภาพ 128"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__image_256
 #: model:ir.model.fields,field_description:product.field_product_template__image_256
 msgid "Image 256"
-msgstr ""
+msgstr "รูปภาพ 256"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__image_512
 #: model:ir.model.fields,field_description:product.field_product_template__image_512
 msgid "Image 512"
-msgstr ""
+msgstr "รูปภาพ 512"
 
 #. module: product
 #: code:addons/product/models/product_pricelist.py:0
@@ -1088,7 +1092,7 @@ msgstr ""
 #: code:addons/product/models/product_template.py:0
 #, python-format
 msgid "Import Template for Products"
-msgstr ""
+msgstr "นำเข้าเทมเพลตสำหรับสินค้า"
 
 #. module: product
 #: code:addons/product/models/product.py:0
@@ -1249,7 +1253,7 @@ msgstr "อัพเดทครั้งสุดท้ายเมื่อ"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Late Activities"
-msgstr ""
+msgstr "กิจกรรมล่าสุด"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo__delay
@@ -1280,7 +1284,7 @@ msgstr "โลจิสติกส์"
 #: model:ir.model.fields,field_description:product.field_product_product__message_main_attachment_id
 #: model:ir.model.fields,field_description:product.field_product_template__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "ไฟล์แนบหลัก"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_template_attribute_value__exclude_for
@@ -1313,7 +1317,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product__message_has_error
 #: model:ir.model.fields,field_description:product.field_product_template__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "ส่งข้อความผิดพลาด"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__message_ids
@@ -1370,19 +1374,19 @@ msgstr "ราคาใหม่ ="
 #: model:ir.model.fields,field_description:product.field_product_product__activity_date_deadline
 #: model:ir.model.fields,field_description:product.field_product_template__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "วันที่สิ้นสุดกิจกรรมถัดไป"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__activity_summary
 #: model:ir.model.fields,field_description:product.field_product_template__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "สรุปกิจกรรมถัดไป"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__activity_type_id
 #: model:ir.model.fields,field_description:product.field_product_template__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "ประเภทกิจกรรมถัดไป"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__message_needaction_counter
@@ -1394,19 +1398,19 @@ msgstr "จำนวนกิจกรรม"
 #: model:ir.model.fields,field_description:product.field_product_product__message_has_error_counter
 #: model:ir.model.fields,field_description:product.field_product_template__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "จำนวนข้อผิดพลาด"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__message_needaction_counter
 #: model:ir.model.fields,help:product.field_product_template__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "จํานวนข้อความที่ต้องการการดําเนินการ"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__message_has_error_counter
 #: model:ir.model.fields,help:product.field_product_template__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "จํานวนข้อความที่มีข้อผิดพลาดในการส่ง"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__pricelist_item_count
@@ -1418,13 +1422,13 @@ msgstr ""
 #: model:ir.model.fields,help:product.field_product_product__message_unread_counter
 #: model:ir.model.fields,help:product.field_product_template__message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "จํานวนข้อความที่ยังไม่ได้อ่าน"
 
 #. module: product
 #: model:product.product,name:product.product_delivery_01
 #: model:product.template,name:product.product_delivery_01_product_template
 msgid "Office Chair"
-msgstr ""
+msgstr "เก้าอี้สำนักงาน"
 
 #. module: product
 #: model:product.product,name:product.product_product_12
@@ -1474,7 +1478,7 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_packaging__name
 msgid "Package Type"
-msgstr ""
+msgstr "ประเภทแพ็คเกจ"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_packaging_form_view
@@ -1492,7 +1496,7 @@ msgstr "หมวดสินค้าแม่"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category__parent_path
 msgid "Parent Path"
-msgstr ""
+msgstr "Path"
 
 #. module: product
 #: model:product.product,name:product.product_product_9
@@ -1577,7 +1581,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
 #, python-format
 msgid "Price Rules"
-msgstr ""
+msgstr "กฎราคา"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item__price_surcharge
@@ -1637,7 +1641,7 @@ msgstr ""
 #. module: product
 #: model:ir.model,name:product.model_product_pricelist_item
 msgid "Pricelist Rule"
-msgstr ""
+msgstr "กฎรายการราคา"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_pricelist_action2
@@ -1659,7 +1663,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 msgid "Pricing"
-msgstr ""
+msgstr "ราคา"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.view_product_price_list
@@ -1691,7 +1695,7 @@ msgstr "สินค้า"
 #: model_terms:ir.ui.view,arch_db:product.product_attribute_view_form
 #: model_terms:ir.ui.view,arch_db:product.product_template_attribute_value_view_form
 msgid "Product Attribute"
-msgstr ""
+msgstr "คุณลักษณะผลิตภัณฑ์"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_line__product_template_value_ids
@@ -1736,7 +1740,7 @@ msgstr "หมวดสินค้า"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_res_config_settings__module_sale_product_configurator
 msgid "Product Configurator"
-msgstr ""
+msgstr "การกำหนดค่าสินค้า"
 
 #. module: product
 #: model:ir.actions.report,name:product.report_product_label
@@ -1760,7 +1764,7 @@ msgstr ""
 #: model:ir.model,name:product.model_product_packaging
 #: model_terms:ir.ui.view,arch_db:product.product_packaging_form_view
 msgid "Product Packaging"
-msgstr ""
+msgstr "บรรจุภัณฑ์ของสินค้า"
 
 #. module: product
 #: model:ir.actions.report,name:product.report_product_packaging
@@ -1772,7 +1776,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_res_config_settings__group_stock_packaging
 #: model_terms:ir.ui.view,arch_db:product.product_packaging_tree_view
 msgid "Product Packagings"
-msgstr ""
+msgstr "การบรรจุสินค้า"
 
 #. module: product
 #: model:ir.model,name:product.model_report_product_report_pricelist
@@ -1803,7 +1807,7 @@ msgstr ""
 #. module: product
 #: model:ir.model,name:product.model_product_template_attribute_line
 msgid "Product Template Attribute Line"
-msgstr ""
+msgstr "ไลน์คุณลักษณะเทมเพลตผลิตภัณฑ์"
 
 #. module: product
 #: model:ir.model,name:product.model_product_template_attribute_value
@@ -1978,7 +1982,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid "Rounding Method"
-msgstr ""
+msgstr "Rounding Factor"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view
@@ -2004,7 +2008,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:product.product_product_tree_view
 #: model_terms:ir.ui.view,arch_db:product.product_template_tree_view
 msgid "Sales Price"
-msgstr ""
+msgstr "ราคาขาย"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__categ_id
@@ -2044,7 +2048,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Show all records which has next action date is before today"
-msgstr ""
+msgstr "Show all records which has next action date is before today"
 
 #. module: product
 #: model:ir.model.fields.selection,name:product.selection__product_pricelist__discount_policy__without_discount
@@ -2114,6 +2118,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"สถานะตามกิจกรรม\n"
+"เกินกำหนด: วันที่ครบกำหนดผ่านไปแล้ว\n"
+"วันนี้: วันที่ทำกิจกรรมคือวันนี้\n"
+"ที่วางแผนไว้: กิจกรรมในอนาคต"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_1
@@ -2131,7 +2139,7 @@ msgstr ""
 #. module: product
 #: model:ir.model,name:product.model_product_supplierinfo
 msgid "Supplier Pricelist"
-msgstr ""
+msgstr "Supplier Pricelist"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__valid_product_template_attribute_line_ids
@@ -2258,6 +2266,15 @@ msgid "This comes from the product form."
 msgstr ""
 
 #. module: product
+#: code:addons/product/models/product_template.py:0
+#, python-format
+msgid ""
+"This configuration of product attributes, values, and exclusions would lead "
+"to no possible variant. Please archive or delete your product directly if "
+"intended."
+msgstr ""
+
+#. module: product
 #: model:ir.model.fields,help:product.field_product_product__price_extra
 msgid "This is the sum of the extra price of all attributes"
 msgstr ""
@@ -2278,6 +2295,15 @@ msgstr ""
 msgid ""
 "This pricelist will be used, instead of the default one, for sales to the "
 "current partner"
+msgstr ""
+
+#. module: product
+#: code:addons/product/models/uom_uom.py:0
+#, python-format
+msgid ""
+"This rounding precision is higher than the Decimal Accuracy (%s digits).\n"
+"This may cause inconsistencies in computations.\n"
+"Please set a precision between %s and 1."
 msgstr ""
 
 #. module: product
@@ -2309,13 +2335,13 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Today Activities"
-msgstr ""
+msgstr "กิจกรรมวันนี้"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__activity_exception_decoration
 #: model:ir.model.fields,help:product.field_product_template__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "พิมพ์กิจกรรมข้อยกเว้นบนบันทึก"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_packaging__product_uom_id
@@ -2385,7 +2411,7 @@ msgstr ""
 #: model:product.template,uom_name:product.product_product_8_product_template
 #: model:product.template,uom_name:product.product_product_9_product_template
 msgid "Units"
-msgstr ""
+msgstr "หน่วย"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_res_config_settings__group_uom
@@ -2419,7 +2445,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "Validity"
-msgstr ""
+msgstr "อายุการใช้งาน"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_value__name
@@ -2508,7 +2534,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:product.product_template_kanban_view
 #: model_terms:ir.ui.view,arch_db:product.product_template_only_form_view
 msgid "Variants"
-msgstr ""
+msgstr "ตัวแปร"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute__create_variant
@@ -2525,7 +2551,7 @@ msgstr "ผู้จำหน่าย"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Vendor Bills"
-msgstr ""
+msgstr "บิลค่าใช้จ่าย"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_supplierinfo_form_view
@@ -2536,7 +2562,7 @@ msgstr ""
 #. module: product
 #: model:ir.actions.act_window,name:product.product_supplierinfo_type_action
 msgid "Vendor Pricelists"
-msgstr ""
+msgstr "รายการราคาผู้ขาย"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo__product_code
@@ -2590,6 +2616,13 @@ msgid "Volume unit of measure label"
 msgstr ""
 
 #. module: product
+#: code:addons/product/models/decimal_precision.py:0
+#: code:addons/product/models/uom_uom.py:0
+#, python-format
+msgid "Warning!"
+msgstr "คำเตือน!"
+
+#. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Warnings"
 msgstr "คำเตือน"
@@ -2614,13 +2647,23 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product__weight_uom_name
 #: model:ir.model.fields,field_description:product.field_product_template__weight_uom_name
 msgid "Weight unit of measure label"
-msgstr ""
+msgstr "หน่วยฉลากน้ำหนัก"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_3
 #: model:product.template.attribute.value,name:product.product_4_attribute_2_value_1
 msgid "White"
 msgstr "ขาว"
+
+#. module: product
+#: code:addons/product/models/decimal_precision.py:0
+#, python-format
+msgid ""
+"You are setting a Decimal Accuracy less precise than the UOMs:\n"
+"%s\n"
+"This may cause inconsistencies in computations.\n"
+"Please increase the rounding of those units of measure, or the digits of this Decimal Accuracy."
+msgstr ""
 
 #. module: product
 #: model_terms:ir.actions.act_window,help:product.product_pricelist_action2
@@ -2708,6 +2751,14 @@ msgid ""
 msgstr ""
 
 #. module: product
+#: code:addons/product/models/product_pricelist.py:0
+#, python-format
+msgid ""
+"You cannot disable a pricelist rule, please delete it or archive its "
+"pricelist instead."
+msgstr ""
+
+#. module: product
 #: code:addons/product/models/product_attribute.py:0
 #: code:addons/product/models/product_attribute.py:0
 #, python-format
@@ -2717,24 +2768,14 @@ msgid ""
 msgstr ""
 
 #. module: product
-#: code:addons/product/wizard/product_price_list.py:0
-#, python-format
-msgid "You have to set a logo or a layout for your company."
-msgstr ""
-
-#. module: product
-#: code:addons/product/wizard/product_price_list.py:0
-#, python-format
-msgid "You have to set your reports's header and footer layout."
-msgstr ""
-
-#. module: product
 #: model_terms:ir.actions.act_window,help:product.product_normal_action
 #: model_terms:ir.actions.act_window,help:product.product_template_action
 msgid ""
 "You must define a product for everything you sell or purchase,\n"
 "                whether it's a storable product, a consumable or a service."
 msgstr ""
+"You must define a product for everything you sell or purchase,\n"
+"                whether it's a storable product, a consumable or a service."
 
 #. module: product
 #: model_terms:ir.actions.act_window,help:product.product_variant_action
@@ -2793,7 +2834,7 @@ msgstr ""
 #: code:addons/product/models/product_template.py:0
 #, python-format
 msgid "product"
-msgstr ""
+msgstr "สินค้า"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.view_partner_property_form

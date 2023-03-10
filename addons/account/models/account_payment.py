@@ -132,6 +132,12 @@ class account_payment(models.Model):
             if payment.amount < 0:
                 raise ValidationError(_('The payment amount cannot be negative.'))
 
+    @api.constrains('invoice_ids')
+    def _check_invoices(self):
+        for payment in self:
+            if any(invoice.company_id != payment.company_id for invoice in payment.invoice_ids):
+                raise ValidationError(_('You can only register payments for invoices in the same company'))
+
     @api.model
     def _get_method_codes_using_bank_account(self):
         return []
@@ -206,13 +212,17 @@ class account_payment(models.Model):
             # context for partner_bank_account_id properly when provided with a
             # default partner_id. Without it, the onchange recomputes the bank account
             # uselessly and might assign a different value to it.
-            if self.partner_id and len(self.partner_id.bank_ids) > 0:
-                self.partner_bank_account_id = self.partner_id.bank_ids[0]
-            elif self.partner_id and len(self.partner_id.commercial_partner_id.bank_ids) > 0:
-                self.partner_bank_account_id = self.partner_id.commercial_partner_id.bank_ids[0]
-            else:
-                self.partner_bank_account_id = False
-        return {'domain': {'partner_bank_account_id': [('partner_id', 'in', [self.partner_id.id, self.partner_id.commercial_partner_id.id])]}}
+            filter_company = lambda x: x.company_id is False or x.company_id == self.company_id
+            self.partner_bank_account_id = (
+                self.partner_id.bank_ids.filtered(filter_company)
+                or self.partner_id.commercial_partner_id.bank_ids.filtered(filter_company)
+            )[:1]
+        if self.payment_type == 'inbound' and self.invoice_ids:
+            partner_ids = [self.invoice_ids[0].company_id.partner_id.id,
+                           self.invoice_ids[0].company_id.partner_id.commercial_partner_id.id]
+        else:
+            partner_ids = [self.partner_id.id, self.partner_id.commercial_partner_id.id]
+        return {'domain': {'partner_bank_account_id': [('partner_id', 'in', partner_ids)]}}
 
     @api.onchange('payment_type')
     def _onchange_payment_type(self):
@@ -259,7 +269,7 @@ class account_payment(models.Model):
         if self.invoice_ids:
             domain_on_types.append(('company_id', '=', self.invoice_ids[0].company_id.id))
         if self.journal_id.type not in journal_types or (self.invoice_ids and self.journal_id.company_id != self.invoice_ids[0].company_id):
-            self.journal_id = self.env['account.journal'].search(domain_on_types, limit=1)
+            self.journal_id = self.env['account.journal'].search(domain_on_types + [('company_id', '=', self.env.company.id)], limit=1)
         return {'domain': {'journal_id': jrnl_filters['domain'] + domain_on_types}}
 
     @api.onchange('currency_id')
@@ -364,6 +374,7 @@ class account_payment(models.Model):
 
     @api.depends('invoice_ids', 'payment_type', 'partner_type', 'partner_id')
     def _compute_destination_account_id(self):
+        self.destination_account_id = False
         for payment in self:
             if payment.invoice_ids:
                 payment.destination_account_id = payment.invoice_ids[0].mapped(
@@ -374,15 +385,16 @@ class account_payment(models.Model):
                     raise UserError(_('There is no Transfer Account defined in the accounting settings. Please define one to be able to confirm this transfer.'))
                 payment.destination_account_id = payment.company_id.transfer_account_id.id
             elif payment.partner_id:
+                partner = payment.partner_id.with_context(force_company=payment.company_id.id)
                 if payment.partner_type == 'customer':
-                    payment.destination_account_id = payment.partner_id.property_account_receivable_id.id
+                    payment.destination_account_id = partner.property_account_receivable_id.id
                 else:
-                    payment.destination_account_id = payment.partner_id.property_account_payable_id.id
+                    payment.destination_account_id = partner.property_account_payable_id.id
             elif payment.partner_type == 'customer':
-                default_account = self.env['ir.property'].get('property_account_receivable_id', 'res.partner')
+                default_account = self.env['ir.property'].with_context(force_company=payment.company_id.id).get('property_account_receivable_id', 'res.partner')
                 payment.destination_account_id = default_account.id
             elif payment.partner_type == 'supplier':
-                default_account = self.env['ir.property'].get('property_account_payable_id', 'res.partner')
+                default_account = self.env['ir.property'].with_context(force_company=payment.company_id.id).get('property_account_payable_id', 'res.partner')
                 payment.destination_account_id = default_account.id
 
     @api.depends('move_line_ids.matched_debit_ids', 'move_line_ids.matched_credit_ids')
@@ -694,7 +706,7 @@ class account_payment(models.Model):
                 # ==== 'inbound' / 'outbound' ====
                 if rec.invoice_ids:
                     (moves[0] + rec.invoice_ids).line_ids \
-                        .filtered(lambda line: not line.reconciled and line.account_id == rec.destination_account_id)\
+                        .filtered(lambda line: not line.reconciled and line.account_id == rec.destination_account_id and not (line.account_id == line.payment_id.writeoff_account_id and line.name == line.payment_id.writeoff_label))\
                         .reconcile()
             elif rec.payment_type == 'transfer':
                 # ==== 'transfer' ====
@@ -708,7 +720,7 @@ class account_payment(models.Model):
         moves = self.mapped('move_line_ids.move_id')
         moves.filtered(lambda move: move.state == 'posted').button_draft()
         moves.with_context(force_delete=True).unlink()
-        self.write({'state': 'draft'})
+        self.write({'state': 'draft', 'invoice_ids': False})
 
     def _get_invoice_payment_amount(self, inv):
         """
@@ -757,10 +769,14 @@ class payment_register(models.TransientModel):
             raise UserError(_("You can only register at the same time for payment that are all inbound or all outbound"))
         if any(inv.company_id != invoices[0].company_id for inv in invoices):
             raise UserError(_("You can only register at the same time for payment that are all from the same company"))
-        # Check the destination account is the same
-        destination_account = invoices.line_ids.filtered(lambda line: line.account_internal_type in ('receivable', 'payable')).mapped('account_id')
-        if len(destination_account) > 1:
-            raise UserError(_('There is more than one receivable/payable account in the concerned invoices. You cannot group payments in that case.'))
+        # Check the destination account is the same for each payment group
+        groups_dict = {}
+        for invoice in invoices:
+            key = self._get_payment_group_key(invoice)
+            destination_account = invoice.line_ids.filtered(lambda line: line.account_internal_type in ('receivable', 'payable')).mapped('account_id')
+            if len(destination_account) > 1 or groups_dict.get(key, destination_account) != destination_account:
+                raise UserError(_('There is more than one receivable/payable account in the concerned invoices. You cannot group payments in that case.'))
+            groups_dict[key] = destination_account
         if 'invoice_ids' not in rec:
             rec['invoice_ids'] = [(6, 0, invoices.ids)]
         if 'journal_id' not in rec:
@@ -786,6 +802,12 @@ class payment_register(models.TransientModel):
             return {'domain': {'payment_method_id': domain_payment, 'journal_id': domain_journal}}
         return {}
 
+    def _prepare_communication(self, invoices):
+        '''Define the value for communication field
+        Append all invoice's references together.
+        '''
+        return " ".join(i.invoice_payment_ref or i.ref or i.name for i in invoices)
+
     def _prepare_payment_vals(self, invoices):
         '''Create the payment values.
 
@@ -799,7 +821,7 @@ class payment_register(models.TransientModel):
             'journal_id': self.journal_id.id,
             'payment_method_id': self.payment_method_id.id,
             'payment_date': self.payment_date,
-            'communication': " ".join(i.invoice_payment_ref or i.ref or i.name for i in invoices),
+            'communication': self._prepare_communication(invoices),
             'invoice_ids': [(6, 0, invoices.ids)],
             'payment_type': ('inbound' if amount > 0 else 'outbound'),
             'amount': abs(amount),
@@ -810,6 +832,12 @@ class payment_register(models.TransientModel):
         }
         return values
 
+    def _get_payment_group_key(self, invoice):
+        """ Returns the grouping key to use for the given invoice when group_payment
+        option has been ticked in the wizard.
+        """
+        return (invoice.commercial_partner_id, invoice.currency_id, invoice.invoice_partner_bank_id, MAP_INVOICE_TYPE_PARTNER_TYPE[invoice.type])
+
     def get_payments_vals(self):
         '''Compute the values for payments.
 
@@ -818,7 +846,7 @@ class payment_register(models.TransientModel):
         grouped = defaultdict(lambda: self.env["account.move"])
         for inv in self.invoice_ids:
             if self.group_payment:
-                grouped[(inv.commercial_partner_id, inv.currency_id, inv.invoice_partner_bank_id, MAP_INVOICE_TYPE_PARTNER_TYPE[inv.type])] += inv
+                grouped[self._get_payment_group_key(inv)] += inv
             else:
                 grouped[inv.id] += inv
         return [self._prepare_payment_vals(invoices) for invoices in grouped.values()]

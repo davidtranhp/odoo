@@ -43,9 +43,9 @@ class WebsiteForm(WebsiteForm):
             geoip_country_code = request.session.get('geoip', {}).get('country_code')
             geoip_state_code = request.session.get('geoip', {}).get('region')
             if geoip_country_code and geoip_state_code:
-                State = request.env['res.country.state']
-                request.params['state_id'] = State.search([('code', '=', geoip_state_code), ('country_id.code', '=', geoip_country_code)]).id
-
+                state = request.env['res.country.state'].search([('code', '=', geoip_state_code), ('country_id.code', '=', geoip_country_code)])
+                if state:
+                    request.params['state_id'] = state.id
         return super(WebsiteForm, self).website_form(model_name, **kwargs)
 
     def insert_record(self, request, model, values, custom, meta=None):
@@ -54,8 +54,7 @@ class WebsiteForm(WebsiteForm):
             if 'company_id' not in values:
                 values['company_id'] = request.website.company_id.id
             lang = request.context.get('lang', False)
-            lang_id = request.env["res.lang"].sudo().search([('code', '=', lang)], limit=1).id
-            values['lang_id'] = lang_id
+            values['lang_id'] = values.get('lang_id') or request.env['res.lang']._lang_get_id(lang)
 
         result = super(WebsiteForm, self).insert_record(request, model, values, custom, meta=meta)
 

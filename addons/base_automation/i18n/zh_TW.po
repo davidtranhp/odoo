@@ -5,15 +5,15 @@
 # Translators:
 # Martin Trigaux, 2019
 # Andy Cheng <andy.cheng@richsoda.com>, 2019
-# 敬雲 林 <chingyun@yuanchih-consult.com>, 2019
+# 敬雲 林 <chingyun@yuanchih-consult.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-07 07:12+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:09+0000\n"
-"Last-Translator: 敬雲 林 <chingyun@yuanchih-consult.com>, 2019\n"
+"Last-Translator: 敬雲 林 <chingyun@yuanchih-consult.com>, 2021\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -214,11 +214,6 @@ msgid "Cancelled"
 msgstr "已取消"
 
 #. module: base_automation
-#: model:ir.model.fields,help:base_automation.field_base_automation_lead_test__employee
-msgid "Check this box if this contact is an Employee."
-msgstr "如果此連絡人是員工，請勾選。"
-
-#. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__child_ids
 msgid "Child Actions"
 msgstr "下級動作"
@@ -300,7 +295,7 @@ msgstr "演示"
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "Disable Action"
-msgstr ""
+msgstr "禁用操作"
 
 #. module: base_automation
 #. openerp-web
@@ -335,7 +330,7 @@ msgstr "截止類型"
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "Edit action"
-msgstr ""
+msgstr "編輯動作"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__template_id
@@ -759,11 +754,11 @@ msgstr "編寫動作將執行的Python代碼。一些變量可供使用;有關py
 #, python-format
 msgid ""
 "You can ask an administrator to disable or correct this automated action."
-msgstr ""
+msgstr "您可以要求管理員禁用或更正此自動操作。"
 
 #. module: base_automation
 #. openerp-web
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "You can disable this automated action or edit it to solve the issue."
-msgstr ""
+msgstr "您可以禁用此自動操作或對其進行編輯以解決問題。"

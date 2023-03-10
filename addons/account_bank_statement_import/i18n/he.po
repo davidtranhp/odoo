@@ -9,18 +9,20 @@
 # yacov mosbacher <ymosba@gmail.com>, 2019
 # Yihya Hugirat <hugirat@gmail.com>, 2019
 # שהאב חוסיין <shhab89@gmail.com>, 2019
-# hed shefetr <hed@laylinetech.com>, 2019
+# hed shefer <hed@laylinetech.com>, 2019
 # דודי מלכה <Dudimalka6@gmail.com>, 2019
 # Amit Spilman <amit@laylinetech.com>, 2019
 # ZVI BLONDER <ZVIBLONDER@gmail.com>, 2020
+# Netta Waizer, 2022
+# Ha Ketem <haketem@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~12.5\n"
+"Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-27 09:10+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:08+0000\n"
-"Last-Translator: ZVI BLONDER <ZVIBLONDER@gmail.com>, 2020\n"
+"Last-Translator: Ha Ketem <haketem@gmail.com>, 2022\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +67,7 @@ msgstr "מספר חשבון"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__type_control_ids
 msgid "Account Types Allowed"
-msgstr "סוגי חשבון מותרים"
+msgstr "סוגי חשבונות מותרים"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__account_control_ids
@@ -187,6 +189,8 @@ msgid ""
 "Check this box if you don't want to share the same sequence for invoices and"
 " credit notes made from this journal"
 msgstr ""
+"סמן תיבה זו אם אינך רוצה לשתף את אותו רצף עבור חשבוניות ותעודות זיכוי שנעשו "
+"מיומן זה"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__color
@@ -282,11 +286,6 @@ msgid "Entry Sequence"
 msgstr "רצף מספרי"
 
 #. module: account_bank_statement_import
-#: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import__filename
-msgid "Filename"
-msgstr "שם קובץ"
-
-#. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import__attachment_ids
 msgid "Files"
 msgstr "קבצים"
@@ -365,6 +364,8 @@ msgid ""
 "If ticked, the accounting entry or invoice receives a hash as soon as it is "
 "posted and cannot be modified anymore."
 msgstr ""
+"אם מסומן, הרישום החשבונאי או החשבונית מקבלים hash מיד עם פרסום ואינם ניתנים "
+"לשינוי עוד."
 
 #. module: account_bank_statement_import
 #: code:addons/account_bank_statement_import/account_journal.py:0
@@ -411,7 +412,7 @@ msgstr "משמש כחשבון ברירת מחדל אבל סכום החיוב"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation__alias_name
 msgid "It creates draft invoices and bills by sending an email."
-msgstr ""
+msgstr "האם יוצר טיוטות חשבוניות וחשבונות על ידי שליחת אימייל."
 
 #. module: account_bank_statement_import
 #: model:ir.model,name:account_bank_statement_import.model_account_journal
@@ -429,12 +430,12 @@ msgstr "יצירת יומן"
 #. module: account_bank_statement_import
 #: model:ir.model,name:account_bank_statement_import.model_account_bank_statement_import_journal_creation
 msgid "Journal Creation on Bank Statement Import"
-msgstr ""
+msgstr "יומן שנוצר בייבוא דפי בנק"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__journal_group_ids
 msgid "Journal Groups"
-msgstr "קבוצות יומן"
+msgstr "קבוצות יומנים"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__name
@@ -444,7 +445,7 @@ msgstr "שם היומן"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__json_activity_data
 msgid "Json Activity Data"
-msgstr ""
+msgstr "נתוני פעילות Json"
 
 #. module: account_bank_statement_import
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
@@ -452,6 +453,8 @@ msgid ""
 "Just click OK to create the account/journal and finish the upload. If this "
 "was a mistake, hit cancel to abort the upload."
 msgstr ""
+"רק ללחוץ על OK ליצירת החשבון/יומן וסיום ההעלאה. אם זאת היתה טעות, לחצו על "
+"ESC לבטל את ההעלאה."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__kanban_dashboard
@@ -530,7 +533,7 @@ msgstr "מועד אחרון לפעילות הבאה"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__activity_summary
 msgid "Next Activity Summary"
-msgstr "תקציר הפעילות הבאה "
+msgstr "תיאור הפעילות הבאה "
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__activity_type_id
@@ -601,7 +604,7 @@ msgstr "שגיאת שליחת SMS"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__secure_sequence_id
 msgid "Secure Sequence"
-msgstr ""
+msgstr "רצף מאובטח"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation__type
@@ -629,12 +632,12 @@ msgstr "רצף"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation__secure_sequence_id
 msgid "Sequence to use to ensure the securisation of data"
-msgstr ""
+msgstr "רצף לשימוש כדי להבטיח את אבטחת הנתונים"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation__active
 msgid "Set active to false to hide the Journal without removing it."
-msgstr ""
+msgstr "הגדר פעיל ל-false כדי להסתיר את היומן מבלי להסיר אותו."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation__code
@@ -666,6 +669,8 @@ msgid ""
 "In order to proceed with the upload, you need to create a bank journal for "
 "this account."
 msgstr ""
+"החשבון המועלה עדיין לא רשום ב-Odoo. כדי להמשיך בהעלאה, צריך קודם לפתוח יומן "
+"תנועות בנק עבור חשבון זה."
 
 #. module: account_bank_statement_import
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:0
@@ -680,7 +685,7 @@ msgstr "חשבון תדפיס בנק זה (%s) אינו זהה ליומן (%s)."
 msgid ""
 "The currency of the bank statement (%s) is not the same as the currency of "
 "the journal (%s)."
-msgstr ""
+msgstr "המטבע ביומן דפי הבנק (%s) אינו זהה למטבע ביומן (%s)."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation__currency_id
@@ -752,7 +757,7 @@ msgstr "מספר הודעות שלא נקראו"
 #: model:ir.actions.act_window,name:account_bank_statement_import.action_account_bank_statement_import
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view
 msgid "Upload"
-msgstr "העלאה"
+msgstr "העלה"
 
 #. module: account_bank_statement_import
 #: model_terms:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view

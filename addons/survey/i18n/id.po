@@ -14,6 +14,11 @@
 # Bonny Useful <bonny.useful@gmail.com>, 2019
 # Ryanto The <ry.the77@gmail.com>, 2019
 # PAS IRVANUS <ipankbiz@gmail.com>, 2019
+# Gradien Foundation <gradien.co@gmail.com>, 2020
+# whenwesober, 2020
+# Abdul Munif Hanafi <amunifhanafi@gmail.com>, 2021
+# Muftiara Syuhada <muftiara.syuhada@gmail.com>, 2021
+# Abe Manyo, 2023
 # 
 msgid ""
 msgstr ""
@@ -21,7 +26,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 12:34+0000\n"
 "PO-Revision-Date: 2019-08-26 09:14+0000\n"
-"Last-Translator: PAS IRVANUS <ipankbiz@gmail.com>, 2019\n"
+"Last-Translator: Abe Manyo, 2023\n"
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -459,7 +464,7 @@ msgstr "Aktivitas"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Activity Exception Decoration"
+msgstr "Dekorasi Pengecualian Aktivitas"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__activity_state
@@ -573,7 +578,7 @@ msgstr "Diarsipkan"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_attachment_count
 msgid "Attachment Count"
-msgstr "Attachment Count"
+msgstr "Hitungan Lampiran"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_invite__attachment_ids
@@ -676,12 +681,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:survey.field_survey_survey__certificate
 #: model_terms:ir.ui.view,arch_db:survey.survey_tree
 msgid "Certificate"
-msgstr ""
+msgstr "Sertifikat"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_survey_view_search
 msgid "Certification"
-msgstr ""
+msgstr "Sertifikat"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__certification_badge_id
@@ -712,7 +717,7 @@ msgstr ""
 #: model:ir.actions.report,name:survey.certification_report
 #: model:ir.model.fields.selection,name:survey.selection__gamification_challenge__category__certification
 msgid "Certifications"
-msgstr ""
+msgstr "Sertifikat-Sertifikat"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_res_partner__certifications_count
@@ -744,7 +749,7 @@ msgstr ""
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.result
 msgid "Chart"
-msgstr ""
+msgstr "Bagan"
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__is_attempts_limited
@@ -855,7 +860,7 @@ msgstr ""
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line__answer_is_correct
 msgid "Correct"
-msgstr ""
+msgstr "Benar"
 
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_2_question_3_choice_3
@@ -1065,12 +1070,12 @@ msgstr "Rancangan"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_1_question_2_choice_4
 msgid "Drawer"
-msgstr ""
+msgstr "Laci"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_kanban
 msgid "Dropdown menu"
-msgstr ""
+msgstr "Menu dropdown"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input__email
@@ -1175,12 +1180,12 @@ msgstr "Dari"
 #. module: survey
 #: model:ir.model,name:survey.model_gamification_badge
 msgid "Gamification Badge"
-msgstr ""
+msgstr "Lencana Gamifikasi"
 
 #. module: survey
 #: model:ir.model,name:survey.model_gamification_challenge
 msgid "Gamification Challenge"
-msgstr ""
+msgstr "Tantangan Gamifikasi"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p1
@@ -1274,7 +1279,7 @@ msgstr "Ikon"
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icon to indicate an exception activity."
+msgstr "Ikon untuk menunjukkan sebuah aktivitas pengecualian."
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input__token
@@ -1285,13 +1290,13 @@ msgstr "Token Identitas"
 #: model:ir.model.fields,help:survey.field_survey_survey__message_needaction
 #: model:ir.model.fields,help:survey.field_survey_survey__message_unread
 msgid "If checked, new messages require your attention."
-msgstr "Jika dicentang pesan-pesan baru membutuhkan penanganan lebih lanjut."
+msgstr "Jika dicentang, pesan baru memerlukan penanganan dan perhatian Anda."
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__message_has_error
 #: model:ir.model.fields,help:survey.field_survey_survey__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan mempunyai kesalahan dalam pengiriman."
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__users_can_go_back
@@ -1506,7 +1511,7 @@ msgstr "Diwajibkan Login"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Main Attachment"
+msgstr "Lampiran Utama"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__constr_mandatory
@@ -1582,7 +1587,7 @@ msgstr ""
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_has_error
 msgid "Message Delivery error"
-msgstr "Message Delivery error"
+msgstr "Kesalahan Pengiriman Pesan"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_ids
@@ -1756,7 +1761,7 @@ msgstr ""
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_has_error_counter
 msgid "Number of errors"
-msgstr "Number of errors"
+msgstr "Jumlah kesalahan"
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__message_needaction_counter
@@ -1766,7 +1771,7 @@ msgstr "Jumlah pesan yang butuh tindakan"
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Number of messages with delivery error"
+msgstr "Jumlah dari pesan dengan kesalahan pengiriman"
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__message_unread_counter
@@ -1991,7 +1996,7 @@ msgstr "Pertanyaan 2"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__question_type
 msgid "Question Type"
-msgstr ""
+msgstr "Tipe Pertanyaan"
 
 #. module: survey
 #: model:ir.actions.act_window,name:survey.action_survey_question_form
@@ -2037,7 +2042,7 @@ msgstr "Penerima"
 #: model:ir.model.fields,field_description:survey.field_survey_survey__answer_count
 #: model_terms:ir.ui.view,arch_db:survey.survey_form
 msgid "Registered"
-msgstr ""
+msgstr "Terdaftar"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_invite__existing_text
@@ -2107,7 +2112,7 @@ msgstr "Baris Matriks"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr "SMS Delivery error"
+msgstr "Kesalahan Pengiriman SMS"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input_line__answer_score
@@ -2566,6 +2571,20 @@ msgid "The checkout process is clear and secure"
 msgstr ""
 
 #. module: survey
+#. openerp-web
+#: code:addons/survey/static/src/js/survey.js:0
+#, python-format
+msgid "The date you selected is greater than the maximum date: "
+msgstr ""
+
+#. module: survey
+#. openerp-web
+#: code:addons/survey/static/src/js/survey.js:0
+#, python-format
+msgid "The date you selected is lower than the minimum date: "
+msgstr ""
+
+#. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__description
 msgid ""
 "The description will be displayed on the home page of the survey. You can "
@@ -2783,7 +2802,7 @@ msgstr "Tipe jawaban"
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Type of the exception activity on record."
+msgstr "Jenis dari aktivitas pengecualian pada rekaman data."
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__labels_ids
@@ -3003,6 +3022,22 @@ msgstr ""
 #. module: survey
 #: code:addons/survey/models/survey_survey.py:0
 #, python-format
+msgid ""
+"You cannot send an invitation for a \"One page per section\" survey if the "
+"survey has no sections."
+msgstr ""
+
+#. module: survey
+#: code:addons/survey/models/survey_survey.py:0
+#, python-format
+msgid ""
+"You cannot send an invitation for a \"One page per section\" survey if the "
+"survey only contains empty sections."
+msgstr ""
+
+#. module: survey
+#: code:addons/survey/models/survey_survey.py:0
+#, python-format
 msgid "You cannot send invitations for closed surveys."
 msgstr "Anda tidak dapat mengirim undangan untuk survei tertutup."
 
@@ -3049,4 +3084,4 @@ msgstr ""
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.403
 msgid "this page"
-msgstr ""
+msgstr "halaman ini"

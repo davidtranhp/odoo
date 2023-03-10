@@ -99,7 +99,7 @@
         <record id="IDR" model="res.currency">
             <field name="name">IDR</field>
             <field name="symbol">Rp</field>
-            <field name="rounding">0.01</field>
+            <field name="rounding">1.00</field>
             <field name="position">before</field>
             <field name="active" eval="False"/>
             <field name="currency_unit_label">Rupiah</field>
@@ -331,9 +331,10 @@
 
         <record id="SGD" model="res.currency">
             <field name="name">SGD</field>
-            <field name="symbol">$</field>
+            <field name="symbol">S$</field>
             <field name="rounding">0.01</field>
             <field name="active" eval="False"/>
+            <field name="position">before</field>
             <field name="currency_unit_label">Dollars</field>
             <field name="currency_subunit_label">Cents</field>
         </record>
@@ -356,7 +357,8 @@
         <record id="CRC" model="res.currency">
             <field name="name">CRC</field>
             <field name="rounding">0.01</field>
-            <field name="symbol">¢</field>
+            <field name="symbol">₡</field>
+            <field name="position">before</field>
             <field name="active" eval="False"/>
             <field name="currency_unit_label">Colon</field>
             <field name="currency_subunit_label">Centimos</field>
@@ -403,7 +405,8 @@
             <field name="symbol">L</field>
             <field name="rounding">0.01</field>
             <field name="active" eval="False"/>
-            <field name="currency_unit_label">Lempira</field>
+            <field name="position">before</field>
+            <field name="currency_unit_label">Lempiras</field>
             <field name="currency_subunit_label">Centavos</field>
         </record>
 
@@ -412,6 +415,7 @@
             <field name="symbol">$</field>
             <field name="rounding">1</field>
             <field name="active" eval="False"/>
+            <field name="position">before</field>
             <field name="currency_unit_label">Peso</field>
             <field name="currency_subunit_label">Centavos</field>
         </record>
@@ -648,6 +652,7 @@
             <field name="active" eval="False"/>
             <field name="currency_unit_label">Guilder</field>
             <field name="currency_subunit_label">Cents</field>
+            <field name="position">before</field>
         </record>
 
         <record id="CYP" model="res.currency">
@@ -905,7 +910,7 @@
 
         <record id="LSL" model="res.currency">
             <field name="name">LSL</field>
-            <field name="symbol">L</field>
+            <field name="symbol">M</field>
             <field name="rounding">0.01</field>
             <field name="active" eval="False"/>
             <field name="currency_unit_label">Loti</field>

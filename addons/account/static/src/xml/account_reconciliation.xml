@@ -61,7 +61,7 @@
                     rel="do_action"
                     data-action_name="Unreconciled Entries"
                     data-model="account.move.line"
-                    data-context="{'search_default_unreconciled': 1}">unreconciled entries</a></li>
+                    data-context="{'search_default_unreconciled': 1, 'search_default_posted': 1}">unreconciled entries</a></li>
             </ul>
         </p>
     </t>
@@ -79,7 +79,7 @@
             <t t-if="context.journal_id">
                 <button class="button_back_to_statement btn btn-secondary" t-att-data_journal_id='context.journal_id'>Go to bank statement(s)</button>
             </t>
-            <t t-if="context['active_model'] === 'account.bank.statement'">
+            <t t-if="bank_statement_id">
                 <button class="button_close_statement btn btn-primary" style="display: inline-block;">Close statement</button>
             </t>
         </p>

@@ -18,28 +18,25 @@
 # Luigi Di Naro <gigidn@gmail.com>, 2019
 # Paolo Valier, 2019
 # Cécile Collart <cco@odoo.com>, 2019
-# mymage <stefano.consolaro@mymage.it>, 2019
-# Luigia Cimmino Caserta <lcc@odoo.com>, 2019
-# Davide Speranza <dsp@odoo.com>, 2019
+# Stefano Consolaro <stefano.consolaro@mymage.it>, 2019
 # Martin Trigaux, 2019
 # Léonie Bouchat <lbo@odoo.com>, 2019
-# Simone Sanfilippo <s.sanfilippo@hinge16.eu>, 2019
 # Mario Riva <mario.riva@gmail.com>, 2020
-# Sergio Zanchetta <primes2h@gmail.com>, 2020
+# Sergio Zanchetta <primes2h@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:32+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2020\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2022\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__delay_endings_days
@@ -242,8 +239,8 @@ msgid ""
 msgstr ""
 "<div>\n"
 "    Spett.le ${object.partner_id.name or 'customer'},<br/>\n"
-"    La ringraziamo per la sua richiesta.<br/>\n"
-"    Per qualsiasi altra domanda, non esiti a contattarci.\n"
+"    La ringraziamo per la Sua richiesta.<br/>\n"
+"    Per qualsiasi domanda, non esiti a contattarci.\n"
 "    <br/><br/>\n"
 "    Grazie,\n"
 "    <br/>\n"
@@ -303,17 +300,6 @@ msgstr "<i class=\"fa fa-smile-o\"/> Ancora nessuna valutazione"
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
-"                        Documents are attached to the tasks of your project.</p><p>\n"
-"                        Send messages or log internal notes with attachments to link\n"
-"                        documents to your project.\n"
-"                    </p>"
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid ""
-"<p class=\"o_view_nocontent_smiling_face\">\n"
 "                    Create a new project</p>"
 msgstr ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
@@ -344,7 +330,7 @@ msgstr "<span class=\"fa fa-tasks\" role=\"img\" aria-label=\"Tasks\" title=\"La
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "<span class=\"o_label\">Profitability</span>"
-msgstr ""
+msgstr "<span class=\"o_label\">Redditività</span>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
@@ -436,7 +422,7 @@ msgstr "Attività"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Eccezione"
+msgstr "Decorazione eccezione attività"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_state
@@ -521,8 +507,8 @@ msgstr "Tutti i lavori"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__employees
-msgid "All employees"
-msgstr "Tutti i dipendenti"
+msgid "All internal users"
+msgstr "Tutti gli utenti interni"
 
 #. module: project
 #. openerp-web
@@ -543,6 +529,9 @@ msgid ""
 "Analytic account to which this project is linked for financial management. "
 "Use an analytic account to record cost and revenue on your project."
 msgstr ""
+"Conto analitico al quale è collegato il progetto per la gestione "
+"finanziaria. Usare un conto analitico per registrare i costi e i ricavi nel "
+"progetto."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -550,7 +539,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.view_task_form2
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Archived"
-msgstr "Archiviato"
+msgstr "In archivio"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_form2
@@ -613,12 +602,6 @@ msgstr "Numero allegati"
 #: model:ir.model.fields,help:project.field_project_task__attachment_ids
 msgid "Attachment that don't come from message."
 msgstr "Allegato che non proviene da un messaggio."
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "Attachments"
-msgstr "Allegati"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__auto_validation_kanban_state
@@ -842,7 +825,7 @@ msgstr "Contatto"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Copywriting"
-msgstr "Stesura"
+msgstr "Stesura testi"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__displayed_image_id
@@ -918,12 +901,12 @@ msgstr "Valuta"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_tasks
 msgid "Current stage of the task"
-msgstr "Fase corrente del lavoro"
+msgstr "Fase attuale del lavoro"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
 msgid "Current stage of this task"
-msgstr "Fase corrente di questo lavoro"
+msgstr "Fase attuale di questo lavoro"
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -1038,11 +1021,17 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__privacy_visibility
 msgid ""
-"Defines the visibility of the tasks of the project:\n"
-"- Invited employees: employees may only see the followed project and tasks.\n"
-"- All employees: employees may see all project and tasks.\n"
-"- Portal users and all employees: employees may see everything.   Portal users may see project and tasks followed by.\n"
-"   them or by someone of their company."
+"People to whom this project and its tasks will be visible.\n"
+"\n"
+"- Invited internal users: when following a project, internal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+" A user with the project > administrator access right level can still access this project and its tasks, even if they are not explicitly part of the followers.\n"
+"\n"
+"- All internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"\n"
+"- Invited portal users and all internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"When following a project, portal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+"\n"
+"In any case, an internal user with no project access rights can still access a task, provided that they are given the corresponding URL (and that they are part of the followers if the project is private)."
 msgstr ""
 
 #. module: project
@@ -1109,7 +1098,9 @@ msgstr "Nome visualizzato"
 #: code:addons/project/models/digest.py:0
 #, python-format
 msgid "Do not have access, skip this data for user's digest email"
-msgstr "Non hai accesso, salta questi dati per l'e-mail digest dell'utente"
+msgstr ""
+"Accesso non consentito, saltare questi dati nell'e-mail di riepilogo "
+"dell'utente"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1185,7 +1176,7 @@ msgstr "Modello e-mail"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__email_cc
 msgid "Email cc"
-msgstr "Email cc"
+msgstr "CC e-mail"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1209,7 +1200,7 @@ msgstr "Errore, impossibile creare gerarchie ricorsive nei lavori."
 msgid "Error! project start-date must be lower than project end-date."
 msgstr ""
 "Errore! La data di inizio del progetto deve essere antecedente alla data di "
-"chiusura."
+"fine."
 
 #. module: project
 #. openerp-web
@@ -1322,7 +1313,7 @@ msgstr "GTD"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
 msgid "Get customer feedback"
-msgstr ""
+msgstr "Ricezione riscontri dai clienti"
 
 #. module: project
 #. openerp-web
@@ -1436,7 +1427,7 @@ msgid ""
 "ID of the parent record holding the alias (example: project holding the task"
 " creation alias)"
 msgstr ""
-"ID del record principale contenente l’alias (esempio: progetto che contiene "
+"ID del record primario contenente l’alias (esempio: progetto che contiene "
 "l’alias di creazione del lavoro)"
 
 #. module: project
@@ -1447,7 +1438,7 @@ msgstr "Icona"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Icona per indicare un'attività eccezione."
 
 #. module: project
 #. openerp-web
@@ -1498,8 +1489,8 @@ msgid ""
 "If the active field is set to False, it will allow you to hide the project "
 "without removing it."
 msgstr ""
-"Se il campo attivo è impostato a «Falso», consente di nascondere il progetto"
-" senza rimuoverlo."
+"Se il campo attivo è impostato a falso, consente di nascondere il progetto "
+"senza rimuoverlo."
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__priority__1
@@ -1582,8 +1573,8 @@ msgstr ""
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__followers
-msgid "Invited employees"
-msgstr "Dipendenti invitati"
+msgid "Invited internal users"
+msgstr "Utenti interni invitati"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__message_is_follower
@@ -1635,12 +1626,12 @@ msgstr "Descrizione kanban pronto"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_digest_digest__kpi_project_task_opened_value
 msgid "Kpi Project Task Opened Value"
-msgstr ""
+msgstr "KPI - Valore lavori aperti progetto"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__label_tasks
 msgid "Label used for the tasks of the project."
-msgstr ""
+msgstr "Etichetta usata per i lavori del progetto."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_project_rating_page
@@ -1702,7 +1693,7 @@ msgstr "Ultimo aggiornamento il"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Late Activities"
-msgstr "Ultime attività"
+msgstr "Attività in ritardo"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
@@ -1897,7 +1888,7 @@ msgstr ""
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Newest"
-msgstr "I più recenti"
+msgstr "Più recenti"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_task_view_tree_activity
@@ -2197,8 +2188,8 @@ msgstr "URL di accesso al portale"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
-msgid "Portal users and all employees"
-msgstr ""
+msgid "Invited portal users and all internal users"
+msgstr "Utenti portale invitati e tutti gli utenti interni"
 
 #. module: project
 #. openerp-web
@@ -2237,7 +2228,7 @@ msgstr "Progetto"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_account_analytic_account__project_count
 msgid "Project Count"
-msgstr "Totale progetti"
+msgstr "Numero progetti"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__user_id
@@ -2282,6 +2273,8 @@ msgid ""
 "Project in which sub-tasks of the current project will be created. It can be"
 " the current project itself."
 msgstr ""
+"Progetto nel quale verranno creati i sottolavori del progetto attuale. Può "
+"essere il progetto attuale stesso."
 
 #. module: project
 #: model:ir.actions.act_window,name:project.dblc_proj
@@ -2382,7 +2375,7 @@ msgstr "Scadenza richiesta di valutazione"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__rating_percentage_satisfaction
 msgid "Rating Satisfaction"
-msgstr ""
+msgstr "Valutazione soddisfazione"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_count
@@ -2806,7 +2799,7 @@ msgstr "Lavoro creato"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_res_config_settings__module_hr_timesheet
 msgid "Task Logs"
-msgstr "Registri lavoro"
+msgstr "Registro lavori"
 
 #. module: project
 #: model:ir.filters,name:project.filter_task_report_task_pipe
@@ -2883,6 +2876,9 @@ msgstr "Lavoro pronto per prossima fase"
 #: model_terms:ir.ui.view,arch_db:project.view_task_partner_info_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_tree2
+#: model:project.project,label_tasks:project.project_project_1
+#: model:project.project,label_tasks:project.project_project_2
+#: model:project.project,label_tasks:project.project_project_data
 msgid "Tasks"
 msgstr "Lavori"
 
@@ -2957,12 +2953,6 @@ msgstr ""
 #. module: project
 #: code:addons/project/models/project.py:0
 #, python-format
-msgid "The parent task belongs to a company you do not have access to."
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
 msgid ""
 "The project cannot be shared with the recipient(s) because the privacy of "
 "the project is too restricted. Set the privacy to 'Visible by following "
@@ -2971,12 +2961,6 @@ msgstr ""
 "Il progetto non può essere condiviso con i destinatari a causa delle "
 "impostazioni di privacy. Impostare il progetto a \"Visibile dai clienti "
 "follower\" per renderlo accessibile ai destinatari."
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "The subtasks belong to a company you do not have access to."
-msgstr ""
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -3132,7 +3116,7 @@ msgstr "Bimestrale"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Tipo di attività eccezione sul record."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
@@ -3310,6 +3294,16 @@ msgid ""
 msgstr ""
 "Inoltre è possibile aggiungere una descrizione per aiutare i colleghi a "
 "capire il significato e lo scopo della fase. "
+
+#. module: project
+#: code:addons/project/models/analytic_account.py:0
+#, python-format
+msgid ""
+"You cannot change the company of an analytical account if it is related to a"
+" project."
+msgstr ""
+"Impossibile cambiare l'azienda di un conto analitico se è collegato a un "
+"progetto."
 
 #. module: project
 #: code:addons/project/models/project.py:0

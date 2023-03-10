@@ -5,14 +5,15 @@
 # Translators:
 # Martin Trigaux, 2019
 # trendspotter <j.podhorecky@volny.cz>, 2020
+# Rastislav Brencic <rastislav.brencic@azet.sk>, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~12.5\n"
+"Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-09 12:16+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-09-09 12:33+0000\n"
-"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2020\n"
+"Last-Translator: Rastislav Brencic <rastislav.brencic@azet.sk>, 2020\n"
 "Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +22,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #. module: pos_adyen
-#: model:ir.model.fields.selection,name:pos_adyen.selection__pos_payment_method__use_payment_terminal__adyen
 #: model_terms:ir.ui.view,arch_db:pos_adyen.pos_config_view_form
 msgid "Adyen"
 msgstr "Adyen"
@@ -104,17 +104,12 @@ msgstr "Nastavení prodejního místa"
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_pos_payment_method
 msgid "Point of Sale Payment Methods"
-msgstr "Platební metody v místě prodeje"
+msgstr "Platební podmíky v místě prodeje"
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_config__adyen_ask_customer_for_tip
 msgid "Prompt the customer to tip."
 msgstr "Vyzvěte zákazníka ke spropitnému."
-
-#. module: pos_adyen
-#: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__use_payment_terminal
-msgid "Record payments with a terminal on this journal."
-msgstr "V tomto deníku zaznamenávejte platby pomocí terminálu."
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_test_mode
@@ -151,11 +146,6 @@ msgid ""
 msgstr ""
 "Připojení k vašemu platebnímu terminálu se nezdařilo. Zkontrolujte, zda je "
 "stále připojen k internetu."
-
-#. module: pos_adyen
-#: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__use_payment_terminal
-msgid "Use a Payment Terminal"
-msgstr "Použijte platební terminál"
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_api_key

@@ -17,14 +17,19 @@
 # Ryanto The <ry.the77@gmail.com>, 2019
 # Ikhsanul Wirsa <iwirsa02@outlook.co.id>, 2019
 # PAS IRVANUS <ipankbiz@gmail.com>, 2019
+# Gradien Foundation <gradien.co@gmail.com>, 2020
+# whenwesober, 2020
+# Abdul Munif Hanafi <amunifhanafi@gmail.com>, 2021
+# arfa simoncelli, 2022
+# Abe Manyo, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 14:57+0000\n"
+"POT-Creation-Date: 2020-04-27 09:22+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: PAS IRVANUS <ipankbiz@gmail.com>, 2019\n"
+"Last-Translator: Abe Manyo, 2023\n"
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -529,7 +534,7 @@ msgstr "<strong>Penjual:</strong>"
 #: model_terms:ir.ui.view,arch_db:sale.report_invoice_document_inherit_sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Shipping Address:</strong>"
-msgstr ""
+msgstr "<strong>Alamat pengiriman:</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -694,7 +699,7 @@ msgstr "Aktivitas"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Activity Exception Decoration"
+msgstr "Dekorasi Pengecualian Aktivitas"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__activity_state
@@ -823,7 +828,7 @@ msgstr "Pada modal"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_attachment_count
 msgid "Attachment Count"
-msgstr "Attachment Count"
+msgstr "Hitungan Lampiran"
 
 #. module: sale
 #: model:ir.model,name:sale.model_product_attribute_value
@@ -1180,7 +1185,7 @@ msgstr "Pelanggan"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__auth_signup_uninvited
 msgid "Customer Account"
-msgstr ""
+msgstr "Akun Pelanggan"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__group_sale_delivery_address
@@ -1191,7 +1196,7 @@ msgstr "Alamat Pelanggan"
 #: model:ir.model.fields,field_description:sale.field_sale_report__country_id
 #: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
 msgid "Customer Country"
-msgstr ""
+msgstr "Negara Pelanggan"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report__commercial_partner_id
@@ -1248,8 +1253,8 @@ msgstr ""
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_dhl
-msgid "DHL Connector"
-msgstr ""
+msgid "DHL Express Connector"
+msgstr "DHL Express Connector"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
@@ -1605,7 +1610,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__res_config_settings__auth_signup_uninvited__b2c
 msgid "Free sign up"
-msgstr ""
+msgstr "Pendaftaran gratis"
 
 #. module: sale
 #: model_terms:ir.actions.act_window,help:sale.action_account_invoice_report_salesteam
@@ -1643,7 +1648,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid ""
 "Generate the invoice automatically when the online payment is confirmed"
-msgstr ""
+msgstr "Buat faktur secara otomatis saat pembayaran online sudah dikonfirmasi"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -1710,19 +1715,19 @@ msgstr "Ikon"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icon to indicate an exception activity."
+msgstr "Ikon untuk menunjukkan sebuah aktivitas pengecualian."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_needaction
 #: model:ir.model.fields,help:sale.field_sale_order__message_unread
 msgid "If checked, new messages require your attention."
-msgstr "Jika dicentang pesan-pesan baru membutuhkan penanganan lebih lanjut."
+msgstr "Jika dicentang, pesan baru memerlukan penanganan dan perhatian Anda."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_has_error
 #: model:ir.model.fields,help:sale.field_sale_order__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan mempunyai kesalahan dalam pengiriman."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_auto_done_setting
@@ -1751,18 +1756,12 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Import Amazon orders and sync deliveries"
-msgstr ""
+msgstr "Import pemesanan Amazon dan selaraskan pengiriman"
 
 #. module: sale
 #: code:addons/sale/models/product_template.py:0
 #, python-format
 msgid "Import Template for Products"
-msgstr ""
-
-#. module: sale
-#: code:addons/sale/models/product_template.py:0
-#, python-format
-msgid "Import Template for Products (with several prices)"
 msgstr ""
 
 #. module: sale
@@ -1990,7 +1989,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model,name:sale.model_account_move
 msgid "Journal Entries"
-msgstr "Ayat Jurnal"
+msgstr "Entri Jurnal"
 
 #. module: sale
 #: model:ir.model,name:sale.model_account_move_line
@@ -2082,7 +2081,7 @@ msgstr "Looks great!"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Main Attachment"
+msgstr "Lampiran Utama"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -2122,8 +2121,12 @@ msgid "Margins"
 msgstr "Margin"
 
 #. module: sale
+#: model:ir.actions.server,name:sale.model_sale_order_action_quotation_sent
+msgid "Mark Quotation as Sent"
+msgstr ""
+
+#. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.account_invoice_form
-#: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "Marketing"
 msgstr "Pemasaran"
 
@@ -2148,7 +2151,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_has_error
 msgid "Message Delivery error"
-msgstr "Message Delivery error"
+msgstr "Pengiriman Pesan terjadi kesalahan"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_partner__sale_warn_msg
@@ -2302,7 +2305,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_has_error_counter
 msgid "Number of errors"
-msgstr "Number of errors"
+msgstr "Jumlah kesalahan"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_needaction_counter
@@ -2312,7 +2315,7 @@ msgstr "Jumlah pesan yang butuh tindakan"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Number of messages with delivery error"
+msgstr "Jumlah dari pesan dengan kesalahan pengiriman"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_crm_team__quotations_count
@@ -2332,7 +2335,7 @@ msgstr "Jumlah pesan yang belum dibaca"
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__res_config_settings__auth_signup_uninvited__b2b
 msgid "On invitation"
-msgstr ""
+msgstr "atas undangan"
 
 #. module: sale
 #: model_terms:ir.actions.act_window,help:sale.act_res_partner_2_sale_order
@@ -2384,6 +2387,12 @@ msgstr ""
 #, python-format
 msgid "Only Integer Value should be valid."
 msgstr "Hanya Bilangan Bulat yang sah."
+
+#. module: sale
+#: code:addons/sale/models/sale.py:0
+#, python-format
+msgid "Only draft orders can be marked as sent directly."
+msgstr ""
 
 #. module: sale
 #: model:ir.model.constraint,message:sale.constraint_product_attribute_custom_value_sol_custom_value_unique
@@ -2507,7 +2516,7 @@ msgstr "Order siap Difakturkan"
 #: model:ir.actions.act_window,name:sale.action_orders_upselling
 #: model:ir.ui.menu,name:sale.menu_sale_order_upselling
 msgid "Orders to Upsell"
-msgstr "Order Penjualan untuk Di-upsell"
+msgstr "Order Penjualan untuk Upsell"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
@@ -3009,7 +3018,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale.utm_campaign_view_form
 #: model_terms:ir.ui.view,arch_db:sale.utm_campaign_view_kanban
 msgid "Revenues"
-msgstr ""
+msgstr "Pendapatan"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_utm_campaign__invoiced_amount
@@ -3019,7 +3028,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr "SMS Delivery error"
+msgstr "Kesalahan Pengiriman SMS"
 
 #. module: sale
 #. openerp-web
@@ -3097,7 +3106,7 @@ msgstr "Analisa Penjualan"
 #. module: sale
 #: model:ir.model,name:sale.model_sale_report
 msgid "Sales Analysis Report"
-msgstr ""
+msgstr "Analisis Laporan Sales"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_report__state__done
@@ -3471,7 +3480,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale.field_product_product__sales_count
 #: model:ir.model.fields,field_description:sale.field_product_template__sales_count
 msgid "Sold"
-msgstr ""
+msgstr "Dijual"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.product_form_view_sale_order_button
@@ -3668,6 +3677,7 @@ msgstr ""
 
 #. module: sale
 #: code:addons/sale/models/product_template.py:0
+#, python-format
 msgid ""
 "The following products cannot be restricted to the company %s because they have already been used in quotations or sales orders in another company:\n"
 "%s\n"
@@ -3889,6 +3899,9 @@ msgid ""
 "list view and click on 'Portal Access Management' option in the dropdown "
 "menu *Action*."
 msgstr ""
+"Untuk mengirim undangan dalam mode B2B, buka kontak atau pilih beberapa "
+"kontak dalam tampilan daftar dan klik opsi 'Portal Access Management' di "
+"menu tarik-turun *Tindakan*."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_filter
@@ -3947,7 +3960,7 @@ msgstr "Type Name"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Type of the exception activity on record."
+msgstr "Jenis dari aktivitas pengecualian pada rekaman data."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_ups
@@ -3962,13 +3975,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model,name:sale.model_utm_campaign
 msgid "UTM Campaign"
-msgstr ""
-
-#. module: sale
-#: code:addons/sale/models/sale.py:0
-#, python-format
-msgid "Uncategorized"
-msgstr "Tidak Berkategori"
+msgstr "Kampanye UTM"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__price_unit
@@ -3996,7 +4003,7 @@ msgstr "Satuan"
 #: model:product.template,uom_name:sale.advance_product_0_product_template
 #: model:product.template,uom_name:sale.product_product_4e_product_template
 msgid "Units"
-msgstr ""
+msgstr "Unit"
 
 #. module: sale
 #: model:ir.ui.menu,name:sale.menu_product_uom_form_action
@@ -4068,7 +4075,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:sale.selection__sale_order__invoice_status__upselling
 #: model:ir.model.fields.selection,name:sale.selection__sale_order_line__invoice_status__upselling
 msgid "Upselling Opportunity"
-msgstr "Kesempatan Upsell"
+msgstr "Peluang Penjualan Upsell"
 
 #. module: sale
 #. openerp-web
@@ -4203,6 +4210,15 @@ msgid ""
 msgstr ""
 
 #. module: sale
+#: code:addons/sale/models/product_product.py:0
+#: code:addons/sale/models/product_template.py:0
+#, python-format
+msgid ""
+"You cannot change the product's type because it is already used in sales "
+"orders."
+msgstr ""
+
+#. module: sale
 #: code:addons/sale/models/sale.py:0
 #, python-format
 msgid ""
@@ -4295,15 +4311,4 @@ msgstr ""
 #: code:addons/sale/static/src/xml/account_reconciliation.xml:0
 #, python-format
 msgid "uninvoiced sales orders"
-msgstr ""
-
-#. module: sale
-#: model:ir.actions.server,name:sale.model_sale_order_action_quotation_sent
-msgid "Mark Quotation as Sent"
-msgstr ""
-
-#. module: sale
-#: code:addons/sale/models/sale.py:0
-#, python-format
-msgid "Only draft orders can be marked as sent directly."
 msgstr ""

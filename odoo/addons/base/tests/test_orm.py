@@ -3,6 +3,8 @@
 
 from collections import defaultdict
 
+import psycopg2
+
 from odoo.exceptions import AccessError, MissingError
 from odoo.tests.common import TransactionCase
 from odoo.tools import mute_logger
@@ -34,6 +36,24 @@ class TestORM(TransactionCase):
 
         # Deleting an already deleted record should be simply ignored
         self.assertTrue(p1.unlink(), "Re-deleting should be a no-op")
+
+    @mute_logger('odoo.models')
+    def test_access_partial_deletion(self):
+        """ Check accessing a record from a recordset where another record has been deleted. """
+        Model = self.env['res.country']
+        self.assertTrue(type(Model).display_name.automatic, "test assumption not satisfied")
+
+        # access regular field when another record from the same prefetch set has been deleted
+        records = Model.create([{'name': name} for name in ('Foo', 'Bar', 'Baz')])
+        for record in records:
+            record.name
+            record.unlink()
+
+        # access computed field when another record from the same prefetch set has been deleted
+        records = Model.create([{'name': name} for name in ('Foo', 'Bar', 'Baz')])
+        for record in records:
+            record.display_name
+            record.unlink()
 
     @mute_logger('odoo.models', 'odoo.addons.base.models.ir_rule')
     def test_access_filtered_records(self):
@@ -118,6 +138,7 @@ class TestORM(TransactionCase):
         self.assertEqual(len(found), 1)
         self.assertTrue(field in list(found[0]) for field in ['id', 'name', 'display_name', 'email'])
 
+    @mute_logger('odoo.sql_db')
     def test_exists(self):
         partner = self.env['res.partner']
 
@@ -126,9 +147,18 @@ class TestORM(TransactionCase):
         self.assertTrue(recs)
         self.assertEqual(recs.exists(), recs)
 
+        # check that new records exist by convention
+        recs = partner.new({})
+        self.assertTrue(recs.exists())
+
         # check that there is no record with id 0
         recs = partner.browse([0])
         self.assertFalse(recs.exists())
+
+        # check that there is no record with string id
+        recs = partner.browse('xxx')
+        with self.assertRaises(psycopg2.DataError):
+            recs.exists()
 
     def test_groupby_date(self):
         partners_data = dict(

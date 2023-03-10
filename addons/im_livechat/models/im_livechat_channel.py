@@ -4,7 +4,7 @@ import base64
 import random
 import re
 
-from odoo import api, fields, models, modules
+from odoo import api, fields, models, modules, _
 
 
 class ImLivechatChannel(models.Model):
@@ -122,7 +122,7 @@ class ImLivechatChannel(models.Model):
             'anonymous_name': False if user_id else anonymous_name,
             'country_id': country_id,
             'channel_type': 'livechat',
-            'name': ', '.join([visitor_user.display_name if visitor_user else anonymous_name, operator.livechat_username if operator.livechat_username else operator.name]),
+            'name': ' '.join([visitor_user.display_name if visitor_user else anonymous_name, operator.livechat_username if operator.livechat_username else operator.name]),
             'public': 'private',
             'email_send': False,
         }
@@ -214,6 +214,8 @@ class ImLivechatChannel(models.Model):
     def get_livechat_info(self, username='Visitor'):
         self.ensure_one()
 
+        if username == 'Visitor':
+            username = _('Visitor')
         info = {}
         info['available'] = len(self._get_available_users()) > 0
         info['server_url'] = self.env['ir.config_parameter'].sudo().get_param('web.base.url')

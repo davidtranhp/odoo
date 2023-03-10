@@ -4,14 +4,15 @@
 # 
 # Translators:
 # avinashnk94 <avinashnk94@gmail.com>, 2020
+# Niyas Raphy, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-18 11:22+0000\n"
+"POT-Creation-Date: 2020-04-27 09:22+0000\n"
 "PO-Revision-Date: 2019-08-26 09:16+0000\n"
-"Last-Translator: avinashnk94 <avinashnk94@gmail.com>, 2020\n"
+"Last-Translator: Niyas Raphy, 2023\n"
 "Language-Team: Malayalam (https://www.transifex.com/odoo/teams/41243/ml/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,6 +50,14 @@ msgstr ""
 #: code:addons/website_slides/static/src/xml/slide_quiz.xml:0
 #, python-format
 msgid "&times;"
+msgstr ""
+
+#. module: website_slides
+#. openerp-web
+#: code:addons/website_slides/static/src/js/slides_course_slides_list.js:0
+#: code:addons/website_slides/static/src/js/slides_slide_archive.js:0
+#, python-format
+msgid "(empty)"
 msgstr ""
 
 #. module: website_slides
@@ -520,6 +529,7 @@ msgstr ""
 #. module: website_slides
 #. openerp-web
 #: code:addons/website_slides/static/src/js/slides_course_fullscreen_player.js:0
+#: code:addons/website_slides/static/src/js/slides_share.js:0
 #, python-format
 msgid "<strong>Thank you!</strong> Mail has been sent."
 msgstr ""
@@ -1052,8 +1062,13 @@ msgid "Click on \"New\" in the top-right corner to write your first course."
 msgstr ""
 
 #. module: website_slides
+#. openerp-web
+#: code:addons/website_slides/static/src/xml/slide_quiz.xml:0
+#: code:addons/website_slides/static/src/xml/slide_quiz.xml:0
+#: code:addons/website_slides/static/src/xml/website_slides_upload.xml:0
 #: model_terms:ir.ui.view,arch_db:website_slides.course_main
 #: model_terms:ir.ui.view,arch_db:website_slides.lesson_content_quiz
+#, python-format
 msgid "Close"
 msgstr "അടയ്‌ക്കുക"
 
@@ -1414,7 +1429,7 @@ msgstr ""
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_channel_view_kanban
 msgid "Delete"
-msgstr ""
+msgstr "ഇല്ലാതാക്കുക"
 
 #. module: website_slides
 #. openerp-web
@@ -1441,7 +1456,7 @@ msgstr ""
 #: code:addons/website_slides/static/src/xml/website_slides_upload.xml:0
 #, python-format
 msgid "Discard"
-msgstr ""
+msgstr "നിരസിക്കുക"
 
 #. module: website_slides
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_1_4
@@ -1575,6 +1590,16 @@ msgid "Done Count"
 msgstr ""
 
 #. module: website_slides
+#: model_terms:ir.ui.view,arch_db:website_slides.embed_slide
+msgid "Download"
+msgstr "ഡൗൺലോഡ്"
+
+#. module: website_slides
+#: model_terms:ir.ui.view,arch_db:website_slides.embed_slide
+msgid "Download Content"
+msgstr ""
+
+#. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_channel_view_kanban
 msgid "Dropdown menu"
 msgstr ""
@@ -1588,7 +1613,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_slides.view_slide_channel_form
 #, python-format
 msgid "Duration"
-msgstr ""
+msgstr "ദൈർഘ്യം"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_channel_view_kanban
@@ -1891,6 +1916,11 @@ msgstr ""
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_slide__html_content
 msgid "HTML Content"
+msgstr ""
+
+#. module: website_slides
+#: model:ir.model,name:website_slides.model_ir_http
+msgid "HTTP Routing"
 msgstr ""
 
 #. module: website_slides
@@ -2715,6 +2745,14 @@ msgid "Partner"
 msgstr "പങ്കാളി"
 
 #. module: website_slides
+#: code:addons/website_slides/models/slide_slide.py:0
+#, python-format
+msgid ""
+"People already took this quiz. To keep course progression it should not be "
+"deleted."
+msgstr ""
+
+#. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.courses_home
 msgid "Pick a course"
 msgstr ""
@@ -3156,6 +3194,12 @@ msgid "Security Token"
 msgstr "സുരക്ഷാ ടോക്കൺ"
 
 #. module: website_slides
+#: code:addons/website_slides/models/res_users.py:0
+#, python-format
+msgid "See our eLearning"
+msgstr ""
+
+#. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_social_embed
 msgid "Select page to start with"
 msgstr ""
@@ -3380,7 +3424,10 @@ msgid "Start Course"
 msgstr ""
 
 #. module: website_slides
+#. openerp-web
+#: code:addons/website_slides/static/src/xml/channel_management.xml:0
 #: model_terms:ir.ui.view,arch_db:website_slides.course_sidebar
+#, python-format
 msgid "Start Course Channel"
 msgstr ""
 

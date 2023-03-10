@@ -3,15 +3,16 @@
 # 	* web
 # 
 # Translators:
-# Avinash N K <avinashnk94@gmail.com>, 2020
+# avinashnk94 <avinashnk94@gmail.com>, 2020
+# Niyas Raphy, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-25 15:03+0000\n"
+"POT-Creation-Date: 2020-04-27 10:17+0000\n"
 "PO-Revision-Date: 2019-08-26 09:15+0000\n"
-"Last-Translator: Avinash N K <avinashnk94@gmail.com>, 2020\n"
+"Last-Translator: Niyas Raphy, 2023\n"
 "Language-Team: Malayalam (https://www.transifex.com/odoo/teams/41243/ml/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -384,6 +385,7 @@ msgstr ""
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/xml/kanban.xml:0
+#: code:addons/web/static/src/xml/kanban.xml:0
 #, python-format
 msgid "Add column"
 msgstr ""
@@ -552,6 +554,7 @@ msgstr ""
 
 #. module: web
 #. openerp-web
+#: code:addons/web/static/src/js/fields/basic_fields.js:0
 #: code:addons/web/static/src/xml/base.xml:0
 #: code:addons/web/static/src/xml/base.xml:0
 #: code:addons/web/static/src/xml/base.xml:0
@@ -663,7 +666,6 @@ msgstr ""
 
 #. module: web
 #. openerp-web
-#: code:addons/web/static/src/xml/base.xml:0
 #: code:addons/web/static/src/xml/kanban.xml:0
 #: code:addons/web/static/src/xml/kanban.xml:0
 #: code:addons/web/static/src/xml/web_calendar.xml:0
@@ -785,6 +787,13 @@ msgstr ""
 
 #. module: web
 #. openerp-web
+#: code:addons/web/static/src/xml/web_calendar.xml:0
+#, python-format
+msgid "Calendar toolbar"
+msgstr ""
+
+#. module: web
+#. openerp-web
 #: code:addons/web/static/src/js/views/calendar/calendar_view.js:0
 #, python-format
 msgid "Calendar view has not defined 'date_start' attribute."
@@ -794,6 +803,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/js/core/dialog.js:0
 #: code:addons/web/static/src/js/core/dialog.js:0
+#: code:addons/web/static/src/js/fields/basic_fields.js:0
 #: code:addons/web/static/src/js/fields/relational_fields.js:0
 #: code:addons/web/static/src/js/fields/signature.js:0
 #: code:addons/web/static/src/js/fields/upgrade_fields.js:0
@@ -836,6 +846,14 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:0
 #, python-format
 msgid "Change default:"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "Change graph"
 msgstr ""
 
 #. module: web
@@ -890,6 +908,9 @@ msgstr ""
 #: code:addons/web/static/src/js/widgets/data_export.js:0
 #: code:addons/web/static/src/js/widgets/domain_selector_dialog.js:0
 #: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/dialog.xml:0
+#: code:addons/web/static/src/xml/notification.xml:0
 #, python-format
 msgid "Close"
 msgstr "അടയ്‌ക്കുക"
@@ -907,6 +928,11 @@ msgstr ""
 #, python-format
 msgid "Column title"
 msgstr ""
+
+#. module: web
+#: model:ir.model,name:web.model_res_company
+msgid "Companies"
+msgstr "കമ്പനികൾ"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.frontend_layout
@@ -977,6 +1003,14 @@ msgstr ""
 #: code:addons/web/static/src/xml/menu.xml:0
 #, python-format
 msgid "Control"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "Control panel toolbar"
 msgstr ""
 
 #. module: web
@@ -1228,7 +1262,7 @@ msgstr ""
 #: code:addons/web/static/src/xml/web_calendar.xml:0
 #, python-format
 msgid "Delete"
-msgstr ""
+msgstr "ഇല്ലാതാക്കുക"
 
 #. module: web
 #. openerp-web
@@ -1270,7 +1304,7 @@ msgstr "വിവരണം"
 #: code:addons/web/static/src/xml/kanban.xml:0
 #, python-format
 msgid "Discard"
-msgstr ""
+msgstr "നിരസിക്കുക"
 
 #. module: web
 #. openerp-web
@@ -1319,6 +1353,13 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:0
 #, python-format
+msgid "Domain node"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
 msgid "Domain:"
 msgstr ""
 
@@ -1328,6 +1369,13 @@ msgstr ""
 #, python-format
 msgid "Don't leave yet,<br />it's still loading..."
 msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "Download"
+msgstr "ഡൗൺലോഡ്"
 
 #. module: web
 #. openerp-web
@@ -2102,6 +2150,17 @@ msgstr ""
 
 #. module: web
 #. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "Main actions"
+msgstr ""
+
+#. module: web
+#. openerp-web
 #: code:addons/web/static/src/js/tools/debug_manager_backend.js:0
 #: code:addons/web/static/src/xml/debug.xml:0
 #, python-format
@@ -2589,6 +2648,20 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/debug.xml:0
 #, python-format
+msgid "Open Developer Tools"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/debug.xml:0
+#, python-format
+msgid "Open Developer Tools#{widget.debug_mode_help}"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/debug.xml:0
+#, python-format
 msgid "Open View"
 msgstr ""
 
@@ -2633,6 +2706,13 @@ msgstr ""
 
 #. module: web
 #. openerp-web
+#: code:addons/web/static/src/js/views/list/list_renderer.js:0
+#, python-format
+msgid "Optional columns"
+msgstr ""
+
+#. module: web
+#. openerp-web
 #: code:addons/web/static/src/js/views/kanban/kanban_record.js:0
 #: code:addons/web/static/src/xml/base.xml:0
 #: code:addons/web/static/src/xml/kanban.xml:0
@@ -2655,6 +2735,13 @@ msgid "PDF Viewer"
 msgstr ""
 
 #. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "PDF controls"
+msgstr ""
+
+#. module: web
 #: model_terms:ir.ui.view,arch_db:web.external_layout_background
 msgid ""
 "Page:\n"
@@ -2667,6 +2754,14 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:web.external_layout_boxed
 #: model_terms:ir.ui.view,arch_db:web.external_layout_standard
 msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "Pager"
 msgstr ""
 
 #. module: web
@@ -2737,6 +2832,13 @@ msgstr ""
 #: code:addons/web/static/src/js/views/pivot/pivot_view.js:0
 #, python-format
 msgid "Pivot"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "Pivot settings"
 msgstr ""
 
 #. module: web
@@ -3427,6 +3529,13 @@ msgstr ""
 
 #. module: web
 #. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "Switch to this company"
+msgstr ""
+
+#. module: web
+#. openerp-web
 #: code:addons/web/static/src/js/widgets/domain_selector.js:0
 #, python-format
 msgid "Syntax error"
@@ -3444,13 +3553,6 @@ msgstr "ടാഗുകൾ"
 #: code:addons/web/static/src/js/core/misc.js:0
 #, python-format
 msgid "Take a minute to get a coffee,<br />because it's loading..."
-msgstr ""
-
-#. module: web
-#. openerp-web
-#: code:addons/web/static/src/xml/base.xml:0
-#, python-format
-msgid "Tap on the list to change company"
 msgstr ""
 
 #. module: web
@@ -3948,6 +4050,13 @@ msgstr ""
 
 #. module: web
 #. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "User"
+msgstr "ഉപയോക്താവ്"
+
+#. module: web
+#. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:0
 #, python-format
 msgid "User Error"
@@ -3992,6 +4101,13 @@ msgstr ""
 #. module: web
 #: model:ir.model.fields,field_description:web.field_ir_actions_act_window_view__view_mode
 msgid "View Type"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "View switcher"
 msgstr ""
 
 #. module: web
@@ -4563,6 +4679,13 @@ msgstr ""
 #, python-format
 msgid "remaining)"
 msgstr "ശേഷിക്കുന്നു)"
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/xml/base.xml:0
+#, python-format
+msgid "search"
+msgstr ""
 
 #. module: web
 #. openerp-web

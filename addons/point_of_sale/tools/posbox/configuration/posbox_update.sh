@@ -2,6 +2,8 @@
 
 sudo mount -o remount,rw /
 
+sudo service led-status stop
+
 cd /home/pi/odoo
 localbranch=$(git symbolic-ref -q --short HEAD)
 localremote=$(git config branch.$localbranch.remote)
@@ -11,7 +13,7 @@ echo "addons/point_of_sale/tools/posbox/overwrite_after_init/home/pi/odoo" >> .g
 git fetch "${localremote}" "${localbranch}" --depth=1
 git reset "${localremote}"/"${localbranch}" --hard
 
-git clean -df
+git clean -dfx
 cp -a /home/pi/odoo/addons/point_of_sale/tools/posbox/overwrite_after_init/home/pi/odoo/* /home/pi/odoo/
 rm -r /home/pi/odoo/addons/point_of_sale/tools/posbox/overwrite_after_init
 
@@ -25,4 +27,7 @@ done
 
 sudo mount -o remount,ro /
 sudo mount -o remount,rw /root_bypass_ramdisks/etc/cups
+
+sudo service led-status start
+
 (sleep 5 && sudo service odoo restart) &

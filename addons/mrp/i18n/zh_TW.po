@@ -9,6 +9,9 @@
 # bluce Lan <bluce.lan@gmail.com>, 2019
 # Martin Trigaux, 2019
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2020
+# zhengwei wu <wzw15199@gmail.com>, 2020
+# Jack N <j.a.ckqueli.neb.a.net.mp@gmail.com>, 2021
+# Benson <Benson.Dr@Gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
@@ -16,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 12:32+0000\n"
 "PO-Revision-Date: 2019-08-26 09:12+0000\n"
-"Last-Translator: 敬雲 林 <chingyun@yuanchih-consult.com>, 2020\n"
+"Last-Translator: Benson <Benson.Dr@Gmail.com>, 2023\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -359,6 +362,13 @@ msgid "A Manufacturing Order is already done or cancelled."
 msgstr "生產單已經完成或者被取消."
 
 #. module: mrp
+#: code:addons/mrp/models/stock_warehouse.py:0
+#, python-format
+msgid ""
+"A product with a kit-type bill of materials can not have a reordering rule."
+msgstr "具有套件類型物料清單的產品不能有重新訂購規則."
+
+#. module: mrp
 #: code:addons/mrp/models/mrp_workcenter.py:0
 #, python-format
 msgid "A workcenter cannot be an alternative of itself"
@@ -529,6 +539,15 @@ msgstr "批准"
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_workcenter_search
 msgid "Archived"
 msgstr "封存"
+
+#. module: mrp
+#: code:addons/mrp/models/mrp_production.py:0
+#, python-format
+msgid ""
+"At least one work order has a quantity produced lower than the quantity "
+"produced in the manufacturing order. You must complete the work orders "
+"before posting the inventory."
+msgstr "至少一個工單已生產數量低於製造訂單已生產數量.在庫存過帳前，務必先完成工單."
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_bom_form_view
@@ -1854,6 +1873,14 @@ msgid "It has already been unblocked."
 msgstr "已經解除阻塞"
 
 #. module: mrp
+#: code:addons/mrp/models/mrp_workorder.py:0
+#, python-format
+msgid ""
+"It is not possible to unplan one single Work Order. You should unplan the "
+"Manufacturing Order instead in order to unplan all the linked operations."
+msgstr "不可能取消計劃一個單一的工單. 您應該取消計劃製造訂單,而不是取消計劃所有鏈接的製程."
+
+#. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_bom__type__phantom
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_bom_filter
 msgid "Kit"
@@ -2783,13 +2810,13 @@ msgstr "請設定您正在生產的數量。 它不能為零。"
 #: model:product.product,name:mrp.product_product_wood_ply
 #: model:product.template,name:mrp.product_product_wood_ply_product_template
 msgid "Ply Layer"
-msgstr ""
+msgstr "板層"
 
 #. module: mrp
 #: model:product.product,name:mrp.product_product_ply_veneer
 #: model:product.template,name:mrp.product_product_ply_veneer_product_template
 msgid "Ply Veneer"
-msgstr ""
+msgstr "膠合板"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__possible_bom_product_template_attribute_value_ids
@@ -2805,13 +2832,13 @@ msgstr "庫存過帳"
 #: code:addons/mrp/models/stock_warehouse.py:0
 #, python-format
 msgid "Post-Production"
-msgstr "生產前"
+msgstr "生產後"
 
 #. module: mrp
 #: code:addons/mrp/models/stock_warehouse.py:0
 #, python-format
 msgid "Pre-Production"
-msgstr "生產後"
+msgstr "生產前"
 
 #. module: mrp
 #. openerp-web
@@ -2856,7 +2883,7 @@ msgstr "補貨組"
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_product_produce_wizard
 #, python-format
 msgid "Produce"
-msgstr "產品"
+msgstr "生產"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_stock_warehouse__manufacture_steps
@@ -3696,7 +3723,7 @@ msgstr "存儲的文件名"
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_product_produce__consumption__strict
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_workorder__consumption__strict
 msgid "Strict"
-msgstr ""
+msgstr "嚴格的"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_bom_form_view
@@ -3862,6 +3889,15 @@ msgid ""
 msgstr "工作訂單的計畫結束日期不能早于計畫開始日期，請更正此日期以保存工作訂單。"
 
 #. module: mrp
+#: code:addons/mrp/models/mrp_bom.py:0
+#, python-format
+msgid ""
+"The product has already been used at least once, editing its structure may "
+"lead to undesirable behaviours. You should rather archive the product and "
+"create a new one with a new bill of materials."
+msgstr "該產品已經至少使用過一次, 編輯其結構可能會導致不良效果. 您應該歸檔產品並使用新的材料清單建立一個新產品."
+
+#. module: mrp
 #: code:addons/mrp/wizard/mrp_product_produce.py:0
 #, python-format
 msgid "The production order for '%s' has no quantity specified."
@@ -3869,6 +3905,8 @@ msgstr "'%s '的生產訂單沒有指定的數量"
 
 #. module: mrp
 #: model:ir.model.constraint,message:mrp.constraint_mrp_production_qty_positive
+#: code:addons/mrp/models/mrp_bom.py:0
+#, python-format
 msgid "The quantity to produce must be positive!"
 msgstr "待生產的數量必須是正數!"
 
@@ -3889,6 +3927,14 @@ msgid ""
 "create work orders afterwards which alters the execution of the "
 "manufacturing order."
 msgstr "途程包含所有使用的工作中心以及使用的時間。 這將在之後創建工作訂單，這會改變製造訂單的執行。"
+
+#. module: mrp
+#: code:addons/mrp/models/mrp_unbuild.py:0
+#, python-format
+msgid ""
+"The selected serial number does not correspond to the one used in the "
+"manufacturing order, please select another one."
+msgstr ""
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_bom.py:0
@@ -4754,6 +4800,14 @@ msgstr "您不能不知道您消費的是那一個批次"
 #: code:addons/mrp/models/mrp_bom.py:0
 #, python-format
 msgid ""
+"You can not create a kit-type bill of materials for products that have at "
+"least one reordering rule."
+msgstr "您不能為至少具有一個重新訂購規則的產品建立組件類型的物料清單."
+
+#. module: mrp
+#: code:addons/mrp/models/mrp_bom.py:0
+#, python-format
+msgid ""
 "You can not delete a Bill of Material with running manufacturing orders.\n"
 "Please close or cancel it first."
 msgstr ""
@@ -4786,7 +4840,7 @@ msgstr "您不能使用相同的序列號兩次。 請更正編碼的序列號�
 #: code:addons/mrp/models/mrp_bom.py:0
 #, python-format
 msgid "You cannot create a new Bill of Material from here."
-msgstr ""
+msgstr "您無法於此處新建物料清單 (BOM)"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_unbuild.py:0
@@ -4855,6 +4909,14 @@ msgstr "您已在前面的工作訂單中生成了 %s 批 %s。您正在嘗試�
 #, python-format
 msgid "You have to produce at least one %s."
 msgstr "您必須生成至少一個 %s。"
+
+#. module: mrp
+#: code:addons/mrp/models/mrp_production.py:0
+#, python-format
+msgid ""
+"You must indicate a non-zero amount consumed for at least one of your "
+"components"
+msgstr "您必須指明至少一個組件消耗的非零數量"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_workorder.py:0

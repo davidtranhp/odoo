@@ -3,9 +3,7 @@
 # 	* website
 # 
 # Translators:
-# 黎伟杰 <674416404@qq.com>, 2019
-# Rona Lin <ssauapw@qq.com>, 2019
-# Xu Lei <xulei8@qq.com>, 2019
+# Lei Xu <xulei8@qq.com>, 2019
 # Zamba Lee <zambalee@gmail.com>, 2019
 # Gary Wei <Gary.wei@elico-corp.com>, 2019
 # Joray <13637815@qq.com>, 2019
@@ -20,38 +18,38 @@
 # SHOM <shanmuxin@yeah.net>, 2019
 # 老窦 北京 <2662059195@qq.com>, 2019
 # John An <johnxan@163.com>, 2019
+# e2f <projects@e2f.com>, 2019
 # Maie <m@maie.name>, 2019
 # Xia Fajin <xia.fajin@elico-corp.com>, 2019
-# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2019
 # e2f_cn c5 <jarvisn@ecinnovations.com>, 2019
 # bf2549c5415a9287249cba2b8a5823c7, 2019
-# diaojiaolou <124412206@qq.com>, 2019
 # keecome <7017511@qq.com>, 2019
 # Lisa Zhang <lzh@odoo.com>, 2019
 # Jeanphy <hzh0292@qq.com>, 2019
 # Felix Yuen <fyu@odoo.com>, 2019
-# e2f <projects@e2f.com>, 2019
 # fausthuang, 2019
 # inspur qiuguodong <qiuguodong@inspur.com>, 2019
 # Mandy Choy <mnc@odoo.com>, 2019
-# Martin Trigaux, 2019
-# liAnGjiA <liangjia@qq.com>, 2019
 # v2exerer <9010446@qq.com>, 2019
 # 苏州远鼎 <tiexinliu@126.com>, 2019
 # Shane Tsoi <sso@odoo.com>, 2019
 # snow wang <147156565@qq.com>, 2019
 # Manga Tsang <mts@odoo.com>, 2019
-# guohuadeng <guohuadeng@hotmail.com>, 2019
-# Jeffery CHEN Fan <jeffery9@gmail.com>, 2020
-# as co02 <asco02@163.com>, 2020
+# guohuadeng <guohuadeng@hotmail.com>, 2020
+# Jeffery CHEN <jeffery9@gmail.com>, 2020
+# diaojiaolou <124412206@qq.com>, 2020
+# 稀饭~~ <wangwhai@qq.com>, 2020
+# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2022
+# Martin Trigaux, 2022
+# liAnGjiA <liangjia@qq.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 09:46+0000\n"
+"POT-Creation-Date: 2022-01-07 12:31+0000\n"
 "PO-Revision-Date: 2019-08-26 09:15+0000\n"
-"Last-Translator: as co02 <asco02@163.com>, 2020\n"
+"Last-Translator: liAnGjiA <liangjia@qq.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,6 +71,36 @@ msgid "\" alert with a"
 msgstr "’警告带有"
 
 #. module: website
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "\"URL to\" can not be empty."
+msgstr "“链接”不能为空"
+
+#. module: website
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "\"URL to\" cannot contain parameter %s which is not used in \"URL from\"."
+msgstr "“URL to”不能包含“URL from”中未使用的参数 %s。"
+
+#. module: website
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "\"URL to\" is invalid: %s"
+msgstr "\"链接到\"无效: %s"
+
+#. module: website
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "\"URL to\" must contain parameter %s used in \"URL from\"."
+msgstr "“链接到”不能包含“链接从”中未使用的参数 %s。"
+
+#. module: website
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "\"URL to\" must start with a leading slash."
+msgstr "“链接”必须以http://或者https://开头"
+
+#. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__page_count
 msgid "# Visited Pages"
 msgstr "# 已访问页面"
@@ -87,18 +115,7 @@ msgstr "%s (id:%s)"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
 msgid "&amp;times;"
-msgstr "&amp;次数;"
-
-#. module: website
-#: model_terms:ir.ui.view,arch_db:website.sitemap_index_xml
-#: model_terms:ir.ui.view,arch_db:website.sitemap_xml
-msgid "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;"
-msgstr "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;"
-
-#. module: website
-#: model_terms:ir.ui.view,arch_db:website.default_xml
-msgid "&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;"
-msgstr "&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;"
+msgstr "&amp;times;"
 
 #. module: website
 #. openerp-web
@@ -141,11 +158,6 @@ msgid ""
 msgstr ""
 "。\n"
 " 更改它的名称将中断这些调用。"
-
-#. module: website
-#: model_terms:ir.ui.view,arch_db:website.default_csv
-msgid "1,2,3"
-msgstr "1,2,3"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -206,17 +218,17 @@ msgstr "3/5"
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__website_rewrite__redirect_type__301
 msgid "301 Moved permanently"
-msgstr ""
+msgstr "301 永久移动"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__website_rewrite__redirect_type__302
 msgid "302 Moved temporarily"
-msgstr ""
+msgstr "302 临时移动"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__website_rewrite__redirect_type__308
 msgid "308 Redirect / Rewrite"
-msgstr ""
+msgstr "308 重定向 / 重写"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -231,7 +243,7 @@ msgstr "4/5"
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__website_rewrite__redirect_type__404
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 没有找到"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -400,6 +412,15 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid ""
 "<i class=\"fa fa-arrow-right\"/>\n"
+"                                            Enable billing on your Google Project"
+msgstr ""
+"<i class=\"fa fa-arrow-right\"/>\n"
+"                                            在您的谷歌项目上启用计费"
+
+#. module: website
+#: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-arrow-right\"/>\n"
 "                                            How to get my Client ID"
 msgstr ""
 "<i class=\"fa fa-arrow-right\"/>\n"
@@ -427,7 +448,7 @@ msgstr "<i class=\"fa fa-fw fa-align-left\"/> 对齐"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-fw fa-anchor\"/> Link Anchor"
-msgstr "链接锚"
+msgstr "<i class=\"fa fa-fw fa-anchor\"/> 链接锚"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -557,7 +578,7 @@ msgstr "<i class=\"fa fa-fw fa-pencil\"/>风格"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-fw fa-picture-o\"/> Background"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-picture-o\"/> 背景板"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -694,7 +715,7 @@ msgstr "<i title=\"Is the page published?\" class=\"fa fa-eye\"/>"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
 msgid "<i>Instant setup, satisfied or reimbursed.</i>"
-msgstr "<i>即时安装，满意或报销.</i>"
+msgstr "<i>即时安装，满意或退款.</i>"
 
 #. module: website
 #. openerp-web
@@ -905,7 +926,7 @@ msgstr "CDN 帮助您向各地的访客提供高可用性和高性能的网站�
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_image
 msgid "A Section Subtitle"
-msgstr "部分副标题"
+msgstr "章节副标题"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_card
@@ -944,7 +965,7 @@ msgstr "如果最后一次连接时间超过8小时，则会考虑重新访问�
 #. module: website
 #: model:ir.model.constraint,message:website.constraint_website_visitor_partner_uniq
 msgid "A partner is linked to only one visitor."
-msgstr ""
+msgstr "一个伙伴仅与一个访问者链接"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features
@@ -991,7 +1012,7 @@ msgstr "访问令牌"
 #. module: website
 #: model:ir.model.constraint,message:website.constraint_website_visitor_access_token_unique
 msgid "Access token should be unique."
-msgstr ""
+msgstr "访问令牌应该惟一。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -1003,7 +1024,7 @@ msgstr "会计和销售管理"
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Action"
-msgstr "操作"
+msgstr "动作"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__active
@@ -1011,7 +1032,7 @@ msgstr "操作"
 #: model:ir.model.fields,field_description:website.field_website_visitor__active
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_kanban
 msgid "Active"
-msgstr "有效"
+msgstr "启用"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns
@@ -1031,7 +1052,7 @@ msgstr "添加"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
 msgid "Add Features"
-msgstr "增加功能"
+msgstr "添加功能"
 
 #. module: website
 #. openerp-web
@@ -1095,7 +1116,7 @@ msgstr "在检查其在移动端的呈现视图后，<b>请关闭预览。</b>"
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Alert"
-msgstr "警告"
+msgstr "警报"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_company_team
@@ -1116,7 +1137,7 @@ msgstr ""
 #. module: website
 #: model:ir.model,name:website.model_website_route
 msgid "All Website Route"
-msgstr ""
+msgstr "全部网站路由"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features_grid
@@ -1191,7 +1212,7 @@ msgstr "已归档"
 #. module: website
 #: model:ir.model.fields,help:website.field_res_config_settings__specific_user_account
 msgid "Are newly created user accounts website specific"
-msgstr "新建的用户帐户是否符合网站"
+msgstr "新建的用户账户是否符合网站"
 
 #. module: website
 #. openerp-web
@@ -1203,7 +1224,7 @@ msgstr "您确定要删除该页面吗？"
 #. module: website
 #: model:ir.model,name:website.model_web_editor_assets
 msgid "Assets Utils"
-msgstr "资产单位"
+msgstr "资产工具"
 
 #. module: website
 #: model:ir.model,name:website.model_ir_attachment
@@ -1342,7 +1363,7 @@ msgstr "可以发布"
 #: model_terms:ir.ui.view,arch_db:website.qweb_500
 #, python-format
 msgid "Cancel"
-msgstr "取消日期"
+msgstr "取消"
 
 #. module: website
 #: code:addons/website/models/res_lang.py:0
@@ -1398,6 +1419,13 @@ msgstr "修改封面"
 #: model_terms:ir.ui.view,arch_db:website.s_features_grid
 msgid "Change Icons"
 msgstr "更改图标"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/js/widgets/theme.js:0
+#, python-format
+msgid "Changing this color will regenerate the default theme color scheme"
+msgstr "更改此颜色将重新生成默认主题颜色方案"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__field_parent
@@ -1514,6 +1542,7 @@ msgstr "复制此页面"
 #. openerp-web
 #: code:addons/website/static/src/js/editor/wysiwyg_multizone_translate.js:0
 #: code:addons/website/static/src/xml/website.gallery.xml:0
+#: code:addons/website/static/src/xml/website.xml:0
 #: model_terms:ir.ui.view,arch_db:website.qweb_500
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
 #, python-format
@@ -1566,7 +1595,7 @@ msgstr "配置设置"
 #. module: website
 #: model:ir.ui.menu,name:website.menu_website_global_configuration
 msgid "Configuration"
-msgstr "配置"
+msgstr "基础配置"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__has_social_network
@@ -1893,7 +1922,7 @@ msgstr "丢弃"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_text
 msgid "Discover more"
-msgstr "了解更多"
+msgstr "发现更多"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
@@ -1967,7 +1996,7 @@ msgstr "你想安装 \"%s\" 这个应用程序?"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Domain"
-msgstr "网域"
+msgstr "域名"
 
 #. module: website
 #. openerp-web
@@ -2127,11 +2156,6 @@ msgid "Email support"
 msgstr "EMail支持"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "Enable billing on your Google Project"
-msgstr ""
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Enter email"
@@ -2199,7 +2223,7 @@ msgstr "Facebook 账户"
 #: code:addons/website/static/src/js/editor/snippets.options.js:0
 #, python-format
 msgid "Facebook Page"
-msgstr "Facebook账号"
+msgstr "Facebook页面"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -2260,12 +2284,12 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Filter Color"
-msgstr "过滤颜色"
+msgstr "滤镜颜色"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Filter Intensity"
-msgstr "筛选强度"
+msgstr "滤镜强度"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features
@@ -2296,7 +2320,7 @@ msgstr "第一页链接到这个视图"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Fit text"
-msgstr ""
+msgstr "符合文本"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -2343,7 +2367,7 @@ msgstr "页脚"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Force your user to create an account per website"
-msgstr "强制你的用户为每个网站创建一个帐户"
+msgstr "强制你的用户为每个网站创建一个账户"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
@@ -2426,7 +2450,7 @@ msgstr "返回块菜单。"
 #: code:addons/website/static/src/xml/website.backend.xml:0
 #, python-format
 msgid "Go to"
-msgstr "去"
+msgstr "转到"
 
 #. module: website
 #. openerp-web
@@ -2522,6 +2546,21 @@ msgid "Google Maps API Key"
 msgstr "Google 地图 API 密钥"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.backend.xml:0
+#, python-format
+msgid ""
+"Google deprecated both its \"Universal Analytics\" and \"Google Sign-In\" "
+"API. It means that only accounts and keys created before 2020 will be able "
+"to integrate their Analytics dashboard in Odoo (or any other website). This "
+"will be possible only up to mid 2023. After that, those services won't work "
+"anymore, at all."
+msgstr ""
+"谷歌官方并不赞成使用 \"Universal Analytics\" 和 \"Google Sign-In\" "
+"这两个API接口。意思即仅2020年以前创建的谷歌账号能集成谷歌分析统计功能集成到 Odoo (或其他任何网站)中。 "
+"且仅支持到2023年中旬。此后这些服务将不再可用。"
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features_grid
 msgid "Great Value"
 msgstr "巨大价值"
@@ -2582,7 +2621,7 @@ msgstr "HTTP 路由"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Half Screen"
-msgstr ""
+msgstr "半屏"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
@@ -2764,7 +2803,7 @@ msgstr "图标"
 #. module: website
 #: model:ir.model.fields,help:website.field_website__specific_user_account
 msgid "If True, new accounts will be associated to the current website"
-msgstr "如果为正确的，新帐户将与当前网站相关联"
+msgstr "如果为正确的，新账户将与当前网站相关联"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_res_config_settings__social_default_image
@@ -2845,7 +2884,10 @@ msgid "Indexed"
 msgstr "索引"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.pageProperties.xml:0
 #: model_terms:ir.ui.view,arch_db:website.theme_customize
+#, python-format
 msgid "Info"
 msgstr "信息"
 
@@ -2895,7 +2937,7 @@ msgstr "已安装的应用程序"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
 msgid "Installed Localizations / Account Charts"
-msgstr ""
+msgstr "安装了本地化/账户图表"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website__theme_id
@@ -2972,15 +3014,6 @@ msgstr "已连接吗？"
 #, python-format
 msgid "It looks like your file is being called by"
 msgstr "似乎以下对象调用了您的文件"
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/content/website_root.js:0
-#, python-format
-msgid ""
-"It might be possible to edit the relevant items or fix the issue in <a "
-"href=\"%s\">the classic Odoo interface</a>"
-msgstr "在<a href=\"%s\">经典 Odoo 界面</a>上可以编辑相关项目或修改问题。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
@@ -3099,7 +3132,7 @@ msgstr "上月"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_kanban
 msgid "Last Page"
-msgstr ""
+msgstr "最后一页"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__write_uid
@@ -3124,7 +3157,7 @@ msgstr "更新时间"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__last_visited_page_id
 msgid "Last Visited Page"
-msgstr ""
+msgstr "上次访问的页面"
 
 #. module: website
 #. openerp-web
@@ -3405,7 +3438,7 @@ msgstr "中间"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__mobile
 msgid "Mobile Phone"
-msgstr ""
+msgstr "移动电话"
 
 #. module: website
 #. openerp-web
@@ -3539,6 +3572,15 @@ msgstr "新活动"
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
 msgid "New Forum"
 msgstr "新论坛"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.backend.xml:0
+#, python-format
+msgid ""
+"New Google Analytics accounts and keys are now using Google Analytics 4 "
+"which, for now, can't be integrated/embed in external websites."
+msgstr "当前最新的谷歌分析统计账号和密钥使用着第4代谷歌分析统计技术，目前暂时还无法集成或/嵌入外部网站。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -3905,14 +3947,14 @@ msgstr "页面属性"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_pages_tree_view
 msgid "Page Published"
-msgstr "网页已发布"
+msgstr "页面已发布"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/menu/new_content.js:0
 #, python-format
 msgid "Page Title"
-msgstr "网页标题"
+msgstr "页面标题"
 
 #. module: website
 #. openerp-web
@@ -3952,7 +3994,7 @@ msgstr "页面"
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Pagination"
-msgstr "页码"
+msgstr "分页"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
@@ -4039,7 +4081,7 @@ msgstr "首要的"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
 msgid "Products Recently Viewed"
-msgstr ""
+msgstr "最近查看的产品"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
@@ -4169,7 +4211,7 @@ msgstr "参考"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.view_website_rewrite_form
 msgid "Refresh route's list"
-msgstr ""
+msgstr "刷新路由列表"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -4261,7 +4303,7 @@ msgstr "审查"
 #. module: website
 #: model:ir.actions.act_window,name:website.action_website_rewrite_list
 msgid "Rewrite"
-msgstr ""
+msgstr "重写"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -4599,7 +4641,7 @@ msgstr "开始你的旅程"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_customize
 msgid "Status"
-msgstr "省份"
+msgstr "状态"
 
 #. module: website
 #. openerp-web
@@ -4805,7 +4847,7 @@ msgstr "目前没有可用的数据。"
 #: code:addons/website/models/website_visitor.py:0
 #, python-format
 msgid "There is no email linked this visitor."
-msgstr ""
+msgstr "没有链接此访问者的电子邮件"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -4892,6 +4934,12 @@ msgid ""
 msgstr "这是一个简单的英雄单元，一个简单的jumbotron风格组件<br/>，用于调用对特色内容或信息的额外关注。"
 
 #. module: website
+#: code:addons/website/models/website_visitor.py:0
+#, python-format
+msgid "This operator is not supported"
+msgstr "不支持此运算符"
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.page_404
 msgid ""
 "This page does not exist, but you can create it as you are administrator of "
@@ -4908,6 +4956,15 @@ msgstr "该页面位于菜单 <b>%s</b>"
 #: model_terms:ir.ui.view,arch_db:website.one_page_line
 msgid "This page will be visible on {{ date_formatted }}"
 msgstr "这个页面在{{date_formatting}}上是可见的"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.backend.xml:0
+#, python-format
+msgid ""
+"Those accounts should now check their Analytics dashboard in the Google "
+"platform directly."
+msgstr "这些账户现在应该直接可在谷歌平台上查看他们的分析仪表板了的。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -4998,12 +5055,12 @@ msgstr "网站顶级菜单 %s"
 #. module: website
 #: model:ir.model.fields,help:website.field_website_visitor__page_count
 msgid "Total number of tracked page visited"
-msgstr ""
+msgstr "已跟踪的页面访问总数"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_visitor__visitor_page_count
 msgid "Total number of visits on tracked pages"
-msgstr ""
+msgstr "跟踪页面的总访问次数"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_ir_ui_view__track
@@ -5021,7 +5078,7 @@ msgstr "跟踪UTM链接的点击次数"
 #: code:addons/website/static/src/xml/track_page.xml:0
 #, python-format
 msgid "Track visitor"
-msgstr "访客跟踪"
+msgstr "追踪访客"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -5117,6 +5174,13 @@ msgid ""
 "        308 Redirect / Rewrite: If you want rename a controller with a new url. (Eg: /shop -> /garden - Both url will be accessible but /shop will automatically be redirected to /garden)\n"
 "    "
 msgstr ""
+"重定向/重写的类型：\n"
+"\n"
+"        301 永久移动：浏览器将保留新 URL 的缓存。\n"
+"        302 暂时移动：浏览器不会保留缓存新 URL，下次再次询问新 URL。\n"
+"        404 未找到：如果您想要删除特定页面/控制器（例如，安装了电子商务，但您不希望/在特定网站上购物）\n"
+"        308 重定向/重写：如果您想要使用新 URL 重命名控制器。（例如： /shop -> /花园 - 两个网址都可访问，但 /shop 将自动重定向到 /garden）\n"
+"    "
 
 #. module: website
 #. openerp-web
@@ -5130,7 +5194,7 @@ msgstr "UA-XXXXXXXX-Y"
 #: model:ir.model.fields,field_description:website.field_website_rewrite__url_from
 #: model_terms:ir.ui.view,arch_db:website.view_website_rewrite_form
 msgid "URL from"
-msgstr ""
+msgstr "URL从"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_res_config_settings__cdn_filters
@@ -5141,7 +5205,7 @@ msgstr "网址匹配这些筛选将被使用CDN基本网址重写"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__url_to
 msgid "URL to"
-msgstr ""
+msgstr "URL到"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5191,7 +5255,7 @@ msgstr "Url网址"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_page_view_search
 msgid "Urls & Pages"
-msgstr ""
+msgstr "Urls 及页面"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -5389,7 +5453,7 @@ msgstr "访客信息"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_page_view_graph
 msgid "Visitor Page Views"
-msgstr ""
+msgstr "访客页面查看"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_page_view_tree
@@ -5399,12 +5463,12 @@ msgstr "访客页面浏览历史"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_track_view_graph
 msgid "Visitor Views"
-msgstr ""
+msgstr "访客查看"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_track_view_tree
 msgid "Visitor Views History"
-msgstr ""
+msgstr "访客查看历史"
 
 #. module: website
 #: model:ir.actions.act_window,name:website.website_visitors_action
@@ -5430,7 +5494,7 @@ msgstr "访问"
 #: model_terms:ir.actions.act_window,help:website.website_visitor_view_action
 msgid ""
 "Wait for visitors to come to your website to see the pages they viewed."
-msgstr ""
+msgstr "等待访问者来到你的网站,看看他们看到的页面"
 
 #. module: website
 #: model_terms:ir.actions.act_window,help:website.website_visitors_action
@@ -5610,7 +5674,7 @@ msgstr "网页访问者"
 #: code:addons/website/models/website_visitor.py:0
 #, python-format
 msgid "Website Visitor #%s"
-msgstr ""
+msgstr "网站访客 #%s"
 
 #. module: website
 #: model:ir.actions.server,name:website.website_visitor_cron_ir_actions_server
@@ -5663,17 +5727,17 @@ msgstr "网站opengraph图像"
 #. module: website
 #: model:ir.model,name:website.model_website_rewrite
 msgid "Website rewrite"
-msgstr ""
+msgstr "网站重写"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.view_website_rewrite_form
 msgid "Website rewrite Settings"
-msgstr ""
+msgstr "网站重写设置"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.action_website_rewrite_tree
 msgid "Website rewrites"
-msgstr ""
+msgstr "网站重写"
 
 #. module: website
 #: model:ir.actions.server,name:website.ir_actions_server_website_dashboard
@@ -5711,6 +5775,12 @@ msgstr "您想要做什么？"
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "White"
 msgstr "白色"
+
+#. module: website
+#: model:ir.model.fields,help:website.field_res_config_settings__website_domain
+#: model:ir.model.fields,help:website.field_website__domain
+msgid "Will be prefixed by http in canonical URLs if no scheme is specified"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_quotes_carousel
@@ -5790,7 +5860,7 @@ msgstr "您没有发布/取消发布的权限"
 #: code:addons/website/static/src/xml/website.backend.xml:0
 #, python-format
 msgid "You do not seem to have access to this Analytics Account."
-msgstr "你好像对此分析帐户没有访问权限。"
+msgstr "你好像对此分析账户没有访问权限。"
 
 #. module: website
 #. openerp-web
@@ -5800,6 +5870,12 @@ msgid ""
 "You have hidden this page from search results. It won't be indexed by search"
 " engines."
 msgstr "你已从搜索结果中隐藏此页面。它不会被搜索引擎索引。"
+
+#. module: website
+#: code:addons/website/models/website.py:162
+#, python-format
+msgid "You must keep at least one website."
+msgstr "您必须至少保留一个网站。"
 
 #. module: website
 #. openerp-web
@@ -5950,11 +6026,6 @@ msgid "signs to get your website ready in no time."
 msgstr "关注全部标志即可立即准备好您的网站。"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.robots
-msgid "sitemap.xml"
-msgstr "sitemap.xml"
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.menu_search
 msgid "url"
 msgstr "url网址"
@@ -5965,11 +6036,6 @@ msgstr "url网址"
 #: model_terms:ir.ui.view,arch_db:website.menu_search
 msgid "website"
 msgstr "网站"
-
-#. module: website
-#: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "www.odoo.com"
-msgstr "www.odoo.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.qweb_500

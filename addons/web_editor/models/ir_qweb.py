@@ -32,7 +32,7 @@ import odoo.modules
 from odoo import api, models, fields
 from odoo.tools import ustr, posix_to_ldml, pycompat
 from odoo.tools import html_escape as escape
-from odoo.tools.misc import get_lang
+from odoo.tools.misc import get_lang, babel_locale_parse
 from odoo.addons.base.models import ir_qweb
 
 REMOTE_CONNECTION_TIMEOUT = 2.5
@@ -53,9 +53,11 @@ class QWeb(models.AbstractModel):
         view_id = View.get_view_id(el.attrib.get('t-call'))
         name = View.browse(view_id).name
         thumbnail = el.attrib.pop('t-thumbnail', "oe-thumbnail")
-        div = u'<div name="%s" data-oe-type="snippet" data-oe-thumbnail="%s">' % (
+        forbid_sanitize = el.attrib.get('t-forbid-sanitize')
+        div = u'<div name="%s" data-oe-type="snippet" data-oe-thumbnail="%s" %s>' % (
             escape(pycompat.to_text(name)),
-            escape(pycompat.to_text(thumbnail))
+            escape(pycompat.to_text(thumbnail)),
+            'data-oe-forbid-sanitize="true"' if forbid_sanitize else '',
         )
         return [self._append(ast.Str(div))] + self._compile_node(el, options) + [self._append(ast.Str(u'</div>'))]
 
@@ -129,7 +131,11 @@ class Integer(models.AbstractModel):
     _description = 'Qweb Field Integer'
     _inherit = 'ir.qweb.field.integer'
 
-    value_from_string = int
+    @api.model
+    def from_html(self, model, field, element):
+        lang = self.user_lang()
+        value = element.text_content().strip()
+        return int(value.replace(lang.thousands_sep, ''))
 
 
 class Float(models.AbstractModel):
@@ -192,7 +198,7 @@ class Contact(models.AbstractModel):
     # helper to call the rendering of contact field
     @api.model
     def get_record_to_html(self, ids, options=None):
-        return self.value_to_html(self.env['res.partner'].browse(ids[0]), options=options)
+        return self.value_to_html(self.env['res.partner'].search([('id', '=', ids[0])]), options=options)
 
 
 class Date(models.AbstractModel):
@@ -212,7 +218,7 @@ class Date(models.AbstractModel):
                 return attrs
 
             lg = self.env['res.lang']._lang_get(self.env.user.lang) or get_lang(self.env)
-            locale = babel.Locale.parse(lg.code)
+            locale = babel_locale_parse(lg.code)
             babel_format = value_format = posix_to_ldml(lg.date_format, locale=locale)
 
             if record[field_name]:
@@ -246,7 +252,7 @@ class DateTime(models.AbstractModel):
             value = record[field_name]
 
             lg = self.env['res.lang']._lang_get(self.env.user.lang) or get_lang(self.env)
-            locale = babel.Locale.parse(lg.code)
+            locale = babel_locale_parse(lg.code)
             babel_format = value_format = posix_to_ldml('%s %s' % (lg.date_format, lg.time_format), locale=locale)
             tz = record.env.context.get('tz') or self.env.user.tz
 
@@ -326,6 +332,15 @@ class HTML(models.AbstractModel):
     _name = 'ir.qweb.field.html'
     _description = 'Qweb Field HTML'
     _inherit = 'ir.qweb.field.html'
+
+    @api.model
+    def attributes(self, record, field_name, options, values=None):
+        attrs = super().attributes(record, field_name, options, values)
+        if options.get('inherit_branding'):
+            field = record._fields[field_name]
+            if field.sanitize:
+                attrs['data-oe-sanitize'] = 1
+        return attrs
 
     @api.model
     def from_html(self, model, field, element):

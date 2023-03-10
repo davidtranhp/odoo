@@ -8,22 +8,24 @@
 # Yoon Nankyung <nankyung.yoon@pro-spire.co.jp>, 2019
 # SHIMIZU Taku <shimizu.taku@gmail.com>, 2019
 # Manami Hashi <manami@roomsfor.hk>, 2019
-# NOKA Shigekazu <shigekazu.noka@gmail.com>, 2019
+# Shigekazu N. <shigekazu.noka@gmail.com>, 2019
 # 高木正勝 <masakatsu.takagi@pro-spire.co.jp>, 2019
 # Martin Trigaux, 2019
 # Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2019
 # Tim Siu Lai <tl@roomsfor.hk>, 2019
 # NANIWA Masahiro <naniwa.masahiro@gmail.com>, 2019
-# Yoshi Tashiro <tashiro@roomsfor.hk>, 2019
 # Hau Dao <hau@quartile.co>, 2020
+# Yoshi Tashiro (Quartile) <tashiro@roomsfor.hk>, 2020
+# Noma Yuki, 2020
+# Ryoko Tsuda <ryoko@quartile.co>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:33+0000\n"
+"POT-Creation-Date: 2020-04-27 09:22+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: Hau Dao <hau@quartile.co>, 2020\n"
+"Last-Translator: Ryoko Tsuda <ryoko@quartile.co>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -103,7 +105,7 @@ msgstr "1 年"
 #: model:product.product,description_sale:product.product_product_4d
 #: model:product.template,description_sale:product.product_product_4b_product_template
 msgid "160x80cm, with large legs."
-msgstr ""
+msgstr "160x80cm、大きな脚付き。"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_6
@@ -158,11 +160,6 @@ msgstr "<span class=\"text-muted\">バーコードなし</span>"
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 msgid "<span>All general settings about this product are managed on</span>"
 msgstr ""
-
-#. module: product
-#: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
-msgid "<span>m³</span>"
-msgstr "<span>m³</span>"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.report_pricelist
@@ -272,7 +269,7 @@ msgstr "活動"
 #: model:ir.model.fields,field_description:product.field_product_product__activity_exception_decoration
 #: model:ir.model.fields,field_description:product.field_product_template__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "例外の活動を示す文字装飾"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__activity_state
@@ -466,7 +463,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_template__purchase_ok
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Can be Purchased"
-msgstr "購買可能"
+msgstr "購買可"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__rental
@@ -479,7 +476,7 @@ msgstr "レンタル可能"
 #: model:ir.model.fields,field_description:product.field_product_template__sale_ok
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Can be Sold"
-msgstr "販売可能"
+msgstr "販売可"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.view_product_price_list
@@ -570,7 +567,7 @@ msgstr ""
 #. module: product
 #: model:ir.model,name:product.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "コンフィグ設定"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
@@ -612,7 +609,7 @@ msgstr ""
 #: model:product.product,name:product.product_product_5
 #: model:product.template,name:product.product_product_5_product_template
 msgid "Corner Desk Right Sit"
-msgstr ""
+msgstr "コーナーデスク右座"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__standard_price
@@ -720,7 +717,7 @@ msgstr "顧客参照番号"
 #: model:product.product,name:product.product_product_4d
 #: model:product.template,name:product.product_product_4b_product_template
 msgid "Customizable Desk (CONFIG)"
-msgstr ""
+msgstr "カスタマイズ可能なデスク(CONFIG)"
 
 #. module: product
 #: model:product.product,uom_name:product.expense_hotel
@@ -745,7 +742,7 @@ msgstr ""
 #: model:ir.model.fields,help:product.field_product_product__uom_id
 #: model:ir.model.fields,help:product.field_product_template__uom_id
 msgid "Default unit of measure used for all stock operations."
-msgstr ""
+msgstr "すべての在庫操作に使用されるデフォルトの測定単位。"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__uom_po_id
@@ -776,7 +773,7 @@ msgstr "説明"
 #: model:product.product,name:product.product_product_3
 #: model:product.template,name:product.product_product_3_product_template
 msgid "Desk Combination"
-msgstr ""
+msgstr "デスクコンビネーション"
 
 #. module: product
 #: model:product.product,name:product.product_product_22
@@ -839,7 +836,7 @@ msgstr "表示名"
 #: model:product.product,name:product.product_product_27
 #: model:product.template,name:product.product_product_27_product_template
 msgid "Drawer"
-msgstr ""
+msgstr "引き出し"
 
 #. module: product
 #: model:product.product,name:product.product_product_16
@@ -1035,7 +1032,7 @@ msgstr "アイコン"
 #: model:ir.model.fields,help:product.field_product_product__activity_exception_icon
 #: model:ir.model.fields,help:product.field_product_template__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "例外的なアクティビティを示唆するアイコン"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__message_needaction
@@ -1049,7 +1046,7 @@ msgstr "チェックされている場合は、新しいメッセージに注意
 #: model:ir.model.fields,help:product.field_product_product__message_has_error
 #: model:ir.model.fields,help:product.field_product_template__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "チェックした場合、一部のメッセージが配信エラーが発生しています。"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo__product_id
@@ -1081,25 +1078,25 @@ msgstr "画像"
 #: model:ir.model.fields,field_description:product.field_product_product__image_1024
 #: model:ir.model.fields,field_description:product.field_product_template__image_1024
 msgid "Image 1024"
-msgstr ""
+msgstr "イメージ 1024"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__image_128
 #: model:ir.model.fields,field_description:product.field_product_template__image_128
 msgid "Image 128"
-msgstr ""
+msgstr "イメージ 128"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__image_256
 #: model:ir.model.fields,field_description:product.field_product_template__image_256
 msgid "Image 256"
-msgstr ""
+msgstr "イメージ 256"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__image_512
 #: model:ir.model.fields,field_description:product.field_product_template__image_512
 msgid "Image 512"
-msgstr ""
+msgstr "イメージ 512"
 
 #. module: product
 #: code:addons/product/models/product_pricelist.py:0
@@ -1209,7 +1206,7 @@ msgstr ""
 #: model:product.product,name:product.product_product_8
 #: model:product.template,name:product.product_product_8_product_template
 msgid "Large Desk"
-msgstr ""
+msgstr "大型デスク"
 
 #. module: product
 #: model:product.product,name:product.consu_delivery_02
@@ -1453,7 +1450,7 @@ msgstr ""
 #: model:product.product,name:product.product_product_12
 #: model:product.template,name:product.product_product_12_product_template
 msgid "Office Chair Black"
-msgstr ""
+msgstr "オフィスチェアブラック"
 
 #. module: product
 #: model:product.product,name:product.product_order_01
@@ -1719,7 +1716,7 @@ msgstr "プロダクト属性"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_line__product_template_value_ids
 msgid "Product Attribute Values"
-msgstr ""
+msgstr "プロダクト属性値"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_attribute_line_form
@@ -1783,7 +1780,7 @@ msgstr "プロダクト梱包"
 #: model:ir.model,name:product.model_product_packaging
 #: model_terms:ir.ui.view,arch_db:product.product_packaging_form_view
 msgid "Product Packaging"
-msgstr ""
+msgstr "製品包装"
 
 #. module: product
 #: model:ir.actions.report,name:product.report_product_packaging
@@ -2289,6 +2286,15 @@ msgid "This comes from the product form."
 msgstr "これは製品フォームから来ています。"
 
 #. module: product
+#: code:addons/product/models/product_template.py:0
+#, python-format
+msgid ""
+"This configuration of product attributes, values, and exclusions would lead "
+"to no possible variant. Please archive or delete your product directly if "
+"intended."
+msgstr ""
+
+#. module: product
 #: model:ir.model.fields,help:product.field_product_product__price_extra
 msgid "This is the sum of the extra price of all attributes"
 msgstr "すべての属性の追加料金の合計です。"
@@ -2310,6 +2316,15 @@ msgid ""
 "This pricelist will be used, instead of the default one, for sales to the "
 "current partner"
 msgstr "この価格リストは現在のパートナに販売するために、デフォルトのそれに代って使用されます。"
+
+#. module: product
+#: code:addons/product/models/uom_uom.py:0
+#, python-format
+msgid ""
+"This rounding precision is higher than the Decimal Accuracy (%s digits).\n"
+"This may cause inconsistencies in computations.\n"
+"Please set a precision between %s and 1."
+msgstr ""
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo__product_code
@@ -2346,7 +2361,7 @@ msgstr "本日の活動"
 #: model:ir.model.fields,help:product.field_product_product__activity_exception_decoration
 #: model:ir.model.fields,help:product.field_product_template__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "記録上の例外アクティビティのタイプ。"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_packaging__product_uom_id
@@ -2621,6 +2636,13 @@ msgid "Volume unit of measure label"
 msgstr "体積単位レベル"
 
 #. module: product
+#: code:addons/product/models/decimal_precision.py:0
+#: code:addons/product/models/uom_uom.py:0
+#, python-format
+msgid "Warning!"
+msgstr "警告！"
+
+#. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Warnings"
 msgstr "警告"
@@ -2652,6 +2674,16 @@ msgstr ""
 #: model:product.template.attribute.value,name:product.product_4_attribute_2_value_1
 msgid "White"
 msgstr "白"
+
+#. module: product
+#: code:addons/product/models/decimal_precision.py:0
+#, python-format
+msgid ""
+"You are setting a Decimal Accuracy less precise than the UOMs:\n"
+"%s\n"
+"This may cause inconsistencies in computations.\n"
+"Please increase the rounding of those units of measure, or the digits of this Decimal Accuracy."
+msgstr ""
 
 #. module: product
 #: model_terms:ir.actions.act_window,help:product.product_pricelist_action2
@@ -2739,24 +2771,20 @@ msgid ""
 msgstr ""
 
 #. module: product
+#: code:addons/product/models/product_pricelist.py:0
+#, python-format
+msgid ""
+"You cannot disable a pricelist rule, please delete it or archive its "
+"pricelist instead."
+msgstr ""
+
+#. module: product
 #: code:addons/product/models/product_attribute.py:0
 #: code:addons/product/models/product_attribute.py:0
 #, python-format
 msgid ""
 "You cannot update related variants from the values. Please update related "
 "values from the variants."
-msgstr ""
-
-#. module: product
-#: code:addons/product/wizard/product_price_list.py:0
-#, python-format
-msgid "You have to set a logo or a layout for your company."
-msgstr ""
-
-#. module: product
-#: code:addons/product/wizard/product_price_list.py:0
-#, python-format
-msgid "You have to set your reports's header and footer layout."
 msgstr ""
 
 #. module: product
@@ -2804,7 +2832,7 @@ msgstr "日"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_category_form_view
 msgid "e.g. Lamps"
-msgstr "レイ. ランプ"
+msgstr "例. ランプ"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view

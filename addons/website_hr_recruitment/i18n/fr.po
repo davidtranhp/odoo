@@ -16,8 +16,9 @@
 # Fred Gilson <fgi@odoo.com>, 2019
 # f5f0a0dac17dde787a1d812a6989680e, 2019
 # Eloïse Stilmant <est@odoo.com>, 2019
-# Cécile Collart <cco@odoo.com>, 2020
-# Fabien Pinckaers <fp@openerp.com>, 2020
+# Julien Goergen <jgo@odoo.com>, 2020
+# Priscilla (prs) Odoo <prs@odoo.com>, 2020
+# Cécile Collart <cco@odoo.com>, 2022
 # 
 msgid ""
 msgstr ""
@@ -25,13 +26,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-27 09:12+0000\n"
 "PO-Revision-Date: 2019-08-26 09:15+0000\n"
-"Last-Translator: Fabien Pinckaers <fp@openerp.com>, 2020\n"
+"Last-Translator: Cécile Collart <cco@odoo.com>, 2022\n"
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.default_website_description
@@ -91,6 +92,8 @@ msgid ""
 "<span class=\"fa fa-2x fa-car\"/>\n"
 "                    Save on commute"
 msgstr ""
+"<span class=\"fa fa-2x fa-car\"/>\n"
+"                    Economisez sur les trajets domicile-travail"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.default_website_description
@@ -134,6 +137,8 @@ msgid ""
 "<span class=\"fa fa-2x fa-map-marker\"/>\n"
 "                    Prime location"
 msgstr ""
+"<span class=\"fa fa-2x fa-map-marker\"/>\n"
+"                    Emplacement privilégié"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.default_website_description
@@ -141,11 +146,13 @@ msgid ""
 "<span class=\"fa fa-2x fa-sun-o\"/>\n"
 "                    PTOs"
 msgstr ""
+"<span class=\"fa fa-2x fa-sun-o\"/>\n"
+"                    PTOs"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
 msgid "<span class=\"o_recruitment_purple\">Published</span>"
-msgstr ""
+msgstr "<span class=\"o_recruitment_purple\">Publié</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.thankyou_ir_ui_view
@@ -221,7 +228,7 @@ msgstr "Postuler"
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.detail
 msgid "Apply Now!"
-msgstr "Postuler!"
+msgstr "Postulez maintenant !"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.default_website_description

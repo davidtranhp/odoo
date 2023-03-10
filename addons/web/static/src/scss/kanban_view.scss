@@ -89,6 +89,8 @@
 
         .o_kanban_record_title {
             @include o-kanban-record-title($font-size: 13px);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
 
         .o_kanban_record_subtitle {
@@ -251,6 +253,7 @@
             display: block;
             margin-bottom: $o-kanban-inner-hmargin;
             line-height: 1.2;
+            word-break: break-all;
 
             .o_tag {
                 display: inline-block;
@@ -348,6 +351,8 @@
         .oe_kanban_details {
             width: 100%;
 
+            overflow-wrap: break-word;
+            word-wrap: break-word;
             // Useful for the class 'o_text_overflow'
             min-width: 0;
 
@@ -554,6 +559,8 @@
 
     // Kanban UN-grouped Layout
     &.o_kanban_ungrouped {
+        min-height: 100%;
+        align-content: flex-start;
         flex-flow: row wrap;
         justify-content: flex-start;
 

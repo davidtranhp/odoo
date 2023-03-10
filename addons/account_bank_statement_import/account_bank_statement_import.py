@@ -136,6 +136,9 @@ class AccountBankStatementImport(models.TransientModel):
         sanitized_acc_number = journal.bank_account_id.sanitized_acc_number
         if " " in sanitized_acc_number:
             sanitized_acc_number = sanitized_acc_number.split(" ")[0]
+        # Needed for BNP France
+        if len(sanitized_acc_number) == 27 and len(account_number) == 11 and sanitized_acc_number[:2].upper() == "FR":
+            return sanitized_acc_number[14:-2] == account_number
         return sanitized_acc_number == account_number
 
     def _find_additional_data(self, currency_code, account_number):
@@ -203,7 +206,8 @@ class AccountBankStatementImport(models.TransientModel):
                     # reconciliation process will be linked to the bank when the statement is closed.
                     identifying_string = line_vals.get('account_number')
                     if identifying_string:
-                        partner_bank = self.env['res.partner.bank'].search([('acc_number', '=', identifying_string)], limit=1)
+                        partner_bank = self.env['res.partner.bank']\
+                            .search([('acc_number', '=', identifying_string), ('company_id', 'in', (False, journal.company_id.id))], limit=1)
                         if partner_bank:
                             line_vals['bank_account_id'] = partner_bank.id
                             line_vals['partner_id'] = partner_bank.partner_id.id

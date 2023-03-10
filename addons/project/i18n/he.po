@@ -11,17 +11,20 @@
 # ExcaliberX <excaliberx@gmail.com>, 2019
 # Yihya Hugirat <hugirat@gmail.com>, 2019
 # Amit Spilman <amit@laylinetech.com>, 2019
-# hed shefetr <hed@laylinetech.com>, 2019
+# hed shefer <hed@laylinetech.com>, 2019
 # דודי מלכה <Dudimalka6@gmail.com>, 2019
 # ZVI BLONDER <ZVIBLONDER@gmail.com>, 2020
+# Lilach Gilliam <lilach.gilliam@gmail.com>, 2022
+# NoaFarkash, 2022
+# Roy Sayag, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:32+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: ZVI BLONDER <ZVIBLONDER@gmail.com>, 2020\n"
+"Last-Translator: Roy Sayag, 2022\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -290,22 +293,6 @@ msgstr "<i class=\"fa fa-smile-o\"/>אין עדיין דירוג"
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
-"                        Documents are attached to the tasks of your project.</p><p>\n"
-"                        Send messages or log internal notes with attachments to link\n"
-"                        documents to your project.\n"
-"                    </p>"
-msgstr ""
-"<p class=\"o_view_nocontent_smiling_face\">\n"
-"                        המסמכים מצורפים למשימות הפרויקט שלך..</p><p>\n"
-"                        שלח הודעות או רשום הערות פנימיות עם קבצים מצורפים לקישור\n"
-"                        מסמכים לפרויקט שלך.\n"
-"                    </p>"
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid ""
-"<p class=\"o_view_nocontent_smiling_face\">\n"
 "                    Create a new project</p>"
 msgstr ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
@@ -439,7 +426,7 @@ msgstr "מצב פעילות"
 #: model:ir.actions.act_window,name:project.mail_activity_type_action_config_project_types
 #: model:ir.ui.menu,name:project.project_menu_config_activity_type
 msgid "Activity Types"
-msgstr "סוגי פעילות"
+msgstr "סוגי פעילויות"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
@@ -513,8 +500,8 @@ msgstr "כל המשימות"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__employees
-msgid "All employees"
-msgstr "כל העובדים"
+msgid "All internal users"
+msgstr "כל המשתמשים הפנימיים"
 
 #. module: project
 #. openerp-web
@@ -562,24 +549,24 @@ msgstr "תאריך שיוך"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Assigned"
-msgstr "מוקצה"
+msgstr "משויך"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.act_res_users_2_project_task_opened
 msgid "Assigned Tasks"
-msgstr "משימות שהוקצו"
+msgstr "משימות ששויכו"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__user_id
 msgid "Assigned To"
-msgstr "משויך ל"
+msgstr "משויכת ל"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__user_id
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Assigned to"
-msgstr "משויך ל"
+msgstr "משויכת ל"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__date_assign
@@ -607,12 +594,6 @@ msgstr "כמות קבצים מצורפים"
 #: model:ir.model.fields,help:project.field_project_task__attachment_ids
 msgid "Attachment that don't come from message."
 msgstr "קובץ מצורף שלא בא מההודעה."
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "Attachments"
-msgstr "קבצים מצורפים"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__auto_validation_kanban_state
@@ -1023,17 +1004,18 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__privacy_visibility
 msgid ""
-"Defines the visibility of the tasks of the project:\n"
-"- Invited employees: employees may only see the followed project and tasks.\n"
-"- All employees: employees may see all project and tasks.\n"
-"- Portal users and all employees: employees may see everything.   Portal users may see project and tasks followed by.\n"
-"   them or by someone of their company."
+"People to whom this project and its tasks will be visible.\n"
+"\n"
+"- Invited internal users: when following a project, internal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+" A user with the project > administrator access right level can still access this project and its tasks, even if they are not explicitly part of the followers.\n"
+"\n"
+"- All internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"\n"
+"- Invited portal users and all internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"When following a project, portal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+"\n"
+"In any case, an internal user with no project access rights can still access a task, provided that they are given the corresponding URL (and that they are part of the followers if the project is private)."
 msgstr ""
-"מגדיר את הנראות של משימות הפרויקט:\n"
-"- עובדים מוזמנים: העובדים יראו רק את הפרויקט והמשימות שהם עוקבים אחריהן.\n"
-"- כל העובדים: העובדים יראו את כל הפרויקטים והמשימות.\n"
-"- משתמשי הפורטל וכל העובדים: העובדים יראו הכל.   משתמשי הפורטל יראו פרויקטים ומשימות שהם עוקבים אחריהן\n"
-" או שמישהו אחר מהחברה עוקב אחריהן."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
@@ -1565,8 +1547,8 @@ msgstr ""
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__followers
-msgid "Invited employees"
-msgstr "עובדים מוזמנים"
+msgid "Invited internal users"
+msgstr "משתמשים פנימיים שיוזמנו"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__message_is_follower
@@ -1739,7 +1721,7 @@ msgstr "חי"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
 msgid "Log time on tasks"
-msgstr "זמן יומן במשימות"
+msgstr "רשום זמנים במשימות"
 
 #. module: project
 #. openerp-web
@@ -2175,8 +2157,8 @@ msgstr "כתובת גישה לפורטל"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
-msgid "Portal users and all employees"
-msgstr "משתמשי הפורטל וכל העובדים"
+msgid "Invited portal users and all internal users"
+msgstr "משתמשי פורטל מוזמנים וכל המשתמשים הפנימיים"
 
 #. module: project
 #. openerp-web
@@ -2471,7 +2453,7 @@ msgstr "מזהה"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Refused"
-msgstr "מסורב"
+msgstr "נדחה"
 
 #. module: project
 #: model:ir.ui.menu,name:project.menu_project_report
@@ -2527,7 +2509,8 @@ msgstr "פרצוף עצוב"
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
 msgid ""
 "Schedule your teams across projects and estimate deadlines more accurately."
-msgstr "קבע את הצוותים שלך לפרויקטים והערך תאריכי יעד בצורה מדויקת יותר."
+msgstr ""
+"הגדר את הצוותים שלך בפרויקטים השונים והערך תאריכי יעד בצורה מדויקת יותר."
 
 #. module: project
 #: code:addons/project/controllers/portal.py:0
@@ -2862,6 +2845,9 @@ msgstr "המשימה מוכנה לשלב הבא"
 #: model_terms:ir.ui.view,arch_db:project.view_task_partner_info_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_tree2
+#: model:project.project,label_tasks:project.project_project_1
+#: model:project.project,label_tasks:project.project_project_2
+#: model:project.project,label_tasks:project.project_project_data
 msgid "Tasks"
 msgstr "משימות"
 
@@ -2916,7 +2902,7 @@ msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
 "<jobs@example.odoo.com>"
 msgstr ""
-"שם כינוי הדוא\"ל, למשל 'עבודות' אם ברצונך לתפוס דוא\"ל עבור "
+"שם כינוי הדוא\"ל, למשל 'עבודות' אם ברצונך לקבל הודעות דוא\"ל ל "
 "<jobs@example.odoo.com>"
 
 #. module: project
@@ -2934,12 +2920,6 @@ msgstr ""
 #. module: project
 #: code:addons/project/models/project.py:0
 #, python-format
-msgid "The parent task belongs to a company you do not have access to."
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
 msgid ""
 "The project cannot be shared with the recipient(s) because the privacy of "
 "the project is too restricted. Set the privacy to 'Visible by following "
@@ -2947,12 +2927,6 @@ msgid ""
 msgstr ""
 "לא ניתן לשתף את המשימה עם הנמענים מכיוון שפרטיות הפרויקט מוגבלת מדי. הגדר את"
 " פרטיות הפרויקט כ'גלויה למעקב לקוחות 'על מנת להנגיש אותו לנמענים."
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "The subtasks belong to a company you do not have access to."
-msgstr ""
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -3069,8 +3043,8 @@ msgid ""
 "To get things done, use activities and status on tasks.<br>\n"
 "                    Chat in real time or by email to collaborate efficiently."
 msgstr ""
-"כדי לגרום לדברים לקרות, השתמש בפעילויות ובסטטוס במשימות.<br>\n"
-"                    צ'אט בזמן אמת או באמצעות דוא\"ל כדי לשתף פעולה ביעילות."
+"כדי לגרום לדברים לקרות, השתמש בפעילויות ובסטטוסים במשימות.<br>\n"
+"                    שוחח בזמן אמת או באמצעות דוא\"ל כדי לשתף פעולה ביעילות."
 
 #. module: project
 #. openerp-web
@@ -3276,6 +3250,14 @@ msgid ""
 "You can also add a description to help your coworkers understand the meaning"
 " and purpose of the stage."
 msgstr "תוכל גם להוסיף תיאור שיעזור לעמיתיך להבין את המשמעות והמטרה של השלב."
+
+#. module: project
+#: code:addons/project/models/analytic_account.py:0
+#, python-format
+msgid ""
+"You cannot change the company of an analytical account if it is related to a"
+" project."
+msgstr "אינך יכול לשנות את חברת הבעלים של חשבון שכבר מכיל פקודות יומן."
 
 #. module: project
 #: code:addons/project/models/project.py:0

@@ -3,15 +3,16 @@
 # 	* hr
 # 
 # Translators:
-# Avinash N K <avinashnk94@gmail.com>, 2020
+# avinashnk94 <avinashnk94@gmail.com>, 2020
+# Niyas Raphy, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:32+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:10+0000\n"
-"Last-Translator: Avinash N K <avinashnk94@gmail.com>, 2020\n"
+"Last-Translator: Niyas Raphy, 2023\n"
 "Language-Team: Malayalam (https://www.transifex.com/odoo/teams/41243/ml/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -797,7 +798,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
 #: model_terms:ir.ui.view,arch_db:hr.view_job_filter
 msgid "Department"
-msgstr ""
+msgstr "വകുപ്പ്"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__name
@@ -1028,7 +1029,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_tree
 #: model_terms:ir.ui.view,arch_db:hr.view_partner_tree2
 msgid "Employees"
-msgstr ""
+msgstr "ജീവനക്കാർ"
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.open_view_employee_tree
@@ -2112,6 +2113,7 @@ msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__user_id
+#: model:ir.model.fields,help:hr.field_resource_resource__user_id
 msgid "Related user name for the resource to manage its access."
 msgstr ""
 
@@ -2154,6 +2156,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr.field_hr_employee_base__resource_calendar_id
 #: model:ir.model.fields,field_description:hr.field_hr_employee_public__resource_calendar_id
 msgid "Resource Calendar"
+msgstr ""
+
+#. module: hr
+#: model:ir.model,name:hr.model_resource_resource
+msgid "Resources"
 msgstr ""
 
 #. module: hr
@@ -2498,6 +2505,7 @@ msgstr "വായിക്കാത്ത സന്ദേശങ്ങളുട�
 #: model:ir.model.fields,field_description:hr.field_hr_employee__user_id
 #: model:ir.model.fields,field_description:hr.field_hr_employee_base__user_id
 #: model:ir.model.fields,field_description:hr.field_hr_employee_public__user_id
+#: model:ir.model.fields,field_description:hr.field_resource_resource__user_id
 msgid "User"
 msgstr "ഉപയോക്താവ്"
 

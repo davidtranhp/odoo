@@ -2,8 +2,11 @@
 
 # Copyright 2015 Eezee-It
 
+import datetime
+from dateutil import parser
 import json
 import logging
+import pytz
 import re
 import time
 from hashlib import sha256
@@ -44,8 +47,8 @@ class AcquirerSips(models.Model):
     provider = fields.Selection(selection_add=[('sips', 'Sips')])
     sips_merchant_id = fields.Char('Merchant ID', help="Used for production only", required_if_provider='sips', groups='base.group_user')
     sips_secret = fields.Char('Secret Key', size=64, required_if_provider='sips', groups='base.group_user')
-    sips_test_url = fields.Char("Test url", required_if_provider='sips', default='https://payment-webinit.simu.sips-atos.com/paymentInit')
-    sips_prod_url = fields.Char("Production url", required_if_provider='sips', default='https://payment-webinit.sips-atos.com/paymentInit')
+    sips_test_url = fields.Char("Test url", required_if_provider='sips', default='https://payment-webinit.simu.sips-services.com/paymentInit')
+    sips_prod_url = fields.Char("Production url", required_if_provider='sips', default='https://payment-webinit.sips-services.com/paymentInit')
     sips_version = fields.Char("Interface Version", required_if_provider='sips', default='HP_2.3')
 
     def _sips_generate_shasign(self, values):
@@ -180,10 +183,22 @@ class TxSips(models.Model):
     def _sips_form_validate(self, data):
         data = self._sips_data_to_object(data.get('Data'))
         status = data.get('responseCode')
+        date = data.get('transactionDateTime')
+        if date:
+            try:
+                # dateutil.parser 2.5.3 and up should handle dates formatted as
+                # '2020-04-08T05:54:18+02:00', which strptime does not
+                # (+02:00 does not work as %z expects +0200 before Python 3.7)
+                # See odoo/odoo#49160
+                date = parser.parse(date).astimezone(pytz.utc).replace(tzinfo=None)
+            except:
+                # will fallback on now in the write to avoid failing to
+                # register the payment because a provider formats their 
+                # dates badly or because some local library is not behaving
+                date = False
         data = {
             'acquirer_reference': data.get('transactionReference'),
-            'date': data.get('transactionDateTime',
-                                      fields.Datetime.now())
+            'date': date or fields.Datetime.now(),
         }
         res = False
         if status in self._sips_valid_tx_status:

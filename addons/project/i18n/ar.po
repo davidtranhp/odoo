@@ -19,14 +19,17 @@
 # Martin Trigaux, 2019
 # Mustafa Rawi <mustafa@cubexco.com>, 2019
 # Osoul <baruni@osoul.ly>, 2019
+# Tasneem Sarhan <tsa@odoo.com>, 2020
+# Mohamed Abuelmagd <mabuelmagd12@gmail.com>, 2022
+# Malaz Abuidris <msea@odoo.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:32+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: Osoul <baruni@osoul.ly>, 2019\n"
+"Last-Translator: Malaz Abuidris <msea@odoo.com>, 2022\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -295,17 +298,6 @@ msgstr "<i class=\"fa fa-smile-o\"/> لا يوجد تقييم بعد"
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
-"                        Documents are attached to the tasks of your project.</p><p>\n"
-"                        Send messages or log internal notes with attachments to link\n"
-"                        documents to your project.\n"
-"                    </p>"
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid ""
-"<p class=\"o_view_nocontent_smiling_face\">\n"
 "                    Create a new project</p>"
 msgstr ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
@@ -428,7 +420,7 @@ msgstr "الأنشطة"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "زخرفة استثناء النشاط"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_state
@@ -461,7 +453,7 @@ msgstr ""
 #. module: project
 #: model:res.groups,name:project.group_project_manager
 msgid "Administrator"
-msgstr ""
+msgstr "مدير"
 
 #. module: project
 #: model:project.task.type,name:project.project_stage_data_2
@@ -513,8 +505,8 @@ msgstr "كافة المهام"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__employees
-msgid "All employees"
-msgstr ""
+msgid "All internal users"
+msgstr "جميع المستخدمين الداخليين"
 
 #. module: project
 #. openerp-web
@@ -535,6 +527,8 @@ msgid ""
 "Analytic account to which this project is linked for financial management. "
 "Use an analytic account to record cost and revenue on your project."
 msgstr ""
+"الحساب التحليلي الذي يرتبط به هذا المشروع للإدارة المالية. استخدم حساباً "
+"تحليلياً لتسجيل التكلفة والإيرادات في مشروعك. "
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -605,12 +599,6 @@ msgstr "عدد المرفقات"
 #: model:ir.model.fields,help:project.field_project_task__attachment_ids
 msgid "Attachment that don't come from message."
 msgstr "المرفقات التي لم تأتِ من رسالة."
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "Attachments"
-msgstr "المرفقات"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__auto_validation_kanban_state
@@ -1024,11 +1012,17 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__privacy_visibility
 msgid ""
-"Defines the visibility of the tasks of the project:\n"
-"- Invited employees: employees may only see the followed project and tasks.\n"
-"- All employees: employees may see all project and tasks.\n"
-"- Portal users and all employees: employees may see everything.   Portal users may see project and tasks followed by.\n"
-"   them or by someone of their company."
+"People to whom this project and its tasks will be visible.\n"
+"\n"
+"- Invited internal users: when following a project, internal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+" A user with the project > administrator access right level can still access this project and its tasks, even if they are not explicitly part of the followers.\n"
+"\n"
+"- All internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"\n"
+"- Invited portal users and all internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"When following a project, portal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+"\n"
+"In any case, an internal user with no project access rights can still access a task, provided that they are given the corresponding URL (and that they are part of the followers if the project is private)."
 msgstr ""
 
 #. module: project
@@ -1171,7 +1165,7 @@ msgstr "قالب البريد الإلكتروني"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__email_cc
 msgid "Email cc"
-msgstr ""
+msgstr "البريد الإلكتروني cc"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1188,7 +1182,7 @@ msgstr "تاريخ الانتهاء"
 #: code:addons/project/models/project.py:0
 #, python-format
 msgid "Error! You cannot create recursive hierarchy of task(s)."
-msgstr "خطأ! لا يمكنك إنشاء تدرج هرمي متكرر للمهام."
+msgstr "خطأ! لا يمكنك إنشاء تدرج هرمي متداخل للمهام. "
 
 #. module: project
 #: model:ir.model.constraint,message:project.constraint_project_project_project_date_greater
@@ -1265,7 +1259,7 @@ msgstr "متابع"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Followed Tasks"
-msgstr ""
+msgstr "المهام المتابعة "
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__message_follower_ids
@@ -1303,7 +1297,7 @@ msgstr "إنجاز الأعمال"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
 msgid "Get customer feedback"
-msgstr ""
+msgstr "احصل على ملاحظات العملاء "
 
 #. module: project
 #. openerp-web
@@ -1422,7 +1416,7 @@ msgstr "الأيقونة"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "الأيقونة للإشارة إلى استثناء النشاط"
 
 #. module: project
 #. openerp-web
@@ -1556,8 +1550,8 @@ msgstr ""
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__followers
-msgid "Invited employees"
-msgstr ""
+msgid "Invited internal users"
+msgstr "المستخدمون الداخليون المدعوون "
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__message_is_follower
@@ -1613,7 +1607,7 @@ msgstr "قيمة المؤشر الرئيسي المفتوحة لمهمة الم�
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__label_tasks
 msgid "Label used for the tasks of the project."
-msgstr ""
+msgstr "بطاقة العنوان المستخدمة لمهام المشروع. "
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_project_rating_page
@@ -1718,7 +1712,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__email_cc
 msgid "List of cc from incoming emails."
-msgstr ""
+msgstr "قائمة cc من رسائل البريد الإلكتروني الواردة."
 
 #. module: project
 #. openerp-web
@@ -2110,7 +2104,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__rating_percentage_satisfaction
 msgid "Percentage of happy ratings"
-msgstr ""
+msgstr "نسبة التقييمات السعيدة "
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -2167,8 +2161,8 @@ msgstr "رابط الوصول لبوابة العملاء"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
-msgid "Portal users and all employees"
-msgstr ""
+msgid "Invited portal users and all internal users"
+msgstr "مستخدمو البوابة المدعوون وكافة المستخدمين الداخليين "
 
 #. module: project
 #. openerp-web
@@ -2851,6 +2845,9 @@ msgstr "المهمة جاهزة للمرحلة المقبلة"
 #: model_terms:ir.ui.view,arch_db:project.view_task_partner_info_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_tree2
+#: model:project.project,label_tasks:project.project_project_1
+#: model:project.project,label_tasks:project.project_project_2
+#: model:project.project,label_tasks:project.project_project_data
 msgid "Tasks"
 msgstr "المهام"
 
@@ -2924,12 +2921,6 @@ msgstr ""
 #. module: project
 #: code:addons/project/models/project.py:0
 #, python-format
-msgid "The parent task belongs to a company you do not have access to."
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
 msgid ""
 "The project cannot be shared with the recipient(s) because the privacy of "
 "the project is too restricted. Set the privacy to 'Visible by following "
@@ -2938,12 +2929,6 @@ msgstr ""
 "لا يمكن مشاركة المشروع مع المستلم لأن خصوصية المشروع محدودة للغاية. قم "
 "بتغيير مستوى الخصوصية لـ\"ظاهر للعملاء المتابعين\" لتتيح للمستلم الوصول "
 "إليه."
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "The subtasks belong to a company you do not have access to."
-msgstr ""
 
 #. module: project
 #: code:addons/project/models/project.py:0
@@ -3096,7 +3081,7 @@ msgstr "مرتان شهريًا"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "نوع النشاط الاستثنائي المسجل."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
@@ -3210,7 +3195,7 @@ msgstr "أسبوعيًا"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__is_favorite
 msgid "Whether this project should be displayed on your dashboard."
-msgstr ""
+msgstr "ما إذا كان ينبغي عرض هذا المشروع في لوحة بياناتك أم لا. "
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__resource_calendar_id
@@ -3270,6 +3255,14 @@ msgid ""
 "You can also add a description to help your coworkers understand the meaning"
 " and purpose of the stage."
 msgstr "يمكنك أيضًا إضافة وصف لمساعدة زملائك على فهم معنى وغرض المرحلة."
+
+#. module: project
+#: code:addons/project/models/analytic_account.py:0
+#, python-format
+msgid ""
+"You cannot change the company of an analytical account if it is related to a"
+" project."
+msgstr "لا يمكنك تغيير شركه حساب تحليلي اذا كان مرتبط بمشروع"
 
 #. module: project
 #: code:addons/project/models/project.py:0

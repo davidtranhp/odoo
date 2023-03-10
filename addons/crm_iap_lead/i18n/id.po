@@ -11,16 +11,19 @@
 # Bonny Useful <bonny.useful@gmail.com>, 2019
 # Muhammad Herdiansyah <herdiansyah@openmailbox.org>, 2019
 # Febrasari Almania <febrasari.almania@gmail.com>, 2019
-# Ryanto The <ry.the77@gmail.com>, 2019
 # Gusti Rini <gustirini@gmail.com>, 2019
+# Ryanto The <ry.the77@gmail.com>, 2020
+# Abdul Munif Hanafi <amunifhanafi@gmail.com>, 2021
+# arfa simoncelli, 2022
+# Abe Manyo, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~12.5\n"
+"Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-26 08:16+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:09+0000\n"
-"Last-Translator: Gusti Rini <gustirini@gmail.com>, 2019\n"
+"Last-Translator: Abe Manyo, 2022\n"
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -143,12 +146,12 @@ msgstr "Perusahaan"
 #. module: crm_iap_lead
 #: model:ir.model.fields.selection,name:crm_iap_lead.selection__crm_iap_lead_mining_request__search_type__people
 msgid "Companies and their Contacts"
-msgstr ""
+msgstr "Perusahaan dan Kontak mereka"
 
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__company_size_max
 msgid "Company Size Max"
-msgstr ""
+msgstr "Ukuran Maksimal Perusahaan"
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_167
@@ -263,6 +266,11 @@ msgid "Error"
 msgstr "Eror!"
 
 #. module: crm_iap_lead
+#: model:ir.model,name:crm_iap_lead.model_ir_model_fields
+msgid "Fields"
+msgstr "Kolom"
+
+#. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__contact_filter_type
 msgid "Filter on"
 msgstr "Menyaring"
@@ -270,7 +278,7 @@ msgstr "Menyaring"
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__filter_on_size
 msgid "Filter on Size"
-msgstr ""
+msgstr "Filter berdasarkan Ukruan"
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_153
@@ -303,7 +311,7 @@ msgstr ""
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__lead_ids
 msgid "Generated Lead / Opportunity"
-msgstr ""
+msgstr "Lead / Peluang yang Dibuat"
 
 #. module: crm_iap_lead
 #: model_terms:ir.ui.view,arch_db:crm_iap_lead.crm_iap_lead_mining_request_search
@@ -352,7 +360,7 @@ msgstr ""
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__industry_ids
 msgid "Industries"
-msgstr ""
+msgstr "Industri"
 
 #. module: crm_iap_lead
 #: model:ir.model,name:crm_iap_lead.model_crm_iap_lead_industry
@@ -449,6 +457,8 @@ msgid ""
 "Make sure you know if you have to be GDPR compliant for storing personal "
 "data."
 msgstr ""
+"Pastikan Anda tahu bila Anda harus mematuhi GDPR dalam menyimpang data "
+"pribadi."
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_148
@@ -458,7 +468,7 @@ msgstr ""
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_86
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_seniority__name
@@ -483,12 +493,12 @@ msgstr "Baru"
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__contact_number
 msgid "Number of Contacts"
-msgstr ""
+msgstr "Jumlah Kontak"
 
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__leads_count
 msgid "Number of Generated Leads"
-msgstr ""
+msgstr "Jumlah Lead yang Dibuat"
 
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__lead_number
@@ -508,12 +518,12 @@ msgstr "Peluang"
 #. module: crm_iap_lead
 #: model_terms:ir.ui.view,arch_db:crm_iap_lead.lead_message_template
 msgid "Opportunity created by Odoo Lead Generation"
-msgstr ""
+msgstr "Peluang dibuat oleh Odoo Lead Generation"
 
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__role_ids
 msgid "Other Roles"
-msgstr ""
+msgstr "Peran Lain"
 
 #. module: crm_iap_lead
 #: model:ir.model,name:crm_iap_lead.model_crm_iap_lead_role
@@ -538,7 +548,7 @@ msgstr "Telepon"
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__preferred_role_id
 msgid "Preferred Role"
-msgstr ""
+msgstr "Peran Pilihan"
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_114
@@ -613,7 +623,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__seniority_id
 #: model:ir.model.fields.selection,name:crm_iap_lead.selection__crm_iap_lead_mining_request__contact_filter_type__seniority
 msgid "Seniority"
-msgstr ""
+msgstr "Senioritas"
 
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__company_size_min
@@ -658,7 +668,7 @@ msgstr "Label"
 #. module: crm_iap_lead
 #: model:ir.model.fields,field_description:crm_iap_lead.field_crm_iap_lead_mining_request__search_type
 msgid "Target"
-msgstr ""
+msgstr "Target"
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.industry,name:crm_iap_lead.crm_iap_lead_industry_166
@@ -743,7 +753,7 @@ msgstr ""
 #. module: crm_iap_lead
 #: model_terms:ir.ui.view,arch_db:crm_iap_lead.crm_iap_lead_mining_request_form
 msgid "employees"
-msgstr ""
+msgstr "karyawan"
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.role,name:crm_iap_lead.crm_iap_lead_role_6
@@ -813,7 +823,7 @@ msgstr ""
 #. module: crm_iap_lead
 #: model:crm.iap.lead.role,name:crm_iap_lead.crm_iap_lead_role_17
 msgid "product"
-msgstr ""
+msgstr "produk"
 
 #. module: crm_iap_lead
 #: model:crm.iap.lead.role,name:crm_iap_lead.crm_iap_lead_role_18

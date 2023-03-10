@@ -16,14 +16,18 @@
 # Muhammad Syarif <mhdsyarif.ms@gmail.com>, 2019
 # Ryanto The <ry.the77@gmail.com>, 2019
 # PAS IRVANUS <ipankbiz@gmail.com>, 2019
+# Gradien Foundation <gradien.co@gmail.com>, 2020
+# whenwesober, 2020
+# Abdul Munif Hanafi <amunifhanafi@gmail.com>, 2021
+# Abe Manyo, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:32+0000\n"
+"POT-Creation-Date: 2020-04-27 09:21+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: PAS IRVANUS <ipankbiz@gmail.com>, 2019\n"
+"Last-Translator: Abe Manyo, 2023\n"
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -185,12 +189,12 @@ msgstr "<i class=\"fa fa-calendar\"/> Tanggal berakhir:"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "<i class=\"fa fa-comments\" role=\"img\" aria-label=\"Unread Messages\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-comments\" role=\"img\" aria-label=\"Pesan belum Dibaca\"/>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Kelola\" title=\"Kelola\"/>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -214,17 +218,6 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 msgid "<i class=\"fa fa-smile-o\"/> No rating yet"
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid ""
-"<p class=\"o_view_nocontent_smiling_face\">\n"
-"                        Documents are attached to the tasks of your project.</p><p>\n"
-"                        Send messages or log internal notes with attachments to link\n"
-"                        documents to your project.\n"
-"                    </p>"
 msgstr ""
 
 #. module: project
@@ -295,7 +288,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
 msgid "<strong>Message and communication history</strong>"
-msgstr ""
+msgstr "<strong>Pesan dan riwayat komunikasi</strong>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
@@ -352,7 +345,7 @@ msgstr "Aktivitas"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Activity Exception Decoration"
+msgstr "Dekorasi Pengecualian Aktivitas"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__activity_state
@@ -435,7 +428,7 @@ msgstr ""
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__employees
-msgid "All employees"
+msgid "All internal users"
 msgstr ""
 
 #. module: project
@@ -518,18 +511,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_project__message_attachment_count
 #: model:ir.model.fields,field_description:project.field_project_task__message_attachment_count
 msgid "Attachment Count"
-msgstr "Attachment Count"
+msgstr "Hitungan Lampiran"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__attachment_ids
 msgid "Attachment that don't come from message."
 msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "Attachments"
-msgstr "Lampiran"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__auto_validation_kanban_state
@@ -768,7 +755,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.project_tags_action
 msgid "Create a new tag"
-msgstr ""
+msgstr "Buat tag baru"
 
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.action_view_task
@@ -925,11 +912,17 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__privacy_visibility
 msgid ""
-"Defines the visibility of the tasks of the project:\n"
-"- Invited employees: employees may only see the followed project and tasks.\n"
-"- All employees: employees may see all project and tasks.\n"
-"- Portal users and all employees: employees may see everything.   Portal users may see project and tasks followed by.\n"
-"   them or by someone of their company."
+"People to whom this project and its tasks will be visible.\n"
+"\n"
+"- Invited internal users: when following a project, internal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+" A user with the project > administrator access right level can still access this project and its tasks, even if they are not explicitly part of the followers.\n"
+"\n"
+"- All internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"\n"
+"- Invited portal users and all internal users: all internal users can access the project and all of its tasks without distinction.\n"
+"When following a project, portal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n"
+"\n"
+"In any case, an internal user with no project access rights can still access a task, provided that they are given the corresponding URL (and that they are part of the followers if the project is private)."
 msgstr ""
 
 #. module: project
@@ -1026,7 +1019,7 @@ msgstr "Rancangan"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Dropdown menu"
-msgstr ""
+msgstr "Menu dropdown"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -1070,7 +1063,7 @@ msgstr "Template Email"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__email_cc
 msgid "Email cc"
-msgstr ""
+msgstr "Email cc"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1141,7 +1134,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__fold
 msgid "Folded in Kanban"
-msgstr ""
+msgstr "Sembunyikan di Kanban"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
@@ -1225,17 +1218,17 @@ msgstr "Hijau"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__legend_done
 msgid "Green Kanban Label"
-msgstr ""
+msgstr "Label Kanban Hijau"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__kanban_state__normal
 msgid "Grey"
-msgstr ""
+msgstr "Abu-Abu"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__legend_normal
 msgid "Grey Kanban Label"
-msgstr ""
+msgstr "Label Kanban Abu-Abu"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
@@ -1264,7 +1257,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Happy face"
-msgstr ""
+msgstr "Muka bahagia"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__report_project_task_user__priority__2
@@ -1318,7 +1311,7 @@ msgstr "Ikon"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icon to indicate an exception activity."
+msgstr "Ikon untuk menunjukkan sebuah aktivitas pengecualian."
 
 #. module: project
 #. openerp-web
@@ -1333,7 +1326,7 @@ msgstr "Gagasan"
 #: model:ir.model.fields,help:project.field_project_task__message_needaction
 #: model:ir.model.fields,help:project.field_project_task__message_unread
 msgid "If checked, new messages require your attention."
-msgstr "Jika dicentang pesan-pesan baru membutuhkan penanganan lebih lanjut."
+msgstr "Jika dicentang, pesan baru memerlukan penanganan dan perhatian Anda."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__message_has_error
@@ -1341,7 +1334,7 @@ msgstr "Jika dicentang pesan-pesan baru membutuhkan penanganan lebih lanjut."
 #: model:ir.model.fields,help:project.field_project_task__message_has_error
 #: model:ir.model.fields,help:project.field_project_task__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan mempunyai kesalahan dalam pengiriman."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task_type__mail_template_id
@@ -1448,7 +1441,7 @@ msgstr ""
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__followers
-msgid "Invited employees"
+msgid "Invited internal users"
 msgstr ""
 
 #. module: project
@@ -1488,7 +1481,7 @@ msgstr "Status Kanban"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__kanban_state_label
 msgid "Kanban State Label"
-msgstr ""
+msgstr "Label Status Kanban"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__legend_done
@@ -1606,14 +1599,14 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__email_cc
 msgid "List of cc from incoming emails."
-msgstr ""
+msgstr "Daftar cc dari email masuk"
 
 #. module: project
 #. openerp-web
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Live"
-msgstr ""
+msgstr "Live"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
@@ -1643,7 +1636,7 @@ msgstr "Rendah"
 #: model:ir.model.fields,field_description:project.field_project_project__message_main_attachment_id
 #: model:ir.model.fields,field_description:project.field_project_task__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Main Attachment"
+msgstr "Lampiran Utama"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__attachment_ids
@@ -1669,7 +1662,7 @@ msgstr "Anggota"
 #: model:ir.model.fields,field_description:project.field_project_project__message_has_error
 #: model:ir.model.fields,field_description:project.field_project_task__message_has_error
 msgid "Message Delivery error"
-msgstr "Message Delivery error"
+msgstr "Kesalahan Pengiriman Pesan"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__message_ids
@@ -1718,7 +1711,7 @@ msgstr "Butuh bantuan fungsional atau teknis"
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Neutral face"
-msgstr ""
+msgstr "Muka netral"
 
 #. module: project
 #. openerp-web
@@ -1848,7 +1841,7 @@ msgstr "Jumlah dokumen yang dilampirkan"
 #: model:ir.model.fields,field_description:project.field_project_project__message_has_error_counter
 #: model:ir.model.fields,field_description:project.field_project_task__message_has_error_counter
 msgid "Number of errors"
-msgstr "Number of errors"
+msgstr "Jumlah kesalahan"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__message_needaction_counter
@@ -1860,7 +1853,7 @@ msgstr "Jumlah pesan yang butuh tindakan"
 #: model:ir.model.fields,help:project.field_project_project__message_has_error_counter
 #: model:ir.model.fields,help:project.field_project_task__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Number of messages with delivery error"
+msgstr "Jumlah dari pesan dengan kesalahan pengiriman"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__message_unread_counter
@@ -1914,7 +1907,7 @@ msgstr ""
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Others"
-msgstr ""
+msgstr "Lainnya"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.action_view_task_overpassed_draft
@@ -2013,7 +2006,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_popover
 msgid "Placeholder"
-msgstr ""
+msgstr "Placeholder"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__planned_hours
@@ -2051,7 +2044,7 @@ msgstr "Portal Access URL"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
-msgid "Portal users and all employees"
+msgid "Invited portal users and all internal users"
 msgstr ""
 
 #. module: project
@@ -2216,17 +2209,17 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_last_feedback
 msgid "Rating Last Feedback"
-msgstr ""
+msgstr "Nilai Feedback Terakhir"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_last_image
 msgid "Rating Last Image"
-msgstr ""
+msgstr "Nilai Gambar Terakhir"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_last_value
 msgid "Rating Last Value"
-msgstr ""
+msgstr "Nilai Value Terakhir"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__rating_request_deadline
@@ -2236,12 +2229,12 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__rating_percentage_satisfaction
 msgid "Rating Satisfaction"
-msgstr ""
+msgstr "Nilai Kepuasan"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_count
 msgid "Rating count"
-msgstr ""
+msgstr "Jumlah nilai"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__portal_show_rating
@@ -2295,7 +2288,7 @@ msgstr ""
 #: model:project.task.type,legend_done:project.project_stage_data_2
 #, python-format
 msgid "Ready for Next Stage"
-msgstr ""
+msgstr "Siap untuk Tahap Berikutnya"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__report_project_task_user__state__done
@@ -2331,7 +2324,7 @@ msgstr "Merah"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__legend_blocked
 msgid "Red Kanban Label"
-msgstr ""
+msgstr "Label Kanban Merah"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_tasks
@@ -2355,7 +2348,7 @@ msgstr "Laporan"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Research"
-msgstr ""
+msgstr "Penelitian"
 
 #. module: project
 #. openerp-web
@@ -2387,13 +2380,13 @@ msgstr "Tanggung-jawab"
 #: model:ir.model.fields,field_description:project.field_project_project__message_has_sms_error
 #: model:ir.model.fields,field_description:project.field_project_task__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr "SMS Delivery error"
+msgstr "Kesalahan Pengiriman SMS"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_project_rating_partner_stat
 #: model_terms:ir.ui.view,arch_db:project.view_task_kanban
 msgid "Sad face"
-msgstr ""
+msgstr "Muka sedih"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
@@ -2501,7 +2494,7 @@ msgstr ""
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Specifications"
-msgstr ""
+msgstr "Spesifikasi"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
@@ -2708,11 +2701,13 @@ msgstr "Kegiatan yang diblokir"
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
 msgid "Task in progress. Click to block or set as done."
 msgstr ""
+"Tugas sedang dalam progres. Klik untuk blok atau tetapkan sebagai selesai."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
 msgid "Task is blocked. Click to unblock or set as done."
 msgstr ""
+"Tugas diblok. Klik untuk menghilangkan blokir atau tetapkan sebagai selesai."
 
 #. module: project
 #: model:mail.message.subtype,description:project.mt_task_ready
@@ -2734,6 +2729,9 @@ msgstr "Tugas siap untuk tahap berikutnya"
 #: model_terms:ir.ui.view,arch_db:project.view_task_partner_info_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_tree2
+#: model:project.project,label_tasks:project.project_project_1
+#: model:project.project,label_tasks:project.project_project_2
+#: model:project.project,label_tasks:project.project_project_data
 msgid "Tasks"
 msgstr "Kegiatan"
 
@@ -2809,22 +2807,10 @@ msgstr ""
 #. module: project
 #: code:addons/project/models/project.py:0
 #, python-format
-msgid "The parent task belongs to a company you do not have access to."
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
 msgid ""
 "The project cannot be shared with the recipient(s) because the privacy of "
 "the project is too restricted. Set the privacy to 'Visible by following "
 "customers' in order to make it accessible by the recipient(s)."
-msgstr ""
-
-#. module: project
-#: code:addons/project/models/project.py:0
-#, python-format
-msgid "The subtasks belong to a company you do not have access to."
 msgstr ""
 
 #. module: project
@@ -2894,7 +2880,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.task_type_edit
 msgid "This step is done. Click to block or set in progress."
-msgstr ""
+msgstr "Langkah ini sudah selesai. Klik untuk blok atau mulai progres."
 
 #. module: project
 #. openerp-web
@@ -2974,7 +2960,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Type of the exception activity on record."
+msgstr "Jenis dari aktivitas pengecualian pada rekaman data."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
@@ -3043,7 +3029,7 @@ msgstr "Email Pengguna"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__privacy_visibility
 msgid "Visibility"
-msgstr ""
+msgstr "Visibilitas"
 
 #. module: project
 #. openerp-web
@@ -3150,6 +3136,14 @@ msgid ""
 msgstr ""
 "Anda juga dapat menambahkan keterangan untuk membantu rekan kerja Anda "
 "memahami arti dan tujuan panggung."
+
+#. module: project
+#: code:addons/project/models/analytic_account.py:0
+#, python-format
+msgid ""
+"You cannot change the company of an analytical account if it is related to a"
+" project."
+msgstr ""
 
 #. module: project
 #: code:addons/project/models/project.py:0

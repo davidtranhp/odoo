@@ -4,11 +4,11 @@
 # 
 # Translators:
 # Baasansuren Sharavsuren <baasansuren@bumanit.mn>, 2019
-# Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019
 # nurbakhit nurka <nurbakhit@bumanit.mn>, 2019
 # Martin Trigaux, 2019
 # Batmunkh Ganbat <batmunkh.g@bumanit.mn>, 2019
-# nurbahyt baha <nurbahyt.kh@gmail.com>, 2019
+# Nurbahyt Kh <nurbahyt.kh@gmail.com>, 2019
+# Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 09:02+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: nurbahyt baha <nurbahyt.kh@gmail.com>, 2019\n"
+"Last-Translator: Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2022\n"
 "Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +46,7 @@ msgstr "%s%% хамгийн хямд бараанд үзүүлэх хөнгөл�
 #: code:addons/sale_coupon/models/sale_coupon_reward.py:0
 #, python-format
 msgid "%s%% discount on products"
-msgstr ""
+msgstr "%s%% барааны үнийн хөнгөлөлт"
 
 #. module: sale_coupon
 #: code:addons/sale_coupon/models/sale_coupon_reward.py:0
@@ -57,11 +57,17 @@ msgstr "%s%% нийт үнийн дүнгийн хөнгөлөлт"
 #. module: sale_coupon
 #: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
 msgid "*Valid for following products:"
-msgstr ""
+msgstr "*Дараах бараанд хүчинтэй:"
 
 #. module: sale_coupon
 #: model:sale.coupon.program,name:sale_coupon.10_percent_coupon
 msgid "10% Discount"
+msgstr "10% Хөнгөлөлт"
+
+#. module: sale_coupon
+#: code:addons/sale_coupon/wizard/sale_coupon_generate.py:35
+#, python-format
+msgid "%s, a coupon has been generated for you"
 msgstr ""
 
 #. module: sale_coupon
@@ -88,8 +94,9 @@ msgid ""
 "                    </span>"
 msgstr ""
 "<span class=\"oe_grey\">\n"
-"                         <b>Одоо хийгдэж буй захиалгад хэрэгжүүлэх - </b> Шагнал одоо хийгдэж буй захиалгад хэрэгжинэ. <br/>\n"
-" "
+"                        <b>Тухайн захиалганд хэрэгжих -</b> Урамшуулал тухайн захиалганд шууд хэрэгжинэ.<br/>\n"
+"                        <b>Дараагийн захиалганд хэрэгжих -</b> Купон код үүсгэн түүнийгээ дараагийн захиалганд ашиглах боломжтой.\n"
+"                    </span>"
 
 #. module: sale_coupon
 #: model_terms:ir.ui.view,arch_db:sale_coupon.sale_coupon_program_view_form_common
@@ -254,10 +261,10 @@ msgid ""
 "                A coupon program generates coupons with a code that can be used to generate a discount on the current\n"
 "                order or create a coupon for a next order."
 msgstr ""
-"Урамшуулалын хөтөлбөр нь тооны хувьд хязгаартай, купон кодгүй шууд хэрэгжих (автоматаар хэрэгжих)\n"
-"эсвэл одоо хийгдэж буй захиалгад хэрэгжих хямдрал бүхий купон код\n"
-", мөн дараагийн захиалгад хэрэгжих купон бүхий хөтөлбөрт байх боломжтой.\n"
-"                  "
+"Урамшуулалын хөтөлбөр нь ямар нэг купон ашиглахгүйгээр шууд хөнгөлөлт, урамшуулал (автоматаар хэрэгжих) олгох эсвэл ямар нэг урьдчилан бэлтгэсэн купон кодыг ашиглан (жишээ нь сэтгүүл дээр хэвлэгдсэн)\n"
+"тухайн захиалга болон дараагийн захиалганд хөнгөлөлт урамшуулал хэрэгжүүлэх боломжтой.\n"
+"\n"
+"                  Купон хөтөлбөр нь тухайн захиалга эсвэл дараагийн захиалга дээр ашиглах боломжтой купон кодыг үүсгэж бүртгэдэг."
 
 #. module: sale_coupon
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_coupon_program__active
@@ -274,7 +281,7 @@ msgstr "Ашиглагдах цар хүрээ"
 #. module: sale_coupon
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_order__applied_coupon_ids
 msgid "Applied Coupons"
-msgstr "Хэрэглсэн купонууд"
+msgstr "Ашиглагдсан купон"
 
 #. module: sale_coupon
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_order__no_code_promo_program_ids
@@ -388,7 +395,7 @@ msgstr "3 шүүгээ худалдаж аваад, нэг үнэгүй аваа
 #. module: sale_coupon
 #: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
 msgid "CODE:"
-msgstr ""
+msgstr "КОД:"
 
 #. module: sale_coupon
 #: model_terms:ir.ui.view,arch_db:sale_coupon.sale_coupon_apply_code_view_form
@@ -689,6 +696,23 @@ msgid "Free Product - Large Cabinet"
 msgstr "Үнэгүй бараа - Том түүшээ"
 
 #. module: sale_coupon
+#: code:addons/sale_coupon/models/sale_coupon.py:0
+#: code:addons/sale_coupon/models/sale_coupon_program.py:0
+#, python-format
+msgid "Free shipping has already been applied."
+msgstr ""
+
+#. module: sale_coupon
+#: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
+msgid "GET %s FREE %s ON YOUR NEXT ORDER!"
+msgstr ""
+
+#. module: sale_coupon
+#: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
+msgid "GET FREE SHIPPING ON YOUR NEXT ORDER!"
+msgstr ""
+
+#. module: sale_coupon
 #: model_terms:ir.ui.view,arch_db:sale_coupon.sale_coupon_generate_view_form
 msgid "Generate"
 msgstr "Үүсгэх"
@@ -706,7 +730,7 @@ msgstr "Купонууд үүсгэх"
 #. module: sale_coupon
 #: model:ir.model,name:sale_coupon.model_sale_coupon_generate
 msgid "Generate Sales Coupon"
-msgstr ""
+msgstr "Борлуулалтын купон үүсгэх"
 
 #. module: sale_coupon
 #: model_terms:ir.actions.act_window,help:sale_coupon.sale_coupon_program_action_coupon_program
@@ -885,6 +909,26 @@ msgid "Number of coupons"
 msgstr "Купоны тоо"
 
 #. module: sale_coupon
+#: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
+msgid "OFF ON %s"
+msgstr ""
+
+#. module: sale_coupon
+#: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
+msgid "OFF ON SOME PRODUCTS*"
+msgstr ""
+
+#. module: sale_coupon
+#: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
+msgid "OFF ON THE CHEAPEST PRODUCT"
+msgstr ""
+
+#. module: sale_coupon
+#: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
+msgid "OFF ON YOUR NEXT ORDER!"
+msgstr ""
+
+#. module: sale_coupon
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_order__generated_coupon_ids
 msgid "Offered Coupons"
 msgstr ""
@@ -892,7 +936,7 @@ msgstr ""
 #. module: sale_coupon
 #: model:ir.model.fields.selection,name:sale_coupon.selection__sale_coupon_reward__discount_apply_on__cheapest_product
 msgid "On Cheapest Product"
-msgstr ""
+msgstr "Хамгийн хямд бараа дээр"
 
 #. module: sale_coupon
 #: model:ir.model.fields.selection,name:sale_coupon.selection__sale_coupon_reward__discount_apply_on__on_order
@@ -907,6 +951,9 @@ msgid ""
 "Cheapest product - Discount on cheapest product of the order\n"
 "Specific products - Discount on selected specific products"
 msgstr ""
+"Захиалгад - Хөнгөлөлт нь бүтэн захиалгын дүнд хэрэгжинэ\n"
+"Хамгийн хямд бараа - Хөнгөлөлт нь тухайн захиалгын хамгийн бага үнэтэй мөр дээр хэрэгжинэ\n"
+"Тухайлсан бараа - Хөнгөлөлт хэрэгжих бараануудыг шүүж сонгох боломжтой"
 
 #. module: sale_coupon
 #: model:ir.model.fields,help:sale_coupon.field_sale_coupon_program__rule_products_domain
@@ -917,7 +964,7 @@ msgstr ""
 #. module: sale_coupon
 #: model:ir.model.fields.selection,name:sale_coupon.selection__sale_coupon_reward__discount_apply_on__specific_products
 msgid "On Specific Products"
-msgstr ""
+msgstr "Тухайлсан бараануудад"
 
 #. module: sale_coupon
 #: code:addons/sale_coupon/models/sale_order.py:0
@@ -985,7 +1032,7 @@ msgstr "Бараа"
 msgid ""
 "Products that will be discounted if the discount is applied on specific "
 "products"
-msgstr ""
+msgstr "Зөвхөн эдгээр тухайлан шүүсэн бараануудад хөнгөлөлт хэрэгжих болно"
 
 #. module: sale_coupon
 #: model:ir.model.fields,field_description:sale_coupon.field_sale_coupon__program_id
@@ -1431,4 +1478,4 @@ msgstr ""
 #. module: sale_coupon
 #: model_terms:ir.ui.view,arch_db:sale_coupon.report_coupon
 msgid "products"
-msgstr ""
+msgstr "бараанууд"

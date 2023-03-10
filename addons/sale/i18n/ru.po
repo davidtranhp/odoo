@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Disaster Disasterov <mobarbitr@gmail.com>, 2019
-# Vitalius Sharkhun <al070572sva@gmail.com>, 2019
 # sorin Rusu <to.rusu.sorin@gmail.com>, 2019
 # Максим Дронь <dronmax@gmail.com>, 2019
 # Андрей Гусев <gaussgss@gmail.com>, 2019
@@ -15,19 +14,26 @@
 # Vasiliy Korobatov <korobatov@gmail.com>, 2019
 # sergeiruzkiicode <sergei.ruzki@icode.by>, 2019
 # Oleg Kuryan <oleg@ventor.tech>, 2019
-# Konstantin Korovin <korovin74@gmail.com>, 2019
+# Константин Коровин <korovin74@gmail.com>, 2019
 # Martin Trigaux, 2019
 # Sergey Vilizhanin, 2019
 # Anton Ilchenko <anton.wmt@gmail.com>, 2019
-# Ivan Yelizariev <yelizariev@it-projects.info>, 2020
+# Ivan Yelizariev // IEL (ellui) <yelizariev@itpp.dev>, 2020
+# Denis Knotko <denis_knotko@yahoo.com>, 2020
+# Denis Baranov <baranov@itlibertas.com>, 2020
+# Ekaterina <nawsikaya@bk.ru>, 2020
+# Ye Ye <vrio.ua@gmail.com>, 2020
+# Сергей Шебанин <sergey@shebanin.ru>, 2021
+# ILMIR <karamov@it-projects.info>, 2021
+# Диляра Дельтаева <dilya.kz93@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 14:57+0000\n"
+"POT-Creation-Date: 2020-04-27 09:22+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: Ivan Yelizariev <yelizariev@it-projects.info>, 2020\n"
+"Last-Translator: Диляра Дельтаева <dilya.kz93@gmail.com>, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +71,7 @@ msgid ""
 "'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })"
 msgstr ""
 "${object.company_id.name} ${object.state in ('draft', 'sent') and "
-"'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })"
+"'Коммерческое предложение' or 'Заказ'} (No. ${object.name or 'n/a' })"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.portal_my_orders
@@ -414,12 +420,12 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Confirmation Email</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label\">Письмо для подтвержения</span>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Down Payments</span>"
-msgstr "<span class=\"o_form_label\">скачать платежи</span>"
+msgstr "<span class=\"o_form_label\">Авансовые платежи</span>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
@@ -467,7 +473,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "<span>Disc.%</span>"
-msgstr ""
+msgstr "<span>Скидка.%</span>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
@@ -497,7 +503,7 @@ msgstr "<strong class=\"d-block mb-1\">счета</strong>"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "<strong class=\"d-block mb-1\">Shipping Address:</strong>"
-msgstr ""
+msgstr "<strong class=\"d-block mb-1\">Адрес доставки</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -508,17 +514,17 @@ msgstr "<strong class=\"mr16\">итог</strong>"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
 msgid "<strong class=\"text-muted\">Salesperson</strong>"
-msgstr ""
+msgstr "<strong class=\"text-muted\">Продавец</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "<strong>Expiration Date:</strong>"
-msgstr "<strong>Дата оканчания:</strong>"
+msgstr "<strong>Дата окончания:</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Expiration:</strong>"
-msgstr ""
+msgstr "<strong>Срок действия:</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -535,7 +541,7 @@ msgstr "<strong>Дата Заказа:</strong>"
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "<strong>Quotation Date:</strong>"
-msgstr "<strong>Дата оферты:</strong>"
+msgstr "<strong>Дата предложения:</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -546,7 +552,7 @@ msgstr "<strong>Продавец:</strong>"
 #: model_terms:ir.ui.view,arch_db:sale.report_invoice_document_inherit_sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Shipping Address:</strong>"
-msgstr ""
+msgstr "<strong>Адрес доставки</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -558,7 +564,7 @@ msgstr "<strong>подпись</strong>"
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content_totals_table
 msgid "<strong>Subtotal</strong>"
-msgstr "<strong>Промежуточный итог</strong>"
+msgstr "<strong>Подытог</strong>"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
@@ -590,7 +596,7 @@ msgstr "<strong>Ваша ссылка:</strong>"
 #. module: sale
 #: model:ir.model.constraint,message:sale.constraint_sale_order_date_order_conditional_required
 msgid "A confirmed sales order requires a confirmation date."
-msgstr ""
+msgstr "Подверженная продажа должна содержать дату подтверждения."
 
 #. module: sale
 #: code:addons/sale/models/sale.py:0
@@ -659,7 +665,7 @@ msgstr "Подтвердить и оплатить"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.mail_notification_paynow_online
 msgid "Accept &amp; Pay Quotation"
-msgstr ""
+msgstr "Принять и оплатить коммерческое предложение"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
@@ -669,7 +675,7 @@ msgstr "Принять и подписать"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.mail_notification_paynow_online
 msgid "Accept &amp; Sign Quotation"
-msgstr ""
+msgstr "Принять и подписать коммерческое предложение"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__access_warning
@@ -720,7 +726,7 @@ msgstr "Деятельность"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Оформление исключения активности"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__activity_state
@@ -956,11 +962,13 @@ msgid ""
 "Check this box if you send quotations to your customers rather than "
 "confirming orders straight away."
 msgstr ""
+"Установите этот флаг, если вам требуется подтверждать коммерческие "
+"предложения у клиента перед продажей."
 
 #. module: sale
 #: model:ir.actions.act_window,name:sale.action_open_sale_onboarding_payment_acquirer_wizard
 msgid "Choose how to confirm quotations"
-msgstr ""
+msgstr "Выберите, как нужно подтверждать коммерческие предложения"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_onboarding_order_confirmation_step
@@ -1283,8 +1291,8 @@ msgstr "Настройте вид своих коммерческих предл
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_dhl
-msgid "DHL Connector"
-msgstr "Коннектор DHL"
+msgid "DHL Express Connector"
+msgstr ""
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
@@ -1485,7 +1493,7 @@ msgstr "Авансовый платеж продукт"
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:0
 #, python-format
 msgid "Down Payment: %s"
-msgstr ""
+msgstr "Авансовый платеж: %s"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_advance_payment_inv__advance_payment_method__fixed
@@ -1576,7 +1584,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__validity_date
 msgid "Expiration"
-msgstr ""
+msgstr "Срок действия"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
@@ -1750,7 +1758,7 @@ msgstr "Иконка"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Значок, обозначающий действие исключения."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_needaction
@@ -1798,12 +1806,6 @@ msgstr ""
 #, python-format
 msgid "Import Template for Products"
 msgstr "Импортировать шаблон для товаров"
-
-#. module: sale
-#: code:addons/sale/models/product_template.py:0
-#, python-format
-msgid "Import Template for Products (with several prices)"
-msgstr "Импорт шаблона для товаров (с несколькими ценам)"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
@@ -1958,7 +1960,7 @@ msgstr "Выставление счёта"
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "Invoicing Address:"
-msgstr ""
+msgstr "Адрес для выставления счёта:"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_product_product__invoice_policy
@@ -1976,7 +1978,7 @@ msgstr "Цель фактурирования"
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "Invoicing and Shipping Address:"
-msgstr ""
+msgstr "Адрес для выставления счёта и доставки:"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_is_follower
@@ -2110,7 +2112,7 @@ msgstr "Блокировать"
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__group_auto_done_setting
 #: model:res.groups,name:sale.group_auto_done_setting
 msgid "Lock Confirmed Sales"
-msgstr "Заблокировать подтверждены продажи"
+msgstr "Заблокировать подтвержденные заказы продаж"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_order__state__done
@@ -2165,8 +2167,12 @@ msgid "Margins"
 msgstr "Маржа"
 
 #. module: sale
+#: model:ir.actions.server,name:sale.model_sale_order_action_quotation_sent
+msgid "Mark Quotation as Sent"
+msgstr "Пометить коммерческое предложение как отправленное"
+
+#. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.account_invoice_form
-#: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "Marketing"
 msgstr "Маркетинг"
 
@@ -2234,7 +2240,7 @@ msgstr "Мои заказы"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_view_search_inherit_quotation
 msgid "My Quotations"
-msgstr "Мои ценовые предложения"
+msgstr "Мои коммерческие предложения"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_line_filter
@@ -2346,7 +2352,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Количество ошибок"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_needaction_counter
@@ -2388,8 +2394,8 @@ msgid ""
 "Once the quotation is confirmed by the customer, it becomes a sales "
 "order.<br> You will be able to create an invoice and collect the payment."
 msgstr ""
-"Как только коммерческое предложение подтверждена клиентом, она становится "
-"заказом на продажу. <br> Вы сможете создать счет-фактуру и получить платеж."
+"Как только коммерческое предложение подтверждено клиентом, оно становится "
+"заказом на продажу. <br> Вы сможете создать счёт и получить платеж."
 
 #. module: sale
 #: model_terms:ir.actions.act_window,help:sale.action_orders
@@ -2436,6 +2442,12 @@ msgid "Only Integer Value should be valid."
 msgstr "Только целочисленное значение."
 
 #. module: sale
+#: code:addons/sale/models/sale.py:0
+#, python-format
+msgid "Only draft orders can be marked as sent directly."
+msgstr ""
+
+#. module: sale
 #: model:ir.model.constraint,message:sale.constraint_product_attribute_custom_value_sol_custom_value_unique
 msgid ""
 "Only one Custom Value is allowed per Attribute Value per Sales Order Line."
@@ -2448,6 +2460,8 @@ msgstr ""
 #, python-format
 msgid "Open Sales app to send your first quotation in a few clicks."
 msgstr ""
+"Откройте приложение Продажи, чтобы отправить первое коммерческое предложение"
+" в несколько кликов."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_filter
@@ -2663,7 +2677,7 @@ msgstr "Операция Оплаты"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_onboarding_order_confirmation_step
 msgid "Payment method"
-msgstr ""
+msgstr "Метод оплаты"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
@@ -2805,7 +2819,7 @@ msgstr "Варианты продукта"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Product used for down payments"
-msgstr "Товар используемый для авансовых платежей"
+msgstr "Продукт используемый для авансовых платежей"
 
 #. module: sale
 #: model:ir.actions.act_window,name:sale.product_template_action
@@ -2931,7 +2945,7 @@ msgstr "Коммерческое предложение отправлено"
 #: code:addons/sale/controllers/portal.py:0
 #, python-format
 msgid "Quotation viewed by customer %s"
-msgstr ""
+msgstr "Коммерческое предложение просмотрено клиентом %s"
 
 #. module: sale
 #: model:ir.actions.act_window,name:sale.action_quotations
@@ -2997,7 +3011,7 @@ msgstr "Ссылка на документ который создал запр�
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_advance_payment_inv__advance_payment_method__delivered
 msgid "Regular invoice"
-msgstr ""
+msgstr "Обычный счёт"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
@@ -3007,7 +3021,7 @@ msgstr "Отклонить эту коммерческое предложени�
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__remaining_validity_days
 msgid "Remaining Days Before Expiration"
-msgstr ""
+msgstr "До истечение срока действия (дней)"
 
 #. module: sale
 #: model:ir.ui.menu,name:sale.menu_sale_report
@@ -3074,7 +3088,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "Ошибка доставки SMS"
 
 #. module: sale
 #. openerp-web
@@ -3490,7 +3504,7 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.mail_notification_paynow_online
 msgid "Sign &amp; Pay Quotation"
-msgstr ""
+msgstr "Подписать и оплатить коммерческое предложение"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__res_company__sale_onboarding_payment_method__digital_signature
@@ -3724,11 +3738,15 @@ msgstr ""
 
 #. module: sale
 #: code:addons/sale/models/product_template.py:0
+#, python-format
 msgid ""
 "The following products cannot be restricted to the company %s because they have already been used in quotations or sales orders in another company:\n"
 "%s\n"
 "You can archive these products and recreate them with your company restriction instead, or leave them as shared product."
 msgstr ""
+"Эти продукты не могут быть привязаны к компании %s, поскольку они уже были использованы в коммерческих предложениях или продажах в другой компании:\n"
+"%s\n"
+"Мы можете архивировать эти продукты и создать их заново для нужной компании или пометьте их как общие."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_res_config_settings__automatic_invoice
@@ -4025,7 +4043,7 @@ msgstr "Название типа"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Тип активности исключения в записи."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_ups
@@ -4041,12 +4059,6 @@ msgstr "коннектор USPS"
 #: model:ir.model,name:sale.model_utm_campaign
 msgid "UTM Campaign"
 msgstr "UTM Кампания"
-
-#. module: sale
-#: code:addons/sale/models/sale.py:0
-#, python-format
-msgid "Uncategorized"
-msgstr "Без категории"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__price_unit
@@ -4086,7 +4098,7 @@ msgstr "Единицы измерения"
 #. module: sale
 #: model:ir.ui.menu,name:sale.menu_product_uom_categ_form_action
 msgid "Units of Measure Categories"
-msgstr ""
+msgstr "Категории единиц измерения"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_auto_done_setting
@@ -4180,12 +4192,12 @@ msgstr "Подтвердить Заказа"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Variant Grid Entry"
-msgstr ""
+msgstr "Вариант записи графика платежей"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.mail_notification_paynow_online
 msgid "View Quotation"
-msgstr ""
+msgstr "Посмотреть коммерческое предложение"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
@@ -4239,7 +4251,7 @@ msgid ""
 "existing one."
 msgstr ""
 "Напишите имя своего клиента, чтобы создать его «на лету», или выберите "
-"существующее."
+"существующего."
 
 #. module: sale
 #. openerp-web
@@ -4344,6 +4356,8 @@ msgid ""
 "Your quotation contains products from company %s whereas your quotation belongs to company %s. \n"
 " Please change the company of your quotation or remove the products from other companies (%s)."
 msgstr ""
+"Ваше предложение содержит продукты компании %s , тогда как ваше предложение принадлежит компании %s. \n"
+" Пожалуйста, измените компанию вашего предложения или удалите продукты от других компаний (%s)."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_bpost
@@ -4390,15 +4404,4 @@ msgstr "type: [(name, amount, base, formated amount, formated base)]"
 #: code:addons/sale/static/src/xml/account_reconciliation.xml:0
 #, python-format
 msgid "uninvoiced sales orders"
-msgstr ""
-
-#. module: sale
-#: model:ir.actions.server,name:sale.model_sale_order_action_quotation_sent
-msgid "Mark Quotation as Sent"
-msgstr ""
-
-#. module: sale
-#: code:addons/sale/models/sale.py:0
-#, python-format
-msgid "Only draft orders can be marked as sent directly."
 msgstr ""

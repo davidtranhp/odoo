@@ -14,7 +14,6 @@
 # v2exerer <9010446@qq.com>, 2019
 # e2f_cn c5 <jarvisn@ecinnovations.com>, 2019
 # bf2549c5415a9287249cba2b8a5823c7, 2019
-# guohuadeng <guohuadeng@hotmail.com>, 2019
 # Lisa Zhang <lzh@odoo.com>, 2019
 # bower Guo <124358678@qq.com>, 2019
 # roye w <159820@qq.com>, 2019
@@ -28,19 +27,21 @@
 # snow wang <147156565@qq.com>, 2019
 # inspur qiuguodong <qiuguodong@inspur.com>, 2019
 # Manga Tsang <mts@odoo.com>, 2019
-# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2019
 # 张昆 <zhangkun@jinanzai.com>, 2019
-# Jeffery CHEN Fan <jeffery9@gmail.com>, 2020
 # Martin Trigaux, 2020
 # as co02 <asco02@163.com>, 2020
+# guohuadeng <guohuadeng@hotmail.com>, 2020
+# Jeffery CHEN <jeffery9@gmail.com>, 2021
+# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2022
+# digitalliuzg8888, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 12:34+0000\n"
+"POT-Creation-Date: 2020-04-27 09:22+0000\n"
 "PO-Revision-Date: 2019-08-26 09:15+0000\n"
-"Last-Translator: as co02 <asco02@163.com>, 2020\n"
+"Last-Translator: digitalliuzg8888, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -106,7 +107,7 @@ msgstr "%d 积分被需要用于创建一个新的提问。"
 #: code:addons/website_forum/models/forum.py:0
 #, python-format
 msgid "%d karma required to delete or reactivate a post."
-msgstr "%d 积分被需要用于删除或者重新激活一个帖子。"
+msgstr "%d 积分被需要用于删除或者重新启用一个帖子。"
 
 #. module: website_forum
 #: code:addons/website_forum/models/forum.py:0
@@ -273,6 +274,7 @@ msgid ""
 "to dilute the essence of questions and answers. For brief discussions please"
 " use commenting facility."
 msgstr ""
+"<b>答案不应引发辩论</b>此社区问答不是讨论组。请避免在您的答案中进行辩论，因为它们往往会淡化问题和答案的本质。对于简短的讨论，请使用评论工具。"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -292,6 +294,8 @@ msgid ""
 "include links to other questions or answers providing relevant additional "
 "information."
 msgstr ""
+"<b>答案不应该只是指向其他问题</b>。而是添加一个注释，指出 "
+"<i>“可能重复...”。但是，最好包含指向其他问题或答案的链接，以提供相关的附加信息。"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -310,14 +314,14 @@ msgid ""
 "<b>Before you ask - please make sure to search for a similar question.</b> "
 "You can search questions by their title or tags. It’s also OK to answer your"
 " own question."
-msgstr ""
+msgstr "<b>在您提问之前 - 请确保搜索类似的问题。 </b>您可以按标题或标签搜索问题。也可以回答你自己的问题。"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 msgid ""
 "<b>Please avoid asking questions that are too subjective and "
 "argumentative</b> or not relevant to this community."
-msgstr ""
+msgstr "<b>请避免提出过于主观和争论性</b>或与该社区无关的问题。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answer
@@ -327,11 +331,15 @@ msgid ""
 "            - no need to answer the same question twice. Also, please <b>don't forget to vote</b>\n"
 "            - it really helps to select the best questions and answers!"
 msgstr ""
+"<b>请大家尽量给个实质性的回答。</b>如果你想回答这个问题或发表评论，只需\n"
+"           <b> 使用评论工具。请</b>记住，您可以随时修改您的答案。\n"
+"            - 不用重复回答同样的问题。另外，请不要忘记投票\n"
+"            - 它确实有助于选择最好的问题和答案!"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "<b>Tags</b> I Follow"
-msgstr ""
+msgstr "<b>标签</b> 关注这个问题"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -339,6 +347,8 @@ msgid ""
 "<b>This forum is empty.</b><br/>\n"
 "                    Be the first one asking a question"
 msgstr ""
+"<b>这个论坛是空的。</b><br/>\n"
+"                    成为第一个提出问题的人"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -371,7 +381,7 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.new_question
 msgid "<b>You already have a pending post.</b><br/>"
-msgstr ""
+msgstr "<b>你已经有一个待处理的帖子。</b><br/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_display_post_answer
@@ -390,27 +400,27 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.tag
 msgid "<em class=\"d-block mb-2\">or</em>"
-msgstr ""
+msgstr "<em class=\"d-block mb-2\">或</em>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "<i class=\" fa fa-comment text-muted mr-1\"/>Comment"
-msgstr ""
+msgstr "<i class=\" fa fa-comment text-muted mr-1\"/>评论"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
 msgid "<i class=\"fa fa-bell fa-fw\"/> Followed Posts"
-msgstr ""
+msgstr "<i class=\"fa fa-bell fa-fw\"/> 跟帖"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "<i class=\"fa fa-bug\"/> Filter Tool"
-msgstr ""
+msgstr "<i class=\"fa fa-bug\"/> 过滤工具"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "<i class=\"fa fa-check fa-fw mr-1\"/>Accept"
-msgstr ""
+msgstr "<i class=\"fa fa-check fa-fw mr-1\"/>接受"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -418,42 +428,39 @@ msgid ""
 "<i class=\"fa fa-check text-success d-block display-2\"/>\n"
 "            <b>You've Completely Caught Up!</b><br/>"
 msgstr ""
+"<i class=\"fa fa-check text-success d-block display-2\"/>\n"
+"            <b>你已经完全赶上了!</b><br/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.edit_post
 #: model_terms:ir.ui.view,arch_db:website_forum.new_question
 msgid "<i class=\"fa fa-check\"/> How to configure TPS and TVQ's canadian taxes?"
-msgstr ""
+msgstr "<i class=\"fa fa-check\"/> 如何配置TPS和TVQ的加拿大税？"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
 msgid "<i class=\"fa fa-check-square-o fa-fw\"/> To Validate"
-msgstr ""
-
-#. module: website_forum
-#: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
-msgid "<i class=\"fa fa-chevron-left mr-1\"/>All Forums"
-msgstr ""
+msgstr "<i class=\"fa fa-check-square-o fa-fw\"/>需验证"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "<i class=\"fa fa-chevron-left mr-1\"/>Back"
-msgstr ""
+msgstr "<i class=\"fa fa-chevron-left mr-1\"/>后退"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.new_question
 msgid "<i class=\"fa fa-chevron-left mr-2\"/>Back to All Topics"
-msgstr ""
+msgstr "<i class=\"fa fa-chevron-left mr-2\"/>返回全部话题"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_sub_nav
 msgid "<i class=\"fa fa-chevron-left small\"/> Back"
-msgstr ""
+msgstr "<i class=\"fa fa-chevron-left small\"/> 返回"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
 msgid "<i class=\"fa fa-flag fa-fw\"/> Flagged"
-msgstr ""
+msgstr "<i class=\"fa fa-flag fa-fw\"/> 标记的"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -461,11 +468,13 @@ msgid ""
 "<i class=\"fa fa-flag ml-4 mr4\"/>\n"
 "                                    Flagged"
 msgstr ""
+"<i class=\"fa fa-flag ml-4 mr4\"/>\n"
+"                                    标记的"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "<i class=\"fa fa-flag\"/> Country"
-msgstr ""
+msgstr "<i class=\"fa fa-flag\"/> 国家"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
@@ -473,6 +482,8 @@ msgid ""
 "<i class=\"fa fa-pencil\"/>\n"
 "                                Edit<span class=\"d-none d-lg-inline\"> your answer</span>"
 msgstr ""
+"<i class=\"fa fa-pencil\"/>\n"
+"                                编辑你<span class=\"d-none d-lg-inline\"> 的答案</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
@@ -482,12 +493,12 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "<i class=\"fa fa-reply mr-1\"/>Answer"
-msgstr ""
+msgstr "<i class=\"fa fa-reply mr-1\"/>回答"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "<i class=\"fa fa-share-alt text-muted mr-1\"/>Share"
-msgstr ""
+msgstr "<i class=\"fa fa-share-alt text-muted mr-1\"/>分享"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
@@ -495,16 +506,18 @@ msgid ""
 "<i class=\"fa fa-share-alt text-muted\"/>\n"
 "                                Share"
 msgstr ""
+"<i class=\"fa fa-share-alt text-muted\"/>\n"
+"                                分享"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
 msgid "<i class=\"fa fa-star fa-fw\"/> Favourites"
-msgstr ""
+msgstr "<i class=\"fa fa-star fa-fw\"/> 收藏"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
 msgid "<i class=\"fa fa-tags fa-fw\"/> Followed Tags"
-msgstr ""
+msgstr "<i class=\"fa fa-tags fa-fw\"/> 跟帖标签"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
@@ -512,6 +525,8 @@ msgid ""
 "<i class=\"fa fa-thumbs-down text-danger ml-3\" role=\"img\" aria-"
 "label=\"Negative votes\" title=\"Negative votes\"/>"
 msgstr ""
+"<i class=\"fa fa-thumbs-down text-danger ml-3\" role=\"img\" aria-"
+"label=\"反对票\" title=\"反对票\"/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
@@ -519,11 +534,13 @@ msgid ""
 "<i class=\"fa fa-thumbs-up text-success\" role=\"img\" aria-label=\"Positive"
 " votes\" title=\"Positive votes\"/>"
 msgstr ""
+"<i class=\"fa fa-thumbs-up text-success\" role=\"img\" aria-label=\"赞成票\" "
+"title=\"赞成票\"/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "<i class=\"fa fa-times fa-fw mr-1\"/>Reject"
-msgstr ""
+msgstr "<i class=\"fa fa-times fa-fw mr-1\"/>删除"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.edit_post
@@ -536,12 +553,12 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "<i class=\"fa fa-user\"/> User"
-msgstr ""
+msgstr "<i class=\"fa fa-user\"/> 用户"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
 msgid "<small class=\"font-weight-bold\">Votes</small>"
-msgstr ""
+msgstr "<small class=\"font-weight-bold\">投票</small>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_display_post_answer
@@ -554,7 +571,7 @@ msgstr "<small class=\"text-muted\">被标记的</small>"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "<span class=\"badge badge-info\">Closed</span>"
-msgstr ""
+msgstr "<span class=\"badge badge-info\">关闭</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.contact
@@ -577,27 +594,27 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
 msgid "<span class=\"font-weight-bold\">No answer posted yet.</span>"
-msgstr ""
+msgstr "<span class=\"font-weight-bold\">还没有公布答案。</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
 msgid "<span class=\"font-weight-bold\">No question posted yet.</span>"
-msgstr ""
+msgstr "<span class=\"font-weight-bold\">尚无问题发布。</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_post_question_block
 msgid "<span class=\"mx-1 d-none d-sm-inline\">&amp;nbsp;|</span>"
-msgstr ""
+msgstr "<span class=\"mx-1 d-none d-sm-inline\">&amp;nbsp;|</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "<span class=\"navbar-text mr-1\">Go to:</span>"
-msgstr ""
+msgstr "<span class=\"navbar-text mr-1\">转到：</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.tag
 msgid "<span class=\"navbar-text mr-3\">Show Tags Starting By</span>"
-msgstr ""
+msgstr "<span class=\"navbar-text mr-3\">显示标签，开始于</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
@@ -606,16 +623,19 @@ msgid ""
 "                            Best Answer\n"
 "                        </span>"
 msgstr ""
+"<span class=\"o_wforum_answer_correct_badge border small border-success rounded-pill font-weight-bold text-success ml-2 px-2\">\n"
+"                            最佳答案\n"
+"                        </span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.close_post
 msgid "<span class=\"text-muted mx-3\">or</span>"
-msgstr ""
+msgstr "<span class=\"text-muted mx-3\">或</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "<span>&amp;times;</span>"
-msgstr "<span>&amp;次数：</span>"
+msgstr "<span>&amp;times;</span>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -678,14 +698,14 @@ msgstr "访问拒绝"
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__message_needaction
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag__message_needaction
 msgid "Action Needed"
-msgstr "需要采取行动"
+msgstr "需要行动"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__active
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__active
 #: model:ir.model.fields.selection,name:website_forum.selection__forum_post__state__active
 msgid "Active"
-msgstr "有效"
+msgstr "启用"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
@@ -719,6 +739,11 @@ msgid "All"
 msgstr "全部"
 
 #. module: website_forum
+#: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
+msgid "All Forums"
+msgstr "所有论坛"
+
+#. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.header
 msgid "All Tags"
 msgstr "所有标签"
@@ -727,12 +752,12 @@ msgstr "所有标签"
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 #: model_terms:ir.ui.view,arch_db:website_forum.new_question
 msgid "All Topics"
-msgstr ""
+msgstr "所有主题"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "All forums"
-msgstr ""
+msgstr "所有论坛"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__allow_bump
@@ -841,7 +866,7 @@ msgstr "答案"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__total_answers
 msgid "Answers Count"
-msgstr ""
+msgstr "答案数量"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_gamification_challenge__category
@@ -951,7 +976,7 @@ msgstr "回退"
 #: model_terms:ir.ui.view,arch_db:website_forum.header
 #: model_terms:ir.ui.view,arch_db:website_forum.new_question
 msgid "Back to Question"
-msgstr ""
+msgstr "回到问题"
 
 #. module: website_forum
 #: code:addons/website_forum/controllers/main.py:0
@@ -968,12 +993,12 @@ msgstr "徽章"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Be less specific in your wording for a wider search result"
-msgstr ""
+msgstr "在你的措辞中不要太具体，以便获得更广泛的搜索结果"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Browse All"
-msgstr ""
+msgstr "查看所有"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__bump_date
@@ -1073,7 +1098,7 @@ msgstr "选取此复选框以显示超过10天没有任何答案的弹出帖子�
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Check your spelling and try again"
-msgstr ""
+msgstr "检查你的拼写，再试一次"
 
 #. module: website_forum
 #: model:gamification.badge,name:website_forum.badge_p_4
@@ -1110,8 +1135,12 @@ msgid "Click to post your question."
 msgstr "点击以贴出你的问题。"
 
 #. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:0
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:0
 #: model:ir.model.fields.selection,name:website_forum.selection__forum_post__state__close
 #: model_terms:ir.ui.view,arch_db:website_forum.question_dropdown
+#, python-format
 msgid "Close"
 msgstr "关闭"
 
@@ -1144,7 +1173,7 @@ msgstr "关闭于"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.close_post
 msgid "Closing"
-msgstr ""
+msgstr "关闭"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_reason__name
@@ -1214,7 +1243,7 @@ msgstr "转换所有回复去评论，反之亦然"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_comment
 msgid "Convert as a answer"
-msgstr ""
+msgstr "转换为答案"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
@@ -1334,7 +1363,7 @@ msgstr "删除自己的帖子"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "Deleted"
-msgstr ""
+msgstr "已删除"
 
 #. module: website_forum
 #: model:gamification.badge,description:website_forum.badge_23
@@ -1409,17 +1438,17 @@ msgstr "编辑"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.header
 msgid "Edit Answer"
-msgstr ""
+msgstr "编辑答案"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "Edit Forum in Backend"
-msgstr ""
+msgstr "在后台编辑论坛"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.header
 msgid "Edit Question"
-msgstr ""
+msgstr "编辑问题"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_edit_all
@@ -1471,6 +1500,8 @@ msgid ""
 "Example\n"
 "                        <i class=\"fa fa-question-circle\"/>"
 msgstr ""
+"示例\n"
+"                        <i class=\"fa fa-question-circle\"/>"
 
 #. module: website_forum
 #: model:gamification.badge,name:website_forum.badge_q_3
@@ -1530,7 +1561,7 @@ msgstr "收藏"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "Filter by:"
-msgstr ""
+msgstr "筛选方式："
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__relevancy_post_vote
@@ -1615,6 +1646,8 @@ msgid ""
 "accumulated for a question or answer per day. The table given at the end "
 "explains reputation point requirements for each type of moderation task."
 msgstr ""
+"例如，如果您提出了一个有趣的问题或给出了一个有帮助的答案，您的意见将被点赞。另一方面，如果答案具有误导性 - "
+"它将被否决。每投赞成票得10分，每反对票减10分。每天一个问题或答案的积分限制为 200 分。最后给出的表格解释了每种类型的审核任务的声誉点要求。"
 
 #. module: website_forum
 #: model:ir.actions.act_url,name:website_forum.action_open_forum
@@ -1634,7 +1667,7 @@ msgstr "论坛"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__mode
 msgid "Forum Mode"
-msgstr ""
+msgstr "论坛模式"
 
 #. module: website_forum
 #. openerp-web
@@ -1682,7 +1715,7 @@ msgstr "论坛"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_website__forums_count
 msgid "Forums Count"
-msgstr ""
+msgstr "论坛计数"
 
 #. module: website_forum
 #: model:ir.model,name:website_forum.model_gamification_challenge
@@ -1778,12 +1811,12 @@ msgstr "隐藏简介"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "I'm <b>Following</b>"
-msgstr ""
+msgstr "我在<b>跟踪</b>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "I'm Following"
-msgstr ""
+msgstr "我在关注"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__id
@@ -1847,6 +1880,8 @@ msgid ""
 "motivation is “I would like others to explain ______ to me”, then you are "
 "probably OK."
 msgstr ""
+"如果您符合这些示例之一，或者您提出问题的动机是“我想参加关于 ______ "
+"的讨论”，那么您不应该在这里提问，而是在我们的邮件列表中提问。但是，如果您的动机是“我希望其他人向我解释______”，那么您可能很棒的。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.close_post
@@ -1916,7 +1951,7 @@ msgstr "作者的简介在其帖子是否可见"
 #: code:addons/website_forum/models/forum.py:0
 #, python-format
 msgid "It is not allowed to modify someone else's vote."
-msgstr ""
+msgstr "不允许修改别人的投票。"
 
 #. module: website_forum
 #: code:addons/website_forum/models/forum.py:0
@@ -1929,7 +1964,7 @@ msgstr "不能给自己的贴子投票。"
 #: code:addons/website_forum/static/src/js/website_forum.js:0
 #, python-format
 msgid "Karma Error"
-msgstr ""
+msgstr "贡献值错误"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.view_forum_forum_form
@@ -2016,7 +2051,7 @@ msgstr "附件"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
 msgid "Mark as Best Answer"
-msgstr ""
+msgstr "标记为最佳答案"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.close_post
@@ -2027,7 +2062,7 @@ msgstr "标记为具有攻击性"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "Mark as spam"
-msgstr ""
+msgstr "标记为垃圾邮件"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__message_has_error
@@ -2056,7 +2091,7 @@ msgstr "管理操作"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
 msgid "Moderation tools"
-msgstr ""
+msgstr "调节工具"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
@@ -2094,7 +2129,7 @@ msgstr "通过将其分享到社交网络上，将此问题移至列表的顶部
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "My <b>Favourites</b>"
-msgstr ""
+msgstr "我的<b>收藏夹</b>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -2104,7 +2139,7 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "My Favourites"
-msgstr ""
+msgstr "我的收藏"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
@@ -2120,7 +2155,7 @@ msgstr "我的投票"
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar
 msgid "My profile"
-msgstr ""
+msgstr "我的资料"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
@@ -2187,37 +2222,37 @@ msgstr "不错的问题"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_activities
 msgid "No activities yet!"
-msgstr ""
+msgstr "还没有活动!"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "No favourite questions in this forum (yet).<br/>"
-msgstr ""
+msgstr "本论坛中未收藏问题(尚未)。<br/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "No flagged posts"
-msgstr ""
+msgstr "没有标记的帖子"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_all
 msgid "No forum is available yet."
-msgstr ""
+msgstr "目前还没有论坛。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "No post to be validated"
-msgstr ""
+msgstr "没有待验证的帖子"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.tag
 msgid "No tags"
-msgstr ""
+msgstr "没有标签"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_votes
 msgid "No vote given by you yet!"
-msgstr ""
+msgstr "您还没有给出评价！"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_dofollow
@@ -2235,7 +2270,7 @@ msgstr "值得注意的问题"
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__message_needaction_counter
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag__message_needaction_counter
 msgid "Number of Actions"
-msgstr "操作次数"
+msgstr "动作个数"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag__posts_count
@@ -2314,7 +2349,7 @@ msgstr "平均，"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
 msgid "Only one answer per question is allowed"
-msgstr ""
+msgstr "每个问题只允许有一个答案"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.view_forum_forum_form
@@ -2329,7 +2364,7 @@ msgstr "订单"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Order by"
-msgstr ""
+msgstr "订购方式"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_all_oe_structure_forum_all_top
@@ -2359,7 +2394,7 @@ msgstr "平面内容"
 msgid ""
 "Please wait for a moderator to validate your previous post before "
 "continuing."
-msgstr ""
+msgstr "请等待版主验证你之前的帖子后再继续。"
 
 #. module: website_forum
 #: model:gamification.badge,name:website_forum.badge_q_1
@@ -2411,7 +2446,7 @@ msgstr "登录关张理由"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__total_posts
 msgid "Post Count"
-msgstr ""
+msgstr "文章计数"
 
 #. module: website_forum
 #: model:ir.model,name:website_forum.model_forum_post_vote
@@ -2496,7 +2531,7 @@ msgstr "问题编辑"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.edit_post
 msgid "Question by"
-msgstr ""
+msgstr "问题"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_gen_question_downvote
@@ -2561,7 +2596,7 @@ msgstr "问题"
 #: code:addons/website_forum/static/src/xml/website_forum_templates.xml:0
 #, python-format
 msgid "Questions and Answers"
-msgstr ""
+msgstr "问题与回答"
 
 #. module: website_forum
 #: model:ir.model.fields,help:website_forum.field_forum_forum__mode
@@ -2569,13 +2604,16 @@ msgid ""
 "Questions mode: only one answer allowed\n"
 " Discussions mode: multiple answers allowed"
 msgstr ""
+"问题模式：只允许一个答案\n"
+"讨论模式：允许多个答案"
 
 #. module: website_forum
 #: model:ir.ui.menu,name:website_forum.menu_forum_rank_global
 msgid "Ranks"
-msgstr ""
+msgstr "等级"
 
 #. module: website_forum
+#: code:addons/website_forum/models/forum.py:0
 #: code:addons/website_forum/models/forum.py:0
 #, python-format
 msgid "Re: %s"
@@ -2586,12 +2624,12 @@ msgstr "回复: %s"
 #: code:addons/website_forum/static/src/js/website_forum.js:0
 #, python-format
 msgid "Read the guidelines to know how to gain karma."
-msgstr ""
+msgstr "阅读指南，知道如何获得贡献值。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_post_question_block
 msgid "Read: #{question.name}"
-msgstr ""
+msgstr "阅读：#{question.name}"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__closed_reason_id
@@ -2644,7 +2682,7 @@ msgstr "重开"
 #: code:addons/website_forum/controllers/main.py:0
 #, python-format
 msgid "Reply should not be empty."
-msgstr ""
+msgstr "回复不应该是空的。"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__self_reply
@@ -2660,7 +2698,7 @@ msgstr "限制发布到本网站。"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.private_profile
 msgid "Return to the forum."
-msgstr ""
+msgstr "返回到论坛。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.404
@@ -2702,7 +2740,7 @@ msgstr "学者"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Search Tips"
-msgstr ""
+msgstr "搜索提示"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.view_forum_post_search
@@ -2722,7 +2760,7 @@ msgstr "第二关联参数"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.tag
 msgid "See"
-msgstr ""
+msgstr "看到"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_post_template_new_answer
@@ -2781,7 +2819,7 @@ msgstr "显示"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.tag
 msgid "Show Tags Starting By"
-msgstr ""
+msgstr "显示标签，开始于"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -2844,7 +2882,7 @@ msgstr "对不起，你不能给自己的帖子投票"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "Spam all post"
-msgstr ""
+msgstr "标记所有帖子为垃圾帖子"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__state
@@ -2896,7 +2934,7 @@ msgstr "标签"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "Tags I Follow"
-msgstr ""
+msgstr "我关注的标签"
 
 #. module: website_forum
 #: model:gamification.badge,name:website_forum.badge_32
@@ -2935,12 +2973,12 @@ msgstr "谢谢张贴！"
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
 "questions related to Odoo."
-msgstr ""
+msgstr "该站点的目标是创建一个相关的知识库来回答与 Odoo 相关的问题。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "The question has been closed"
-msgstr ""
+msgstr "该问题已被关闭"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.faq
@@ -2950,20 +2988,22 @@ msgid ""
 " base content. Such privileges are granted based on user karma level: you "
 "will be able to do the same once your karma gets high enough."
 msgstr ""
+"因此，本网站的有经验用户可以像 wiki "
+"页面一样编辑问题和答案，以提高知识库内容的整体质量。此类特权是根据用户业力级别授予的：一旦您的业力变得足够高，您就可以这样做。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_all_oe_structure_forum_all_top
 msgid ""
 "This community is for professional and enthusiast users, partners and "
 "programmers."
-msgstr ""
+msgstr "这个社区是为专业和发烧友用户、合作伙伴和程序员服务的。"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 msgid ""
 "This community is for professional and enthusiast users, partners and "
 "programmers. You can ask questions about:"
-msgstr ""
+msgstr "该社区面向专业和爱好者用户、合作伙伴和程序员。您可以提出以下问题："
 
 #. module: website_forum
 #: model_terms:forum.forum,welcome_message:website_forum.forum_help
@@ -2971,6 +3011,8 @@ msgid ""
 "This community is for professionals and enthusiasts of our products and services.\n"
 "                                        <br>Share and discuss the best content and new marketing ideas, build your professional profile and become a better marketer together."
 msgstr ""
+"该社区面向专业人士和我们产品和服务的爱好者。\n"
+"                                        <br>分享和讨论最好的内容和新的营销理念，建立你的专业形象，一起成为更好的营销人员。"
 
 #. module: website_forum
 #: model:forum.forum,description:website_forum.forum_help
@@ -3013,6 +3055,8 @@ msgid ""
 "This post is currently awaiting moderation and it's not published yet.<br/>\n"
 "                Do you want <b>Accept</b> or <b>Reject</b> this post ?"
 msgstr ""
+"这个帖子目前正在等待审核，还没有发表。<br/>\n"
+"                你想<b>接受</b>或<b>拒绝</b>这个帖子吗？"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__name
@@ -3048,7 +3092,7 @@ msgstr "待验证"
 msgid ""
 "To prevent your question from being flagged and possibly removed, avoid "
 "asking subjective questions where …"
-msgstr ""
+msgstr "为防止您的问题被标记并可能被删除，请避免在哪里提出主观问题……"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -3058,12 +3102,12 @@ msgstr "切换收藏状态"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.tag
 msgid "Toolbar with button groups"
-msgstr ""
+msgstr "带有按钮组的工具条"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "Topics"
-msgstr ""
+msgstr "主题"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__vote_count
@@ -3078,7 +3122,7 @@ msgstr "趋势"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Try searching for one or two words"
-msgstr ""
+msgstr "试着搜索一或两个词"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -3088,7 +3132,7 @@ msgstr "未回答"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.question_dropdown
 msgid "Undelete"
-msgstr ""
+msgstr "取消删除"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_comment_unlink_all
@@ -3103,7 +3147,7 @@ msgstr "不链接自己的评论"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
 msgid "Unmark as Best Answer"
-msgstr ""
+msgstr "取消标记为最佳答案"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__message_unread
@@ -3122,7 +3166,7 @@ msgstr "未读消息计数器"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Unsolved"
-msgstr ""
+msgstr "未解决"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__write_date
@@ -3212,7 +3256,7 @@ msgstr "投票"
 #. module: website_forum
 #: model:ir.model.constraint,message:website_forum.constraint_forum_post_vote_vote_uniq
 msgid "Vote already exists !"
-msgstr ""
+msgstr "投票已经存在 !"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__vote_ids
@@ -3307,11 +3351,12 @@ msgid ""
 "rough measure of the community trust to him/her. Various moderation tasks "
 "are gradually assigned to the users based on those points."
 msgstr ""
+"当一个问题或答案被点赞时，发布它们的用户将获得一些积分，这些积分被称为“业力积分”。这些点可以粗略地衡量社区对他/她的信任。根据这些点，逐步将各种审核任务分配给用户。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "You already have a pending post"
-msgstr ""
+msgstr "你已经有一个待处理的帖子"
 
 #. module: website_forum
 #: code:addons/website_forum/models/forum.py:0
@@ -3332,7 +3377,7 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.edit_post
 msgid "You need to have sufficient karma to edit tags"
-msgstr ""
+msgstr "你需要有足够的业力来编辑标签"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -3340,12 +3385,12 @@ msgid ""
 "You should only ask practical, answerable questions based on actual problems"
 " that you face. Chatty, open-ended questions diminish the usefulness of this"
 " site and push other questions off the front page."
-msgstr ""
+msgstr "您应该只根据您面临的实际问题提出实际的、可回答的问题。喋喋不休的开放式问题会降低该网站的实用性，并将其他问题推到首页之外。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "You're not following any topic in this forum (yet).<br/>"
-msgstr ""
+msgstr "你没有关注本论坛的任何主题（尚未）。<br/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.edit_post
@@ -3361,22 +3406,22 @@ msgstr "你的回复"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_post_question_block
 msgid "Your favourite"
-msgstr ""
+msgstr "您最喜欢的"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_post_question_block
 msgid "[Closed]"
-msgstr ""
+msgstr "[已关闭]"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_post_question_block
 msgid "[Deleted]"
-msgstr ""
+msgstr "[已删除]"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_post_question_block
 msgid "[Offensive]"
-msgstr ""
+msgstr "[攻击性]"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.faq
@@ -3386,7 +3431,7 @@ msgstr "接受任何回复"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "activity date"
-msgstr ""
+msgstr "下一个活动日期"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.header
@@ -3506,12 +3551,12 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "in your favourites"
-msgstr ""
+msgstr "在你的收藏"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "in your followed list"
-msgstr ""
+msgstr "在你的关注列表"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -3555,22 +3600,22 @@ msgstr "贡献度点数"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "matching \""
-msgstr ""
+msgstr "陪陪 \""
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "most answered"
-msgstr ""
+msgstr "最多回答"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "most voted"
-msgstr ""
+msgstr "热门"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "newest"
-msgstr ""
+msgstr "最新"
 
 #. module: website_forum
 #: model:forum.post.reason,name:website_forum.reason_4
@@ -3618,7 +3663,7 @@ msgstr "种族主义和仇恨言论"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "solved"
-msgstr ""
+msgstr "已解答"
 
 #. module: website_forum
 #: model:forum.post.reason,name:website_forum.reason_8
@@ -3633,7 +3678,7 @@ msgstr "有关Odoo服务等具体问题等。"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "tag"
-msgstr ""
+msgstr "标签"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -3650,7 +3695,7 @@ msgstr "威胁性语言"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "to partecipate"
-msgstr ""
+msgstr "参与"
 
 #. module: website_forum
 #: model:forum.post.reason,name:website_forum.reason_9
@@ -3665,17 +3710,17 @@ msgstr "过于主观和争论性"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "trending"
-msgstr ""
+msgstr "趋势"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "unanswered"
-msgstr ""
+msgstr "未回答"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "unsolved"
-msgstr ""
+msgstr "未解决"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.faq
@@ -3685,7 +3730,7 @@ msgstr "支持，添加注释"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
 msgid "using the"
-msgstr ""
+msgstr "使用"
 
 #. module: website_forum
 #: model:forum.post.reason,name:website_forum.reason_12
@@ -3730,9 +3775,9 @@ msgstr "你的基础资料可以被视为提示工具"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.display_post_question_block
 msgid "| Flagged"
-msgstr ""
+msgstr "| 标记的"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "圾 Text"
-msgstr ""
+msgstr "垃 圾 文本"

@@ -3,7 +3,6 @@
 # 	* survey
 # 
 # Translators:
-# 黎伟杰 <674416404@qq.com>, 2019
 # mrshelly <mrshelly@hotmail.com>, 2019
 # THL <wt39181819@gmail.com>, 2019
 # xiangye xiao, 2019
@@ -22,13 +21,14 @@
 # v2exerer <9010446@qq.com>, 2019
 # Ryan Zhang <so_happy_boy@hotmail.com>, 2019
 # 老窦 北京 <2662059195@qq.com>, 2019
-# guohuadeng <guohuadeng@hotmail.com>, 2019
 # keecome <7017511@qq.com>, 2019
 # snow wang <147156565@qq.com>, 2019
 # Jeanphy <hzh0292@qq.com>, 2019
-# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2019
-# Jeffery CHEN Fan <jeffery9@gmail.com>, 2019
 # as co02 <asco02@163.com>, 2020
+# guohuadeng <guohuadeng@hotmail.com>, 2020
+# Jeffery CHEN <jeffery9@gmail.com>, 2020
+# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2022
+# Raymond Yu <cl_yu@hotmail.com>, 2022
 # 
 msgid ""
 msgstr ""
@@ -36,7 +36,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 12:34+0000\n"
 "PO-Revision-Date: 2019-08-26 09:14+0000\n"
-"Last-Translator: as co02 <asco02@163.com>, 2020\n"
+"Last-Translator: Raymond Yu <cl_yu@hotmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +59,7 @@ msgstr "%s 挑战证书"
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.page
 msgid "&amp;times;"
-msgstr "&amp;次数;"
+msgstr "&amp;times;"
 
 #. module: survey
 #: model:ir.actions.report,print_report_name:survey.certification_report
@@ -483,12 +483,12 @@ msgstr "长度必须是正数。"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_2_question_3_choice_4
 msgid "A little bit overpriced"
-msgstr ""
+msgstr "价格有点高"
 
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_2_question_3_choice_5
 msgid "A lot overpriced"
-msgstr ""
+msgstr "价格高出很多"
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_label__answer_score
@@ -511,7 +511,7 @@ msgstr "令牌必须是独特的！"
 #: model:survey.question,question:survey.survey_feedback_p2
 #: model:survey.question,title:survey.survey_feedback_p2
 msgid "About our ecommerce"
-msgstr ""
+msgstr "关于我们的电子商务"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_invite__survey_access_mode
@@ -532,12 +532,12 @@ msgstr "访问记号应该是独一无二"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_needaction
 msgid "Action Needed"
-msgstr "需要采取行动"
+msgstr "需要行动"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__active
 msgid "Active"
-msgstr "有效"
+msgstr "启用"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__activity_ids
@@ -911,7 +911,7 @@ msgstr "撰写邮件"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_1_question_2_choice_3
 msgid "Conference chair"
-msgstr ""
+msgstr "会议主席"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.sfinished
@@ -946,7 +946,7 @@ msgstr "正确的"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_2_question_3_choice_3
 msgid "Correctly priced"
-msgstr ""
+msgstr "正确的定价"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_invite__create_uid
@@ -1018,7 +1018,7 @@ msgstr "客户将收到相同的令牌"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_1_question_2_choice_5
 msgid "Customizable Lamp"
-msgstr ""
+msgstr "可定制的灯"
 
 #. module: survey
 #: model:ir.model.fields.selection,name:survey.selection__survey_question__question_type__date
@@ -1129,19 +1129,19 @@ msgstr "显示简单模式选择问题。"
 #: model:survey.question,question:survey.vendor_certification_page_1_question_1
 #: model:survey.question,title:survey.vendor_certification_page_1_question_1
 msgid "Do we sell Acoustic Bloc Screens?"
-msgstr ""
+msgstr "我们是否出售声学Bloc屏风？"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p2_q3
 #: model:survey.question,title:survey.survey_feedback_p2_q3
 msgid "Do you have any other comments, questions, or concerns ?"
-msgstr ""
+msgstr "你是否有任何其他意见、问题或担忧？"
 
 #. module: survey
 #: model:survey.question,question:survey.vendor_certification_page_1_question_5
 #: model:survey.question,title:survey.vendor_certification_page_1_question_5
 msgid "Do you think we have missing products in our catalog? (not rated)"
-msgstr ""
+msgstr "你认为我们的目录中是否有遗漏的产品？(未评级)"
 
 #. module: survey
 #: model:ir.model.fields.selection,name:survey.selection__survey_survey__state__draft
@@ -1201,7 +1201,7 @@ msgstr "错误消息"
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_user_input_view_search
 msgid "Except Test Entries"
-msgstr ""
+msgstr "排除测试条目"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_invite__existing_partner_ids
@@ -1287,7 +1287,7 @@ msgstr "赠送徽章"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug4
 msgid "Good value for money"
-msgstr ""
+msgstr "物美价廉"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_question_search
@@ -1311,36 +1311,36 @@ msgstr "高度"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug1
 msgid "High quality"
-msgstr ""
+msgstr "高质量"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p1_q3
 #: model:survey.question,title:survey.survey_feedback_p1_q3
 msgid "How frequently do you buy products online ?"
-msgstr ""
+msgstr "你在网上购买产品的频率如何？"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p1_q4
 #: model:survey.question,title:survey.survey_feedback_p1_q4
 msgid "How many times did you order products on our website ?"
-msgstr ""
+msgstr "您在我们的网站上订购了多少次产品？"
 
 #. module: survey
 #: model:survey.question,question:survey.vendor_certification_page_1_question_4
 #: model:survey.question,title:survey.vendor_certification_page_1_question_4
 msgid "How many versions of the Corner Desk do we have?"
-msgstr ""
+msgstr "我们有多少个转角桌的版本？"
 
 #. module: survey
 #: model:survey.question,question:survey.vendor_certification_page_2_question_1
 #: model:survey.question,title:survey.vendor_certification_page_2_question_1
 msgid "How much do we sell our Cable Management Box?"
-msgstr ""
+msgstr "我们的电缆管理箱卖多少钱？"
 
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q2_row5
 msgid "I have added products to my wishlist"
-msgstr ""
+msgstr "我已将产品添加到我的愿望清单中"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_invite__id
@@ -1432,7 +1432,7 @@ msgstr "如果你愿意，你能"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug6
 msgid "Impractical"
-msgstr ""
+msgstr "不切实际"
 
 #. module: survey
 #: model:ir.model.fields.selection,name:survey.selection__survey_survey__state__open
@@ -1442,7 +1442,7 @@ msgstr "进行中"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug7
 msgid "Ineffective"
-msgstr ""
+msgstr "无效的"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__validation_email
@@ -1498,7 +1498,7 @@ msgstr "达到时限了吗?"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q2_row2
 msgid "It is easy to find the product that I want"
-msgstr ""
+msgstr "很容易找到我想要的产品"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_label__sequence
@@ -1734,7 +1734,7 @@ msgstr "每行有多个选项"
 #. module: survey
 #: model:survey.survey,title:survey.vendor_certification
 msgid "MyCompany Vendor Certification"
-msgstr ""
+msgstr "我的公司供应商认证"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_user_input_view_search
@@ -1820,7 +1820,7 @@ msgstr "号码"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_needaction_counter
 msgid "Number of Actions"
-msgstr "操作次数"
+msgstr "动作个数"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__attempts_limit
@@ -1837,7 +1837,7 @@ msgstr "栏位数"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_1_question_3_choice_5
 msgid "Number of drawers"
-msgstr ""
+msgstr "抽屉的数量"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_has_error_counter
@@ -1882,7 +1882,7 @@ msgstr "黑色办公椅子"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p1_q3_sug1
 msgid "Once a day"
-msgstr ""
+msgstr "一天一次"
 
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p1_q3_sug3
@@ -1892,12 +1892,12 @@ msgstr "一个月一次"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p1_q3_sug2
 msgid "Once a week"
-msgstr ""
+msgstr "每周一次"
 
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p1_q3_sug4
 msgid "Once a year"
-msgstr ""
+msgstr "每年一次"
 
 #. module: survey
 #: model:ir.model.fields.selection,name:survey.selection__survey_question__matrix_subtype__simple
@@ -1950,7 +1950,7 @@ msgstr "整体表现 %.2f%s"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug5
 msgid "Overpriced"
-msgstr ""
+msgstr "价格过高"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__page_id
@@ -2018,7 +2018,7 @@ msgstr "请确保你的调查中至少有一个问题。你还需要至少一个
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug8
 msgid "Poor quality"
-msgstr ""
+msgstr "质量"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_user_input__question_ids
@@ -2272,13 +2272,13 @@ msgstr "查看结果"
 #: model:survey.question,question:survey.vendor_certification_page_1_question_3
 #: model:survey.question,title:survey.vendor_certification_page_1_question_3
 msgid "Select all the available customizations for our Customizable Desk"
-msgstr ""
+msgstr "为我们的可定制办公桌选择所有可用的定制功能"
 
 #. module: survey
 #: model:survey.question,question:survey.vendor_certification_page_1_question_2
 #: model:survey.question,title:survey.vendor_certification_page_1_question_2
 msgid "Select all the existing products"
-msgstr ""
+msgstr "选择所有现有产品"
 
 #. module: survey
 #: model:survey.question,question:survey.vendor_certification_page_2_question_2
@@ -2648,21 +2648,21 @@ msgstr "每个调查的徽章应该是独一无二的!"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q2_row4
 msgid "The checkout process is clear and secure"
-msgstr ""
+msgstr "结账过程清晰而安全"
 
 #. module: survey
 #. openerp-web
 #: code:addons/survey/static/src/js/survey.js:0
 #, python-format
 msgid "The date you selected is greater than the maximum date: "
-msgstr ""
+msgstr "您选择的日期大于最大日期: "
 
 #. module: survey
 #. openerp-web
 #: code:addons/survey/static/src/js/survey.js:0
 #, python-format
 msgid "The date you selected is lower than the minimum date: "
-msgstr ""
+msgstr "您选择的日期低于最小日期: "
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__description
@@ -2690,12 +2690,12 @@ msgstr "以下电子邮箱已收到邀请"
 msgid ""
 "The following recipients have no user account: %s. You should create user "
 "accounts for them or allow external signup in configuration."
-msgstr "以下收件人没有用户帐户： %s 您应该为它们创建用户帐户或允许在配置中进行外部注册。"
+msgstr "以下收件人没有用户账户： %s 您应该为它们创建用户账户或允许在配置中进行外部注册。"
 
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q2_row1
 msgid "The new layout and design is fresh and up-to-date"
-msgstr ""
+msgstr "新的布局和设计是新鲜和最新的"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.403
@@ -2716,7 +2716,7 @@ msgstr "如果调查时间有限，则时间限制必须为正数。"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q2_row3
 msgid "The tool to compare the products is useful to make a choice"
-msgstr ""
+msgstr "比较产品的工具对做出选择很有用"
 
 #. module: survey
 #: code:addons/survey/controllers/main.py:0
@@ -2825,7 +2825,7 @@ msgstr ""
 msgid ""
 "This survey does not allow external people to participate. You should create"
 " user accounts or update survey access mode accordingly."
-msgstr "此调查不允许外部人员参与。 您应该创建用户帐户或更新调查访问模式。"
+msgstr "此调查不允许外部人员参与。 您应该创建用户账户或更新调查访问模式。"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_expired
@@ -2896,7 +2896,7 @@ msgstr "无法发布邮件，请配置发件人的EMail地址。"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_2_question_3_choice_2
 msgid "Underpriced"
-msgstr ""
+msgstr "价格偏低"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.sfinished
@@ -2906,7 +2906,7 @@ msgstr "好可惜，你没有通过测试。"
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug3
 msgid "Unique"
-msgstr ""
+msgstr "唯一的"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_unread
@@ -2943,7 +2943,7 @@ msgstr "用于随机分组，从该分组的所有问题中随机抽取X个问�
 #. module: survey
 #: model:survey.label,value:survey.survey_feedback_p2_q1_sug2
 msgid "Useful"
-msgstr ""
+msgstr "有用"
 
 #. module: survey
 #: model:res.groups,name:survey.group_survey_user
@@ -3001,7 +3001,7 @@ msgstr "信息：验证错误"
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_2_question_3_choice_1
 msgid "Very underpriced"
-msgstr ""
+msgstr "价格非常低"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.result_choice
@@ -3022,31 +3022,31 @@ msgstr "网上沟通记录"
 #: model:survey.question,question:survey.vendor_certification_page_2_question_3
 #: model:survey.question,title:survey.vendor_certification_page_2_question_3
 msgid "What do you think about our prices (not rated)?"
-msgstr ""
+msgstr "你对我们的价格（未评级）有何看法？"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p2_q2
 #: model:survey.question,title:survey.survey_feedback_p2_q2
 msgid "What do your think about our new eCommerce ?"
-msgstr ""
+msgstr "您如何看待我们的新电子商务？"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p1_q2
 #: model:survey.question,title:survey.survey_feedback_p1_q2
 msgid "When is your date of birth ?"
-msgstr ""
+msgstr "你的出生日期是什么时候？"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p1_q1
 #: model:survey.question,title:survey.survey_feedback_p1_q1
 msgid "Where do you live ?"
-msgstr ""
+msgstr "你住在哪里？"
 
 #. module: survey
 #: model:survey.question,question:survey.survey_feedback_p2_q1
 #: model:survey.question,title:survey.survey_feedback_p2_q1
 msgid "Which of the following words would you use to describe our products ?"
-msgstr ""
+msgstr "你会用以下哪个词来描述我们的产品？"
 
 #. module: survey
 #: model:survey.label,value:survey.vendor_certification_page_1_question_3_choice_3
@@ -3096,6 +3096,22 @@ msgstr "您只能为具有评分机制的调查创建证书。"
 #, python-format
 msgid "You cannot send an invitation for a survey that has no questions."
 msgstr "你不能为没有问题的调查问卷发送邀请。"
+
+#. module: survey
+#: code:addons/survey/models/survey_survey.py:0
+#, python-format
+msgid ""
+"You cannot send an invitation for a \"One page per section\" survey if the "
+"survey has no sections."
+msgstr "如果调查表没有章节，你不能为 \"每节一页 \"的调查表发送邀请。"
+
+#. module: survey
+#: code:addons/survey/models/survey_survey.py:0
+#, python-format
+msgid ""
+"You cannot send an invitation for a \"One page per section\" survey if the "
+"survey only contains empty sections."
+msgstr "如果调查表只包含空的部分，你不能为 \"每部分一页 \"的调查表发送邀请。"
 
 #. module: survey
 #: code:addons/survey/models/survey_survey.py:0

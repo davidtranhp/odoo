@@ -3,7 +3,7 @@
 
 from odoo import api, exceptions, fields, models, _
 from odoo.exceptions import UserError
-from odoo.tools import float_compare, float_round
+from odoo.tools import float_compare, float_round, float_is_zero
 
 
 class StockMoveLine(models.Model):
@@ -87,6 +87,12 @@ class StockMove(models.Model):
         .filtered(lambda ml: ml.qty_done == 0.0)\
         .write({'move_id': new_move, 'product_uom_qty': 0})
 
+    @api.model
+    def _prepare_merge_moves_distinct_fields(self):
+        distinct_fields = super()._prepare_merge_moves_distinct_fields()
+        distinct_fields.append('bom_line_id')
+        return distinct_fields
+
     @api.depends('raw_material_production_id.move_finished_ids.move_line_ids.lot_id')
     def _compute_order_finished_lot_ids(self):
         for move in self:
@@ -119,6 +125,19 @@ class StockMove(models.Model):
         for move in self:
             move.is_done = (move.state in ('done', 'cancel'))
 
+    @api.depends('raw_material_production_id.name')
+    def _compute_reference(self):
+        not_prod_move = self.env['stock.move']
+        for move in self:
+            if not move.raw_material_production_id:
+                not_prod_move |= move
+                continue
+            move.write({
+                'name': move.raw_material_production_id.name,
+                'reference': move.raw_material_production_id.name,
+            })
+        super(StockMove, not_prod_move)._compute_reference()
+
     @api.model
     def default_get(self, fields_list):
         defaults = super(StockMove, self).default_get(fields_list)
@@ -128,6 +147,9 @@ class StockMove(models.Model):
                 defaults['state'] = 'done'
                 defaults['product_uom_qty'] = 0.0
                 defaults['additional'] = True
+            elif production_id.state == 'draft':
+                defaults['group_id'] = production_id.procurement_group_id.id
+                defaults['reference'] = production_id.name
         return defaults
 
     def _action_assign(self):
@@ -152,7 +174,7 @@ class StockMove(models.Model):
         moves_to_unlink = self.env['stock.move']
         phantom_moves_vals_list = []
         for move in self:
-            if not move.picking_type_id:
+            if not move.picking_type_id or (move.production_id and move.production_id.product_id == move.product_id):
                 moves_to_return |= move
                 continue
             bom = self.env['mrp.bom'].sudo()._bom_find(product=move.product_id, company_id=move.company_id.id, bom_type='phantom')
@@ -265,11 +287,17 @@ class StockMove(models.Model):
         for bom_line, bom_line_data in bom_sub_lines:
             bom_line_moves = self.filtered(lambda m: m.bom_line_id == bom_line)
             if bom_line_moves:
+                if float_is_zero(bom_line_data['qty'], precision_rounding=bom_line.product_uom_id.rounding):
+                    # As BoMs allow components with 0 qty, a.k.a. optionnal components, we simply skip those
+                    # to avoid a division by zero.
+                    continue
                 # We compute the quantities needed of each components to make one kit.
                 # Then, we collect every relevant moves related to a specific component
                 # to know how many are considered delivered.
                 uom_qty_per_kit = bom_line_data['qty'] / bom_line_data['original_qty']
-                qty_per_kit = bom_line.product_uom_id._compute_quantity(uom_qty_per_kit, bom_line.product_id.uom_id)
+                qty_per_kit = bom_line.product_uom_id._compute_quantity(uom_qty_per_kit, bom_line.product_id.uom_id, round=False)
+                if not qty_per_kit:
+                    continue
                 incoming_moves = bom_line_moves.filtered(filters['incoming_moves'])
                 outgoing_moves = bom_line_moves.filtered(filters['outgoing_moves'])
                 qty_processed = sum(incoming_moves.mapped('product_qty')) - sum(outgoing_moves.mapped('product_qty'))

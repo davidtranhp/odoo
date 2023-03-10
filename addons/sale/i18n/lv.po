@@ -10,14 +10,15 @@
 # InfernalLV <karlisdreizis@gmail.com>, 2019
 # ievaputnina <ievai.putninai@gmail.com>, 2019
 # Konstantins Zabogonskis <inculin4ik@gmail.com>, 2019
+# Anzelika Adejanova, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 14:57+0000\n"
+"POT-Creation-Date: 2020-04-27 09:22+0000\n"
 "PO-Revision-Date: 2019-08-26 09:13+0000\n"
-"Last-Translator: Konstantins Zabogonskis <inculin4ik@gmail.com>, 2019\n"
+"Last-Translator: Anzelika Adejanova, 2022\n"
 "Language-Team: Latvian (https://www.transifex.com/odoo/teams/41243/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -685,7 +686,7 @@ msgstr "Aktivitātes"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Aktivitātes izņēmuma noformējums"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__activity_state
@@ -1237,7 +1238,7 @@ msgstr ""
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_dhl
-msgid "DHL Connector"
+msgid "DHL Express Connector"
 msgstr ""
 
 #. module: sale
@@ -1699,7 +1700,7 @@ msgstr "Icon"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Ikona izņēmuma aktivitātes identificēšanai."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_needaction
@@ -1745,12 +1746,6 @@ msgstr ""
 #, python-format
 msgid "Import Template for Products"
 msgstr "Importēt veidni produktiem"
-
-#. module: sale
-#: code:addons/sale/models/product_template.py:0
-#, python-format
-msgid "Import Template for Products (with several prices)"
-msgstr ""
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
@@ -2106,8 +2101,12 @@ msgid "Margins"
 msgstr "Peļņas"
 
 #. module: sale
+#: model:ir.actions.server,name:sale.model_sale_order_action_quotation_sent
+msgid "Mark Quotation as Sent"
+msgstr ""
+
+#. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.account_invoice_form
-#: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "Marketing"
 msgstr "Mārketings"
 
@@ -2287,7 +2286,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Kļūdu skaits"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__message_needaction_counter
@@ -2369,6 +2368,12 @@ msgstr ""
 #, python-format
 msgid "Only Integer Value should be valid."
 msgstr "Only Integer Value should be valid."
+
+#. module: sale
+#: code:addons/sale/models/sale.py:0
+#, python-format
+msgid "Only draft orders can be marked as sent directly."
+msgstr ""
 
 #. module: sale
 #: model:ir.model.constraint,message:sale.constraint_product_attribute_custom_value_sol_custom_value_unique
@@ -3003,7 +3008,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "SMS piegādes kļūda"
 
 #. module: sale
 #. openerp-web
@@ -3644,6 +3649,7 @@ msgstr ""
 
 #. module: sale
 #: code:addons/sale/models/product_template.py:0
+#, python-format
 msgid ""
 "The following products cannot be restricted to the company %s because they have already been used in quotations or sales orders in another company:\n"
 "%s\n"
@@ -3921,7 +3927,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Reģistrētās izņēmuma aktivitātes veids."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_ups
@@ -3937,12 +3943,6 @@ msgstr ""
 #: model:ir.model,name:sale.model_utm_campaign
 msgid "UTM Campaign"
 msgstr ""
-
-#. module: sale
-#: code:addons/sale/models/sale.py:0
-#, python-format
-msgid "Uncategorized"
-msgstr "Uncategorized"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__price_unit
@@ -4177,6 +4177,15 @@ msgid ""
 msgstr ""
 
 #. module: sale
+#: code:addons/sale/models/product_product.py:0
+#: code:addons/sale/models/product_template.py:0
+#, python-format
+msgid ""
+"You cannot change the product's type because it is already used in sales "
+"orders."
+msgstr ""
+
+#. module: sale
 #: code:addons/sale/models/sale.py:0
 #, python-format
 msgid ""
@@ -4269,15 +4278,4 @@ msgstr ""
 #: code:addons/sale/static/src/xml/account_reconciliation.xml:0
 #, python-format
 msgid "uninvoiced sales orders"
-msgstr ""
-
-#. module: sale
-#: model:ir.actions.server,name:sale.model_sale_order_action_quotation_sent
-msgid "Mark Quotation as Sent"
-msgstr ""
-
-#. module: sale
-#: code:addons/sale/models/sale.py:0
-#, python-format
-msgid "Only draft orders can be marked as sent directly."
 msgstr ""

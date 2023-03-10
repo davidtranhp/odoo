@@ -18,6 +18,10 @@
 # Shaima Safar <shaima.safar@open-inside.com>, 2019
 # Mostafa Hanafy <mostafa.s.hanafy@gmail.com>, 2019
 # Nisrine Tagri <nta@odoo.com>, 2019
+# Tasneem Sarhan <tsa@odoo.com>, 2020
+# Dooreen AlMehdar <doa@odoo.com>, 2020
+# Mohamed Abuelmagd <mabuelmagd12@gmail.com>, 2021
+# Malaz Abuidris <msea@odoo.com>, 2022
 # 
 msgid ""
 msgstr ""
@@ -25,7 +29,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 12:34+0000\n"
 "PO-Revision-Date: 2019-08-26 09:09+0000\n"
-"Last-Translator: Nisrine Tagri <nta@odoo.com>, 2019\n"
+"Last-Translator: Malaz Abuidris <msea@odoo.com>, 2022\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -322,7 +326,7 @@ msgstr "إجراء مطلوب"
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_mail_activity_type__category
 msgid "Action to Perform"
-msgstr ""
+msgstr "إجراء للتنفيذ"
 
 #. module: calendar
 #: model:ir.model.fields,help:calendar.field_mail_activity_type__category
@@ -330,6 +334,8 @@ msgid ""
 "Actions may trigger specific behavior like opening calendar view or "
 "automatically mark as done when a document is uploaded"
 msgstr ""
+"قد تؤدي الإجراءات إلى سلوك معين مثل فتح طريقة عرض التقويم أو وضع علامة "
+"\"تم\" عليها تلقائيًا عند تحميل مستند"
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_contacts__active
@@ -449,7 +455,7 @@ msgstr "جهات اتصال التقويم"
 #. module: calendar
 #: model:ir.model,name:calendar.model_calendar_event
 msgid "Calendar Event"
-msgstr ""
+msgstr "حدث التقويم"
 
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.invitation_page_anonymous
@@ -612,12 +618,12 @@ msgstr "البريد الإلكتروني"
 #. module: calendar
 #: model:calendar.alarm,name:calendar.alarm_mail_1
 msgid "Email - 3 Hours"
-msgstr ""
+msgstr "البريد الإلكتروني - 3 ساعات "
 
 #. module: calendar
 #: model:calendar.alarm,name:calendar.alarm_mail_2
 msgid "Email - 6 Hours"
-msgstr ""
+msgstr "البريد الإلكتروني - 6 ساعات "
 
 #. module: calendar
 #: model:ir.model.fields,help:calendar.field_calendar_attendee__email
@@ -1019,27 +1025,27 @@ msgstr "التنبيهات"
 #. module: calendar
 #: model:calendar.alarm,name:calendar.alarm_notif_5
 msgid "Notification - 1 Days"
-msgstr ""
+msgstr "إشعار - 1 يوم "
 
 #. module: calendar
 #: model:calendar.alarm,name:calendar.alarm_notif_3
 msgid "Notification - 1 Hours"
-msgstr ""
+msgstr "إشعار - 1 ساعة "
 
 #. module: calendar
 #: model:calendar.alarm,name:calendar.alarm_notif_1
 msgid "Notification - 15 Minutes"
-msgstr ""
+msgstr "إشعار - 15 دقيقة "
 
 #. module: calendar
 #: model:calendar.alarm,name:calendar.alarm_notif_4
 msgid "Notification - 2 Hours"
-msgstr ""
+msgstr "إشعار - 2 ساعتان "
 
 #. module: calendar
 #: model:calendar.alarm,name:calendar.alarm_notif_2
 msgid "Notification - 30 Minutes"
-msgstr ""
+msgstr "إشعار - 30 دقيقة "
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_event__message_needaction_counter
@@ -1294,7 +1300,7 @@ msgstr "حالة مشاركة الحضور"
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.view_calendar_event_form
 msgid "Status:"
-msgstr ""
+msgstr "الحالة: "
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_event__stop
@@ -1375,7 +1381,7 @@ msgstr "لا يمكن أن يكون تاريخ الإنتهاء سابقًا ل�
 #: code:addons/calendar/models/calendar.py:0
 #, python-format
 msgid "The interval cannot be negative."
-msgstr ""
+msgstr "لا يمكن أن تكون الفترة سلبية. "
 
 #. module: calendar
 #: code:addons/calendar/models/calendar.py:0
@@ -1497,7 +1503,7 @@ msgstr "أسابيع"
 #. module: calendar
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__rrule_type__yearly
 msgid "Years"
-msgstr ""
+msgstr "سنوات"
 
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.invitation_page_anonymous

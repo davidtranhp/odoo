@@ -173,7 +173,7 @@ class Project(models.Model):
         string='Members')
     is_favorite = fields.Boolean(compute='_compute_is_favorite', inverse='_inverse_is_favorite', string='Show Project on dashboard',
         help="Whether this project should be displayed on your dashboard.")
-    label_tasks = fields.Char(string='Use Tasks as', default='Tasks', help="Label used for the tasks of the project.")
+    label_tasks = fields.Char(string='Use Tasks as', default='Tasks', help="Label used for the tasks of the project.", translate=True)
     tasks = fields.One2many('project.task', 'project_id', string="Task Activities")
     resource_calendar_id = fields.Many2one(
         'resource.calendar', string='Working Time',
@@ -190,18 +190,21 @@ class Project(models.Model):
         help="Internal email associated with this project. Incoming emails are automatically synchronized "
              "with Tasks (or optionally Issues if the Issue Tracker module is installed).")
     privacy_visibility = fields.Selection([
-            ('followers', 'Invited employees'),
-            ('employees', 'All employees'),
-            ('portal', 'Portal users and all employees'),
+            ('followers', 'Invited internal users'),
+            ('employees', 'All internal users'),
+            ('portal', 'Invited portal users and all internal users'),
         ],
         string='Visibility', required=True,
         default='portal',
-        help="Defines the visibility of the tasks of the project:\n"
-                "- Invited employees: employees may only see the followed project and tasks.\n"
-                "- All employees: employees may see all project and tasks.\n"
-                "- Portal users and all employees: employees may see everything."
-                "   Portal users may see project and tasks followed by.\n"
-                "   them or by someone of their company.")
+        help="People to whom this project and its tasks will be visible.\n\n"
+            "- Invited internal users: when following a project, internal users will get access to all of its tasks without distinction. "
+            "Otherwise, they will only get access to the specific tasks they are following.\n "
+            "A user with the project > administrator access right level can still access this project and its tasks, even if they are not explicitly part of the followers.\n\n"
+            "- All internal users: all internal users can access the project and all of its tasks without distinction.\n\n"
+            "- Invited portal users and all internal users: all internal users can access the project and all of its tasks without distinction.\n"
+            "When following a project, portal users will get access to all of its tasks without distinction. Otherwise, they will only get access to the specific tasks they are following.\n\n"
+            "In any case, an internal user with no project access rights can still access a task, "
+            "provided that they are given the corresponding URL (and that they are part of the followers if the project is private).")
     doc_count = fields.Integer(compute='_compute_attached_docs_count', string="Number of documents attached")
     date_start = fields.Date(string='Start Date')
     date = fields.Date(string='Expiration Date', index=True, tracking=True)
@@ -265,6 +268,9 @@ class Project(models.Model):
                 # set the parent to the duplicated task
                 defaults['parent_id'] = old_to_new_tasks.get(task.parent_id.id, False)
             new_task = task.copy(defaults)
+            # If child are created before parent (ex sub_sub_tasks)
+            new_child_ids = [old_to_new_tasks[child.id] for child in task.child_ids if child.id in old_to_new_tasks]
+            tasks.browse(new_child_ids).write({'parent_id': new_task.id})
             old_to_new_tasks[task.id] = new_task.id
             tasks += new_task
 
@@ -328,7 +334,7 @@ class Project(models.Model):
         """ Subscribe to all existing active tasks when subscribing to a project """
         res = super(Project, self).message_subscribe(partner_ids=partner_ids, channel_ids=channel_ids, subtype_ids=subtype_ids)
         project_subtypes = self.env['mail.message.subtype'].browse(subtype_ids) if subtype_ids else None
-        task_subtypes = project_subtypes.mapped('parent_id').ids if project_subtypes else None
+        task_subtypes = (project_subtypes.mapped('parent_id') | project_subtypes.filtered(lambda sub: sub.internal or sub.default)).ids if project_subtypes else None
         if not subtype_ids or task_subtypes:
             self.mapped('tasks').message_subscribe(
                 partner_ids=partner_ids, channel_ids=channel_ids, subtype_ids=task_subtypes)
@@ -357,7 +363,7 @@ class Project(models.Model):
 
     def open_tasks(self):
         ctx = dict(self._context)
-        ctx.update({'search_default_project_id': self.id})
+        ctx.update({'search_default_project_id': self.id, 'default_project_id': self.id})
         action = self.env['ir.actions.act_window'].for_xml_id('project', 'act_project_project_2_project_task_all')
         return dict(action, context=ctx)
 
@@ -417,8 +423,10 @@ class Project(models.Model):
     @api.model
     def _send_rating_all(self):
         projects = self.search([('rating_status', '=', 'periodic'), ('rating_request_deadline', '<=', fields.Datetime.now())])
-        projects.mapped('task_ids')._send_task_rating_mail()
-        projects._compute_rating_request_deadline()
+        for project in projects:
+            project.task_ids._send_task_rating_mail()
+            project._compute_rating_request_deadline()
+            self.env.cr.commit()
 
 
 class Task(models.Model):
@@ -724,6 +732,8 @@ class Task(models.Model):
                 if fname not in vals:
                     vals[fname] = value
         task = super(Task, self.with_context(context)).create(vals)
+        if task.project_id.privacy_visibility == 'portal':
+            task._portal_ensure_token()
         return task
 
     def write(self, vals):
@@ -797,13 +807,13 @@ class Task(models.Model):
             return self.env.ref('project.mt_task_stage')
         return super(Task, self)._track_subtype(init_values)
 
-    def _notify_get_groups(self):
+    def _notify_get_groups(self, msg_vals=None):
         """ Handle project users and managers recipients that can assign
         tasks and create new one directly from notification emails. Also give
         access button to portal users and portal customers. If they are notified
         they should probably have access to the document. """
-        groups = super(Task, self)._notify_get_groups()
-
+        groups = super(Task, self)._notify_get_groups(msg_vals=msg_vals)
+        local_msg_vals = dict(msg_vals or {})
         self.ensure_one()
 
         project_user_group_id = self.env.ref('project.group_project_user').id
@@ -814,7 +824,7 @@ class Task(models.Model):
         )
 
         if not self.user_id and not self.stage_id.fold:
-            take_action = self._notify_get_action_link('assign')
+            take_action = self._notify_get_action_link('assign', **local_msg_vals)
             project_actions = [{'url': take_action, 'title': _('I take it')}]
             new_group[2]['actions'] = project_actions
 
