@@ -31,9 +31,11 @@
 # Collex100, 2020
 # Sergey Vilizhanin, 2020
 # Irina Fedulova <istartlin@gmail.com>, 2020
-# Ivan Yelizariev // IEL (ellui) <yelizariev@itpp.dev>, 2021
+# Ivan Kropotkin <yelizariev@itpp.dev>, 2021
 # ILMIR <karamov@it-projects.info>, 2021
-# Сергей Шебанин <sergey@shebanin.ru>, 2021
+# Иван Дроздов <hiraetari@gmail.com>, 2022
+# Alena Vlasova, 2022
+# Сергей Шебанин <sergey@shebanin.ru>, 2023
 # 
 msgid ""
 msgstr ""
@@ -41,7 +43,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-27 13:50+0000\n"
 "PO-Revision-Date: 2020-09-07 08:09+0000\n"
-"Last-Translator: Сергей Шебанин <sergey@shebanin.ru>, 2021\n"
+"Last-Translator: Сергей Шебанин <sergey@shebanin.ru>, 2023\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,6 +65,14 @@ msgid ""
 "\n"
 "    "
 msgstr ""
+"\n"
+"\n"
+"Бухгалтерские отчёты для Австрии.\n"
+"================================\n"
+"\n"
+"  * Определяет следующие отчеты:\n"
+"      * Прибыль/Потери (§ Метод общей стоимости UGB 231)\n"
+"      * Бухгалтерский баланс (§ UGB 224)"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_invoice_bba
@@ -82,6 +92,20 @@ msgid ""
 "        **R..R =** Customer Reference without non-numeric characters, **SSS =** Sequence Number, **DD =** Check Digits\n"
 "    "
 msgstr ""
+"\n"
+"\n"
+"Добавьте структурированную коммуникацию к счетам клиентов.\n"
+"--------------------------------------------------\n"
+"\n"
+"Использование структурированной связи BBA упрощает сверку счетов-фактур и платежей.\n"
+"Вы можете выбрать структурированное сообщение в качестве платежного сообщения в настройках выставления счетов/учета.\n"
+"Предлагаются два алгоритма:\n"
+"\n"
+"\" 1) Номер счета-фактуры +++RRR/RRRR/RRRDD+++\\n\"\n"
+"\" **R..R =** Номер счета, **DD =** Контрольные цифры\\n\"\n"
+"\" 2) Ссылка на клиента +++RRR/RRRR/SSSDD+++\\n\"\n"
+"\" **R..R =** Ссылка на клиента без нечисловых символов, **SSS =** Порядковый номер, **DD =** Контрольные цифры\\n\"\n"
+"\" \""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_at
@@ -363,6 +387,20 @@ msgid ""
 "\n"
 "    "
 msgstr ""
+"\n"
+"\n"
+"Обзор:\n"
+"---------\n"
+"\n"
+"* Шаблон плана счетов и налогов для компаний в Японии.\n"
+"* Это, вероятно, не охватывает все необходимые учетные записи для компании. Ожидается, что вы будете добавлять / удалять / изменять учетные записи на основе этого шаблона.\n"
+"\n"
+"Примечание:\n"
+"-----\n"
+"\n"
+"* Фискальные позиции \"内税\" и \"外税\" были добавлены для удовлетворения особых требований, которые могут возникнуть в результате внедрения POS. [1] При нормальных обстоятельствах вам может вообще не понадобиться их использовать.\n"
+"\n"
+"[1] См. https://github.com/odoo/odoo/pull/6470 для деталей."
 
 #. module: base
 #: code:addons/base/models/res_config.py:0
@@ -383,6 +421,9 @@ msgid ""
 "\n"
 "This module adds a custom Sales Team for the Point of Sale. This enables you to view and manage your point of sale sales with more ease.\n"
 msgstr ""
+"\n"
+"\n"
+"Этот модуль добавляет пользовательскую команду продаж для точки продаж. Это позволяет вам с большей легкостью просматривать продажи в точках продаж и управлять ими.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_restaurant
@@ -395,6 +436,13 @@ msgid ""
 "- Kitchen Order Printing: allows you to print orders updates to kitchen or bar printers\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Этот модуль добавляет в точку продаж несколько функций, специфичных для управления рестораном:\n"
+"- Печать счета: позволяет распечатать квитанцию до оплаты заказа.\n"
+"- Разделение счетов: позволяет разделить заказ на разные заказы.\n"
+"- Печать заказов на кухню: позволяет печатать обновления заказов на кухонных или барных принтерах\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_discount
@@ -405,6 +453,11 @@ msgid ""
 "discount to a customer.\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Этот модуль позволяет кассиру быстро предоставлять клиенту\n"
+"скидку в процентах.\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_loyalty
@@ -416,6 +469,12 @@ msgid ""
 "and get rewards.\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Этот модуль позволяет вам определить программу лояльности в\n"
+"точке продаж, в рамках которой клиенты зарабатывают баллы лояльности\n"
+"и получают вознаграждения.\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_epson_printer_restaurant
@@ -424,6 +483,10 @@ msgid ""
 "\n"
 "Use Epson Printers as Order Printers in the Point of Sale without the IoT Box\n"
 msgstr ""
+"\n"
+"\n"
+"Используйте принтеры Epson в качестве принтеров для заказов в точке продаж без управляющего узла IoT (интернета вещей)\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_epson_printer
@@ -432,6 +495,9 @@ msgid ""
 "\n"
 "Use Epson ePOS Printers without the IoT Box in the Point of Sale\n"
 msgstr ""
+"\n"
+"\n"
+"Используйте pos-принтеры Epson в точке продаж без управляющего узла IoT (интернета вещей)\n"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_renting_sign
@@ -440,6 +506,8 @@ msgid ""
 "            Bridge Sign functionalities with the Rental application\n"
 "        "
 msgstr ""
+"\n"
+"           Поддержка символа моста в приложении для аренды"
 
 #. module: base
 #: model:ir.module.module,description:base.module_helpdesk_timesheet
@@ -449,6 +517,9 @@ msgid ""
 "        - Track timesheet for a task from a ticket\n"
 "    "
 msgstr ""
+"\n"
+"       - Позволяет настроить проект для команды службы поддержки\n"
+"       - Отслеживание расписания для задачи из тикета"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_reports
@@ -458,7 +529,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Бухгалтерская отчетность для Бельгии\n"
+"        Бухгалтерские отчёты для Бельгии\n"
 "    "
 
 #. module: base
@@ -469,7 +540,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Бухгалтерская отчетность для Чили\n"
+"        Бухгалтерские отчёты для Чили\n"
 "    "
 
 #. module: base
@@ -481,6 +552,11 @@ msgid ""
 "        Also adds DATEV export options to general ledger\n"
 "    "
 msgstr ""
+"\n"
+"        Бухгалтерские отчёты для Германии\n"
+"        Содержит бухгалтерский баланс, отчеты о прибылях и убытках, отчеты по НДС и партнерские отчеты по НДС\n"
+"         Также добавляет параметры экспорта в главную книгу в формате DATEV\n"
+"         "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_lt_reports
@@ -492,7 +568,9 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Бухгалтерская отчетность для Литвы Содержит отчет баланса, отчет о Доходы / Расходы"
+"       Бухгалтерские отчёты для Литвы\n"
+"\n"
+"       Содержит бухгалтерский баланс, отчеты о прибылях и убытках"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_nl_reports
@@ -523,6 +601,8 @@ msgid ""
 "        Accounting reports for Sweden\n"
 "    "
 msgstr ""
+"\n"
+"         Бухгалтерские отчёты для Швеции"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ch_reports
@@ -7751,7 +7831,7 @@ msgstr "<i class=\"fa fa-times\" title=\"Close the onboarding panel\"/>"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.onboarding_container
 msgid "<span aria-label=\"Close\">×</span>"
-msgstr ""
+msgstr "<span aria-label=\"Закрыть\">×</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.reset_view_arch_wizard_view
@@ -9200,7 +9280,7 @@ msgstr ""
 #: model:ir.module.module,description:base.module_payment_alipay
 #: model:ir.module.module,shortdesc:base.module_payment_alipay
 msgid "Alipay Payment Acquirer"
-msgstr ""
+msgstr "Платежная система Alipay"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_cron_view_search
@@ -9236,7 +9316,7 @@ msgstr ""
 #: model:ir.module.module,description:base.module_account_consolidation
 #: model:ir.module.module,summary:base.module_account_consolidation
 msgid "All you need to make financial consolidation"
-msgstr ""
+msgstr "Все, что вам нужно, чтобы выполнить финансовую консолидацию"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_holidays
@@ -10153,7 +10233,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_payment
 msgid "Base Module for Payment Acquirers"
-msgstr ""
+msgstr "Базовый модуль для платежных систем"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model__state__base
@@ -11580,7 +11660,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_consolidation
 msgid "Consolidation"
-msgstr ""
+msgstr "Консолидация"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_constraint__name
@@ -11679,7 +11759,7 @@ msgstr ""
 #: code:addons/base/models/ir_model.py:0 code:addons/base/models/ir_rule.py:0
 #, python-format
 msgid "Contact your administrator to request access if necessary."
-msgstr ""
+msgstr "Свяжитесь с администратором, если необходимо получить доступ."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__partner_ids
@@ -11992,7 +12072,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_approvals
 msgid "Create and validate approvals requests"
-msgstr ""
+msgstr "Создавайте и утверждайте заявки"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -13655,7 +13735,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_referral
 msgid "Employee Referral"
-msgstr ""
+msgstr "Реферальная программа для сотрудников"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_human_resources_employees
@@ -14557,12 +14637,12 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment__datas
 msgid "File Content (base64)"
-msgstr ""
+msgstr "Содержимое файла (base64)"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment__raw
 msgid "File Content (raw)"
-msgstr ""
+msgstr "Содержимое файла (raw)"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_language_export__format
@@ -16261,28 +16341,28 @@ msgstr "Изображение"
 #: model:ir.model.fields,field_description:base.field_res_partner__image_1024
 #: model:ir.model.fields,field_description:base.field_res_users__image_1024
 msgid "Image 1024"
-msgstr ""
+msgstr "Изображение 1024"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_image_mixin__image_128
 #: model:ir.model.fields,field_description:base.field_res_partner__image_128
 #: model:ir.model.fields,field_description:base.field_res_users__image_128
 msgid "Image 128"
-msgstr ""
+msgstr "Изображение 128"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_image_mixin__image_256
 #: model:ir.model.fields,field_description:base.field_res_partner__image_256
 #: model:ir.model.fields,field_description:base.field_res_users__image_256
 msgid "Image 256"
-msgstr ""
+msgstr "Изображение 256"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_image_mixin__image_512
 #: model:ir.model.fields,field_description:base.field_res_partner__image_512
 #: model:ir.model.fields,field_description:base.field_res_users__image_512
 msgid "Image 512"
-msgstr ""
+msgstr "Изображение 512"
 
 #. module: base
 #: model:ir.model,name:base.model_image_mixin
@@ -17250,8 +17330,8 @@ msgstr "LGPL Версия 3"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lt_reports
-msgid "LT - Accounting Reports"
-msgstr "LT - Бухгалтерские отчеты"
+msgid "Lithuania - Accounting Reports"
+msgstr ""
 
 #. module: base
 #: code:addons/base/models/ir_ui_view.py:0
@@ -17739,7 +17819,7 @@ msgstr ""
 #: model:ir.module.module,description:base.module_hr_referral
 #: model:ir.module.module,summary:base.module_hr_referral
 msgid "Let your employees share job positions and refer their friends"
-msgstr ""
+msgstr "Позвольте сотрудникам делиться вакансиями и приводить своих друзей"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.onboarding_step
@@ -18283,7 +18363,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_website_slides
 msgid "Manage and publish an eLearning platform"
-msgstr ""
+msgstr "Управляйте и публикуйте обучающие материалы онлайн"
 
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_res_bank_form
@@ -18349,7 +18429,7 @@ msgstr "Управляйте инвентаризацией товаров и н
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_renting
 msgid "Manage rental contracts, deliveries and returns"
-msgstr ""
+msgstr "Управляйте договорами аренды, поставкой и возвратами"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_skills
@@ -18403,7 +18483,7 @@ msgstr "Управляйте записями зарплаты работник�
 #. module: base
 #: model:ir.module.module,summary:base.module_planning
 msgid "Manage your employees' schedule"
-msgstr ""
+msgstr "Управляйте расписанием ваших сотрудников"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_fleet
@@ -19251,7 +19331,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base.view_partner_tree
 #, python-format
 msgid "Name"
-msgstr "Название"
+msgstr "Имя"
 
 #. module: base
 #: code:addons/base/models/ir_ui_view.py:0
@@ -19269,7 +19349,7 @@ msgstr ""
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "Name:"
-msgstr "Наименование:"
+msgstr "Имя:"
 
 #. module: base
 #: model:res.country,name:base.na
@@ -19495,7 +19575,7 @@ msgstr ""
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.open_module_tree
 msgid "No module found!"
-msgstr ""
+msgstr "Нет модулей!"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__view_ids
@@ -19614,7 +19694,7 @@ msgstr "Недостаточно прав доступа для внешнего
 #: code:addons/base/models/ir_rule.py:0
 #, python-format
 msgid "Note: this might be a multi-company issue."
-msgstr ""
+msgstr "Возможно у вас не включена соответствующая объекту компания."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner__comment
@@ -21898,7 +21978,7 @@ msgstr "Модуль партнера для сайта"
 #: model:ir.model.fields,field_description:base.field_res_partner__same_vat_partner_id
 #: model:ir.model.fields,field_description:base.field_res_users__same_vat_partner_id
 msgid "Partner with same Tax ID"
-msgstr ""
+msgstr "Контакт с таким же ИНН"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_users__partner_id
@@ -21990,7 +22070,7 @@ msgstr "Платежи клиентов: вклад в Adyen"
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_alipay
 msgid "Payment Acquirer: Alipay Implementation"
-msgstr ""
+msgstr "Платежная система: поддержка Alipay"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_authorize
@@ -22020,7 +22100,7 @@ msgstr "Платежи клиентов: через Paypal"
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_payulatam
 msgid "Payment Acquirer: PayuLatam Implementation"
-msgstr ""
+msgstr "Платежная система: поддержка PayuLatam"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_payumoney
@@ -22030,7 +22110,7 @@ msgstr "Платеж покупателя: PayuMoney осуществлен"
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_sepa_direct_debit
 msgid "Payment Acquirer: Sepa Direct Debit"
-msgstr ""
+msgstr "Платежная система: поддержка Sepa Direct Debit"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_stripe
@@ -22087,7 +22167,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_payulatam
 msgid "PayuLatam Payment Acquirer"
-msgstr ""
+msgstr "Платежная система PayuLatam"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_payumoney
@@ -22097,7 +22177,7 @@ msgstr "PayuMoney платеж покупателя"
 #. module: base
 #: model:ir.module.module,description:base.module_payment_payulatam
 msgid "Payulatam payment acquirer"
-msgstr ""
+msgstr "Платежная система Payulatam"
 
 #. module: base
 #: model:res.country,name:base.pe
@@ -22149,7 +22229,7 @@ msgstr "Центр"
 #. module: base
 #: model:ir.module.module,summary:base.module_project_forecast
 msgid "Plan your resources on project tasks"
-msgstr ""
+msgstr "Планируйте свои ресурсы для задач проекта"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_human_resources_planning
@@ -23100,7 +23180,7 @@ msgstr "Сообщений:"
 #: code:addons/base/models/ir_rule.py:0
 #, python-format
 msgid "Records: %s"
-msgstr ""
+msgstr "Записи: %s"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_human_resources_recruitment
@@ -23264,7 +23344,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_renting
 msgid "Rental"
-msgstr ""
+msgstr "Аренда"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_stock_renting
@@ -23927,7 +24007,7 @@ msgstr "Запланировать встречи с клиентами"
 #. module: base
 #: model:ir.module.module,summary:base.module_calendar
 msgid "Schedule employees' meetings"
-msgstr ""
+msgstr "Планируйте встречи сотрудников"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_social
@@ -24256,7 +24336,7 @@ msgstr "Сенегал"
 #: model:ir.module.module,description:base.module_payment_sepa_direct_debit
 #: model:ir.module.module,shortdesc:base.module_payment_sepa_direct_debit
 msgid "Sepa Direct Debit Payment Acquirer"
-msgstr ""
+msgstr "Платежная система Sepa Direct Debit"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__grouping
@@ -25439,7 +25519,7 @@ msgstr "Тестирование основного процесса"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_test
 msgid "Test Payment Acquirer"
-msgstr ""
+msgstr "Тестовая платежная система "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_performance
@@ -25605,8 +25685,8 @@ msgstr ""
 #. module: base
 #: code:addons/base/models/ir_module.py:0
 #, python-format
-msgid "The `base` module cannot be uninstalled"
-msgstr "Базовый модуль нельзя удалить"
+msgid "Those modules cannot be uninstalled: %s"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_partner_category__active
@@ -26391,6 +26471,8 @@ msgid ""
 "This restriction is due to the following rules:\n"
 "%s"
 msgstr ""
+"Это ограничение сработало из-за следующих правил доступа:\n"
+"%s"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__thousands_sep
@@ -26637,7 +26719,7 @@ msgstr "Отслеживайте конвейер вашего рекрутин�
 #. module: base
 #: model:ir.module.module,summary:base.module_helpdesk
 msgid "Track, prioritize, and solve customer tickets"
-msgstr ""
+msgstr "Отслеживайте, приоритизируйте и закрывайте заявки ваших клиентов"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_event
@@ -27501,7 +27583,7 @@ msgstr "Пользователь:"
 #: code:addons/base/models/ir_rule.py:0
 #, python-format
 msgid "User: %s"
-msgstr ""
+msgstr "Пользователь: %s"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_user
@@ -28507,7 +28589,7 @@ msgstr ""
 #: code:addons/base/models/ir_actions.py:0
 #, python-format
 msgid "You don't have enough access rights to run this action."
-msgstr ""
+msgstr "У вас недостаточно прав доступа для выполнения этого действия."
 
 #. module: base
 #: code:addons/models.py:0
@@ -28515,6 +28597,7 @@ msgstr ""
 msgid ""
 "You don't have the rights to export data. Please contact an Administrator."
 msgstr ""
+"У вас нет прав на экспорт данных. Пожалуйста, свяжитесь с администратором."
 
 #. module: base
 #: code:addons/base/wizard/base_partner_merge.py:0
@@ -28562,6 +28645,8 @@ msgid ""
 "You won't be able to reduce the number of decimal places of a currency which"
 " has already been used to make accounting entries."
 msgstr ""
+"Вы не сможете уменьшить количество знаков после запятой в валюте, которая "
+"уже использовалась для проведения бухгалтерских операций."
 
 #. module: base
 #: code:addons/base/models/ir_mail_server.py:0
@@ -28592,7 +28677,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 #: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "ZIP"
-msgstr "Индекс"
+msgstr "Почтовый индекс"
 
 #. module: base
 #: model:res.country,name:base.zm
@@ -28610,12 +28695,12 @@ msgstr "Зимбабве"
 #: model:ir.model.fields,field_description:base.field_res_partner__zip
 #: model:ir.model.fields,field_description:base.field_res_users__zip
 msgid "Zip"
-msgstr "Индекс"
+msgstr "Почтовый индекс"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country__zip_required
 msgid "Zip Required"
-msgstr ""
+msgstr "Необходим почтовый индекс"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_import_language
@@ -28646,7 +28731,7 @@ msgstr ""
 #: code:addons/models.py:0
 #, python-format
 msgid "allowed for groups %s"
-msgstr ""
+msgstr "разрешено для групп %s"
 
 #. module: base
 #: code:addons/models.py:0
@@ -28842,6 +28927,8 @@ msgid ""
 "has been successfully installed.\n"
 "Users can choose his favorite language in their preferences."
 msgstr ""
+"был успешно установлен.\n"
+"Пользователи могут выбрать предпочтительный язык в своих настройках."
 
 #. module: base
 #: code:addons/base/models/ir_qweb_fields.py:0
@@ -28929,7 +29016,7 @@ msgstr "Не удалось установить модуль (и) и выклю
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__monetary
 msgid "monetary"
-msgstr "monetary"
+msgstr "монетарный"
 
 #. module: base
 #: code:addons/base/models/ir_qweb_fields.py:0
@@ -29048,17 +29135,17 @@ msgstr "тест mimetypes-guessing"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_access_rights
 msgid "test of access rights and rules"
-msgstr "проверка прав доступа и правила"
+msgstr "тест прав и правил доступа"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_read_group
 msgid "test read_group"
-msgstr "test read_group"
+msgstr "тест read_group"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_xlsx_export
 msgid "test xlsx export"
-msgstr ""
+msgstr "тест экспорта xlsx"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_assetsbundle
@@ -29108,7 +29195,7 @@ msgstr "test-lint"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_populate
 msgid "test-populate"
-msgstr ""
+msgstr "test-populate"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_translation_import
@@ -29128,7 +29215,7 @@ msgstr "test_convert"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_search_panel
 msgid "test_search_panel"
-msgstr ""
+msgstr "test_search_panel"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__text
@@ -29161,7 +29248,7 @@ msgstr "неделю"
 #: code:addons/base/models/ir_qweb_fields.py:0
 #, python-format
 msgid "year"
-msgstr ""
+msgstr "год"
 
 #. module: base
 #: code:addons/base/models/ir_fields.py:0
@@ -29173,3 +29260,9 @@ msgstr "да"
 #: model:res.country,name:base.ax
 msgid "Åland Islands"
 msgstr "Аландские острова"
+
+#. module: base
+#: code:addons/base/models/res_currency.py:0
+#, python-format
+msgid "This currency is set on a company and therefore must be active."
+msgstr ""

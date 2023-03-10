@@ -14,6 +14,9 @@
 # Hamid Darabi, 2020
 # Hamed Mohammadi <hamed@dehongi.com>, 2021
 # Mohsen Mohammadi <iammohsen.123@gmail.com>, 2021
+# Farid Hariri <fhari1234@gmail.com>, 2022
+# Hanna Kheradroosta, 2022
+# rahim agh <rahim.aghareb@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
@@ -21,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-27 14:12+0000\n"
 "PO-Revision-Date: 2020-09-07 08:16+0000\n"
-"Last-Translator: Mohsen Mohammadi <iammohsen.123@gmail.com>, 2021\n"
+"Last-Translator: rahim agh <rahim.aghareb@gmail.com>, 2023\n"
 "Language-Team: Persian (https://www.transifex.com/odoo/teams/41243/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -169,6 +172,9 @@ msgid ""
 "                        will delete and recreate existing variants and lead\n"
 "                        to the loss of their possible customizations."
 msgstr ""
+"<strong>هشدار</strong>: افزودن یا حذف ویژگی‌ها\n"
+"                         انواع موجود را حذف و دوباره ایجاد می کند و منجر می شود\n"
+"                         به از دست دادن سفارشی سازی های احتمالی آنها."
 
 #. module: product
 #: model:ir.model.constraint,message:product.constraint_product_product_barcode_uniq
@@ -423,7 +429,7 @@ msgstr "بر پایه"
 #. module: product
 #: model:res.groups,name:product.group_product_pricelist
 msgid "Basic Pricelists"
-msgstr "لیست قیمتی مبتدی"
+msgstr "لیست قیمت پایه"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_4
@@ -598,7 +604,7 @@ msgstr "هزینه"
 #: model:ir.model.fields,field_description:product.field_product_product__cost_currency_id
 #: model:ir.model.fields,field_description:product.field_product_template__cost_currency_id
 msgid "Cost Currency"
-msgstr "هزینه ارز"
+msgstr "هقیمت تمام‌شده ارز"
 
 #. module: product
 #: model:ir.model,name:product.model_res_country_group
@@ -725,6 +731,7 @@ msgstr "پیش‌فرض %(currency)s لیست قیمت"
 #: model:ir.model.fields,help:product.field_product_template__uom_id
 msgid "Default unit of measure used for all stock operations."
 msgstr ""
+"واحد اندازه گیری پیش فرض برای همه عملیات انتقال موجودی استفاده می شود."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__uom_po_id
@@ -783,7 +790,7 @@ msgstr ""
 #: model:ir.model.fields,help:product.field_product_attribute__sequence
 #: model:ir.model.fields,help:product.field_product_attribute_value__sequence
 msgid "Determine the display order"
-msgstr ""
+msgstr "تعیین ترتیب نمایش"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist__discount_policy
@@ -1152,7 +1159,7 @@ msgstr "درونش قالب لیست قیمتی فروشنده"
 #: model:ir.model.fields,help:product.field_product_template__standard_price
 msgid ""
 "In Standard Price & AVCO: value of the product (automatically computed in AVCO).\n"
-"        In FIFO: value of the last unit that left the stock (automatically computed).\n"
+"        In FIFO: value of the next unit that will leave the stock (automatically computed).\n"
 "        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n"
 "        Used to compute margins on sale orders."
 msgstr ""
@@ -1315,6 +1322,8 @@ msgid ""
 "receipt of the products in your warehouse. Used by the scheduler for "
 "automatic computation of the purchase order planning."
 msgstr ""
+"فاصله زمانی بین تایید سفارش خرید و دریافت محصولات در انبار شما بر حسب روز. "
+"توسط زمانبندی برای محاسبه خودکار برنامه ریزی سفارش خرید استفاده می شود."
 
 #. module: product
 #: model:product.attribute,name:product.product_attribute_1
@@ -1769,17 +1778,17 @@ msgstr "مشخصه محصول"
 #. module: product
 #: model:ir.model,name:product.model_product_attribute_custom_value
 msgid "Product Attribute Custom Value"
-msgstr ""
+msgstr "مقدار سفارشی مشخصه‌ محصول"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_line__product_template_value_ids
 msgid "Product Attribute Values"
-msgstr ""
+msgstr "مقادیر مشخصه محصول"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_attribute_line_form
 msgid "Product Attribute and Values"
-msgstr ""
+msgstr "مشخصه محصول و مقادیر"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__attribute_line_ids
@@ -2027,6 +2036,8 @@ msgid ""
 "Register the prices requested by your vendors for each product, based on the"
 " quantity and the period."
 msgstr ""
+"قیمت های درخواستی فروشندگان خود را برای هر محصول بر اساس مقدار و دوره ثبت "
+"کنید."
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute__product_tmpl_ids
@@ -2140,7 +2151,7 @@ msgstr "تمام رکوردهایی که تاریخ اعمال بعدی قبل �
 #. module: product
 #: model:ir.model.fields.selection,name:product.selection__product_pricelist__discount_policy__without_discount
 msgid "Show public price & discount to the customer"
-msgstr ""
+msgstr "قیمت و تخفیف عمومی را به مشتری نشان دهید"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__categ_id
@@ -2173,6 +2184,8 @@ msgid ""
 "Specify the fixed amount to add or substract(if negative) to the amount "
 "calculated with the discount."
 msgstr ""
+"مقدار ثابتی را برای اضافه یا تفریق (در صورت منفی) به مقدار محاسبه شده با "
+"تخفیف مشخص کنید."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__price_max_margin
@@ -2265,7 +2278,7 @@ msgstr ""
 msgid ""
 "The computed price is expressed in the default Unit of Measure of the "
 "product."
-msgstr ""
+msgstr "قیمت محاسبه شده در واحد اندازه گیری پیش فرض محصول بیان می شود"
 
 #. module: product
 #: code:addons/product/models/product_template.py:0
@@ -2322,6 +2335,12 @@ msgid "The product template is archived so no combination is possible."
 msgstr ""
 
 #. module: product
+#: code:addons/product/models/product.py:0
+#, python-format
+msgid "The product variant must be a variant of the product template."
+msgstr ""
+
+#. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo__min_qty
 msgid ""
 "The quantity to purchase from this vendor to benefit from the price, "
@@ -2366,6 +2385,15 @@ msgid "This comes from the product form."
 msgstr "این از فرم محصول می‌آید."
 
 #. module: product
+#: code:addons/product/models/product_template.py:0
+#, python-format
+msgid ""
+"This configuration of product attributes, values, and exclusions would lead "
+"to no possible variant. Please archive or delete your product directly if "
+"intended."
+msgstr ""
+
+#. module: product
 #: model:ir.model.fields,help:product.field_product_product__price_extra
 msgid "This is the sum of the extra price of all attributes"
 msgstr ""
@@ -2373,7 +2401,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view
 msgid "This note is added to sales orders and invoices."
-msgstr ""
+msgstr "این یادداشت به سفارشات فروش و فاکتورها اضافه می شود."
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view
@@ -2607,7 +2635,7 @@ msgstr "اطلاعات گونه"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__price_extra
 msgid "Variant Price Extra"
-msgstr ""
+msgstr "قیمت اضافی گونه"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__variant_seller_ids
@@ -2618,7 +2646,7 @@ msgstr ""
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.attribute_tree_view
 msgid "Variant Values"
-msgstr ""
+msgstr "مقادیر گونه ها"
 
 #. module: product
 #: code:addons/product/models/product_pricelist.py:0
@@ -2637,7 +2665,7 @@ msgstr "گونه ها"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute__create_variant
 msgid "Variants Creation Mode"
-msgstr ""
+msgstr "حالت ایجاد گونه ها"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo__name
@@ -2710,13 +2738,13 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,field_description:product.field_res_config_settings__product_volume_volume_in_cubic_feet
 msgid "Volume unit of measure"
-msgstr ""
+msgstr "واحد اندازه گیری حجم"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__volume_uom_name
 #: model:ir.model.fields,field_description:product.field_product_template__volume_uom_name
 msgid "Volume unit of measure label"
-msgstr ""
+msgstr "برچسب واحد اندازه گیری حجم"
 
 #. module: product
 #: code:addons/product/models/decimal_precision.py:0
@@ -2744,13 +2772,13 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,field_description:product.field_res_config_settings__product_weight_in_lbs
 msgid "Weight unit of measure"
-msgstr ""
+msgstr "واحد اندازه گیری وزن"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__weight_uom_name
 #: model:ir.model.fields,field_description:product.field_product_template__weight_uom_name
 msgid "Weight unit of measure label"
-msgstr ""
+msgstr "برچسب واحد اندازه گیری وزن"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_3
@@ -2876,6 +2904,14 @@ msgid ""
 msgstr ""
 
 #. module: product
+#: code:addons/product/models/product_pricelist.py:0
+#, python-format
+msgid ""
+"You cannot disable a pricelist rule, please delete it or archive its "
+"pricelist instead."
+msgstr ""
+
+#. module: product
 #: code:addons/product/models/product_attribute.py:0
 #: code:addons/product/models/product_attribute.py:0
 #, python-format
@@ -2915,6 +2951,10 @@ msgid ""
 "                The product form contains information to simplify the sale process:\n"
 "                price, notes in the quotation, accounting data, procurement methods, etc."
 msgstr ""
+"شما باید برای هر چیزی که می فروشید یک محصول تعریف کنید، چه محصول فیزیکی،\n"
+"                 مواد مصرفی یا خدماتی که به مشتریان ارائه می دهید.\n"
+"                 فرم محصول حاوی اطلاعاتی برای ساده کردن فرآیند فروش است:\n"
+"                 قیمت، یادداشت های موجود در پیش فاکتور، داده های حسابداری، روش های تدارکات و غیره."
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_supplierinfo_form_view
