@@ -25,7 +25,7 @@ msgstr ""
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "\" to validate your action."
-msgstr "\" để xác nhạn hành động của bạn."
+msgstr "\" để xác thực hành động của bạn."
 
 #. module: portal
 #. odoo-javascript
@@ -123,16 +123,20 @@ msgid ""
 "<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Previous\" "
 "title=\"Previous\"/>"
 msgstr ""
+"<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Trước\" "
+"title=\"Trước\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.pager
 msgid "<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Next\" title=\"Next\"/>"
 msgstr ""
+"<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Tiếp theo\" "
+"title=\"Tiếp theo\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
 msgid "<span class=\"small me-1 navbar-text\">Filter By:</span>"
-msgstr "<span class=\"small me-1 navbar-text\">Bộ lọc:</span>"
+msgstr "<span class=\"small me-1 navbar-text\">Lọc theo:</span>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
@@ -142,7 +146,7 @@ msgstr "<span class=\"small me-1 navbar-text\">Nhóm theo:</span>"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
 msgid "<span class=\"small me-1 navbar-text\">Sort By:</span>"
-msgstr "<span class=\"small me-1 navbar-text\">Xếp theo:</span>"
+msgstr "<span class=\"small me-1 navbar-text\">Sắp xếp theo:</span>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_template
@@ -269,7 +273,7 @@ msgstr "Tài khoản đã bị xoá!"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_wizard
 msgid "Add a note"
-msgstr "Thêm một ghi chú"
+msgstr "Thêm ghi chú"
 
 #. module: portal
 #. odoo-javascript
@@ -301,7 +305,7 @@ msgstr "Đã đăng ký rồi"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Are you sure you want to do this?"
-msgstr "Bạn có chắc chắn muốn thực hiện?"
+msgstr "Bạn có chắc chắn muốn thực hiện việc này không?"
 
 #. module: portal
 #. odoo-javascript
@@ -475,7 +479,7 @@ msgstr ""
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_res_config_settings__portal_allow_api_keys
 msgid "Customer API Keys"
-msgstr "Khóa API khách hàng"
+msgstr "Khoá API của khách hàng"
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_mixin__access_url
@@ -497,7 +501,7 @@ msgstr "Xoá"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Delete Account"
-msgstr "Xóa tài khoản"
+msgstr "Xoá tài khoản"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
@@ -524,10 +528,10 @@ msgid ""
 "                                            This action cannot be undone.\n"
 "                                        </b>"
 msgstr ""
-"Vô hiệu tài khoản của bạn, ngăn chặn đăng nhập trong tương lai.<br/>\n"
+"Vô hiệu hóa tài khoản của bạn để ngăn chặn mọi hoạt động đăng nhập tiếp theo.<br/>\n"
 "                                        <b>\n"
 "                                            <i class=\"fa fa-exclamation-triangle text-danger\"/>\n"
-"                                            Hành động này không thể đảo ngược.\n"
+"                                            Bạn không thể hoàn tác hành động này.\n"
 "                                        </b>"
 
 #. module: portal
@@ -722,8 +726,8 @@ msgid ""
 "It is very important that this description be clear\n"
 "                and complete,"
 msgstr ""
-"Điều quan trọng là mô tả này và hoàn chỉnh và hết sức\n"
-"                rõ ràng,"
+"Điều vô cùng quan trọng là phần mô tả này phải rõ ràng\n"
+"                 và đầy đủ,"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share____last_update
@@ -844,7 +848,8 @@ msgstr "Logo hệ thống"
 #: code:addons/portal/models/res_users_apikeys_description.py:0
 #, python-format
 msgid "Only internal and portal users can create API keys"
-msgstr "Chỉ người dùng nội bộ và người dùng portal có thể tạo khóa API"
+msgstr ""
+"Chỉ người dùng nội bộ và người dùng cổng thông tin mới có thể tạo khóa API"
 
 #. module: portal
 #. odoo-javascript
@@ -1164,7 +1169,9 @@ msgstr "Đối tác \"%s\" đã được cấp quyền truy cập portal rồi."
 #: code:addons/portal/wizard/portal_wizard.py:0
 #, python-format
 msgid "The partner \"%s\" has no portal access or is internal."
-msgstr "Đối tác \"%s\" không thể đăng nhập công thông tin hay nội bộ."
+msgstr ""
+"Đối tác \"%s\" không có quyền truy cập cổng thông tin hoặc là người dùng nội"
+" bộ."
 
 #. module: portal
 #. odoo-python
@@ -1174,8 +1181,8 @@ msgid ""
 "The template \"Portal: new user\" not found for sending email to the portal "
 "user."
 msgstr ""
-"Mẫu \"Portal: new user\" không thấy để có thể gửi email tới "
-"người dùng cổng thông tin."
+"Không tìm thấy mẫu \"Cổng thông tin: người dùng mới\" để gửi email đến người"
+" dùng cổng thông tin."
 
 #. module: portal
 #. odoo-javascript
@@ -1448,7 +1455,7 @@ msgstr "bình luận"
 #: code:addons/portal/static/src/xml/portal_security.xml:0
 #, python-format
 msgid "full access"
-msgstr "đầy đủ quyền truy cập"
+msgstr "toàn quyền truy cập"
 
 #. module: portal
 #. odoo-javascript
@@ -1458,8 +1465,8 @@ msgid ""
 "it will be the only way to\n"
 "                identify the key once created"
 msgstr ""
-"đó là cách duy nhất để xác\n"
-"                định khóa một khi nó được tạo"
+"đó sẽ là cách duy nhất để\n"
+"               xác định mã khóa sau khi được tạo"
 
 #. module: portal
 #. odoo-javascript
@@ -1491,4 +1498,5 @@ msgstr "để đăng một bình luận."
 #, python-format
 msgid "to your user account, it is very important to store it securely."
 msgstr ""
-"cho tài khoản người dùng của bạn. Điều quan trọng là hãy lưu trữ nó an toàn."
+"cho tài khoản người dùng của bạn, nên việc lưu trữ nó một cách an toàn là "
+"điều vô cùng quan trọng."
