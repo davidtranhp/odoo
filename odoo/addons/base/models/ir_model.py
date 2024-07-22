@@ -2199,7 +2199,7 @@ class IrModelData(models.Model):
         # be executed on a stale registry, and if some of the data for executing the compute
         # methods is not in cache it will be fetched, and fields that exist in the registry but not
         # in the database will be prefetched, this will of course fail and prevent the uninstall.
-        for ir_field in self.env['ir.model.fields'].browse(field_ids):
+        for ir_field in self.env['ir.model.fields'].browse(field_ids).exists():
             model = self.pool.get(ir_field.model)
             if model is not None:
                 field = model._fields.get(ir_field.name)
