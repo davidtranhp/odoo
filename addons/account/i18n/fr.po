@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-06 18:35+0000\n"
-"PO-Revision-Date: 2025-11-08 17:01+0000\n"
+"POT-Creation-Date: 2025-12-04 18:36+0000\n"
+"PO-Revision-Date: 2025-12-06 17:01+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: French <https://translate.odoo.com/projects/odoo-17/account/"
 "fr/>\n"
@@ -26,9 +26,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : ((n != 0 && n % "
-"1000000 == 0) ? 1 : 2);\n"
-"X-Generator: Weblate 5.12.2\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : "
+"((n != 0 && n % 1000000 == 0) ? 1 : 2);\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: account
 #. odoo-python
@@ -2205,6 +2205,8 @@ msgid ""
 "Accrual entry created on %(date)s: %(accrual_entry)s.                And its "
 "reverse entry: %(reverse_entry)s."
 msgstr ""
+"Écriture d’accumulation créée le %(date)s: %(accrual_entry)s.                "
+"Et son écriture d’inversion : %(reverse_entry)s."
 
 #. module: account
 #. odoo-python
@@ -7553,6 +7555,11 @@ msgid "How total tax amount is computed in orders and invoices"
 msgstr ""
 "Définir comment le montant total des taxes est calculé sur les commandes et "
 "factures"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "ICE:"
+msgstr "ICE :"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__id
@@ -14712,13 +14719,6 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_payment__invoice_origin
 msgid "The document(s) that generated the invoice."
 msgstr "Le ou les documents qui ont généré la facture."
-
-#. module: account
-#. odoo-python
-#: code:addons/account/models/account_move.py:0
-#, python-format
-msgid "The entry %s (id %s) is using accounts from a different company."
-msgstr ""
 
 #. module: account
 #. odoo-python

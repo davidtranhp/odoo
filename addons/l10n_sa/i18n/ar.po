@@ -3,13 +3,14 @@
 # * l10n_sa
 #
 # "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-28 10:17+0000\n"
-"PO-Revision-Date: 2025-11-07 14:47+0000\n"
-"Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
+"POT-Creation-Date: 2025-12-04 19:04+0000\n"
+"PO-Revision-Date: 2025-12-06 08:13+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Arabic <https://translate.odoo.com/projects/odoo-17-l10n/"
 "l10n_sa/ar/>\n"
 "Language: ar\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: l10n_sa
 #: model:account.report.line,name:l10n_sa.tax_report_line_standard_rated_15_base
@@ -228,12 +229,12 @@ msgstr ""
 #. module: l10n_sa
 #: model_terms:ir.ui.view,arch_db:l10n_sa.arabic_english_invoice
 msgid "<strong>Shipping Address:</strong>"
-msgstr ""
+msgstr "<strong>عنوان الشحن:</strong>"
 
 #. module: l10n_sa
 #: model:ir.model,name:l10n_sa.model_account_chart_template
 msgid "Account Chart Template"
-msgstr ""
+msgstr "نموذج مخطط الحساب"
 
 #. module: l10n_sa
 #: model_terms:res.company,invoice_terms_html:l10n_sa.demo_company_sa
@@ -246,7 +247,7 @@ msgstr ""
 #: model:account.report.column,name:l10n_sa.tax_report_vat_filing_balance
 #: model:account.report.column,name:l10n_sa.tax_report_withholding_tax_balance
 msgid "Balance"
-msgstr ""
+msgstr "الرصيد"
 
 #. module: l10n_sa
 #: model_terms:res.company,invoice_terms_html:l10n_sa.demo_company_sa
@@ -254,6 +255,8 @@ msgid ""
 "Below text serves as a suggestion and doesn’t engage Odoo S.A. "
 "responsibility."
 msgstr ""
+"النص المذكور أدناه هو مجرد اقتراح من شركة أودو ولا يترتب عليها منه أي "
+"مسؤولية تجاهه"
 
 #. module: l10n_sa
 #: model_terms:res.company,invoice_terms_html:l10n_sa.demo_company_sa
@@ -268,25 +271,13 @@ msgid ""
 msgstr ""
 
 #. module: l10n_sa
-#: model:ir.model.fields,field_description:l10n_sa.field_account_bank_statement_line__l10n_sa_confirmation_datetime
-#: model:ir.model.fields,field_description:l10n_sa.field_account_move__l10n_sa_confirmation_datetime
-#: model:ir.model.fields,field_description:l10n_sa.field_account_payment__l10n_sa_confirmation_datetime
-msgid "Confirmation Date"
-msgstr "تاريخ التأكيد"
-
-#. module: l10n_sa
 #: model:ir.model.fields,help:l10n_sa.field_account_bank_statement_line__l10n_sa_confirmation_datetime
 #: model:ir.model.fields,help:l10n_sa.field_account_move__l10n_sa_confirmation_datetime
 #: model:ir.model.fields,help:l10n_sa.field_account_payment__l10n_sa_confirmation_datetime
 msgid ""
-"Date when the invoice is confirmed and posted.\n"
-"                                                    In other words, it is "
-"the date on which the invoice is generated as final document (after securing "
-"all internal approvals)."
+"Date on which the invoice is generated as final document (after securing all "
+"internal approvals)."
 msgstr ""
-"تاريخ تأكيد وتسجيل الفاتورة.\n"
-"بعبارة أخرى، هو التاريخ الذي يتم فيه إصدار الفاتورة كوثيقة نهائية (بعد "
-"الحصول على جميع الموافقات الداخلية)."
 
 #. module: l10n_sa
 #: model_terms:res.company,invoice_terms_html:l10n_sa.demo_company_sa
@@ -307,7 +298,7 @@ msgstr ""
 #. module: l10n_sa
 #: model:ir.model,name:l10n_sa.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "قيد اليومية"
 
 #. module: l10n_sa
 #: model:account.report.line,name:l10n_sa.tax_report_line_net_vat_due
@@ -344,7 +335,23 @@ msgstr ""
 #. module: l10n_sa
 #: model_terms:res.company,invoice_terms_html:l10n_sa.demo_company_sa
 msgid "STANDARD TERMS AND CONDITIONS OF SALE"
-msgstr ""
+msgstr "الشروط والأحكام القياسية للبيع"
+
+#. module: l10n_sa
+#: model_terms:ir.ui.view,arch_db:l10n_sa.arabic_english_invoice
+msgid "Simplified Tax Invoice"
+msgstr "الفاتورة الضريبية المبسطة"
+
+#. module: l10n_sa
+#: model_terms:ir.ui.view,arch_db:l10n_sa.arabic_english_invoice
+msgid "Tax Invoice"
+msgstr "فاتورة ضريبية"
+
+#. module: l10n_sa
+#: model_terms:res.company,sign_terms:l10n_sa.demo_company_sa
+#: model_terms:res.company,sign_terms_html:l10n_sa.demo_company_sa
+msgid "Terms &amp; Conditions"
+msgstr "الشروط والأحكام"
 
 #. module: l10n_sa
 #: model_terms:res.company,invoice_terms_html:l10n_sa.demo_company_sa
@@ -354,6 +361,9 @@ msgid ""
 "order to be valid, any derogation must be expressly agreed to in advance in "
 "writing."
 msgstr ""
+"يتنازل العميل صراحةً عن شروطه وأحكامه القياسية، حتى وإن تم سحبها بعد هذه "
+"الشروط والأحكام القياسية للبيع. حتى تكون صالحة، يجب أن يُتّفق كتابةً على أي "
+"انتقاص مسبقاً."
 
 #. module: l10n_sa
 #: model:account.report.line,name:l10n_sa.tax_report_line_total_value_of_due_tax_for_the_period
@@ -363,7 +373,7 @@ msgstr "إجمالي ضريبة القيمة المستحقة للفترة ال�
 #. module: l10n_sa
 #: model:account.report.line,name:l10n_sa.tax_report_line_total_value_of_recoverable_tax_for_the_period
 msgid "Total value of recoverable tax for the period"
-msgstr ""
+msgstr "اجمالي الضريبة القيمة المضافة المدفوعة مقدما"
 
 #. module: l10n_sa
 #: model:account.report,name:l10n_sa.tax_report_vat_filing
@@ -548,6 +558,19 @@ msgstr "استقطاع الضريبة على الخدمات المشتراة (ض
 #. module: l10n_sa
 #: model_terms:res.company,invoice_terms_html:l10n_sa.demo_company_sa
 msgid "You should update this document to reflect your T&amp;C."
+msgstr "عليك تحديث هذا المستند لتطبيق الشروط والأحكام الخاصة بك."
+
+#. module: l10n_sa
+#: model_terms:res.company,sign_terms:l10n_sa.demo_company_sa
+#: model_terms:res.company,sign_terms_html:l10n_sa.demo_company_sa
+msgid "Your conditions..."
+msgstr "شروطك..."
+
+#. module: l10n_sa
+#: model:ir.model.fields,field_description:l10n_sa.field_account_bank_statement_line__l10n_sa_confirmation_datetime
+#: model:ir.model.fields,field_description:l10n_sa.field_account_move__l10n_sa_confirmation_datetime
+#: model:ir.model.fields,field_description:l10n_sa.field_account_payment__l10n_sa_confirmation_datetime
+msgid "ZATCA Issue Date"
 msgstr ""
 
 #. module: l10n_sa
@@ -555,4 +578,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_sa.field_account_move__l10n_sa_qr_code_str
 #: model:ir.model.fields,field_description:l10n_sa.field_account_payment__l10n_sa_qr_code_str
 msgid "Zatka QR Code"
-msgstr ""
+msgstr "رمز الاستجابة السريعة لهيئة الزكاة والضريبة والجمارك"
+
+#. module: l10n_sa
+#: model_terms:ir.ui.view,arch_db:l10n_sa.arabic_english_invoice
+msgid "فاتورة ضريبية"
+msgstr "فاتورة ضريبية"
+
+#. module: l10n_sa
+#: model_terms:ir.ui.view,arch_db:l10n_sa.arabic_english_invoice
+msgid "فاتورة ضريبية مبسطة"
+msgstr "فاتورة ضريبية مبسطة"
+
+#~ msgid "Confirmation Date"
+#~ msgstr "تاريخ التأكيد"
+
+#~ msgid ""
+#~ "Date when the invoice is confirmed and posted.\n"
+#~ "                                                    In other words, it is "
+#~ "the date on which the invoice is generated as final document (after "
+#~ "securing all internal approvals)."
+#~ msgstr ""
+#~ "تاريخ تأكيد وتسجيل الفاتورة.\n"
+#~ "بعبارة أخرى، هو التاريخ الذي يتم فيه إصدار الفاتورة كوثيقة نهائية (بعد "
+#~ "الحصول على جميع الموافقات الداخلية)."

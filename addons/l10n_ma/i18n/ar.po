@@ -1,21 +1,24 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* l10n_ma
+# * l10n_ma
 #
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-28 10:15+0000\n"
-"PO-Revision-Date: 2025-10-28 10:15+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-12-04 19:04+0000\n"
+"PO-Revision-Date: 2025-12-06 08:13+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Arabic <https://translate.odoo.com/projects/odoo-17-l10n/"
+"l10n_ma/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: l10n_ma
 #: model:account.report.line,name:l10n_ma.tax_report_part_d_1
@@ -566,7 +569,7 @@ msgstr ""
 #. module: l10n_ma
 #: model:ir.model,name:l10n_ma.model_account_chart_template
 msgid "Account Chart Template"
-msgstr ""
+msgstr "نموذج مخطط الحساب"
 
 #. module: l10n_ma
 #: model_terms:res.company,invoice_terms_html:l10n_ma.l10n_ma_demo_company_company
@@ -582,7 +585,7 @@ msgstr ""
 #. module: l10n_ma
 #: model:account.report.column,name:l10n_ma.tax_report_column_base
 msgid "Base"
-msgstr ""
+msgstr "قاعدة"
 
 #. module: l10n_ma
 #: model:account.report.column,name:l10n_ma.tax_report_column_base_tax
@@ -595,6 +598,8 @@ msgid ""
 "Below text serves as a suggestion and doesn’t engage Odoo S.A. "
 "responsibility."
 msgstr ""
+"النص المذكور أدناه هو مجرد اقتراح من شركة أودو ولا يترتب عليها منه أي "
+"مسؤولية تجاهه"
 
 #. module: l10n_ma
 #: model:account.report.line,name:l10n_ma.tax_report_part_c
@@ -616,6 +621,16 @@ msgid ""
 msgstr ""
 
 #. module: l10n_ma
+#: model:ir.model,name:l10n_ma.model_base_document_layout
+msgid "Company Document Layout"
+msgstr "مخطط مستندات الشركة"
+
+#. module: l10n_ma
+#: model:ir.model,name:l10n_ma.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: l10n_ma
 #: model:account.report.line,name:l10n_ma.tax_report_part_d
 msgid "D - Breakdown of deductions"
 msgstr ""
@@ -623,6 +638,19 @@ msgstr ""
 #. module: l10n_ma
 #: model:account.report.line,name:l10n_ma.tax_report_part_ded
 msgid "Deduction adjustments"
+msgstr ""
+
+#. module: l10n_ma
+#: model_terms:ir.ui.view,arch_db:l10n_ma.view_company_form
+#: model_terms:ir.ui.view,arch_db:l10n_ma.view_partner_property_form
+msgid "ICE"
+msgstr ""
+
+#. module: l10n_ma
+#. odoo-python
+#: code:addons/l10n_ma/models/res_partner.py:0
+#, python-format
+msgid "ICE number should have exactly 15 digits."
 msgstr ""
 
 #. module: l10n_ma
@@ -691,12 +719,12 @@ msgstr ""
 #. module: l10n_ma
 #: model_terms:res.company,invoice_terms_html:l10n_ma.l10n_ma_demo_company_company
 msgid "STANDARD TERMS AND CONDITIONS OF SALE"
-msgstr ""
+msgstr "الشروط والأحكام القياسية للبيع"
 
 #. module: l10n_ma
 #: model:account.report.line,name:l10n_ma.tax_report_part_d_1_1
 msgid "Services"
-msgstr ""
+msgstr "الخدمات"
 
 #. module: l10n_ma
 #: model:account.report.line,name:l10n_ma.tax_report_part_b_20
@@ -709,6 +737,12 @@ msgid "Tax Due/Ded."
 msgstr ""
 
 #. module: l10n_ma
+#: model_terms:res.company,sign_terms:l10n_ma.l10n_ma_demo_company_company
+#: model_terms:res.company,sign_terms_html:l10n_ma.l10n_ma_demo_company_company
+msgid "Terms &amp; Conditions"
+msgstr "الشروط والأحكام"
+
+#. module: l10n_ma
 #: model_terms:res.company,invoice_terms_html:l10n_ma.l10n_ma_demo_company_company
 msgid ""
 "The client explicitly waives its own standard terms and conditions, even if "
@@ -716,11 +750,14 @@ msgid ""
 "order to be valid, any derogation must be expressly agreed to in advance in "
 "writing."
 msgstr ""
+"يتنازل العميل صراحةً عن شروطه وأحكامه القياسية، حتى وإن تم سحبها بعد هذه "
+"الشروط والأحكام القياسية للبيع. حتى تكون صالحة، يجب أن يُتّفق كتابةً على أي "
+"انتقاص مسبقاً."
 
 #. module: l10n_ma
 #: model:account.report,name:l10n_ma.tax_report_vat
 msgid "VAT Report"
-msgstr ""
+msgstr "الإقرار الضريبي"
 
 #. module: l10n_ma
 #: model:account.report.line,name:l10n_ma.tax_report_part_results
@@ -740,4 +777,10 @@ msgstr ""
 #. module: l10n_ma
 #: model_terms:res.company,invoice_terms_html:l10n_ma.l10n_ma_demo_company_company
 msgid "You should update this document to reflect your T&amp;C."
-msgstr ""
+msgstr "عليك تحديث هذا المستند لتطبيق الشروط والأحكام الخاصة بك."
+
+#. module: l10n_ma
+#: model_terms:res.company,sign_terms:l10n_ma.l10n_ma_demo_company_company
+#: model_terms:res.company,sign_terms_html:l10n_ma.l10n_ma_demo_company_company
+msgid "Your conditions..."
+msgstr "شروطك..."

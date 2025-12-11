@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-06 18:35+0000\n"
-"PO-Revision-Date: 2025-11-08 17:01+0000\n"
+"POT-Creation-Date: 2025-12-04 18:36+0000\n"
+"PO-Revision-Date: 2025-12-06 17:01+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-17/account/"
 "ko/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: account
 #. odoo-python
@@ -7295,7 +7295,8 @@ msgstr "결제 항목들을 하나로 일괄 묶음 처리하여 조정 프로�
 msgid ""
 "Groupby feature isn't supported by '%(engine)s' engine. Please remove the "
 "groupby value on '%(report_line)s'"
-msgstr "그룹별 기능은 '%(engine)s' 엔진에서 지원되지 않습니다. 그룹별 값을 "
+msgstr ""
+"그룹별 기능은 '%(engine)s' 엔진에서 지원되지 않습니다. 그룹별 값을 "
 "'%(report_line)s' 에서 제거하세요."
 
 #. module: account
@@ -7417,6 +7418,11 @@ msgstr "최고명"
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "How total tax amount is computed in orders and invoices"
 msgstr "발주서 및 청구서에서 세금 총액을 계산하는 방법입니다."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "ICE:"
+msgstr "ICE:"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__id
@@ -8238,7 +8244,7 @@ msgstr "청구서 미처리내역 대변 차변 위젯"
 #: model:ir.model.fields,field_description:account.field_account_move__invoice_partner_display_name
 #: model:ir.model.fields,field_description:account.field_account_payment__invoice_partner_display_name
 msgid "Invoice Partner Display Name"
-msgstr "청구서 협력사 표시 이름"
+msgstr "청구서 협력사 표시명"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__invoice_payments_widget
@@ -14397,13 +14403,6 @@ msgstr "배송지 주소는 재정 위치를 계산하기 위해 사용됩니다
 #: model:ir.model.fields,help:account.field_account_payment__invoice_origin
 msgid "The document(s) that generated the invoice."
 msgstr "청구서 생성 문서"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/models/account_move.py:0
-#, python-format
-msgid "The entry %s (id %s) is using accounts from a different company."
-msgstr ""
 
 #. module: account
 #. odoo-python
