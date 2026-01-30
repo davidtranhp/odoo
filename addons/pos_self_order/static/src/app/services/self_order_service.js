@@ -295,7 +295,16 @@ export class SelfOrder extends Reactive {
             screenMode: screen_mode,
         });
         this.printKioskChanges(access_token);
+        this.resetCategorySelection();
     }
+
+    resetCategorySelection() {
+        if (!this.kioskMode) {
+            return;
+        }
+        this.currentCategory = this.availableCategories[0];
+    }
+
     hasPaymentMethod() {
         return this.filterPaymentMethods(this.models["pos.payment.method"].getAll()).length > 0;
     }
@@ -515,7 +524,7 @@ export class SelfOrder extends Reactive {
                 order,
                 Object.values(printer.config.product_categories_ids)
             );
-            if (orderlines) {
+            if (orderlines.length > 0) {
                 const printingChanges = {
                     new: orderlines,
                     tracker: order.table_stand_number,

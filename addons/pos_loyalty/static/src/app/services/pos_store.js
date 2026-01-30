@@ -428,6 +428,9 @@ patch(PosStore.prototype, {
         }
 
         const result = await super.addLineToCurrentOrder(vals, opt, configure);
+        if (!result) {
+            return;
+        }
 
         const rewardsToApply = [];
         for (const reward of potentialRewards) {
@@ -856,13 +859,15 @@ patch(PosStore.prototype, {
                     }
                 }
             }
-            if (payload.coupon_report) {
+            if (payload.coupon_report && Object.keys(payload.coupon_report).length > 0) {
                 for (const [actionId, active_ids] of Object.entries(payload.coupon_report)) {
                     await this.env.services.report.doAction(actionId, active_ids);
                 }
                 order.has_pdf_gift_card = Object.keys(payload.coupon_report).length > 0;
             }
-            order.new_coupon_info = payload.new_coupon_info;
+            if (payload.new_coupon_info?.length) {
+                order.new_coupon_info = payload.new_coupon_info;
+            }
         }
     },
 });

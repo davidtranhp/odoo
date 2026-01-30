@@ -178,7 +178,13 @@ export class PosStore extends WithLazyGetterTrap {
             this.syncAllOrdersDebounced();
         });
 
-        initLNA(this.notification);
+        this.lnaState = {
+            type: "pending",
+            message: _t("Checking Local Network Access permission..."),
+        };
+        initLNA(this.notification, (type, message) => {
+            this.lnaState = { type, message };
+        });
     }
 
     navigate(routeName, routeParams = {}) {
@@ -1850,25 +1856,33 @@ export class PosStore extends WithLazyGetterTrap {
                     opts.cancelled
                 );
 
-                if (
-                    !orderChange.new.length &&
-                    !orderChange.cancelled.length &&
-                    !orderChange.noteUpdate.length &&
-                    !orderChange.internal_note &&
-                    !orderChange.general_customer_note &&
-                    order.uiState.lastPrints
-                ) {
-                    orderChange = [order.uiState.lastPrints.at(-1)];
-                    reprint = true;
+                const hasChanges =
+                    orderChange.new.length ||
+                    orderChange.cancelled.length ||
+                    orderChange.noteUpdate.length ||
+                    orderChange.internal_note ||
+                    orderChange.general_customer_note;
+
+                let shouldPrint = true;
+                if (!hasChanges) {
+                    if (opts.explicitReprint && order.uiState.lastPrints) {
+                        orderChange = [order.uiState.lastPrints.at(-1)];
+                        reprint = true;
+                    } else {
+                        shouldPrint = false;
+                    }
                 } else {
                     order.uiState.lastPrints.push(orderChange);
                     orderChange = [orderChange];
                 }
 
                 if (reprint && opts.orderDone) {
-                    return;
+                    shouldPrint = false;
                 }
-                isPrinted = await this.printChanges(order, orderChange, reprint);
+
+                if (shouldPrint) {
+                    isPrinted = await this.printChanges(order, orderChange, reprint);
+                }
             } catch (e) {
                 logPosMessage(
                     "Store",
@@ -2750,22 +2764,30 @@ export class PosStore extends WithLazyGetterTrap {
             return sortedProducts.length ? [["0", sortedProducts]] : [];
         } else {
             const groupedByCategory = {};
+            const selectedCategories = this.selectedCategory
+                ? this.selectedCategory.getAllChildren().map((c) => c.id)
+                : false;
             for (const product of sortedProducts) {
                 if (product.pos_categ_ids.length === 0) {
+                    // Only display product without category if we don't have a category selected
+                    if (selectedCategories) {
+                        continue;
+                    }
                     if (!groupedByCategory[0]) {
                         groupedByCategory[0] = [];
                     }
                     groupedByCategory[0].push(product);
                     continue;
                 }
-                const category_ids = this.selectedCategory
-                    ? [this.selectedCategory.id]
-                    : product.pos_categ_ids.map((c) => c.id);
-                for (const categ_id of category_ids) {
-                    if (!groupedByCategory[categ_id]) {
-                        groupedByCategory[categ_id] = [];
+                const productCategories = product.pos_categ_ids.map((c) => c.id);
+                for (const categId of productCategories) {
+                    if (selectedCategories && !selectedCategories.includes(categId)) {
+                        continue;
                     }
-                    groupedByCategory[categ_id].push(product);
+                    if (!groupedByCategory[categId]) {
+                        groupedByCategory[categId] = [];
+                    }
+                    groupedByCategory[categId].push(product);
                 }
             }
             const res = Object.entries(groupedByCategory).sort(([a], [b]) => {

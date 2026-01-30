@@ -9,7 +9,6 @@ from uuid import uuid4
 from random import randrange
 from pprint import pformat
 
-import psycopg2
 import pytz
 
 from odoo import api, fields, models, tools, _
@@ -139,15 +138,7 @@ class PosOrder(models.Model):
     def _process_saved_order(self, draft):
         self.ensure_one()
         if not draft and self.state != 'cancel':
-            try:
-                self.action_pos_order_paid()
-            except psycopg2.DatabaseError:
-                # do not hide transactional errors, the order(s) won't be saved!
-                raise
-            except UserError as e:
-                _logger.warning('Could not fully process the POS Order: %s', tools.exception_to_unicode(e))
-            except Exception as e:
-                _logger.error('Could not fully process the POS Order: %s', tools.exception_to_unicode(e), exc_info=True)
+            self.action_pos_order_paid()
             self._create_order_picking()
             self._compute_total_cost_in_real_time()
 
@@ -1716,7 +1707,7 @@ class PosOrderLine(models.Model):
             'date_deadline': date_deadline,
             'route_ids': self.order_id.config_id.route_id,
             'warehouse_id': self.order_id.config_id.warehouse_id or False,
-            'partner': self.order_id.partner_id,
+            'partner_id': self.order_id.partner_id.id,
             'product_description_variants': self.full_product_name,
             'company_id': self.order_id.company_id,
             'reference_ids': self.order_id.stock_reference_ids,
