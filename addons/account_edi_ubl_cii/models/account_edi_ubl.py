@@ -1,5 +1,6 @@
 import io
 import logging
+import re
 
 from markupsafe import Markup
 from stdnum.be import vat as be_vat
@@ -2609,6 +2610,20 @@ class AccountEdiUBL(models.AbstractModel):
             partner_create_values['vat'] = customer_values['vat']
         return partner_create_values
 
+    def _check_customer_vat_match(self, customer, vat, collected_values):
+        """
+        Compare the VAT from an EDI document against a partner's stored VAT,
+        with country-specific normalization where needed.
+        Should stay consistent with `_get_country_specific_vat_variants`.
+        """
+        country = self._import_ubl_get_country(collected_values)
+        customer_vat = customer.vat.replace(' ', '').upper()
+        vat_to_compare = vat.replace(' ', '').replace('.', '').upper()
+        if country.code == 'CH':
+            customer_vat = re.sub(r"(TVA|IVA|MWST)?$", "", customer_vat.replace('.', '').replace('-', ''))
+            vat_to_compare = re.sub(r"(TVA|IVA|MWST)?$", "", vat_to_compare.replace('-', ''))
+        return customer_vat == vat_to_compare
+
     def _import_ubl_create_missing_customer(self, collected_values):
         customer_values = collected_values['customer_values']
         logs = collected_values['logs']
@@ -2626,7 +2641,7 @@ class AccountEdiUBL(models.AbstractModel):
                 if self.env['res.partner']._run_vat_test(vat, country, True):
                     customer.vat = vat
                 return
-            if customer.vat.replace(' ', '') == vat.replace(' ', '').replace('.', ''):
+            if self._check_customer_vat_match(customer, vat, collected_values):
                 return
             vat_mismatch = True
 
@@ -3262,6 +3277,7 @@ class AccountEdiUBL(models.AbstractModel):
     def _import_ubl_retrieve_taxes_search_plan(self, collected_values):
         AccountTax = self.env['account.tax']
         return [
+            AccountTax._import_retrieve_tax_from_account_default_tax,
             AccountTax._import_retrieve_tax_from_invoice_predictive,
             AccountTax._import_retrieve_tax_from_price_include_exclude,
         ]
@@ -3272,6 +3288,9 @@ class AccountEdiUBL(models.AbstractModel):
         lines_collected_values = collected_values['lines_collected_values']
         tax_values_list = list(collected_values['taxes_values'])
         for line_collected_values in lines_collected_values:
+            if account := line_collected_values['account_values'].get('account'):
+                for tax_values in line_collected_values['taxes_values']:
+                    tax_values['account'] = account
             tax_values_list += line_collected_values['taxes_values']
             for charge in line_collected_values['charges']:
                 if tax_values := charge.get('attempt_tax_values'):
@@ -3560,7 +3579,9 @@ class AccountEdiUBL(models.AbstractModel):
         for base_line in base_lines:
             for tax_data in base_line['tax_details']['taxes_data']:
                 if tax_data['tax'].price_include:
-                    base_line['price_unit'] += tax_data['raw_tax_amount_currency'] / (base_line['quantity'] if base_line['quantity'] else 1)
+                    discount = base_line['discount'] / 100
+                    raw_tax_amount_currency = tax_data['raw_tax_amount_currency'] / (1 - discount)
+                    base_line['price_unit'] += raw_tax_amount_currency / (base_line['quantity'] if base_line['quantity'] else 1)
 
         # Remove lines having a zero amount except 100% discounts
         collected_values['base_lines'] = [

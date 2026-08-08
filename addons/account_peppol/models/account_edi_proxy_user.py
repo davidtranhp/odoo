@@ -10,6 +10,7 @@ from odoo.exceptions import UserError
 from odoo.tools import format_list
 from odoo.addons.account_edi_proxy_client.models.account_edi_proxy_user import AccountEdiProxyError
 from odoo.addons.account_peppol.tools.demo_utils import handle_demo
+from odoo.addons.account_peppol.tools.peppol_errors import render_peppol_errors
 
 _logger = logging.getLogger(__name__)
 BATCH_SIZE = 50
@@ -207,15 +208,28 @@ class AccountEdiProxyClientUser(models.Model):
         credit_note_type_code = xml_tree.findtext('.//{*}CreditNoteTypeCode')
         if invoice_type_code in ['389', '527'] or credit_note_type_code == '261':
             # 329/527: Self-billing invoice; 261: Self-billing credit note
+            sale_journal_domain = [
+                *self.env['account.journal']._check_company_domain(self.company_id),
+                ('type', '=', 'sale'),
+            ]
             journal = self.env['account.journal'].search(
-                [
-                    *self.env['account.journal']._check_company_domain(self.company_id),
-                    ('type', '=', 'sale'),
-                ],
+                [*sale_journal_domain, ('is_self_billing', '=', True)],
                 limit=1,
             )
+            if not journal:
+                journal = self.env['account.journal'].search(sale_journal_domain, limit=1)
             move_type = 'out_invoice' if invoice_type_code else 'out_refund'
         return journal, move_type
+
+    def _peppol_get_duplicate_message_uuids(self, message_uuids):
+        self.ensure_one()
+        return set(
+            self.env['account.move'].search([
+                ('peppol_message_uuid', 'in', message_uuids),
+                ('company_id', '=', self.company_id.id),
+            ])
+            .mapped('peppol_message_uuid')
+        )
 
     def _peppol_get_new_documents(self):
         # Context added to not break stable policy: useful to tweak on databases processing large invoices
@@ -245,6 +259,19 @@ class AccountEdiProxyClientUser(models.Model):
                 message['uuid']
                 for message in messages.get('messages', [])
             ]
+            # remove the duplicates
+            if duplicate_message_uuids := list(edi_user._peppol_get_duplicate_message_uuids(message_uuids)):
+                message_uuids = list(set(message_uuids) - set(duplicate_message_uuids))
+                # acknowledge the duplicates on IAP side.
+                edi_user._call_peppol_proxy(
+                    endpoint=edi_user._get_peppol_proxy_endpoint('1/ack'),
+                    params={'message_uuids': duplicate_message_uuids},
+                )
+                _logger.info(
+                    "Messages with UUID %s could not be imported because they are identified as duplicates",
+                    ', '.join(duplicate_message_uuids)
+                )
+
             if not message_uuids:
                 continue
 
@@ -354,7 +381,8 @@ class AccountEdiProxyClientUser(models.Model):
                     # thrown when the IAP is still processing the message
                     continue
                 move.peppol_move_state = 'error'
-                move._message_log(body=self._peppol_get_message_status_error_body(move, content['error']))
+                error = content['error']
+                move._message_log(body=render_peppol_errors(move, error.get('data', {}).get('message') or error['message']))
                 processed_message_uuids.append(uuid)
                 continue
 
@@ -364,8 +392,8 @@ class AccountEdiProxyClientUser(models.Model):
         return processed_message_uuids
 
     def _peppol_get_message_status_error_body(self, move, error):
-        self.ensure_one()
-        return self.env._("Peppol error: %s", error.get('data', {}).get('message') or error['message'])
+        # DEPRECATED, TO BE REMOVED IN MASTER
+        pass
 
     def _peppol_get_message_status_update_body(self, move, content):
         self.ensure_one()
