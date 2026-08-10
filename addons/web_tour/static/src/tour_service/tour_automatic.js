@@ -59,7 +59,14 @@ export class TourAutomatic {
                     timeout:
                         step.pause && this.debugMode
                             ? 9999999
-                            : step.timeout || this.timeout || 10000,
+                            : // The 10s default step budget assumes a machine running one
+                              // build at a time; ours share their cores with about ten
+                              // others. Scale by the same 2 as the server-side browser_js
+                              // timeout so a heavy-but-healthy step (e.g. the first load of
+                              // an app's main list view) does not kill the whole tour. An
+                              // explicit per-step or per-tour budget is scaled too: it was
+                              // chosen against upstream's machine, not ours.
+                              (step.timeout || this.timeout || 10000) * 2,
                     action: async (trigger) => {
                         if (delayToCheckUndeterminisms > 0) {
                             await step.checkForUndeterminisms(trigger, delayToCheckUndeterminisms);

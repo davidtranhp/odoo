@@ -223,7 +223,7 @@ test("a failing tour with disabled element", async () => {
         `error: FAILED: [2/3] Tour tour3 → Step .button1.
 Element has been found.
 BUT: Element is not enabled. TIP: You can use :enable to wait the element is enabled before doing action on it.
-TIMEOUT step failed to complete within 500 ms.`,
+TIMEOUT step failed to complete within 1000 ms.`,
     ];
     expect.verifySteps(expectedError);
 });
@@ -315,7 +315,7 @@ test("a failing tour logs the step that failed", async () => {
         "log: [5/9] Tour tour1 → Step content (trigger: .wrong_selector)",
         `error: FAILED: [5/9] Tour tour1 → Step content (trigger: .wrong_selector).
 Element (.wrong_selector) has not been found.
-TIMEOUT step failed to complete within 111 ms.`,
+TIMEOUT step failed to complete within 222 ms.`,
         `runbot: {"content":"content","trigger":".button1","run":"click"},{"content":"content","trigger":".button2","run":"click"},{"content":"content","trigger":".button3","run":"click"},FAILED:[5/9]Tourtour1→Stepcontent(trigger:.wrong_selector){"content":"content","trigger":".wrong_selector","run":"click","timeout":111},{"content":"content","trigger":".button4","run":"click"},{"content":"content","trigger":".button5","run":"click"},{"content":"content","trigger":".button6","run":"click"},`,
     ]);
 });
@@ -414,7 +414,7 @@ test("automatic tour with invisible element", async () => {
         `error: FAILED: [2/3] Tour tour_de_wallonie → Step .button1.
 Element has been found.
 BUT: Element is not visible. TIP: You can use :not(:visible) to force the search for an invisible element.
-TIMEOUT step failed to complete within 777 ms.`,
+TIMEOUT step failed to complete within 1554 ms.`,
     ]);
 });
 
@@ -583,7 +583,7 @@ test("check not possible to click below modal", async () => {
         `error: FAILED: [2/2] Tour tour_check_modal → Step .button1.
 Element has been found.
 BUT: It is not allowed to do action on an element that's below a modal.
-TIMEOUT step failed to complete within 888 ms.`,
+TIMEOUT step failed to complete within 1776 ms.`,
     ]);
 });
 

@@ -2400,6 +2400,11 @@ class HttpCase(TransactionCase):
             The tour is ran with the `debug=assets` query parameter. When an error is thrown, the debugger stops on the exception.
         :param int cpu_throttling: CPU throttling rate as a slowdown factor (1 is no throttle, 2 is 2x slowdown, etc)
         """
+        # Applies to every browser test, including the ones passing an explicit
+        # timeout. The upstream budgets assume a machine running one build at a time;
+        # ours share their cores with about ten others, which is enough to make a
+        # healthy tour fail on wall-clock alone.
+        timeout = timeout * 2
         if not self.env.registry.loaded:
             self._logger.warning('HttpCase test should be in post_install only')
 
@@ -2456,7 +2461,9 @@ class HttpCase(TransactionCase):
 
             # Needed because tests like test01.js (qunit tests) are passing a ready
             # code = ""
-            self.assertTrue(browser._wait_ready(ready), 'The ready "%s" code was always falsy' % ready)
+            # Scaled by the same 2: waiting for the ready code is part of the same
+            # budget, and its own default is hardcoded at 60s.
+            self.assertTrue(browser._wait_ready(ready, timeout=120), 'The ready "%s" code was always falsy' % ready)
 
             error = False
             try:

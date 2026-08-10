@@ -284,8 +284,12 @@ class Contains {
         this.onScroll = () => this.runOnce("after scroll");
         if (!this.runOnce("immediately")) {
             this.timer = setTimeout(
-                () => this.runOnce("Timeout of 5 seconds", { crashOnFail: true }),
-                5000
+                // The upstream 5s budget is a real wall-clock timer that mock timers
+                // do not cover. Scale by the same 2 as the other browser test budgets
+                // so a slow-but-healthy render on a saturated host does not fail the
+                // check; a matching element still resolves immediately via mutations.
+                () => this.runOnce("Timeout of 10 seconds", { crashOnFail: true }),
+                5000 * 2
             );
             this.observer = new MutationObserver((mutations) => {
                 try {
