@@ -18,10 +18,13 @@ class TestItEdiImport(TestItEdi):
     """ Main test class for the l10n_it_edi vendor bills XML import"""
 
     fake_test_content = """<?xml version="1.0" encoding="UTF-8"?>
-        <p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-        xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd">
+        <p:FatturaElettronica
+            xmlns:ds="___ignore___"
+            xmlns:p="___ignore___"
+            xmlns:xsi="___ignore___"
+            xsi:schemaLocation="___ignore___"
+            versione="FPR12"
+        >
         <FatturaElettronicaHeader>
           <DatiTrasmissione>
             <IdTrasmittente>
@@ -830,3 +833,44 @@ class TestItEdiImport(TestItEdi):
             moves.l10n_it_edi_attachment_id.mapped('name'),
             ['IT01234567890_FPR03.xml', 'IT01234567890_FPR02.xml.p7m']
         )
+
+    def test_correct_journal_type_after_exception_in_SDI_import_bill(self):
+        """Test that when an exception (of any kind) is raised while importing a
+        SDI file the entry move created is a vendor bill move (in_invoice). """
+
+        def mock_commit(self):
+            pass
+
+        def patched_import_invoice(self, invoice, data, is_new):
+            with self._get_edi_creation() as self:
+                self.move_type = 'in_invoice'
+                raise Exception('This is an exception!')
+
+        with (
+            patch.object(self.env.registry['account.move'], '_l10n_it_edi_import_invoice', patched_import_invoice),
+            patch.object(self.env.registry['account_edi_proxy_client.user'], '_decrypt_data', return_value=self.fake_test_content),
+            patch.object(sql_db.Cursor, "commit", mock_commit),
+            tools.mute_logger("odoo.addons.account.models.account_move"),
+        ):
+            self.env['account.move'].with_company(self.company)._l10n_it_edi_process_downloads({
+                '999999999': {
+                    'filename': 'IT01234567890_FPR01.xml',
+                    'file': self.fake_test_content,
+                    'key': str(uuid.uuid4()),
+                }},
+                self.proxy_user,
+            )
+
+        expected_journal = self.env['account.journal'].search([
+            ('company_id', '=', self.company.id),
+            ('type', '=', 'purchase'),
+        ], limit=1)
+
+        move = self.env['account.move'].search([
+            ('company_id', '=', self.company.id),
+            ('journal_id', '=', expected_journal.id),
+            ('state', '=', 'draft'),
+            ('invoice_line_ids', '=', False),
+            ('message_ids.body', 'like', 'Error importing attachment'),
+        ], limit=1)
+        self.assertTrue(move)
