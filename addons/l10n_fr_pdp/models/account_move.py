@@ -120,15 +120,6 @@ class AccountMove(models.Model):
         copy=False,
     )
 
-    @api.depends('peppol_is_sent')
-    def _compute_show_reset_to_draft_button(self):
-        # EXTEND 'account' to hide the reset to draft button for sent PDP invoices
-        super()._compute_show_reset_to_draft_button()
-        relevant_moves = self.filtered(
-            lambda move: move.pdp_is_sent and move.is_sale_document(include_receipts=True)
-        )
-        relevant_moves.show_reset_to_draft_button = False
-
     @api.depends(
         'line_ids.matched_debit_ids.debit_move_id',
         'line_ids.matched_credit_ids.credit_move_id',
@@ -643,6 +634,6 @@ class AccountMove(models.Model):
                 # considered as sent in previous flow, and allow the current flow to be sent even if
                 # it's the only diffrence between the 2 flows.
                 move.l10n_fr_pdp_sent_in_flow_ids = False
-                # ensure RE flow exist for current move period (if move is never posted again)
+                # Ensure RE flow exist for current move period.
                 self.env['l10n.fr.pdp.reports.flow']._get_open_flow_and_create_if_needed(move)
         return super().button_draft()
