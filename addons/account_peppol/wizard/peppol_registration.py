@@ -9,6 +9,7 @@ from odoo import _, api, fields, models, modules
 from odoo.exceptions import UserError, ValidationError, RedirectWarning
 
 from odoo.addons.account_edi_proxy_client.models.account_edi_proxy_user import AccountEdiProxyError
+from odoo.addons.account_edi_ubl_cii.models.account_edi_common import DEPRECATED_PEPPOL_EAS
 from odoo.addons.account_peppol.tools.demo_utils import handle_demo
 
 
@@ -161,13 +162,13 @@ class PeppolRegistration(models.TransientModel):
         for wizard in self:
             peppol_warnings = {}
             if wizard.company_id._peppol_is_french_company():
-                pdp_module = self.env['ir.module.module']._get('l10n_fr_pdp')
-                if pdp_module and pdp_module.state != 'installed':
+                pdp_info = self.env['res.config.settings']._get_pdp_module_info()
+                if not pdp_info['is_installed']:
                     peppol_warnings['company_french_warning'] = {
                         'level': 'warning',
-                        'message': self.env._("To use the Approved Platform for French E-Invoicing install the module"),
-                        'action_text': self.env._("France - E-Invoicing (Approved Platform)"),
-                        'action': pdp_module.sudo()._get_records_action(),
+                        'message': pdp_info['warning_message'],
+                        'action_text': pdp_info['action_name'],
+                        'action': pdp_info['action'],
                     }
             if (
                 wizard.peppol_eas
@@ -243,7 +244,11 @@ class PeppolRegistration(models.TransientModel):
     # BUSINESS ACTIONS
     # -------------------------------------------------------------------------
     def _get_peppol_eas_selection(self):
-        return self.env['res.company']._fields['peppol_eas']._description_selection(self.env)
+        return [
+            (eas, label)
+            for eas, label in self.env['res.company']._fields['peppol_eas']._description_selection(self.env)
+            if eas not in DEPRECATED_PEPPOL_EAS or eas == self.env.company.peppol_eas
+        ]
 
     def _ensure_mandatory_fields(self):
         if self.use_parent_connection:
@@ -264,26 +269,12 @@ class PeppolRegistration(models.TransientModel):
         self.ensure_one()
         if self.peppol_eas != '0225':
             return
-        pdp_module = self.env['ir.module.module']._get('l10n_fr_pdp')
-
-        if pdp_module:
-            redirect_action = pdp_module._get_records_action()
-            redirect_button_text = self.env._("Install module")
-            message = self.env._(
-                "If you want to register for the French e-invoicing, first install the PDP module: France - E-Invoicing (Approved Platform).",
-            )
-        else:
-            redirect_action = self.env.ref('base.action_view_base_module_update').id
-            message = self.env._(
-                "If you want to register for the French e-invoicing, first install the PDP module: France - E-Invoicing (Approved Platform).\n"
-                "The module was not found. Please update the available apps first.",
-            )
-            redirect_button_text = self.env._("Update Apps List")
+        pdp_info = self.env['res.config.settings']._get_pdp_module_info()
         raise RedirectWarning(
-                message=message,
-                action=redirect_action,
-                button_text=redirect_button_text,
-            )
+            message=pdp_info['warning_message'],
+            action=pdp_info['action'],
+            button_text=pdp_info['action_name'],
+        )
 
     def _action_open_peppol_form(self, reopen=True):
         view = self.env.ref('account_peppol.peppol_registration_form').sudo()
