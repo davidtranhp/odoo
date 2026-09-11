@@ -430,6 +430,7 @@ class CiiExportFacturXFR(TestCiiFacturXCommon, TestUblCiiFRCommon):
         self._assert_invoice_ubl_file(invoice, 'test_invoice_cash_rounding_biggest_tax')
 
     def test_invoice_deferred_dates(self):
+        self.ensure_installed("account_accountant")
         invoice = self._create_invoice(
             partner_id=self.partner_fr,
             partner_bank_id=self.recipient_bank,
