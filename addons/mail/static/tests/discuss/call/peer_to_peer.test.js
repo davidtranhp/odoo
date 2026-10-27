@@ -1,4 +1,4 @@
-import { describe, expect } from "@odoo/hoot";
+import { describe, expect, test } from "@odoo/hoot";
 import { waitUntil } from "@odoo/hoot-dom";
 import { advanceTime } from "@odoo/hoot-mock";
 import { browser } from "@web/core/browser/browser";
@@ -68,6 +68,9 @@ onlineTest("basic peer to peer connection", async () => {
     network.close();
 });
 
+// 10 real peers make 90 WebRTC connections: on a busy test machine (several builds at once)
+// this took 10 seconds, and once more than the 15 the runner allows, though nothing hung.
+test.config({ timeout: 45_000 });
 onlineTest("mesh peer to peer connections", async () => {
     await mountWebClient();
     const channelId = 2;
@@ -87,7 +90,7 @@ onlineTest("mesh peer to peer connections", async () => {
     const connectionCount = () => users.reduce((count, user) => count + user.p2p.peers.size, 0);
     await waitUntil(() => connectionCount() === expectedCount, {
         message: () => `expected ${expectedCount} connections, got ${connectionCount()}`,
-        timeout: 10_000,
+        timeout: 30_000,
     });
     network.close();
     expect(connectionCount()).toBe(0);
