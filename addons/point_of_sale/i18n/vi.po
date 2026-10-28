@@ -10,21 +10,21 @@
 # Thi Huong Nguyen, 2025
 # "Thi Huong Nguyen (thng)" <thng@odoo.com>, 2025, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
+# Deleted User <noreply+31@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-03 17:38+0000\n"
-"PO-Revision-Date: 2026-04-14 08:24+0000\n"
-"Last-Translator: \"Thi Huong Nguyen (thng)\" <thng@odoo.com>\n"
-"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-18/"
-"point_of_sale/vi/>\n"
+"PO-Revision-Date: 2026-10-20 13:10+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-18/point_of_sale/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16.2\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. module: point_of_sale
 #. odoo-python
@@ -198,13 +198,10 @@ msgid ""
 msgstr ""
 "<div style=\"margin: 0px; padding: 0px;\">\n"
 "    <h4>\n"
-"        Xin chào <t t-out=\"object.partner_id.name or 'Valuable Customer'\">"
-"Azure Interior</t>,\n"
+"        Xin chào <t t-out=\"object.partner_id.name or 'Valuable Customer'\">Azure Interior</t>,\n"
 "    </h4>\n"
 "    <p style=\"font-size: 13px;\">\n"
-"Chúng tôi có chương trình khuyến mại dành riêng cho bạn, nhưng có giới hạn "
-"thời gian. Hãy tận hưởng chiết khấu 20% giá cố định cho lần mua hàng tiếp "
-"theo với chúng tôi.\n"
+"Chúng tôi có chương trình khuyến mại dành riêng cho bạn, nhưng có giới hạn thời gian. Hãy tận hưởng chiết khấu 20% giá cố định cho lần mua hàng tiếp theo với chúng tôi.\n"
 "Chúng tôi rất mong được tiếp tục đồng hành cùng bạn.\n"
 "    </p>\n"
 "</div>\n"
@@ -225,8 +222,8 @@ msgid ""
 "<i class=\"fa fa-info-circle me-1\" title=\"This setting is common to all "
 "PoS.\" pos-data-toggle=\"tooltip\"/>"
 msgstr ""
-"<i class=\"fa fa-info-circle me-1\" title=\"Thiết lập này dùng chung cho tất "
-"cả POS.\" pos-data-toggle=\"tooltip\"/>"
+"<i class=\"fa fa-info-circle me-1\" title=\"Thiết lập này dùng chung cho tất"
+" cả POS.\" pos-data-toggle=\"tooltip\"/>"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.ticket_validation_screen
@@ -261,8 +258,7 @@ msgid ""
 "                                <i class=\"fa fa-info-circle me-1\" title=\"This setting is common to all PoS.\" pos-data-toggle=\"tooltip\"/>"
 msgstr ""
 "<span class=\"o_form_label\">Mã vạch</span>\n"
-"                                <i class=\"fa fa-info-circle me-1\" title=\""
-"Đây là thiết lập chung cho tất cả POS.\" pos-data-toggle=\"tooltip\"/>"
+"                                <i class=\"fa fa-info-circle me-1\" title=\"Đây là thiết lập chung cho tất cả POS.\" pos-data-toggle=\"tooltip\"/>"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
@@ -443,7 +439,8 @@ msgstr "KHOẢN TIỀN"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Accept customer tips or convert their change to a tip"
-msgstr "Chấp nhận tiền tip của khách hàng hoặc chuyển tiền thừa thành tiền tip"
+msgstr ""
+"Chấp nhận tiền tip của khách hàng hoặc chuyển tiền thừa thành tiền tip"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -549,8 +546,8 @@ msgid ""
 "Accounting journal used to post POS session journal entries and POS invoice "
 "payments."
 msgstr ""
-"Sổ nhật ký kế toán được dùng để ghi sổ bút toán ca POS và thanh toán hóa đơn "
-"POS."
+"Sổ nhật ký kế toán được dùng để ghi sổ bút toán ca POS và thanh toán hóa đơn"
+" POS."
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order__message_needaction
@@ -1516,7 +1513,8 @@ msgstr "Kiểm soát tiền mặt - mở ca"
 #. odoo-python
 #: code:addons/point_of_sale/models/pos_session.py:0
 msgid "Cash difference observed during the counting (Loss) - closing"
-msgstr "Chênh lệch tiền được phát hiện trong quá trình kiểm đếm (Lỗ) - đóng ca"
+msgstr ""
+"Chênh lệch tiền được phát hiện trong quá trình kiểm đếm (Lỗ) - đóng ca"
 
 #. module: point_of_sale
 #. odoo-python
@@ -1669,8 +1667,8 @@ msgstr "Chọn nếu bạn muốn sản phẩm này hiển thị trong điểm b
 msgid ""
 "Check if you want to group products of this category in point of sale orders"
 msgstr ""
-"Chọn nếu bạn muốn gộp các sản phẩm thuộc nhóm đơn vị tính này trong đơn hàng "
-"POS"
+"Chọn nếu bạn muốn gộp các sản phẩm thuộc nhóm đơn vị tính này trong đơn hàng"
+" POS"
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__cash_control
@@ -1716,8 +1714,8 @@ msgid ""
 "Choose a specific fiscal position at the order depending on the kind of "
 "customer (tax exempt, onsite vs. takeaway, etc.)."
 msgstr ""
-"Chọn một chế độ thuế cụ thể theo đơn đặt hàng tùy thuộc vào loại khách hàng ("
-"được miễn thuế, tại chỗ so với mua, v.v.)."
+"Chọn một chế độ thuế cụ thể theo đơn đặt hàng tùy thuộc vào loại khách hàng "
+"(được miễn thuế, tại chỗ so với mua, v.v.)."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2682,7 +2680,8 @@ msgstr "Chênh lệch khi đóng ca POS"
 msgid ""
 "Difference between the theoretical closing balance and the real closing "
 "balance."
-msgstr "Chênh lệch giữa số dư cuối ca theo lý thuyết và số dư cuối ca thực tế."
+msgstr ""
+"Chênh lệch giữa số dư cuối ca theo lý thuyết và số dư cuối ca thực tế."
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_digest_digest
@@ -3496,8 +3495,8 @@ msgid ""
 "If this orderline is a refund, then the refunded orderline is specified in "
 "this field."
 msgstr ""
-"Nếu dòng đơn hàng này là dòng trả hàng, trường này chỉ rõ dòng đơn hàng được "
-"trả."
+"Nếu dòng đơn hàng này là dòng trả hàng, trường này chỉ rõ dòng đơn hàng được"
+" trả."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__picking_policy
@@ -3950,8 +3949,7 @@ msgid ""
 "Overrides the company's receivable account (for Point of Sale) used in the journal entries."
 msgstr ""
 "Để trống để dùng tài khoản mặc định từ thiết lập công ty.\n"
-"Ghi đè lên tài khoản phải thu của công ty (cho điểm bán hàng) được sử dụng "
-"trong bút toán."
+"Ghi đè lên tài khoản phải thu của công ty (cho điểm bán hàng) được sử dụng trong bút toán."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_payment_method_view_form
@@ -3968,12 +3966,9 @@ msgid ""
 "Only cash and bank journals are allowed."
 msgstr ""
 "Để trống để sử dụng tài khoản phải thu của khách hàng.\n"
-"Xác định sổ nhật ký nơi ghi sổ các khoản thanh toán lũy kế (hoặc thanh toán "
-"đơn lẻ nếu Định danh khách hàng là đúng) sau khi đóng ca.\n"
-"Đối với sổ nhật ký tiền mặt, chúng tôi ghi trực tiếp vào tài khoản mặc định "
-"trên sổ kế toán thông qua chi tiết sao kê.\n"
-"Đối với sổ nhật ký ngân hàng, chúng tôi ghi vào tài khoản tiền đang chuyển "
-"được chỉ định trong phương thức thanh toán này.\n"
+"Xác định sổ nhật ký nơi ghi sổ các khoản thanh toán lũy kế (hoặc thanh toán đơn lẻ nếu Định danh khách hàng là đúng) sau khi đóng ca.\n"
+"Đối với sổ nhật ký tiền mặt, chúng tôi ghi trực tiếp vào tài khoản mặc định trên sổ kế toán thông qua chi tiết sao kê.\n"
+"Đối với sổ nhật ký ngân hàng, chúng tôi ghi vào tài khoản tiền đang chuyển được chỉ định trong phương thức thanh toán này.\n"
 "Chỉ cho phép sổ nhật ký tiền mặt và ngân hàng."
 
 #. module: point_of_sale
@@ -4116,9 +4111,9 @@ msgid ""
 "Otherwise the default pricelist will apply."
 msgstr ""
 "Cho phép dùng nhiều bảng giá trong điểm bán hàng. Bạn cũng có thể áp dụng "
-"bảng giá cho các khách hàng cụ thể từ biểu mẫu liên hệ của họ (trong tab Bán "
-"hàng). Để hợp lệ, bảng giá này phải được liệt kê ở đây dưới dạng bảng giá có "
-"sẵn. Nếu không, bảng giá mặc định sẽ được áp dụng."
+"bảng giá cho các khách hàng cụ thể từ biểu mẫu liên hệ của họ (trong tab Bán"
+" hàng). Để hợp lệ, bảng giá này phải được liệt kê ở đây dưới dạng bảng giá "
+"có sẵn. Nếu không, bảng giá mặc định sẽ được áp dụng."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -5392,8 +5387,7 @@ msgid ""
 "Please close and validate the following open PoS Sessions before modifying this payment method.\n"
 "Open sessions: %s"
 msgstr ""
-"Vui lòng đóng và xác nhận các ca POS đang mở sau đây trước khi điều chỉnh "
-"phương thức thanh toán này.\n"
+"Vui lòng đóng và xác nhận các ca POS đang mở sau đây trước khi điều chỉnh phương thức thanh toán này.\n"
 "Các ca đang mở: %s"
 
 #. module: point_of_sale
@@ -6241,7 +6235,8 @@ msgstr "Sản phẩm:"
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Promotions, Coupons, Gift Card & Loyalty Program"
 msgstr ""
-"Khuyến mại, Phiếu giảm giá, Thẻ quà tặng & Chương trình khách hàng thân thiết"
+"Khuyến mại, Phiếu giảm giá, Thẻ quà tặng & Chương trình khách hàng thân "
+"thiết"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -7708,8 +7703,7 @@ msgid ""
 "The rounding precision is %s so you should set %s as payment amount instead of %s."
 msgstr ""
 "Số tiền của các dòng thanh toán phải được làm tròn để xác nhận giao dịch.\n"
-"Độ chính xác làm tròn là %s, nên bạn nên đặt %s làm số tiền thanh toán thay "
-"vì %s."
+"Độ chính xác làm tròn là %s, nên bạn nên đặt %s làm số tiền thanh toán thay vì %s."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_payment__card_brand
@@ -7850,12 +7844,9 @@ msgid ""
 "\n"
 "The order will be sent to the server with the last changes made on this device."
 msgstr ""
-"Đơn hàng đã được chỉnh sửa trên một thiết bị khác. Nếu bạn đã thay đổi các "
-"dòng trong đơn hàng hiện có, hãy kiểm tra để đảm bảo thay đổi của bạn không "
-"bị ghi đè.\n"
+"Đơn hàng đã được chỉnh sửa trên một thiết bị khác. Nếu bạn đã thay đổi các dòng trong đơn hàng hiện có, hãy kiểm tra để đảm bảo thay đổi của bạn không bị ghi đè.\n"
 "\n"
-"Đơn hàng sẽ được gửi lên máy chủ với các chỉnh sửa cuối cùng được thực hiện "
-"trên thiết bị này."
+"Đơn hàng sẽ được gửi lên máy chủ với các chỉnh sửa cuối cùng được thực hiện trên thiết bị này."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -7907,8 +7898,8 @@ msgid ""
 "The pos order that was reverted after closing the session to create an "
 "invoice for it."
 msgstr ""
-"Đơn hàng POS đã được hoàn nguyên sau khi đóng ca để tạo hóa đơn cho đơn hàng "
-"đó."
+"Đơn hàng POS đã được hoàn nguyên sau khi đóng ca để tạo hóa đơn cho đơn hàng"
+" đó."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__note_ids
@@ -8004,8 +7995,8 @@ msgid ""
 "anytime and posted to Accounting from Point of Sale's dashboard."
 msgstr ""
 "Một người dùng khác đã đóng ca. Tất cả doanh số hoàn thành trong thời gian "
-"đó đã được lưu trong một ca khôi phục, ca này có thể được xem lại bất kỳ lúc "
-"nào và được ghi sổ vào Kế toán từ bảng điều khiển của POS."
+"đó đã được lưu trong một ca khôi phục, ca này có thể được xem lại bất kỳ lúc"
+" nào và được ghi sổ vào Kế toán từ bảng điều khiển của POS."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
@@ -8117,8 +8108,7 @@ msgid ""
 "There are still orders in draft state in the session. Pay or cancel the following orders to validate the session:\n"
 "%s"
 msgstr ""
-"Đang có đơn hàng nháp trong ca này. Vui lòng thanh toán hoặc hủy các đơn "
-"hàng dưới đây để xác nhận ca:\n"
+"Đang có đơn hàng nháp trong ca này. Vui lòng thanh toán hoặc hủy các đơn hàng dưới đây để xác nhận ca:\n"
 "%s"
 
 #. module: point_of_sale
@@ -8155,11 +8145,9 @@ msgid ""
 "\n"
 " Please pay the exact amount or add a cash payment method in the point of sale configuration"
 msgstr ""
-"Không có phương thức thanh toán tiền mặt nào khả dụng tại điểm bán hàng này "
-"để trả tiền thừa.\n"
+"Không có phương thức thanh toán tiền mặt nào khả dụng tại điểm bán hàng này để trả tiền thừa.\n"
 "\n"
-" Vui lòng thanh toán đúng số tiền hoặc thêm phương thức thanh toán tiền mặt "
-"vào cấu hình POS"
+" Vui lòng thanh toán đúng số tiền hoặc thêm phương thức thanh toán tiền mặt vào cấu hình POS"
 
 #. module: point_of_sale
 #. odoo-python
@@ -8219,8 +8207,8 @@ msgid ""
 "this maximum is reached, the user will have an error message at the closing "
 "of his session saying that he needs to contact his manager."
 msgstr ""
-"Trường này thể hiện mức chênh lệch tối đa được phép giữa số dư cuối ca và số "
-"tiền mặt theo lý thuyết khi đóng ca, áp dụng cho người không phải quản lý "
+"Trường này thể hiện mức chênh lệch tối đa được phép giữa số dư cuối ca và số"
+" tiền mặt theo lý thuyết khi đóng ca, áp dụng cho người không phải quản lý "
 "POS. Nếu đạt mức tối đa này, người dùng sẽ nhận được thông báo lỗi khi đóng "
 "ca, yêu cầu liên hệ với người quản lý."
 
@@ -8254,8 +8242,8 @@ msgid ""
 "note."
 msgstr ""
 "Hóa đơn này liên kết với một Đơn hàng POS, việc đặt lại về nháp sẽ khiến ca "
-"bán hàng không thể đóng. Bạn nên trả hàng cho đơn hàng hoặc tạo hóa đơn điều "
-"chỉnh giảm."
+"bán hàng không thể đóng. Bạn nên trả hàng cho đơn hàng hoặc tạo hóa đơn điều"
+" chỉnh giảm."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__fiscal_position_ids
@@ -8296,8 +8284,7 @@ msgid ""
 msgstr ""
 "Thao tác này sẽ xóa tất cả đơn hàng ${\n"
 "                    paid ? \"paid\" : \"unpaid\"\n"
-"                } trong trình duyệt. Bạn sẽ mất tất cả dữ liệu. Không thể "
-"hoàn tác thao tác này."
+"                } trong trình duyệt. Bạn sẽ mất tất cả dữ liệu. Không thể hoàn tác thao tác này."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -8316,8 +8303,8 @@ msgid ""
 "This order has already been paid. You cannot set it back to draft or edit "
 "it."
 msgstr ""
-"Đơn hàng này đã được thanh toán. Bạn không thể chuyển về trạng thái nháp hay "
-"chỉnh sửa."
+"Đơn hàng này đã được thanh toán. Bạn không thể chuyển về trạng thái nháp hay"
+" chỉnh sửa."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -8464,9 +8451,7 @@ msgid ""
 msgstr ""
 "Để xóa một sản phẩm, hãy đảm bảo tất cả các ca POS đều đã đóng.\n"
 "\n"
-"Việc xóa một sản phẩm hiện có trong ca không khác nào bạn cố gắng giật chiếc "
-"bánh hamburger mà khách hàng đang cắn dở; rồi hỗn loạn sẽ xảy ra khi sốt cà "
-"chua và mayo bay tứ tung!"
+"Việc xóa một sản phẩm hiện có trong ca không khác nào bạn cố gắng giật chiếc bánh hamburger mà khách hàng đang cắn dở; rồi hỗn loạn sẽ xảy ra khi sốt cà chua và mayo bay tứ tung!"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -8657,8 +8642,7 @@ msgid ""
 "%s"
 msgstr ""
 "Không thể đóng và xác nhận ca.\n"
-"Vui lòng đặt tài khoản thuế tương ứng trong mỗi dòng phân loại của các loại "
-"thuế sau: \n"
+"Vui lòng đặt tài khoản thuế tương ứng trong mỗi dòng phân loại của các loại thuế sau: \n"
 "%s"
 
 #. module: point_of_sale
@@ -8674,8 +8658,8 @@ msgid ""
 "Unable to modify this PoS Configuration because you can't modify %s while a "
 "session is open."
 msgstr ""
-"Không thể chỉnh sửa Cấu hình POS vì bạn không thể chỉnh sửa %s trong khi một "
-"ca đang mở."
+"Không thể chỉnh sửa Cấu hình POS vì bạn không thể chỉnh sửa %s trong khi một"
+" ca đang mở."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -9018,8 +9002,8 @@ msgid ""
 " accounting separately."
 msgstr ""
 "Mỗi khi bạn đóng một ca, một bút toán được tạo trong sổ nhật ký kế toán sau "
-"cho tất cả các đơn hàng chưa lập hóa đơn. Hóa đơn được hạch toán riêng trong "
-"phân hệ kế toán."
+"cho tất cả các đơn hàng chưa lập hóa đơn. Hóa đơn được hạch toán riêng trong"
+" phân hệ kế toán."
 
 #. module: point_of_sale
 #: model:product.attribute.value,name:point_of_sale.product_attribute_value_white
@@ -9180,8 +9164,8 @@ msgstr "Bạn không thể tạo ca bắt đầu trước: %(lock_date_info)s"
 #. odoo-python
 #: code:addons/point_of_sale/models/res_partner.py:0
 msgid ""
-"You cannot delete a customer that has point of sales orders. You can archive "
-"it instead."
+"You cannot delete a customer that has point of sales orders. You can archive"
+" it instead."
 msgstr ""
 "Bạn không thể xóa một khách hàng có đơn hàng POS. Thay vào đó, bạn có thể "
 "lưu trữ."

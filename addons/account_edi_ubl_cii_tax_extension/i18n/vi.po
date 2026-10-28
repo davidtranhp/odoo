@@ -12,16 +12,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-07 17:38+0000\n"
-"PO-Revision-Date: 2026-01-10 09:30+0000\n"
+"PO-Revision-Date: 2026-10-20 09:30+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
-"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-18/"
-"account_edi_ubl_cii_tax_extension/vi/>\n"
+"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-18/account_edi_ubl_cii_tax_extension/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_category_code__ae
@@ -123,8 +122,8 @@ msgid ""
 "VATEX-EU-132-1A - Exempt based on article 132, section 1 (a) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1A - Miễn trừ dựa trên điều 132, mục 1 (a) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1A - Miễn trừ dựa trên điều 132, mục 1 (a) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1b
@@ -132,8 +131,8 @@ msgid ""
 "VATEX-EU-132-1B - Exempt based on article 132, section 1 (b) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1B - Miễn trừ dựa trên điều 132, mục 1 (b) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1B - Miễn trừ dựa trên điều 132, mục 1 (b) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1c
@@ -141,8 +140,8 @@ msgid ""
 "VATEX-EU-132-1C - Exempt based on article 132, section 1 (c) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1C - Miễn trừ dựa trên điều 132, mục 1 (c) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1C - Miễn trừ dựa trên điều 132, mục 1 (c) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1d
@@ -150,8 +149,8 @@ msgid ""
 "VATEX-EU-132-1D - Exempt based on article 132, section 1 (d) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1D - Miễn trừ dựa trên điều 132, mục 1 (d) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1D - Miễn trừ dựa trên điều 132, mục 1 (d) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1e
@@ -159,8 +158,8 @@ msgid ""
 "VATEX-EU-132-1E - Exempt based on article 132, section 1 (e) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1E - Miễn trừ dựa trên điều 132, mục 1 (e) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1E - Miễn trừ dựa trên điều 132, mục 1 (e) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1f
@@ -168,8 +167,8 @@ msgid ""
 "VATEX-EU-132-1F - Exempt based on article 132, section 1 (f) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1F - Miễn trừ dựa trên điều 132, mục 1 (f) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1F - Miễn trừ dựa trên điều 132, mục 1 (f) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1g
@@ -177,8 +176,8 @@ msgid ""
 "VATEX-EU-132-1G - Exempt based on article 132, section 1 (g) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1G - Miễn trừ dựa trên điều 132, mục 1 (g) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1G - Miễn trừ dựa trên điều 132, mục 1 (g) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1h
@@ -186,8 +185,8 @@ msgid ""
 "VATEX-EU-132-1H - Exempt based on article 132, section 1 (h) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1H - Miễn trừ dựa trên điều 132, mục 1 (h) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1H - Miễn trừ dựa trên điều 132, mục 1 (h) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1i
@@ -195,8 +194,8 @@ msgid ""
 "VATEX-EU-132-1I - Exempt based on article 132, section 1 (i) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1I - Miễn trừ dựa trên điều 132, mục 1 (i) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1I - Miễn trừ dựa trên điều 132, mục 1 (i) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1j
@@ -204,8 +203,8 @@ msgid ""
 "VATEX-EU-132-1J - Exempt based on article 132, section 1 (j) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1J - Miễn trừ dựa trên điều 132, mục 1 (j) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1J - Miễn trừ dựa trên điều 132, mục 1 (j) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1k
@@ -213,8 +212,8 @@ msgid ""
 "VATEX-EU-132-1K - Exempt based on article 132, section 1 (k) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1K - Miễn trừ dựa trên điều 132, mục 1 (k) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1K - Miễn trừ dựa trên điều 132, mục 1 (k) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1l
@@ -222,8 +221,8 @@ msgid ""
 "VATEX-EU-132-1L - Exempt based on article 132, section 1 (l) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1L - Miễn trừ dựa trên điều 132, mục 1 (l) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1L - Miễn trừ dựa trên điều 132, mục 1 (l) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1m
@@ -231,8 +230,8 @@ msgid ""
 "VATEX-EU-132-1M - Exempt based on article 132, section 1 (m) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1M - Miễn trừ dựa trên điều 132, mục 1 (m) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1M - Miễn trừ dựa trên điều 132, mục 1 (m) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1n
@@ -240,8 +239,8 @@ msgid ""
 "VATEX-EU-132-1N - Exempt based on article 132, section 1 (n) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1N - Miễn trừ dựa trên điều 132, mục 1 (n) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1N - Miễn trừ dựa trên điều 132, mục 1 (n) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1o
@@ -249,8 +248,8 @@ msgid ""
 "VATEX-EU-132-1O - Exempt based on article 132, section 1 (o) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1O - Miễn trừ dựa trên điều 132, mục 1 (o) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1O - Miễn trừ dựa trên điều 132, mục 1 (o) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1p
@@ -258,8 +257,8 @@ msgid ""
 "VATEX-EU-132-1P - Exempt based on article 132, section 1 (p) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1P - Miễn trừ dựa trên điều 132, mục 1 (p) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1P - Miễn trừ dựa trên điều 132, mục 1 (p) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-132-1q
@@ -267,17 +266,17 @@ msgid ""
 "VATEX-EU-132-1Q - Exempt based on article 132, section 1 (q) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-132-1Q - Miễn trừ dựa trên điều 132, mục 1 (q) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-132-1Q - Miễn trừ dựa trên điều 132, mục 1 (q) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-135-1
 msgid ""
-"VATEX-EU-135-1 - Exempt based on article 135, section 1 of Council Directive "
-"2006/112/EC"
+"VATEX-EU-135-1 - Exempt based on article 135, section 1 of Council Directive"
+" 2006/112/EC"
 msgstr ""
-"VATEX-EU-135-1 - Miễn trừ dựa trên điều 135, mục 1 của Chỉ thị Hội đồng 2006/"
-"112/EC"
+"VATEX-EU-135-1 - Miễn trừ dựa trên điều 135, mục 1 của Chỉ thị Hội đồng "
+"2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143
@@ -292,8 +291,8 @@ msgid ""
 "VATEX-EU-143-1A - Exempt based on article 143, section 1 (a) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1A - Miễn trừ dựa trên điều 143, mục 1 (a) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1A - Miễn trừ dựa trên điều 143, mục 1 (a) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1b
@@ -301,8 +300,8 @@ msgid ""
 "VATEX-EU-143-1B - Exempt based on article 143, section 1 (b) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1B - Miễn trừ dựa trên điều 143, mục 1 (b) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1B - Miễn trừ dựa trên điều 143, mục 1 (b) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1c
@@ -310,8 +309,8 @@ msgid ""
 "VATEX-EU-143-1C - Exempt based on article 143, section 1 (c) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1C - Miễn trừ dựa trên điều 143, mục 1 (c) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1C - Miễn trừ dựa trên điều 143, mục 1 (c) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1d
@@ -319,8 +318,8 @@ msgid ""
 "VATEX-EU-143-1D - Exempt based on article 143, section 1 (d) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1D - Miễn trừ dựa trên điều 143, mục 1 (d) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1D - Miễn trừ dựa trên điều 143, mục 1 (d) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1e
@@ -328,8 +327,8 @@ msgid ""
 "VATEX-EU-143-1E - Exempt based on article 143, section 1 (e) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1E - Miễn trừ dựa trên điều 143, mục 1 (e) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1E - Miễn trừ dựa trên điều 143, mục 1 (e) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1f
@@ -337,8 +336,8 @@ msgid ""
 "VATEX-EU-143-1F - Exempt based on article 143, section 1 (f) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1F - Miễn trừ dựa trên điều 143, mục 1 (f) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1F - Miễn trừ dựa trên điều 143, mục 1 (f) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1fa
@@ -355,8 +354,8 @@ msgid ""
 "VATEX-EU-143-1G - Exempt based on article 143, section 1 (g) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1G - Miễn trừ dựa trên điều 143, mục 1 (g) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1G - Miễn trừ dựa trên điều 143, mục 1 (g) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1h
@@ -364,8 +363,8 @@ msgid ""
 "VATEX-EU-143-1H - Exempt based on article 143, section 1 (h) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1H - Miễn trừ dựa trên điều 143, mục 1 (h) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1H - Miễn trừ dựa trên điều 143, mục 1 (h) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1i
@@ -373,8 +372,8 @@ msgid ""
 "VATEX-EU-143-1I - Exempt based on article 143, section 1 (i) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1I - Miễn trừ dựa trên điều 143, mục 1 (i) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1I - Miễn trừ dựa trên điều 143, mục 1 (i) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1j
@@ -382,8 +381,8 @@ msgid ""
 "VATEX-EU-143-1J - Exempt based on article 143, section 1 (j) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1J - Miễn trừ dựa trên điều 143, mục 1 (j) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1J - Miễn trừ dựa trên điều 143, mục 1 (j) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1k
@@ -391,8 +390,8 @@ msgid ""
 "VATEX-EU-143-1K - Exempt based on article 143, section 1 (k) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1K - Miễn trừ dựa trên điều 143, mục 1 (k) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1K - Miễn trừ dựa trên điều 143, mục 1 (k) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-143-1l
@@ -400,8 +399,8 @@ msgid ""
 "VATEX-EU-143-1L - Exempt based on article 143, section 1 (l) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-143-1L - Miễn trừ dựa trên điều 143, mục 1 (l) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-143-1L - Miễn trừ dựa trên điều 143, mục 1 (l) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-144
@@ -416,8 +415,8 @@ msgid ""
 "VATEX-EU-146-1E - Exempt based on article 146 section 1 (e) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-146-1E - Miễn trừ dựa trên điều 146, mục 1 (e) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-146-1E - Miễn trừ dựa trên điều 146, mục 1 (e) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-148
@@ -502,8 +501,8 @@ msgid ""
 "VATEX-EU-151-1A - Exempt based on article 151, section 1 (a) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-151-1A - Miễn trừ dựa trên điều 151, mục 1 (a) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-151-1A - Miễn trừ dựa trên điều 151, mục 1 (a) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-151-1aa
@@ -520,8 +519,8 @@ msgid ""
 "VATEX-EU-151-1B - Exempt based on article 151, section 1 (b) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-151-1B - Miễn trừ dựa trên điều 151, mục 1 (b) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-151-1B - Miễn trừ dựa trên điều 151, mục 1 (b) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-151-1c
@@ -529,8 +528,8 @@ msgid ""
 "VATEX-EU-151-1C - Exempt based on article 151, section 1 (c) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-151-1C - Miễn trừ dựa trên điều 151, mục 1 (c) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-151-1C - Miễn trừ dựa trên điều 151, mục 1 (c) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-151-1d
@@ -538,8 +537,8 @@ msgid ""
 "VATEX-EU-151-1D - Exempt based on article 151, section 1 (d) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-151-1D - Miễn trừ dựa trên điều 151, mục 1 (d) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-151-1D - Miễn trừ dựa trên điều 151, mục 1 (d) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-151-1e
@@ -547,8 +546,8 @@ msgid ""
 "VATEX-EU-151-1E - Exempt based on article 151, section 1 (e) of Council "
 "Directive 2006/112/EC"
 msgstr ""
-"VATEX-EU-151-1E - Miễn trừ dựa trên điều 151, mục 1 (e) của Chỉ thị Hội đồng "
-"2006/112/EC"
+"VATEX-EU-151-1E - Miễn trừ dựa trên điều 151, mục 1 (e) của Chỉ thị Hội đồng"
+" 2006/112/EC"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-eu-153
@@ -627,8 +626,8 @@ msgstr "VATEX-EU-O - Không chịu thuế GTGT"
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-298sexdeciesa
 msgid ""
-"VATEX-FR-298SEXDECIESA - Exempt based on article 298 sexdecies A of the Code "
-"Général des Impôts (CGI ; General tax code)"
+"VATEX-FR-298SEXDECIESA - Exempt based on article 298 sexdecies A of the Code"
+" Général des Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-298SEXDECIESA - Miễn thuế theo điều 298 sexdecies A của Code "
 "Général des Impôts (CGI ; Bộ luật thuế chung)"
@@ -645,8 +644,8 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261-1
 msgid ""
-"VATEX-FR-CGI261-1 - Exempt based on 1 of article 261 of the Code Général des "
-"Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261-1 - Exempt based on 1 of article 261 of the Code Général des"
+" Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-CGI261-1 - Miễn thuế theo khoản 1 điều 261 của Code Général des "
 "Impôts (CGI ; Bộ luật thuế chung)"
@@ -654,8 +653,8 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261-2
 msgid ""
-"VATEX-FR-CGI261-2 - Exempt based on 2 of article 261 of the Code Général des "
-"Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261-2 - Exempt based on 2 of article 261 of the Code Général des"
+" Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-CGI261-2 - Miễn thuế theo khoản 2 điều 261 của Code Général des "
 "Impôts (CGI ; Bộ luật thuế chung)"
@@ -663,8 +662,8 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261-3
 msgid ""
-"VATEX-FR-CGI261-3 - Exempt based on 3 of article 261 of the Code Général des "
-"Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261-3 - Exempt based on 3 of article 261 of the Code Général des"
+" Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-CGI261-3 - Miễn thuế theo khoản 3 điều 261 của Code Général des "
 "Impôts (CGI ; Bộ luật thuế chung)"
@@ -672,8 +671,8 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261-4
 msgid ""
-"VATEX-FR-CGI261-4 - Exempt based on 4 of article 261 of the Code Général des "
-"Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261-4 - Exempt based on 4 of article 261 of the Code Général des"
+" Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-CGI261-4 - Miễn thuế theo khoản 4 điều 261 của Code Général des "
 "Impôts (CGI ; Bộ luật thuế chung)"
@@ -681,8 +680,8 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261-5
 msgid ""
-"VATEX-FR-CGI261-5 - Exempt based on 5 of article 261 of the Code Général des "
-"Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261-5 - Exempt based on 5 of article 261 of the Code Général des"
+" Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-CGI261-5 - Miễn thuế theo khoản 5 điều 261 của Code Général des "
 "Impôts (CGI ; Bộ luật thuế chung)"
@@ -690,8 +689,8 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261-7
 msgid ""
-"VATEX-FR-CGI261-7 - Exempt based on 7 of article 261 of the Code Général des "
-"Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261-7 - Exempt based on 7 of article 261 of the Code Général des"
+" Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-CGI261-7 - Miễn thuế theo khoản 7 điều 261 của Code Général des "
 "Impôts (CGI ; Bộ luật thuế chung)"
@@ -699,8 +698,8 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261-8
 msgid ""
-"VATEX-FR-CGI261-8 - Exempt based on 8 of article 261 of the Code Général des "
-"Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261-8 - Exempt based on 8 of article 261 of the Code Général des"
+" Impôts (CGI ; General tax code)"
 msgstr ""
 "VATEX-FR-CGI261-8 - Miễn thuế theo khoản 8 điều 261 của Code Général des "
 "Impôts (CGI ; Bộ luật thuế chung)"
@@ -726,38 +725,38 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261c-1
 msgid ""
-"VATEX-FR-CGI261C-1 - Exempt based on 1° of article 261 C of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261C-1 - Exempt based on 1° of article 261 C of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261C-1 - Miễn thuế theo khoản 1° điều 261 C của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261C-1 - Miễn thuế theo khoản 1° điều 261 C của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261c-2
 msgid ""
-"VATEX-FR-CGI261C-2 - Exempt based on 2° of article 261 C of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261C-2 - Exempt based on 2° of article 261 C of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261C-2 - Miễn thuế theo khoản 2° điều 261 C của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261C-2 - Miễn thuế theo khoản 2° điều 261 C của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261c-3
 msgid ""
-"VATEX-FR-CGI261C-3 - Exempt based on 3° of article 261 C of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261C-3 - Exempt based on 3° of article 261 C of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261C-3 - Miễn thuế theo khoản 3° điều 261 C của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261C-3 - Miễn thuế theo khoản 3° điều 261 C của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261d-1
 msgid ""
-"VATEX-FR-CGI261D-1 - Exempt based on 1° of article 261 D of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261D-1 - Exempt based on 1° of article 261 D of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261D-1 - Miễn thuế theo khoản 1° điều 261 D của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261D-1 - Miễn thuế theo khoản 1° điều 261 D của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261d-1bis
@@ -771,58 +770,58 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261d-2
 msgid ""
-"VATEX-FR-CGI261D-2 - Exempt based on 2° of article 261 D of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261D-2 - Exempt based on 2° of article 261 D of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261D-2 - Miễn thuế theo khoản 2° điều 261 D của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261D-2 - Miễn thuế theo khoản 2° điều 261 D của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261d-3
 msgid ""
-"VATEX-FR-CGI261D-3 - Exempt based on 3° of article 261 D of the Code Général "
-"des Impôts (CGI ; General tax code) Exonération de TVA - Article 261 D-3° du "
-"Code Général des Impôts"
+"VATEX-FR-CGI261D-3 - Exempt based on 3° of article 261 D of the Code Général"
+" des Impôts (CGI ; General tax code) Exonération de TVA - Article 261 D-3° "
+"du Code Général des Impôts"
 msgstr ""
-"VATEX-FR-CGI261D-3 - Miễn thuế theo khoản 3° điều 261 D của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung) Exonération de TVA - Article 261 D-3° du "
+"VATEX-FR-CGI261D-3 - Miễn thuế theo khoản 3° điều 261 D của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung) Exonération de TVA - Article 261 D-3° du "
 "Code Général des Impôts"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261d-4
 msgid ""
-"VATEX-FR-CGI261D-4 - Exempt based on 4° of article 261 D of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261D-4 - Exempt based on 4° of article 261 D of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261D-4 - Miễn thuế theo khoản 4° điều 261 D của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261D-4 - Miễn thuế theo khoản 4° điều 261 D của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261e-1
 msgid ""
-"VATEX-FR-CGI261E-1 - Exempt based on 1° of article 261 E of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261E-1 - Exempt based on 1° of article 261 E of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261E-1 - Miễn thuế theo khoản 1° điều 261 E của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261E-1 - Miễn thuế theo khoản 1° điều 261 E của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi261e-2
 msgid ""
-"VATEX-FR-CGI261E-2 - Exempt based on 2° of article 261 E of the Code Général "
-"des Impôts (CGI ; General tax code)"
+"VATEX-FR-CGI261E-2 - Exempt based on 2° of article 261 E of the Code Général"
+" des Impôts (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI261E-2 - Miễn thuế theo khoản 2° điều 261 E của Code Général des "
-"Impôts (CGI ; Bộ luật thuế chung)"
+"VATEX-FR-CGI261E-2 - Miễn thuế theo khoản 2° điều 261 E của Code Général des"
+" Impôts (CGI ; Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi275
 msgid ""
-"VATEX-FR-CGI275 - Exempt based on article 275 of the Code Général des Impôts "
-"(CGI ; General tax code)"
+"VATEX-FR-CGI275 - Exempt based on article 275 of the Code Général des Impôts"
+" (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI275 - Miễn thuế theo điều 275 của Code Général des Impôts (CGI ; "
-"Bộ luật thuế chung)"
+"VATEX-FR-CGI275 - Miễn thuế theo điều 275 của Code Général des Impôts (CGI ;"
+" Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi277a
@@ -836,11 +835,11 @@ msgstr ""
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex-fr-cgi295
 msgid ""
-"VATEX-FR-CGI295 - Exempt based on article 295 of the Code Général des Impôts "
-"(CGI ; General tax code)"
+"VATEX-FR-CGI295 - Exempt based on article 295 of the Code Général des Impôts"
+" (CGI ; General tax code)"
 msgstr ""
-"VATEX-FR-CGI295 - Miễn thuế theo điều 295 của Code Général des Impôts (CGI ; "
-"Bộ luật thuế chung)"
+"VATEX-FR-CGI295 - Miễn thuế theo điều 295 của Code Général des Impôts (CGI ;"
+" Bộ luật thuế chung)"
 
 #. module: account_edi_ubl_cii_tax_extension
 #: model:ir.model.fields.selection,name:account_edi_ubl_cii_tax_extension.selection__account_tax__ubl_cii_tax_exemption_reason_code__vatex_fr-cnwvat
