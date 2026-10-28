@@ -11,14 +11,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-10 18:38+0000\n"
-"PO-Revision-Date: 2024-09-25 09:41+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
+"PO-Revision-Date: 2026-10-20 11:55+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-18/pos_self_order/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. module: pos_self_order
 #: model:ir.actions.report,print_report_name:pos_self_order.report_self_order_qr_codes_page
@@ -407,10 +408,8 @@ msgid ""
 "Each table in your floor plan is assigned a unique QR code based on your configuration. For security reasons,\n"
 "                    both the point of sale and table names are encrypted in the generated URL, as shown in the example below:."
 msgstr ""
-"Mỗi bàn trong sơ đồ khu vực của bạn được gán một mã QR duy nhất theo cách "
-"bạn cấu hình. Vì lý do bảo mật,\n"
-"                     cả tên POS và tên bàn đều được mã hóa trong URL được "
-"tạo, như trong ví dụ dưới đây:"
+"Mỗi bàn trong sơ đồ khu vực của bạn được gán một mã QR duy nhất theo cách bạn cấu hình. Vì lý do bảo mật,\n"
+"                     cả tên POS và tên bàn đều được mã hóa trong URL được tạo, như trong ví dụ dưới đây:"
 
 #. module: pos_self_order
 #. odoo-javascript
@@ -1303,8 +1302,8 @@ msgstr "Có"
 #. odoo-python
 #: code:addons/pos_self_order/controllers/orders.py:0
 msgid ""
-"You are not authorized to create, update, or delete records of type '%"
-"(model)s'. Only the following models are allowed: %(allowed)s"
+"You are not authorized to create, update, or delete records of type "
+"'%(model)s'. Only the following models are allowed: %(allowed)s"
 msgstr ""
 "Bạn không có quyền tạo, cập nhật hoặc xóa bản ghi loại '%(model)s'. Chỉ cho "
 "phép các mô hình sau: %(allowed)s"

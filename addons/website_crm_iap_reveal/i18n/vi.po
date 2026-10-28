@@ -6,30 +6,30 @@
 # Wil Odoo, 2024
 #
 # "Thi Huong Nguyen (thng)" <thng@odoo.com>, 2026.
+# Deleted User <noreply+31@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-29 18:38+0000\n"
-"PO-Revision-Date: 2026-01-10 09:09+0000\n"
-"Last-Translator: \"Thi Huong Nguyen (thng)\" <thng@odoo.com>\n"
-"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-18/"
-"website_crm_iap_reveal/vi/>\n"
+"PO-Revision-Date: 2026-10-20 13:19+0000\n"
+"Last-Translator: Deleted User <noreply+31@weblate.org>\n"
+"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-18/website_crm_iap_reveal/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. module: website_crm_iap_reveal
 #: model_terms:ir.ui.view,arch_db:website_crm_iap_reveal.crm_reveal_rule_form
 msgid ""
-"1 credit is consumed per visitor matching the website traffic conditions and "
-"whose company can be identified.<br/>"
+"1 credit is consumed per visitor matching the website traffic conditions and"
+" whose company can be identified.<br/>"
 msgstr ""
-"1 điểm được sử dụng cho mỗi khách truy cập khớp với điều kiện lưu lượng truy "
-"cập website và công ty của họ có thể được xác định. <br/>"
+"1 điểm được sử dụng cho mỗi khách truy cập khớp với điều kiện lưu lượng truy"
+" cập website và công ty của họ có thể được xác định. <br/>"
 
 #. module: website_crm_iap_reveal
 #: model_terms:ir.ui.view,arch_db:website_crm_iap_reveal.crm_reveal_rule_form
@@ -251,7 +251,8 @@ msgstr "Tiềm năng/Cơ hội"
 #: model:ir.model.fields,help:website_crm_iap_reveal.field_crm_reveal_rule__industry_tag_ids
 msgid "Leave empty to always match. Odoo will not create lead if no match"
 msgstr ""
-"Để trống để luôn luôn phù hợp. Odoo sẽ không tạo tiềm năng nếu không phù hợp "
+"Để trống để luôn luôn phù hợp. Odoo sẽ không tạo tiềm năng nếu không phù hợp"
+" "
 
 #. module: website_crm_iap_reveal
 #: model:ir.model.fields.selection,name:website_crm_iap_reveal.selection__crm_reveal_rule__priority__0
@@ -300,8 +301,8 @@ msgstr "Số lượng cơ hội được tạo "
 #. module: website_crm_iap_reveal
 #: model:ir.model.fields,help:website_crm_iap_reveal.field_crm_reveal_rule__country_ids
 msgid ""
-"Only visitors of following countries will be converted into leads/"
-"opportunities (using GeoIP)."
+"Only visitors of following countries will be converted into "
+"leads/opportunities (using GeoIP)."
 msgstr ""
 "Chỉ khách truy cập của các quốc gia sau sẽ được chuyển đổi thành tiềm "
 "năng/cơ hội (sử dụng GeoIP)."
@@ -309,7 +310,8 @@ msgstr ""
 #. module: website_crm_iap_reveal
 #: model:ir.model.fields,help:website_crm_iap_reveal.field_crm_reveal_rule__state_ids
 msgid ""
-"Only visitors of following states will be converted into leads/opportunities."
+"Only visitors of following states will be converted into "
+"leads/opportunities."
 msgstr ""
 "Chỉ khách truy cập của các tỉnh thành sau sẽ được chuyển đổi thành tiềm "
 "năng/cơ hội. "
@@ -357,9 +359,9 @@ msgid ""
 "to target the homepage. Example: /page* to track all the pages which begin "
 "with /page"
 msgstr ""
-"Regex để theo dõi các trang web. Để trống để theo dõi toàn bộ trang web "
-"hoặc / để nhắm mục tiêu trang chủ. Ví dụ: / page * để theo dõi tất cả các "
-"trang bắt đầu bằng /page"
+"Regex để theo dõi các trang web. Để trống để theo dõi toàn bộ trang web hoặc"
+" / để nhắm mục tiêu trang chủ. Ví dụ: / page * để theo dõi tất cả các trang "
+"bắt đầu bằng /page"
 
 #. module: website_crm_iap_reveal
 #: model:ir.model.fields,help:website_crm_iap_reveal.field_crm_reveal_rule__website_id
@@ -434,15 +436,16 @@ msgid ""
 "criteria. Their details will show up in the history thread of generated "
 "leads/opportunities. One credit is consumed per tracked contact."
 msgstr ""
-"Đây là số lượng liên hệ để theo dõi nếu vai trò/thâm niên của họ phù hợp với "
-"tiêu chuẩn của bạn. Chi tiết của họ sẽ xuất hiện trong luồng lịch sử của "
-"tiềm năng/cơ hội được tạo. Một điểm được dùng cho mỗi liên hệ được theo dõi. "
+"Đây là số lượng liên hệ để theo dõi nếu vai trò/thâm niên của họ phù hợp với"
+" tiêu chuẩn của bạn. Chi tiết của họ sẽ xuất hiện trong luồng lịch sử của "
+"tiềm năng/cơ hội được tạo. Một điểm được dùng cho mỗi liên hệ được theo dõi."
+" "
 
 #. module: website_crm_iap_reveal
 #: model:ir.model.fields,help:website_crm_iap_reveal.field_crm_reveal_rule__suffix
 msgid ""
-"This will be appended in name of generated lead so you can identify lead/"
-"opportunity is generated with this rule"
+"This will be appended in name of generated lead so you can identify "
+"lead/opportunity is generated with this rule"
 msgstr ""
 "Hậu tố này sẽ được thêm vào phía cuối tên của tiềm năng được tạo để bạn có "
 "thể xác định tiềm năng/cơ hội được tạo bằng quy tắc này "
@@ -473,8 +476,8 @@ msgid ""
 "Used to order the rules with same URL and countries. Rules with a lower "
 "sequence number will be processed first."
 msgstr ""
-"Được sử dụng để sắp xếp các quy tắc có cùng URL và quốc gia. Các quy tắc với "
-"số trình tự thấp hơn sẽ được xử lý trước. "
+"Được sử dụng để sắp xếp các quy tắc có cùng URL và quốc gia. Các quy tắc với"
+" số trình tự thấp hơn sẽ được xử lý trước. "
 
 #. module: website_crm_iap_reveal
 #: model:ir.model.fields.selection,name:website_crm_iap_reveal.selection__crm_reveal_rule__priority__3

@@ -276,6 +276,31 @@ class TestPdpMessage(TestL10nFrPdpCommon, TestAccountMoveSendCommon):
         )
         self.assertTrue(bool(move.ubl_cii_xml_id))
 
+    def test_pdp_send_success_message_peppol(self):
+        # should be able to send valid invoices correctly
+        # attachment should be generated
+        # peppol_move_state should be set to done
+        # pdp_ppf_move_state should be `False`
+        move = self._create_invoice(partner_id=self.belgian_partner.id)
+        move.action_post()
+
+        wizard = self.create_send_and_print(move)
+        self.assertEqual(wizard.invoice_edi_format, 'ubl_bis3')
+        wizard.sending_methods = ['peppol']
+
+        wizard.action_send_and_print()
+
+        self.env['account_edi_proxy_client.user']._cron_peppol_get_message_status()
+        self.assertRecordValues(
+            move,
+            [{
+                'peppol_move_state': 'done',
+                'pdp_ppf_move_state': False,
+                'peppol_message_uuid': FAKE_UUID[0],
+            }],
+        )
+        self.assertTrue(bool(move.ubl_cii_xml_id))
+
     def test_pdp_einvoicing_chatter_keeps_last_status_in_fetch(self):
         move = self._create_french_invoice()
         move.action_post()
@@ -941,6 +966,34 @@ class TestPdpMessage(TestL10nFrPdpCommon, TestAccountMoveSendCommon):
             self.env.ref('l10n_fr_pdp.ir_cron_pdp_send_lifecycles').method_direct_trigger()
             self.assertFalse(button_send.called)
 
+    def test_pdp_send_to_contact_can_send_response(self):
+        # We should be able to send invoices to a contact of a partner and then send responses
+        move = self._create_french_invoice()
+        commercial_partner = move.partner_id
+        contact = commercial_partner.copy({'parent_id': commercial_partner.id})
+        contact.write({'peppol_eas': False, 'peppol_endpoint': False, 'invoice_edi_format': False})
+        move.partner_id = contact
+        self.assertEqual(contact.commercial_partner_id, commercial_partner)
+        move.action_post()
+
+        wizard = self.create_send_and_print(move)
+        self.assertEqual(wizard.invoice_edi_format, 'ubl_21_fr')
+        self.assertTrue('peppol' in wizard.sending_methods)
+
+        wizard.action_send_and_print()
+
+        self.env['account_edi_proxy_client.user']._cron_peppol_get_message_status()
+        self.assertRecordValues(
+            move,
+            [{
+                'peppol_move_state': 'done',
+                'pdp_ppf_move_state': 'in_progress',
+                'peppol_message_uuid': FAKE_UUID[0],
+            }],
+        )
+        self.assertTrue(bool(move.ubl_cii_xml_id))
+        self.assertTrue(move.pdp_can_send_response)
+
 
 @tagged('post_install_l10n', 'post_install', '-at_install')
 class TestPdpMessageFacturX(TestPdpMessage):
@@ -996,4 +1049,21 @@ class TestPdpMessageFacturX(TestPdpMessage):
         self.assertRecordValues(move.partner_id, [{
             'name': 'SUPER FRENCH PARTNER',
             'vat': 'FR23334175221',
+        }])
+
+    def test_receive_self_billed_keeps_peppol_state_with_tracking(self):
+        """ A received self-billed invoice keeps its `peppol_move_state`.
+        The bug only happens with tracking enabled (it's not by default here in tests), so enable it here
+        """
+        self.env['account_edi_proxy_client.user'].with_context(
+            tracking_disable=False,
+            mail_notrack=False
+        )._cron_peppol_get_new_documents()
+
+        move = self.env['account.move'].search([('peppol_message_uuid', '=', FAKE_UUID[0])])
+        self.assertRecordValues(move, [{
+            'move_type': 'out_invoice',
+            'state': 'draft',
+            'peppol_move_state': 'done',
+            'peppol_is_sent': True,
         }])
